@@ -2,7 +2,7 @@
 " Maintainer:		Restorer <restorers@users.sourceforge.net>
 " Previous Maintainer:	Sergey Alyoshin <alyoshin.s@gmail.com>
 "			vassily ragosin <vrr[at]users.sourceforge.net>
-" Last Change:		18 Aug 2020
+" Last Change:		21 Jan 2020
 " URL:			
 "
 "
@@ -324,19 +324,19 @@ endif
 "
 " Find in help dialog
 "
-let g:menutrans_help_dialog = "Укажите команду или слово, которые требуется найти в документации.\n\nЧтобы найти команды режима вставки, используйте приставку i_ (например, i_CTRL-X)\nЧтобы найти команды командной строки, используйте приставку c_ (например, c_<Del>)\nЧтобы найти информацию о параметрах, используйте символ ' (например, 'shftwidth')"
+let g:menutrans_help_dialog = "Наберите команду или слово, которые требуется найти в документации.\n\nЧтобы найти команды режима вставки, используйте приставку i_ (например, i_CTRL-X)\nЧтобы найти команды командной строки, используйте приставку c_ (например, c_<Del>)\nЧтобы найти информацию о параметрах, используйте символ ' (например, 'shftwidth')"
 "
 " Search path dialog
 "
-let g:menutrans_path_dialog = "Укажите через запятую наименования каталогов, где будет выполняться поиск файлов"
+let g:menutrans_path_dialog = "Введите через запятую наименования каталогов, где будет выполняться поиск файлов"
 "
 " Tag files dialog
 "
-let g:menutrans_tags_dialog = "Укажите через запятую наименования файлов индексов"
+let g:menutrans_tags_dialog = "Введите через запятую наименования файлов индексов"
 "
 " Text width dialog
 "
-let g:menutrans_textwidth_dialog = "Укажите количество символов для установки ширины текста\nЧтобы отменить форматирование, укажите 0"
+let g:menutrans_textwidth_dialog = "Введите количество символов для установки ширины текста\nЧтобы отменить форматирование, введите 0"
 "
 " File format dialog
 "
