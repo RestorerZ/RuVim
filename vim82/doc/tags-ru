@@ -204,6 +204,11 @@ function-list	usr_41.rux	/*function-list*
 help-summary	usr_02.rux	/*help-summary*
 help-tags	tags-ru	1
 hjkl	usr_02.rux	/*hjkl*
+how-do-i	howto.rux	/*how-do-i*
+how-to	howto.rux	/*how-to*
+howdoi	howto.rux	/*howdoi*
+howto	howto.rux	/*howto*
+howto.txt	howto.rux	/*howto.txt*
 last-position-jump	usr_05.rux	/*last-position-jump*
 manual-copyright	usr_01.rux	/*manual-copyright*
 matchit-install	usr_05.rux	/*matchit-install*
@@ -270,7 +275,9 @@ write-plugin	usr_41.rux	/*write-plugin*
 добавление_файла_справки	usr_05.rux	/*добавление_файла_справки*
 закладки	usr_03.rux	/*закладки*
 из_книги	usr_01.rux	/*из_книги*
+инструкции	howto.rux	/*инструкции*
 использование-<Plug>	usr_41.rux	/*использование-<Plug>*
+как-сделать	howto.rux	/*как-сделать*
 модули-специальные_элементы	usr_41.rux	/*модули-специальные_элементы*
 модули-тип_файла	usr_41.rux	/*модули-тип_файла*
 модули_типа_файла	usr_05.rux	/*модули_типа_файла*
