@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Russian Vim program help files *.rux
 " Maintainer:   Restorer (restorers@users.sourceforge.net)
-" Last Change:  04 Aprl 2017
+" Last Change:  02 Jul 2021
 " 
 
 " Проверяем язык локали и установки опции 'helplang'
@@ -36,10 +36,10 @@ syntax keyword helpNote     Замечание:
 " в старой версии документации
 syntax keyword helpWarning   ВНИМАНИЕ! Предупреждение:
 " Подсветка Ex-команд в документации Vim
-syntax match helpCommand     "\":[A-Za-z!]\+\""hs=s+1,he=e-1
+syntax match helpCommand     "\":[0-9A-Za-z!]\+\""hs=s+1,he=e-1
 " Подсветка специальных обозначений
 syntax match helpSpecial    "{[-а-яёА-ЯЁ0-9'":%#=[\]<>.,]\+}"
-syntax match helpSpecial    "{[-а-яёА-ЯЁ0-9'"*+/:%#=[\]<>.,]\+}"
+syntax match helpSpecial    "{[-а-яёА-ЯЁ0-9'"*+/:%#=[\]<>.,_]\+}"
 syntax match helpSpecial    "\s\[[-а-яё^А-ЯЁ0-9_]\{2,}]"ms=s+1
 syntax match helpSpecial    "<[-а-яёА-ЯЁ0-9_]\+>"
 syntax match helpSpecial    "\[диапазон]"
