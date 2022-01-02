@@ -2,8 +2,8 @@
 " Maintainer:		Restorer <restorers@users.sourceforge.net>
 " Previous Maintainer:	Sergey Alyoshin <alyoshin.s@gmail.com>
 "			vassily ragosin <vrr[at]users.sourceforge.net>
-" Last Change:		18 Aug 2020
-" URL:			
+" Last Change:		26 Dec 2021
+" URL:			https://github.com/RestorerZ/RuVim
 "
 "
 " Adopted for RuVim project by Vassily Ragosin.
@@ -36,7 +36,7 @@ menutrans &Help				&Справка
 "
 "
 " Submenu of menu Help
-menutrans &Overview<Tab><F1>		&Содержание<Tab><F1>
+menutrans &Overview<Tab><F1>		&Содержание<Tab>F1
 menutrans &User\ Manual			&Руководство\ пользователя
 menutrans &How-to\ links		&Инструкции
 menutrans &Find\.\.\.			&Найти\.\.\.
@@ -44,7 +44,7 @@ menutrans &Find\.\.\.			&Найти\.\.\.
 menutrans &Credits			Со&авторы
 menutrans Co&pying			&Лицензия
 menutrans &Sponsor/Register		Сод&ействие\ и\ регистрация
-menutrans O&rphans			&Помочь\ детям
+menutrans O&rphans			&Благотварительность
 "--------------------
 menutrans &Version			&Текущая\ версия
 menutrans &About			&О\ программе
@@ -82,23 +82,23 @@ menutrans &Delete<Tab>x			&Удалить<Tab>x
 menutrans &Select\ All<Tab>ggVG		В&ыделить\ всё<Tab>gg\ SHIFT+V\ SHIFT+G
 "--------------------
 " Athena GUI only
-menutrans &Find<Tab>/			&Найти<Tab>/
-menutrans Find\ and\ Rep&lace<Tab>:%s	&Заменить<Tab>:%s
+menutrans &Find<Tab>/				&Найти<Tab>/
+menutrans Find\ and\ Rep&lace<Tab>:%s		&Заменить<Tab>:%s
 " End Athena GUI only
-menutrans &Find\.\.\.<Tab>/		&Найти\.\.\.<Tab>/
-menutrans Find\ and\ Rep&lace\.\.\.	&Заменить\.\.\.
+menutrans &Find\.\.\.<Tab>/			&Найти\.\.\.<Tab>/
+menutrans Find\ and\ Rep&lace\.\.\.		&Заменить\.\.\.
 menutrans Find\ and\ Rep&lace\.\.\.<Tab>:%s	&Заменить\.\.\.<Tab>:%s
 menutrans Find\ and\ Rep&lace\.\.\.<Tab>:s	&Заменить\.\.\.<Tab>:s
 "--------------------
-menutrans Settings\ &Window		&Все\ параметры\.\.\.
-menutrans Startup\ &Settings		Параметры\ запус&ка
-menutrans &Global\ Settings		&Общие\ параметры
-menutrans F&ile\ Settings		Параметр&ы\ текущего\ буфера
+menutrans Settings\ &Window			&Все\ параметры\.\.\.
+menutrans Startup\ &Settings			Параметры\ запус&ка
+menutrans &Global\ Settings			&Общие\ параметры
+menutrans F&ile\ Settings			Параметр&ы\ текущего\ буфера
 menutranslate Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выбора\ цве&товой\ схемы
-menutrans C&olor\ Scheme		Цветовая\ с&хема
-menutranslate Show\ &Keymaps\ in\ Menu	Показать\ меню\ выбора\ раскладки\ к&лавиатуры
-menutrans &Keymap			&Раскладка\ клавиатуры
-menutrans Select\ Fo&nt\.\.\.		&Шрифт\.\.\.
+menutrans C&olor\ Scheme			Цветовая\ с&хема
+menutranslate Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
+menutrans &Keymap				&Раскладка\ клавиатуры
+menutrans Select\ Fo&nt\.\.\.			&Шрифт\.\.\.
 ">>>----------------- Edit/Global settings
 menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсвечивать\ &совпадения<Tab>:set\ hls!
 menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!			&Регистронезависимый\ поиск<Tab>:set\ ic!
@@ -110,25 +110,25 @@ menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!	&Совместимость\ с\ редактором
 menutrans Search\ &Path\.\.\.				&Каталоги\ для\ поиска\ файлов\.\.\.
 menutrans Ta&g\ Files\.\.\.				Индексные\ файлы\.\.\.
 "
-menutrans Toggle\ &Toolbar				Показ\ &панели\ инструментов
-menutrans Toggle\ &Bottom\ Scrollbar			Показ\ полосы\ прокрутки\ вни&зу
-menutrans Toggle\ &Left\ Scrollbar			Показ\ полосы\ прокрутки\ с&лева
-menutrans Toggle\ &Right\ Scrollbar			Показ\ полосы\ прокрутки\ спр&ава
+menutrans Toggle\ &Toolbar			Показ\ &панели\ инструментов
+menutrans Toggle\ &Bottom\ Scrollbar		Показ\ полосы\ прокрутки\ вни&зу
+menutrans Toggle\ &Left\ Scrollbar		Показ\ полосы\ прокрутки\ с&лева
+menutrans Toggle\ &Right\ Scrollbar		Показ\ полосы\ прокрутки\ спр&ава
 ">>>->>>------------- Edit/Global settings/Virtual edit
 menutranslate Never				Выключено\ во\ всех\ режимах
-menutranslate Block\ Selection		Включено\ в\ режиме\ визуального\ блока
+menutranslate Block\ Selection			Включено\ в\ режиме\ визуального\ блока
 menutranslate Insert\ mode			Включено\ в\ режиме\ вставки
 menutranslate Block\ and\ Insert		Включено\ в\ режимах\ визуального\ блока\ и\ вставки
 menutranslate Always				Включено\ во\ всех\ режимах
 ">>>----------------- Edit/File settings
-menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!	Показ\ &нумерации\ строк<Tab>:set\ nu!
+menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!		Показ\ &нумерации\ строк<Tab>:set\ nu!
 menutrans Toggle\ relati&ve\ Line\ Numbering<Tab>:set\ rnu!	Показ\ относите&льной\ нумерации\ строк<Tab>:set\ nru!
-menutrans Toggle\ &List\ Mode<Tab>:set\ list!		Показ\ &непечатаемых\ знаков<Tab>:set\ list!
-menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!	&Разбивка\ строк\ по\ границе\ окна<Tab>:set\ wrap!
-menutrans Toggle\ W&rapping\ at\ word<Tab>:set\ lbr!	Разбивка\ строк\ по\ &границе\ слов<Tab>:set\ lbr!
-menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!		Заменить\ символы\ &табуляции\ на\ пробелы<Tab>:set\ et!
-menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!	Установить\ отступ\ как\ у\ текущей\ &строки<Tab>:set\ ai!
-menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!	Установить\ отступ\ как\ в\ &языке\ Си<Tab>:set\ cin!
+menutrans Toggle\ &List\ Mode<Tab>:set\ list!			Показ\ &непечатаемых\ знаков<Tab>:set\ list!
+menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!		&Разбивка\ строк\ по\ границе\ окна<Tab>:set\ wrap!
+menutrans Toggle\ W&rapping\ at\ word<Tab>:set\ lbr!		Разбивка\ строк\ по\ &границе\ слов<Tab>:set\ lbr!
+menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!			Заменить\ символы\ &табуляции\ на\ пробелы<Tab>:set\ et!
+menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!		Установить\ отступ\ как\ у\ текущей\ &строки<Tab>:set\ ai!
+menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!		Установить\ отступ\ как\ в\ &языке\ Си<Tab>:set\ cin!
 ">>>---
 menutrans &Shiftwidth					Вели&чина\ отступа
 menutrans Soft\ &Tabstop				Ширина\ &табуляции
@@ -140,32 +140,32 @@ menutrans &File\ Format\.\.\.				&Формат\ файла\.\.\.
 " Submenu of Tools menu
 menutrans &Jump\ to\ this\ tag<Tab>g^]			&Перейти\ по\ индексному\ указателю<Tab>g\ CTRL+]
 menutrans Jump\ &back<Tab>^T				&Вернуться\ назад<Tab>CTRL+T
-menutrans Build\ &Tags\ File				Создать\ ф&айл\ индексов
+menutrans Build\ &Tags\ File				Создать\ файл\ &индексов
 "-------------------
-menutrans &Folding					Структура\ текста
-menutrans &Spelling					Проверка\ пр&авописания
+menutrans &Folding					С&труктура\ текста
+menutrans &Spelling					Пр&авописание
 menutrans &Diff						&Сравнение\ текста
 "-------------------
 menutrans &Make<Tab>:make				Ко&мпиляция<Tab>:make
-menutrans &List\ Errors<Tab>:cl				Список\ результатов<Tab>:cl
-menutrans L&ist\ Messages<Tab>:cl!			Список\ все&х\ сообщений<Tab>:cl!
+menutrans &List\ Errors<Tab>:cl				Распознанные\ о&шибки<Tab>:cl
+menutrans L&ist\ Messages<Tab>:cl!			Вес&ь\ список\ результатов<Tab>:cl!
 menutrans &Next\ Error<Tab>:cn				Следу&ющая\ запись\ из\ списка<Tab>:cn
 menutrans &Previous\ Error<Tab>:cp			Пр&едыдущая\ запись\ из\ списка<Tab>:cp
-menutrans &Older\ List<Tab>:cold			Более\ стар&ый\ список\ результатов<Tab>:cold
-menutrans N&ewer\ List<Tab>:cnew			Более\ све&жий\ список\ результатов<Tab>:cnew
+menutrans &Older\ List<Tab>:cold			Пред&ыдущий\ список\ результатов<Tab>:cold
+menutrans N&ewer\ List<Tab>:cnew			Пос&ледующий\ список\ результатов<Tab>:cnew
 menutrans Error\ &Window				Ок&но\ со\ списком\ результатов
 menutranslate Show\ Compiler\ Se&ttings\ in\ Menu	Показать\ меню\ выбора\ &компилятора
 menutrans Se&T\ Compiler				Выбрать\ &компилятор
 "-------------------
-menutrans &Convert\ to\ HEX<Tab>:%!xxd			Преобразовать\ в\ HEX<Tab>:%!xxd
+menutrans &Convert\ to\ HEX<Tab>:%!xxd			Прео&бразовать\ в\ HEX<Tab>:%!xxd
 menutrans Conve&rt\ back<Tab>:%!xxd\ -r			Преобразовать\ и&з\ HEX<Tab>:%!xxd\ -r
 ">>>---------------- Tools/Spelling
-menutrans &Spell\ Check\ On				&Проверять
-menutrans Spell\ Check\ &Off				&Без\ проверки
+menutrans &Spell\ Check\ On				Автоматически\ &проверять
+menutrans Spell\ Check\ &Off				&Не\ выполнять\ проверку
 menutrans To\ &Next\ error<Tab>]s			С&ледующая\ ошибка<Tab>]s
 menutrans To\ &Previous\ error<Tab>[s			Пр&едыдущая\ ошибка<Tab>[s
-menutrans Suggest\ &Corrections<Tab>z=                  Варианты\ написания<Tab>z=
-menutrans &Repeat\ correction<Tab>:spellrepall		Заменить\ все<Tab>:spellrepall
+menutrans Suggest\ &Corrections<Tab>z=			Вариант&ы\ написания<Tab>z=
+menutrans &Repeat\ correction<Tab>:spellrepall		Заменить\ &все<Tab>:spellrepall
 "-------------------
 menutranslate Set\ language\ to\ "en"			Включить\ для\ языка\ "en"
 menutranslate Set\ language\ to\ "en_au"		Включить\ для\ языка\ "en_au"
@@ -190,15 +190,15 @@ menutrans Delete\ &All\ Folds<Tab>zD			Убрать\ вс&е\ блоки\ структуры<Tab>z\ SHI
 menutrans Fold\ col&umn\ width				&Ширина\ столбца\ со\ значками\ структуры
 ">>>->>>----------- Tools/Folds/Fold Method
 menutrans M&anual					Установить\ вру&чную
-menutrans I&ndent					По\ о&тступам
-menutrans E&xpression					По\ &вычисленным\ условиям
-menutrans S&yntax					По\ &синтаксису
-menutranslate &Diff                                     По\ различиям\ в\ тексте
-menutrans Ma&rker					По\ &маркерам
+menutrans I&ndent					На\ основе\ о&тступов
+menutrans E&xpression					На\ основе\ рас&чётов
+menutrans S&yntax					На\ основе\ &синтаксиса
+menutranslate &Diff					На\ основе\ различий\ в\ текстах
+menutrans Ma&rker					На\ основе\ &маркеров
 ">>>--------------- Sub of Tools/Diff
 menutrans &Update					О&бновить\ содержимое\ окон
-menutrans &Get\ Block					Перенести\ в\ текущий\ буфер
-menutrans &Put\ Block					Перенести\ из\ текущего\ буфера
+menutrans &Get\ Block					Перенести\ &в\ текущий\ буфер
+menutrans &Put\ Block					Перенести\ &из\ текущего\ буфера
 ">>>--------------- Tools/Diff/Error window
 menutrans &Update<Tab>:cwin				О&бновить<Tab>:cwin
 menutrans &Close<Tab>:cclose				&Закрыть<Tab>:cclose
@@ -207,21 +207,21 @@ menutrans &Open<Tab>:copen				&Открыть<Tab>:copen
 "
 " Syntax menu
 "
-menutrans &Show\ File\ Types\ in\ menu			Показать\ меню\ выбора\ типа\ &файла
-menutrans Set\ '&syntax'\ only				&Задать\ значение\ только\ 'syntax'
-menutrans Set\ '&filetype'\ too				Задать\ &также\ значение\ 'filetype'
+menutrans &Show\ File\ Types\ in\ menu			&Показать\ меню\ выбора\ типа\ файла
+menutrans Set\ '&syntax'\ only				А&ктивировать\ параметр\ 'syntax'
+menutrans Set\ '&filetype'\ too				Активировать\ пара&метр\ 'filetype'
 menutrans &Off						&Отключить\ подсветку
 menutrans &Manual					Включать\ подсветку\ вру&чную
 menutrans A&utomatic					Включать\ подсветку\ &автоматически
-menutrans on/off\ for\ &This\ file			Переключить\ режим\ для\ текущего\ файла
-menutrans Co&lor\ test					Проверка\ &цветов
-menutrans &Highlight\ test				Проверка\ под&светки
-menutrans &Convert\ to\ HTML				С&оздать\ HTML-файл\ с\ CSS
+menutrans on/off\ for\ &This\ file			Изменить\ режим\ для\ &текущего\ файла
+menutrans Co&lor\ test					Проверить\ поддер&живаемые\ цвета
+menutrans &Highlight\ test				Показать\ группы\ под&светки
+menutrans &Convert\ to\ HTML				Со&здать\ HTML-файл\ с\ CSS
 "
 "
 " Buffers menu
 "
-menutrans &Refresh\ menu				&Обновить\ меню
+menutrans &Refresh\ menu				&Обновить\ список\ буферов
 menutrans &Delete					&Удалить\ буфер
 menutrans &Alternate					&Соседний\ буфер
 menutrans &Next						С&ледующий\ буфер
@@ -274,7 +274,7 @@ menutrans Select\ Pa&ragraph				Выделить\ аб&зац
 " The Spelling popup menu
 "
 "
-let g:menutrans_spell_change_ARG_to =			'Исправить\ "%s"\ на'
+let g:menutrans_spell_change_ARG_to =			'Исправить\ "%s"'
 let g:menutrans_spell_add_ARG_to_word_list =		'Добавить\ "%s"\ в\ словарь'
 let g:menutrans_spell_ignore_ARG =			'Пропустить\ "%s"'
 "
@@ -308,7 +308,7 @@ if has("toolbar")
     tmenu ToolBar.RunCtags				Создать файл индексов
     tmenu ToolBar.TagJump				Перейти по индексному указателю
     tmenu ToolBar.Help					Справка
-    tmenu ToolBar.FindHelp				Поиск в справке
+    tmenu ToolBar.FindHelp				Поиск в документации
     tmenu ToolBar.WinClose				Закрыть текущее окно
     tmenu ToolBar.WinMax				Максимальная высота текущего окна
     tmenu ToolBar.WinMin				Минимальная высота текущего окна
@@ -324,24 +324,24 @@ endif
 "
 " Find in help dialog
 "
-let g:menutrans_help_dialog = "Укажите команду или слово, которые требуется найти в документации.\n\nЧтобы найти команды режима вставки, используйте приставку i_ (например, i_CTRL-X)\nЧтобы найти команды командной строки, используйте приставку c_ (например, c_<Del>)\nЧтобы найти информацию о параметрах, используйте символ ' (например, 'shftwidth')"
+let g:menutrans_help_dialog = "Наберите команду или слово, которые требуется найти в документации.\n\nЧтобы найти команды режима вставки, используйте приставку i_ (например, i_CTRL-X)\nЧтобы найти команды командной строки, используйте приставку c_ (например, c_<Del>)\nЧтобы найти информацию о параметрах, используйте символ ' (например, 'shftwidth')"
 "
 " Search path dialog
 "
-let g:menutrans_path_dialog = "Укажите через запятую наименования каталогов, где будет выполняться поиск файлов"
+let g:menutrans_path_dialog = "Введите через запятую наименования каталогов, где будет выполняться поиск файлов"
 "
 " Tag files dialog
 "
-let g:menutrans_tags_dialog = "Укажите через запятую наименования файлов индексов"
+let g:menutrans_tags_dialog = "Введите через запятую наименования файлов индексов"
 "
 " Text width dialog
 "
-let g:menutrans_textwidth_dialog = "Укажите количество символов для установки ширины текста\nЧтобы отменить форматирование, укажите 0"
+let g:menutrans_textwidth_dialog = "Введите количество символов для установки ширины текста\nЧтобы отменить форматирование, введите 0"
 "
 " File format dialog
 "
 let g:menutrans_fileformat_dialog = "Выберите формат файла"
-let g:menutrans_fileformat_choices = "&1. Unix\n&2. Dos\n&3. Mac\nО&тмена"
+let g:menutrans_fileformat_choices = "&1. Unix\n&2. Dos\n&3. Mac\nОтмена (&C)"
 "
 let menutrans_no_file = "[Безымянный]"
 
