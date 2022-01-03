@@ -4,7 +4,7 @@
 #
 # vassily "vr" ragosin <vrr@users.sourceforge.net>, 2004
 # Sergey Alyoshin <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
-# Restorer <restorers@users.sourceforge.net>, 2017
+# Restorer <restorers@users.sourceforge.net>, 2017, 2020-2022
 #
 #
 #   Restorer
@@ -12,18 +12,18 @@
 #   - Соответствие нормам и правилам русского языка;
 #   - Унифицированность сообщений;
 #   - Связанность сообщений;
-#   - Полнота и понятность сообщений без обращения к встроенной документации;
+#   - Полнота и понимание сообщений без обращения к встроенной документации;
 #   - Лаконичность.
 # Насколько это, конечно, возможно и позволяет моя безграмотность,
 # и слабое знание языка первоисточника и предметной области.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 8.0\n"
-"Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2020-08-05 23:49+0300\n"
-"PO-Revision-Date: 2020-09-18 21:45+0300\n"
-"Last-Translator: Restorer <restorers@users.sourceforge.net>\n"
+"Project-Id-Version: Vim 8.0.1850\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-02 21:49+0300\n"
+"PO-Revision-Date: 2022-01-02 22:56+0300\n"
+"Last-Translator: Restorer, <restorers@users.sourceforge.net>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
@@ -138,7 +138,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E84: No modified buffer found"
-msgstr "E84: Отсутствуют буферы, содержащие не сохранённые данные"
+msgstr "E84: Отсутствуют буферы, содержащие несохранённые данные"
 
 # :!~ Restorer
 msgid "E85: There is no listed buffer"
@@ -168,8 +168,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E37: No write since last change (add ! to override)"
 msgstr ""
-"E37: В буфере есть не сохранённые данные (чтобы игнорировать, укажите "
-"модификатор !)"
+"E37: Данные в буфере не сохранены (чтобы игнорировать, укажите модификатор !)"
 
 # :!~ Restorer
 msgid "E948: Job still running"
@@ -177,7 +176,7 @@ msgstr "E948: В текущем буфере выполняется задание"
 
 # :!~ Restorer
 msgid "E37: No write since last change"
-msgstr "E37: В буфере есть не сохранённые данные"
+msgstr "E37: Данные в буфере не сохранены"
 
 # :!~ Restorer
 msgid "W14: Warning: List of file names overflow"
@@ -503,25 +502,21 @@ msgstr "E98: Файл, содержащий результат сравнения различий не был создан"
 
 # :!~ Restorer
 msgid "E99: Current buffer is not in diff mode"
-msgstr ""
-"E99: Текущий буфер не содержится в перечне буферов с режимом сравнение "
-"различий"
+msgstr "E99: Для текущего буфера на активирован режим сравнения различий"
 
 # :!~ Restorer
 msgid "E793: No other buffer in diff mode is modifiable"
 msgstr ""
-"E793: Нет других буферов в режиме сверки различий и доступных для "
-"редактирования"
+"E793: Нет буферов с режимом сравнения различий и доступных для редактирования"
 
 # :!~ Restorer
 msgid "E100: No other buffer in diff mode"
-msgstr "E100: Не обнаружено других буферов в режиме сравнения различий"
+msgstr "E100: Не обнаружено других буферов с режимом сравнения различий"
 
 # :!~ Restorer
 msgid "E101: More than two buffers in diff mode, don't know which one to use"
 msgstr ""
-"E101: Слияние различий не выполнено. В режиме сверки различий более двух "
-"буферов"
+"E101: Слияние не выполнено. Больше двух буферов в режиме сравнения различий"
 
 # :!~ Restorer
 #, c-format
@@ -560,12 +555,10 @@ msgid " Keyword completion (^N^P)"
 msgstr " Подстановка слова под курсором CTRL+N или CTRL+P"
 
 # :!~ Restorer
-#. CTRL_X_NORMAL, ^P/^N compl.
 msgid " ^X mode (^]^D^E^F^I^K^L^N^O^Ps^U^V^Y)"
 msgstr " Режим подстановки CTRL+X и CTRL+ (] D E F I K L N O P S U V Y)"
 
 # :!~ Restorer
-#. CTRL_X_SCROLL: depends on state
 msgid " Whole line completion (^L^N^P)"
 msgstr " Подстановка целой строки CTRL+L и CTRL+N или CTRL+P"
 
@@ -586,7 +579,6 @@ msgid " Definition completion (^D^N^P)"
 msgstr " Подстановка определений CTRL+D и CTRL+N или CTRL+P"
 
 # :!~ Restorer
-#. CTRL_X_FINISHED
 msgid " Dictionary completion (^K^N^P)"
 msgstr " Подстановка из словаря CTRL+K и CTRL+N или CTRL+P"
 
@@ -669,7 +661,6 @@ msgid " Adding"
 msgstr " Добавление"
 
 # ~!:earlier
-#.
 msgid "-- Searching..."
 msgstr "-- Поиск..."
 
@@ -696,7 +687,6 @@ msgid "match %d"
 msgstr "вариантов %d"
 
 # :!~ Restorer
-#. maximum nesting of lists and dicts
 msgid "E18: Unexpected characters in :let"
 msgstr ""
 "E18: Обнаружены недопустимые символы в присваиваемом выражении команды :let"
@@ -754,7 +744,7 @@ msgstr "E738: Не удалось получить значения указанных переменных %s"
 # :!~ Restorer
 msgid "E689: Can only index a List or Dictionary"
 msgstr ""
-"E689: Индекс допускается только для типа данных List, Dictionary или Blob"
+"E689: Индекс допускается только для типа данных List, Dictionary или BLOB"
 
 # :!~ Restorer
 msgid "E708: [:] must come last"
@@ -800,8 +790,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E109: Missing ':' after '?'"
-msgstr ""
-"E109: Отсутствует символ двоеточия ':' в операторе проверки условия '?'"
+msgstr "E109: Отсутствует символ двоеточия ':' в команде проверки условия '?'"
 
 # :!~ Restorer
 msgid "E804: Cannot use '%' with Float"
@@ -946,20 +935,19 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E908: using an invalid value as a String"
-msgstr ""
-"E908: Обнаружена попытка преобразования не распознанных данных в тип String"
+msgstr "E908: Обнаружены недопустимые данные там, где ожидался тип String"
 
 # :!~ Restorer
 #, c-format
 msgid "E795: Cannot delete variable %s"
-msgstr "E795: Не может быть выполнено удаление фиксированной переменной %s"
+msgstr "E795: Не допускается удаление фиксированной переменной %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E704: Funcref variable name must start with a capital: %s"
 msgstr ""
-"E704: Наименование должно начинаться с прописной буквы для переменной с "
-"типом Funcref %s"
+"E704: Наименование переменной с типом Funcref должно начинаться с прописной "
+"буквы %s"
 
 # :!~ Restorer
 #, c-format
@@ -971,7 +959,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E741: Value is locked: %s"
-msgstr "E741: Изменение значения блокировано для переменной %s"
+msgstr "E741: Обнаружена блокировка значения %s"
 
 # :!~ Restorer
 msgid "Unknown"
@@ -980,7 +968,7 @@ msgstr "не определено"
 # :!~ Restorer
 #, c-format
 msgid "E742: Cannot change value of %s"
-msgstr "E742: Не может быть изменено значение для фиксированной переменной %s"
+msgstr "E742: Не допускается изменение значения фиксированной переменной %s"
 
 # :!~ Restorer
 msgid "E698: variable nested too deep for making a copy"
@@ -1042,7 +1030,7 @@ msgstr "E686: Для функции %s тип данных одного из аргументов должен быть List"
 
 # :!~ Restorer
 msgid "E928: String required"
-msgstr "E928: Тип данных одного из аргументов должен быть String"
+msgstr "E928: Тип данных аргумента должен быть String"
 
 # :!~ Restorer
 msgid "E808: Number or Float required"
@@ -1055,12 +1043,11 @@ msgstr "add() argument"
 
 # :!~ Restorer
 msgid "E785: complete() can only be used in Insert mode"
-msgstr "E785: Функция complet() может быть вызвана только для режима вставки"
+msgstr "E785: Функция complete() может быть вызвана только для режима вставки"
 
 # :!~ Restorer
 # #Restorer: используется в функции confirm() если не заданы аргумент buttons
 # #Restorer: используется как кнопка по умолчанию в окнах сообщений ГИП
-#.
 msgid "&Ok"
 msgstr "&OK"
 
@@ -1157,7 +1144,7 @@ msgstr "E941: Обнаружено, что указанный сервер уже работает"
 
 # :!~ Restorer
 msgid "E942: +clientserver feature not available"
-msgstr "E942: Функционал клиент-сервер (+clientserver) не реализован"
+msgstr "E942: В этой версии не включён компонент клиент-сервер (+clientserver)"
 
 # :!~ Restorer
 # #Restorer: если правильно понял, не требует перевода т. к. не отображается
@@ -1202,7 +1189,7 @@ msgstr "E882: Ошибка при выполнении сравнения в функции поиска дубликатов"
 
 # :!~ Restorer
 msgid "(Invalid)"
-msgstr "(Недопустимое значение)"
+msgstr "(недопустимое значение)"
 
 # :!~ Restorer
 #, c-format
@@ -1219,7 +1206,7 @@ msgstr "E921: Недопустимый тип обработчика сообщений"
 
 # :!~ Restorer
 # #Restorer: например, команда `:ascii` и `ga`
-# #Restorer: если активирован функционал +digraphs и для символа есть диграф
+# #Restorer: если активирована функциональность +digraphs и для символа есть диграф
 #, c-format
 msgid "<%s>%s%s  %d,  Hex %02x,  Oct %03o, Digr %s"
 msgstr ""
@@ -1233,14 +1220,14 @@ msgstr "<%s>%s%s десятичное %d; шестнадцатеричное %02x; восьмеричное %03o"
 
 # :!~ Restorer
 # #Restorer: например, команда `:ascii` и `ga`
-# #Restorer: если активирован функционал +digraphs и для символа есть диграф
+# #Restorer: если активирована функциональность +digraphs и для символа есть диграф
 #, c-format
 msgid "> %d, Hex %04x, Oct %o, Digr %s"
 msgstr "> десятичное %d; шестнадцатеричное %04x; восьмеричное %o; диграф %s"
 
 # :!~ Restorer
 # #Restorer: например, команда `:ascii` и `ga`
-# #Restorer: если активирован функционал +digraphs и для символа есть диграф
+# #Restorer: если активирована функциональность +digraphs и для символа есть диграф
 #, c-format
 msgid "> %d, Hex %08x, Oct %o, Digr %s"
 msgstr "> десятичное %d; шестнадцатеричное %08x; восьмеричное %o; диграф %s"
@@ -1477,7 +1464,7 @@ msgstr ""
 # #Restorer: выводится, например, при исполнении команды `:substitute`
 #, c-format
 msgid "replace with %s (y/n/a/q/l/^E/^Y)?"
-msgstr "заменить  %s ? (y; n; a; q; l; CTRL+E; CTRL+Y)"
+msgstr "заменить словом %s ? (y; n; a; q; l; CTRL+E; CTRL+Y)"
 
 # :!~ Restorer
 msgid "(Interrupted) "
@@ -1517,7 +1504,6 @@ msgid " on %ld lines"
 msgstr " в %ld строках"
 
 # :!~ Restorer
-#. will increment global_busy to break out of the loop
 msgid "E147: Cannot do :global recursive with a range"
 msgstr ""
 "E147: При указании диапазона не допускается рекурсивный вызов команды :global"
@@ -1736,7 +1722,7 @@ msgstr ""
 "E750: Чтобы провести анализ работы, введите команду \":profile start {файл}\""
 
 # ~!:earlier
-# #Restorer: выводится при обрыве редактирования, если не сохранённые изменения
+# #Restorer: выводится при обрыве редактирования, если несохранённые изменения
 #, c-format
 msgid "Save changes to \"%s\"?"
 msgstr "Сохранить изменения в \"%s\"?"
@@ -1749,7 +1735,7 @@ msgstr "E947: Выполняется задание в буфере \"%s\""
 # :!~ Restorer
 #, c-format
 msgid "E162: No write since last change for buffer \"%s\""
-msgstr "E162: Не сохранены изменения в буфере \"%s\""
+msgstr "E162: Не сохранены данные в буфере \"%s\""
 
 # :!~ Restorer
 msgid "Warning: Entered other buffer unexpectedly (check autocommands)"
@@ -1825,7 +1811,7 @@ msgstr "Ошибка при обработке командного файла \"%s\""
 # #Restorer: при обработке командного файла программы Vim, 'verbose'>0
 #, c-format
 msgid "line %ld: could not source \"%s\""
-msgstr "Ошибка на строке %ld, при обработке командного файла \"%s\""
+msgstr "Ошибка на строке %ld при обработке командного файла \"%s\""
 
 # :!~ Restorer
 # #Restorer: при обработке командного файла программы Vim в режиме отладки, 'verbose'>1
@@ -1906,7 +1892,7 @@ msgstr "E197: Не могут быть изменены региональные настройки для \"%s\""
 # :!~ Restorer
 msgid "Entering Ex mode.  Type \"visual\" to go to Normal mode."
 msgstr ""
-"Выполнено переключение в Ex-режим. Чтобы переключить в командный режим, "
+"Выполнено переключение в Ex-режим. Чтобы переключить в режим команд, "
 "наберите \"visual\""
 
 # :!~ Restorer
@@ -1923,12 +1909,12 @@ msgid "E605: Exception not caught: %s"
 msgstr "E605: Не обработанная исключительная ситуация %s"
 
 # :!~ Restorer
-# #Restorer: выводится в отладочном режиме
+# #Restorer: выводится в режиме отладки
 msgid "End of sourced file"
 msgstr "Достигнуто окончание обрабатываемого командного файла"
 
 # :!~ Restorer
-# #Restorer: выводится в отладочном режиме
+# #Restorer: выводится в режиме отладки
 msgid "End of function"
 msgstr "Достигнуто окончание обрабатываемой функции"
 
@@ -1985,8 +1971,7 @@ msgstr "E173: Осталось не отредактированных файлов: %ld"
 # :!~ Restorer
 msgid "E174: Command already exists: add ! to replace it"
 msgstr ""
-"E174: Команда с таким наименованием уже существует. Чтобы заменить её, "
-"укажите модификатор !"
+"E174: Такая команда существует. Укажите модификатор ! , чтобы изменить её"
 
 # :!~ Restorer
 # #Restorer: выводится по команде `:command`
@@ -2065,8 +2050,7 @@ msgstr "E180: Для атрибута -complete задано недопустимое значение %s"
 # :!~ Restorer
 msgid "E468: Completion argument only allowed for custom completion"
 msgstr ""
-"E468: Расширенные параметры для атрибута -complete разрешены в значениях "
-"custom*"
+"E468: Расширенные параметры атрибута -complete разрешены в значениях custom*"
 
 # :!~ Restorer
 msgid "E467: Custom completion requires a function argument"
@@ -2074,7 +2058,7 @@ msgstr ""
 "E467: Для значений custom* вторым значением указывается наименование функции"
 
 # ~!:earlier
-# #Restorer: выводится по команде `:colorscheme`, если не активен функционал +eval
+# #Restorer: выводится по команде `:colorscheme`, если отключен компонент +eval
 msgid "unknown"
 msgstr "неизвестно"
 
@@ -2135,14 +2119,16 @@ msgid "E465: :winsize requires two number arguments"
 msgstr "E465: Для команды :winsize должно быть указано два числовых значения"
 
 # :!~ Restorer
+# #Restorer: выводится по команде `:winpos`
 #, c-format
 msgid "Window position: X %d, Y %d"
 msgstr ""
-"Расположение верхнего левого угла окна программы по оси X: %d, по оси Y: %d"
+"Координаты верхнего левого угла окна программы по оси X: %d, по оси Y: %d"
 
 # :!~ Restorer
 msgid "E188: Obtaining window position not implemented for this platform"
-msgstr "E188: Данная система не поддерживает определение расположения окон"
+msgstr ""
+"E188: в данной системе не поддерживается определение координат окна программы"
 
 # :!~ Restorer
 msgid "E466: :winpos requires two number arguments"
@@ -2191,7 +2177,6 @@ msgid "E190: Cannot open \"%s\" for writing"
 msgstr "E190: Не может быть выполнена запись файла \"%s\""
 
 # :!~ Restorer
-#. set mark
 msgid "E191: Argument must be a letter or forward/backward quote"
 msgstr ""
 "E191: Аргументом команды должна быть буква либо прямая или обратная кавычка"
@@ -2204,7 +2189,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E809: #< is not available without the +eval feature"
 msgstr ""
-"E809: Спецсимвол #< не может использоваться без реализации функционала +eval"
+"E809: Спецсимвол #< не может использоваться при отключённом компоненте +eval"
 
 # :!~ Restorer
 msgid "E194: No alternate file name to substitute for '#'"
@@ -2261,7 +2246,8 @@ msgstr "безымянный"
 
 # :!~ Restorer
 msgid "E196: No digraphs in this version"
-msgstr "E196: В данной версии программы функционал диграфов не реализован"
+msgstr ""
+"E196: В данной версии программы функциональность диграфов не поддерживается"
 
 # :!~ Restorer
 msgid "E608: Cannot :throw exceptions with 'Vim' prefix"
@@ -2346,7 +2332,6 @@ msgstr "Ошибка"
 # ~!:earlier
 # #Restorer: выводится при 'verbose'=>14
 # #Restorer: составное сообщение.
-#. if (pending & CSTP_INTERRUPT)
 msgid "Interrupt"
 msgstr "Прерывание"
 
@@ -2406,7 +2391,6 @@ msgid "E603: :catch without :try"
 msgstr "E603: Обнаружена команда :catch не сопоставленная с командой :try"
 
 # :!~ Restorer
-#. * Just parse.
 msgid "E604: :catch after :finally"
 msgstr "E604: Обнаружена команда :catch указанная после команды :finally"
 
@@ -2415,7 +2399,6 @@ msgid "E606: :finally without :try"
 msgstr "E606: Обнаружена команда :finally не сопоставленная с командой :try"
 
 # :!~ Restorer
-#. Give up for a multiple ":finally" and ignore it.
 msgid "E607: multiple :finally"
 msgstr "E607: Обнаружено несколько следующих одна за другой команд :finally"
 
@@ -2486,7 +2469,7 @@ msgstr "строки ввода"
 # :!~ Restorer
 # #Restorer: запись в viminfo-файл журнала (history) команд, поиска и проч.
 msgid "Debug Line"
-msgstr "отладочных команд"
+msgstr "команд отладки"
 
 # :!~ Restorer
 msgid "E198: cmd_pchar beyond the command length"
@@ -2556,14 +2539,13 @@ msgstr ""
 
 # :!~ Restorer
 msgid "Vim: Reading from stdin...\n"
-msgstr "Программа Vim: Считывание из стандартного потока ввода...\n"
+msgstr "Программа Vim. Считывание из стандартного потока ввода...\n"
 
 # :!~ Restorer
 msgid "Reading from stdin..."
 msgstr "Считывание из стандартного потока ввода..."
 
 # :!~ Restorer
-#. Re-opening the original file failed!
 msgid "E202: Conversion made file unreadable!"
 msgstr "E202: В результате перекодирования файла он стал не читаемым!"
 
@@ -2657,7 +2639,7 @@ msgstr ""
 # :!~ Restorer
 # #Restorer: ошибка E656:
 msgid "NetBeans disallows writes of unmodified buffers"
-msgstr "не поддерживается запись буферов ИСР NetBeans, в которых нет изменений"
+msgstr "в ИСР NetBeans запрещена запись буферов, в которых нет изменений"
 
 # :!~ Restorer
 # #Restorer: ошибка E657:
@@ -2700,7 +2682,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E509: Cannot create backup file (add ! to override)"
 msgstr ""
-"E509: Резервный файл не может быть создан (чтобы игнорировать, укажите "
+"E509: Не удалось создать резервный файл (чтобы игнорировать, укажите "
 "модификатор !)"
 
 # :!~ Restorer
@@ -2885,7 +2867,6 @@ msgstr "[нет символа завершения строки]"
 
 # :!~ Restorer
 # #Restorer: при записи изменённого извне файла
-#. don't use emsg() here, don't want to flush the buffers
 msgid "WARNING: The file has been changed since reading it!!!"
 msgstr "Внимание! Файл был изменён уже после того, как считан в буфер"
 
@@ -2966,10 +2947,6 @@ msgstr ""
 msgid "Warning"
 msgstr "Внимание"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
 # :!~ Restorer
 # #Restorer: наименование кнопок в окне диалога о внешних изменениях файла
 msgid ""
@@ -3021,16 +2998,15 @@ msgstr "E215: После символа * должен быть пробел, а не %s"
 # :!~ Restorer
 #, c-format
 msgid "E216: No such event: %s"
-msgstr "E216: Не удалось распознать такое событие %s"
+msgstr "E216: Не удалось распознать событие %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E216: No such group or event: %s"
-msgstr "E216: Не удалось распознать такую группу или событие %s"
+msgstr "E216: Не удалось распознать группу или событие %s"
 
 # ~!:earlier
 # #Restorer: отображается, например, по команде `:autocmd`
-#. Highlight title
 msgid ""
 "\n"
 "--- Auto-Commands ---"
@@ -3264,11 +3240,6 @@ msgstr "_Открыть"
 msgid "_OK"
 msgstr "Д_а"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# #Restorer: несчастный Ok оставим как есть.
 # :!~ Restorer
 msgid ""
 "&Yes\n"
@@ -3313,13 +3284,11 @@ msgstr "Чем:"
 
 # :!~ Restorer
 # #Restorer: заголовок переключателя в окне поиска и замены
-#. whole word only button
 msgid "Match whole word only"
 msgstr "Только слово целиком"
 
 # :!~ Restorer
 # #Restorer: заголовок переключателя в окне поиска и замены
-#. match case button
 msgid "Match case"
 msgstr "С учётом регистра"
 
@@ -3330,7 +3299,6 @@ msgstr "Направление"
 
 # ~!:earlier
 # #Restorer: заголовок переключателя в окне поиска и замены
-#. 'Up' and 'Down' buttons
 msgid "Up"
 msgstr "Вверх"
 
@@ -3362,7 +3330,7 @@ msgstr "О_тмена"
 # :!~ Restorer
 msgid "Vim: Received \"die\" request from session manager\n"
 msgstr ""
-"Программа Vim: От диспетчера сеансов получен запрос на прекращение работы\n"
+"Программа Vim. От диспетчера сеансов получен запрос на прекращение работы\n"
 
 # ~!:earlier
 # #Restorer: пункт контекстного меню на вкладке и панели вкладок
@@ -3381,7 +3349,7 @@ msgstr "Открыть вкладку..."
 
 # :!~ Restorer
 msgid "Vim: Main window unexpectedly destroyed\n"
-msgstr "Программа Vim: Непредвиденное закрытие основного окна\n"
+msgstr "Программа Vim. Непредвиденное закрытие основного окна\n"
 
 # ~!:earlier
 # #Restorer: наименование кнопки в окне выбора файлов
@@ -3461,7 +3429,6 @@ msgstr "Заменить"
 # :!~ Restorer
 # #Restorer: заголовок окна
 # #Restorer: это только заполнитель
-#. * file name that won't be used.
 msgid "Not Used"
 msgstr "Not Used"
 
@@ -3486,7 +3453,8 @@ msgstr ""
 # :!~ Restorer
 msgid "E672: Unable to open window inside MDI application"
 msgstr ""
-"E672: Не удалось открыть окно редактора Vim в другой многооконной программе"
+"E672: Не удалось открыть окно редактора Vim в другой многодокументной "
+"программе"
 
 # :!~ Restorer
 msgid "Vim E458: Cannot allocate colormap entry, some colors may be incorrect"
@@ -3566,7 +3534,6 @@ msgstr "Наименование:"
 
 # ~!:earlier
 # #Restorer: наименование переключателя в окне выбора шрифта
-#. create toggle button
 msgid "Show size in Points"
 msgstr "Показывать размер в пунктах"
 
@@ -3592,9 +3559,8 @@ msgstr "Размер:"
 
 # :!~ Restorer
 # #Restorer: может лучше перевести это на корейский (в хангыле)
-# #Restorer: E256: Ошибка преобразования хангыль
 msgid "E256: Hangul automata ERROR"
-msgstr "E256: Hangul automata ERROR"
+msgstr "E256: Ошибка преобразования хангыль"
 
 # :!~ Restorer
 msgid "E550: Missing colon"
@@ -3873,8 +3839,8 @@ msgid ""
 msgstr ""
 "\n"
 "       a: поиск места присвоения значения для указанного идентификатора\n"
-"       c: поиск функций вызывающих указанную функцию\n"
-"       d: поиск функций вызываемых указанной функцией\n"
+"       c: поиск функций, вызывающих указанную функцию\n"
+"       d: поиск функций, вызываемых указанной функцией\n"
 "       e: поиск по заданному регулярному выражению\n"
 "       f: поиск указанного файла\n"
 "       g: поиск указанного определения\n"
@@ -3912,7 +3878,6 @@ msgid "cscope connection %s closed"
 msgstr "Выполнено отключение базы данных cscope %s"
 
 # :!~ Restorer
-#. should not reach here
 msgid "E570: fatal error in cs_manage_matches"
 msgstr ""
 "E570: Внутренняя функция cs_manage_matches(). Произошла критическая ошибка"
@@ -3983,7 +3948,7 @@ msgstr "задано недопустимое выражение"
 
 # :!~ Restorer
 msgid "expressions disabled at compile time"
-msgstr "функционал вычисления выражений отключен при компиляции"
+msgstr "компонент вычисления выражений отключён при компиляции"
 
 # :!~ Restorer
 msgid "hidden option"
@@ -4047,6 +4012,21 @@ msgid "not allowed in the Vim sandbox"
 msgstr "не допускается выполнение в изолированной среде программы Vim"
 
 # :!~ Restorer
+#, c-format
+msgid "E370: Could not load library %s"
+msgstr "E370: Не удалось подключить файл динамической библиотеки %s"
+
+# :!~ Restorer
+msgid "Sorry, this command is disabled: the Perl library could not be loaded."
+msgstr "Не удалось подключить файл библиотеки языка Perl. Команда не выполнена"
+
+# :!~ Restorer
+msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
+msgstr ""
+"E299: Отсутствует модуль безопасности языка Perl. Исполнение команд в "
+"изолированной среде ограничено"
+
+# :!~ Restorer
 msgid "E836: This Vim cannot execute :python after using :py3"
 msgstr ""
 "E836: В данной версии программы запрещён вызов команды :python после "
@@ -4091,7 +4071,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E267: unexpected return"
-msgstr "E267: Непредвиденное появление оператора return"
+msgstr "E267: Непредвиденное появление команды return"
 
 # :!~ Restorer
 msgid "E268: unexpected next"
@@ -4127,7 +4107,6 @@ msgid "not implemented yet"
 msgstr "пока не реализовано"
 
 # :!~ Restorer
-#. ???
 msgid "cannot set line(s)"
 msgstr "не удалось заменить строки"
 
@@ -4182,7 +4161,6 @@ msgstr ""
 "выполнения команды"
 
 # :!~ Restorer
-#. This should never happen.  Famous last word?
 msgid ""
 "E280: TCL FATAL ERROR: reflist corrupt!? Please report this to vim-dev@vim."
 "org"
@@ -4290,14 +4268,13 @@ msgstr ""
 # :!~ Restorer
 msgid "'-nb' cannot be used: not enabled at compile time\n"
 msgstr ""
-"Недопустимый аргумент командной строки '-nb'. Функционал отключен при "
+"Недопустимый аргумент командной строки '-nb'. Функциональность отключена при "
 "компиляции\n"
 
 # :!~ Restorer
 msgid "This Vim was not compiled with the diff feature."
 msgstr ""
-"Не поддерживается режим сравнения различий. Функционал отключен при "
-"компиляции"
+"Не поддерживается режим сравнения различий. Компонент отключён при компиляции"
 
 # :!~ Restorer
 msgid "Attempt to open script file again: \""
@@ -4314,24 +4291,23 @@ msgstr "Не удалось открыть на запись файл протокола \""
 # :!~ Restorer
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr ""
-"Программа Vim: Не удалось запустить программу Gvim из среды разработки "
+"Программа Vim. Не удалось запустить программу Gvim из среды разработки "
 "NetBeans\n"
 
 # :!~ Restorer
 msgid "Vim: Error: This version of Vim does not run in a Cygwin terminal\n"
 msgstr ""
-"Программа Vim: Данная версия программы не работает в терминале Cygwin\n"
+"Программа Vim. Данная версия программы не работает в терминале Cygwin\n"
 
 # :!~ Restorer
 msgid "Vim: Warning: Output is not to a terminal\n"
-msgstr "Программа Vim: Внимание! Вывод осуществляется не на терминал\n"
+msgstr "Программа Vim. Внимание! Вывод осуществляется не на терминал\n"
 
 # :!~ Restorer
 msgid "Vim: Warning: Input is not from a terminal\n"
-msgstr "Программа Vim: Внимание! Ввод осуществляется не с терминала\n"
+msgstr "Программа Vim. Внимание! Ввод осуществляется не с терминала\n"
 
 # :!~ Restorer
-#. just in case..
 msgid "pre-vimrc command line"
 msgstr "команды, выполняемые перед обработкой файла vimrc"
 
@@ -4467,23 +4443,23 @@ msgstr "-d\t\t\tЗапустить в режиме сравнения различий (как \"vimdiff\")"
 
 # :!~ Restorer
 msgid "-y\t\t\tEasy mode (like \"evim\", modeless)"
-msgstr "-y\t\t\tЗапустить в упрощённом режиме (как \"evim\", безрежимный)"
+msgstr "-y\t\t\tРабота в упрощённом варианте (как \"evim\", безрежимный)"
 
 # :!~ Restorer
 msgid "-R\t\t\tReadonly mode (like \"view\")"
-msgstr "-R\t\t\tЗапустить в режиме только чтение (как \"view\")"
+msgstr "-R\t\t\tРабота в варианте только для чтения (как \"view\")"
 
 # :!~ Restorer
 msgid "-Z\t\t\tRestricted mode (like \"rvim\")"
-msgstr "-Z\t\t\tЗапустить в режиме ограничений (как \"rvim\")"
+msgstr "-Z\t\t\tРабота в варианте с ограничениями (как \"rvim\")"
 
 # :!~ Restorer
 msgid "-m\t\t\tModifications (writing files) not allowed"
-msgstr "-m\t\t\tЗапустить без возможности сохранения изменений"
+msgstr "-m\t\t\tРабота без возможности сохранения изменений"
 
 # :!~ Restorer
 msgid "-M\t\t\tModifications in text not allowed"
-msgstr "-M\t\t\tЗапустить без возможности внесения изменений в текст"
+msgstr "-M\t\t\tРабота без возможности внесения изменений в текст"
 
 # :!~ Restorer
 msgid "-b\t\t\tBinary mode"
@@ -4495,11 +4471,11 @@ msgstr "-l\t\t\tЗапустить в режиме Lisp"
 
 # :!~ Restorer
 msgid "-C\t\t\tCompatible with Vi: 'compatible'"
-msgstr "-C\t\t\tВ режиме совместимости с редактором Vi"
+msgstr "-C\t\t\tРабота в варианте совместимости с редактором Vi"
 
 # :!~ Restorer
 msgid "-N\t\t\tNot fully Vi compatible: 'nocompatible'"
-msgstr "-N\t\t\tВ режиме частичной совместимости с редактором Vi"
+msgstr "-N\t\t\tРабота в варианте частичной совместимости с редактором Vi"
 
 # :!~ Restorer
 # \n\t\t.. для умещения в 80 столбцов (С. Алёшин)
@@ -4514,7 +4490,7 @@ msgstr "-D\t\t\tЗапустить в режиме отладки"
 
 # :!~ Restorer
 msgid "-n\t\t\tNo swap file, use memory only"
-msgstr "-n\t\t\tЗапустить без создания файла подкачки на ГМД или ЖМД"
+msgstr "-n\t\t\tРабота без создания файла подкачки на ГМД или ЖМД"
 
 # :!~ Restorer
 msgid "-r\t\t\tList swap files and exit"
@@ -4617,7 +4593,7 @@ msgstr "-S <сеанс>\t\tСчитать файл <сеанса> после загрузки первого файла"
 
 # :!~ Restorer
 msgid "-s <scriptin>\tRead Normal mode commands from file <scriptin>"
-msgstr "-s <сценарий>\tСчитать команды командного режима из файла <сценария>"
+msgstr "-s <сценарий>\tСчитать команды режима команд из файла <сценария>"
 
 # :!~ Restorer
 msgid "-w <scriptout>\tAppend all typed commands to file <scriptout>"
@@ -4697,12 +4673,12 @@ msgstr ""
 "-i <viminfo>\t\tНазначить вместо файла viminfo указанный файл <viminfo>"
 
 # :!~ Restorer
-# #Restorer: убрал один \t и добавил пробелы, чтобы выглядело единообразно
 # \n\t\t.. для умещения в 80 столбцов (С. Алёшин)
+# #Restorer: убрал один \t и добавил пробелы, чтобы выглядело единообразно
 msgid "--clean\t\t'nocompatible', Vim defaults, no plugins, no viminfo"
 msgstr ""
-"--clean\t\tЗапустить с частичной совместимостью Vi, настройками по\n"
-"\t\t\t    умолчанию, без подключаемых модулей и viminfo-файла"
+"--clean\t\tЗапустить с настройками по умолчанию, с частичной \n"
+"\t\t\t  совместимостью с Vi, без подключаемых модулей и viminfo-файла"
 
 # ~!:earlier
 msgid "-h  or  --help\tPrint Help (this message) and exit"
@@ -4835,12 +4811,10 @@ msgid "No display"
 msgstr "Отсутствует подключение к X-серверу"
 
 # :!~ Restorer
-#. Failed to send, abort.
 msgid ": Send failed.\n"
 msgstr " Не удалась осуществить передачу\n"
 
 # :!~ Restorer
-#. Let vim start normally.
 msgid ": Send failed. Trying to execute locally\n"
 msgstr " Не удалась осуществить передачу. Попытка выполнить локально\n"
 
@@ -4871,7 +4845,6 @@ msgstr "E283: Отсутствуют закладки, совпадающие с \"%s\""
 
 # :!~ Restorer
 # #Restorer: выводится по команде `:marks`
-#. Highlight title
 msgid ""
 "\n"
 "mark line  col file/text"
@@ -4881,7 +4854,6 @@ msgstr ""
 
 # :!~ Restorer
 # #Restorer: выводится по команде `:jumps`
-#. Highlight title
 msgid ""
 "\n"
 " jump line  col file/text"
@@ -4891,7 +4863,6 @@ msgstr ""
 
 # :!~ Restorer
 # #Restorer: выводится по команде `:changes`
-#. Highlight title
 msgid ""
 "\n"
 "change line  col text"
@@ -4910,7 +4881,6 @@ msgstr ""
 
 # :!~ Restorer
 # #Restorer: в viminfo-файле
-#. Write the jumplist with -'
 msgid ""
 "\n"
 "# Jumplist (newest first):\n"
@@ -5010,7 +4980,6 @@ msgstr "E843: Ошибка при обновлении шифрованного файла подкачки"
 
 # :!~ Restorer
 # #Restorer: E301: Не удалось открыть файл подкачки. Возможно, он был удалён
-#. could not (re)open the swap file, what can we do????
 msgid "E301: Oops, lost the swap file!!!"
 msgstr "E301: Ой, куда-то делся файл подкачки!!!"
 
@@ -5213,7 +5182,7 @@ msgstr "Наберите \":help E312\", чтобы получить дополнительную информацию"
 
 # ~!:earlier
 msgid "Recovery completed. You should check if everything is OK."
-msgstr "Восстановление завершено. Проверьте, всё ли в порядке"
+msgstr "Восстановление завершено. Проверьте, всё ли в порядке."
 
 # :!~ Restorer
 msgid ""
@@ -5225,11 +5194,11 @@ msgstr ""
 
 # ~!:earlier
 msgid "and run diff with the original file to check for changes)"
-msgstr "файлом при помощи программы diff)"
+msgstr "файлом при помощи программы diff)."
 
 # :!~ Restorer
 msgid "Recovery completed. Buffer contents equals file contents."
-msgstr "Восстановление завершено. Содержание буфера и файла эквивалентно."
+msgstr "Восстановление завершено. Содержание буфера и файла идентичны."
 
 # :!~ Restorer
 msgid ""
@@ -5246,7 +5215,6 @@ msgid "Using crypt key from swap file for the text file.\n"
 msgstr "Для текстового файла используется пароль из файла подкачки\n"
 
 # :!~ Restorer
-#. use msg() to start the scrolling properly
 msgid "Swap files found:"
 msgstr "Обнаруженные файлы подкачки:"
 
@@ -5474,7 +5442,6 @@ msgstr "Который имеет более позднюю дату, чем обнаруженный файл подкачки\n"
 # :!~ Restorer__
 # #Restorer: добавлен второй "\n" и сдвинут к границе экрана,
 # #Restorer: чтобы выделить текст визуально
-#. * other languages.
 msgid ""
 "\n"
 "(1) Another program may be editing the same file.  If this is the case,\n"
@@ -5543,11 +5510,6 @@ msgstr "Внимание"
 msgid "Swap file already exists!"
 msgstr "Обнаружен файл подкачки!"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# #Restorer: несчастный Ok оставим как есть.
 # :!~ Restorer
 # #Restorer: кнопки окно диалога при обнаружении существующего файла подкачки
 msgid ""
@@ -5557,17 +5519,12 @@ msgid ""
 "&Quit\n"
 "&Abort"
 msgstr ""
-"Открыть для чтения (&O)\n"
+"Только чтение (&O)\n"
 "Редактировать (&E)\n"
 "Восстановить (&R)\n"
 "Выход (&Q)\n"
 "Прервать (&A)"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# #Restorer: несчастный Ok оставим как есть.
 # :!~ Restorer
 # #Restorer: кнопки окно диалога при обнаружении существующего файла подкачки
 msgid ""
@@ -5578,7 +5535,7 @@ msgid ""
 "&Quit\n"
 "&Abort"
 msgstr ""
-"Открыть для чтения (&O)\n"
+"Только чтение (&O)\n"
 "Редактировать (&E)\n"
 "Восстановить (&R)\n"
 "Удалить (&D)\n"
@@ -5604,7 +5561,6 @@ msgid "E329: No menu \"%s\""
 msgstr "E329: Не удалось обнаружить пункт меню \"%s\""
 
 # :!~ Restorer
-#. Only a mnemonic or accelerator is not valid.
 msgid "E792: Empty menu name"
 msgstr "E792: Не задано наименование пункта меню"
 
@@ -5624,7 +5580,6 @@ msgstr ""
 
 # ~!:earlier
 # #Restorer: отображается, например, по команде `:menu`
-#. Highlight title
 msgid ""
 "\n"
 "--- Menus ---"
@@ -5670,7 +5625,7 @@ msgstr "Обнаружена ошибка при обработке %s"
 # #Restorer: дописывается к «Error detected while processing %s:»
 #, c-format
 msgid "line %4ld:"
-msgstr "строка %4ld."
+msgstr "строка %4ld:"
 
 # :!~ Restorer
 #, c-format
@@ -5682,8 +5637,8 @@ msgstr "E354: Недопустимое наименование регистра '%s'"
 # #Restorer: добавил года
 msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
 msgstr ""
-"Перевод сообщений на русский язык: Василий Рагозин, 2004; Сергей Алёшин, "
-"2013--2019; Restorer, <restorers@users.sourceforge.net>, 2020"
+"Перевод на русский язык: Василий Рагозин, 2004; Сергей Алёшин, 2013--2019; "
+"Restorer, 2020, 2021, <restorers@users.sf.net>"
 
 # :!~ Restorer
 # #Restorer: отображается если нажаты CTRL+C (CTRL+BREAK) и далее про продолжение
@@ -5713,11 +5668,6 @@ msgstr " SPACE/d/j - вниз, b/u/k - вверх на экран/страницу/строку; q - отбой "
 msgid "Question"
 msgstr "Запрос"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# #Restorer: несчастный Ok оставим как есть.
 # :!~ Restorer
 # #Restorer: кнопки общего окна диалога используемого в Vim
 msgid ""
@@ -5727,11 +5677,6 @@ msgstr ""
 "Да (&Y)\n"
 "Нет (&N)"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# #Restorer: несчастный Ok оставим как есть.
 # :!~ Restorer
 # #Restorer: кнопки общего окна диалога используемого в Vim
 msgid ""
@@ -5763,7 +5708,6 @@ msgid "Open File dialog"
 msgstr "Открыть файл"
 
 # :!~ Restorer
-#. TODO: non-GUI file selector here
 msgid "E338: Sorry, no file browser in console mode"
 msgstr ""
 "E338: Не поддерживается окно выбора файлов при работе программы в консоли"
@@ -5782,7 +5726,8 @@ msgstr "E767: Для функции printf() превышено допустимое количество аргументов"
 
 # :!~ Restorer
 msgid "W10: Warning: Changing a readonly file"
-msgstr "W10: Внимание! Изменение файла, имеющего атрибут 'только для чтения'"
+msgstr ""
+"W10: Внимание! Обнаружена попытка правки файла открытого только для чтения"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `z=`
@@ -5971,7 +5916,7 @@ msgstr "E774: Не задано значение параметра 'operatorfunc'"
 
 # :!~ Restorer
 msgid "E775: Eval feature not available"
-msgstr "E775: Функционал вычисления выражений отключен при компиляции"
+msgstr "E775: Компонент вычисления выражений отключён при компиляции"
 
 # :!~ Restorer
 msgid "Warning: terminal cannot highlight"
@@ -6057,7 +6002,6 @@ msgstr ""
 
 # :!~ Restorer
 # #Restorer: выводится при исполнении оператора `d` с большим кол-вом текста
-#. must display the prompt
 msgid "cannot yank; delete anyway"
 msgstr "Текст не может быть сохранён во временный регистр. Выполнить удаление?"
 
@@ -6125,7 +6069,6 @@ msgstr "E353: Отсутствуют данные в регистре %s"
 
 # ~!:earlier
 # #Restorer: выводится, например, по команде `:registers` или `:display`
-#. Highlight title
 msgid ""
 "\n"
 "--- Registers ---"
@@ -6161,7 +6104,7 @@ msgstr ""
 "строки"
 
 # :!~ Restorer
-# #Restorer: добавляется к сообщению о позиции курсора при блочном выделении
+# #Restorer: добавляется к сообщению о позиции курсора при блоковом выделении
 #, c-format
 msgid "%ld Cols; "
 msgstr "колонок %ld; "
@@ -6418,6 +6361,7 @@ msgstr ""
 "\n"
 "--- Команды терминала ---"
 
+# --- Управляющие коды терминала ---
 # :!~ Restorer
 # #Restorer: выводится по команде `:setglobal [all]`
 msgid ""
@@ -6468,7 +6412,7 @@ msgstr "Не удалось подключить библиотеку "
 
 # :!~ Restorer
 msgid "VIM: Can't open window!\n"
-msgstr "Программа Vim: Окно не может быть отображено на экране!\n"
+msgstr "Программа VIM. Окно не может быть отображено на экране!\n"
 
 # :!~ Restorer
 msgid "Need Amigados version 2.04 or later\n"
@@ -6503,7 +6447,6 @@ msgstr ""
 "Внутренняя функция mch_get_shellsize(). Возможно, не обнаружена консоль\n"
 
 # :!~ Restorer
-#. if Vim opened a window: Executing a shell may cause crashes
 msgid "E360: Cannot execute shell with -f option"
 msgstr ""
 "E360: Программы запущена с аргументом '-f', командная оболочка не будет "
@@ -6586,7 +6529,7 @@ msgid ""
 "Vim: Got X error\n"
 msgstr ""
 "\n"
-"Программа Vim: Получена ошибка от X-сервера\n"
+"Программа Vim. Получена ошибка от X-сервера\n"
 
 # :!~ Restorer
 msgid "Testing the X display failed"
@@ -6723,7 +6666,7 @@ msgstr "Не удалось получить указатель на функцию из библиотеки vim32.dll"
 # :!~ Restorer
 #, c-format
 msgid "Vim: Caught %s event\n"
-msgstr "Vim: было перехвачено событие %s\n"
+msgstr "Программой Vim было перехвачено событие %s\n"
 
 # :!~ Restorer
 # #Restorer: подставляется в сообщение «Vim: Caught %s event». Это и есть событие
@@ -6746,13 +6689,17 @@ msgstr "E371: Не удалось найти файл командной оболочки"
 
 # :!~ Restorer
 # #Restorer: чтобы передать смысл, дополнительная строка текста в переводе
+# #Restorer: всё-таки заключил слово «PATH» в знак процента, пока использую
+# #Restorer: перевод только для себя. Добваил #, no-c-format 
+# #Restorer: здесь подробности https://github.com/vim/vim/pull/6762#issuecomment-678662463
+#, no-c-format
 msgid ""
 "VIMRUN.EXE not found in your $PATH.\n"
 "External commands will not pause after completion.\n"
 "See  :help win32-vimrun  for more information."
 msgstr ""
 "Не удалось найти файл VIMRUN.EXE по тем маршрутам,\n"
-"которые указаны в переменной окружения $PATH.\n"
+"которые указаны в переменной окружения %PATH%.\n"
 "По этой причине после исполнения внешних команд,\n"
 "вызванных из программы GVim, окно командной оболочки\n"
 "будет закрыто автоматически.\n"
@@ -6771,8 +6718,7 @@ msgstr "От командной оболочки получен код возврата %d"
 # :!~ Restorer
 msgid "E926: Current location list was changed"
 msgstr ""
-"E926: В результате действий автокоманд локальный список результатов был "
-"изменён"
+"E926: Изменение локального списка результатов вызвано исполнением автокоманд"
 
 # :!~ Restorer
 #, c-format
@@ -6805,7 +6751,6 @@ msgid "E377: Invalid %%%c in format string"
 msgstr "E377: В форматной строке обнаружен недопустимый элемент %%%c"
 
 # :!~ Restorer
-#. nothing found
 msgid "E378: 'errorformat' contains no pattern"
 msgstr "E378: Не задано значение шаблона в параметре 'errorformat'"
 
@@ -6819,11 +6764,11 @@ msgstr "E553: Достигнута конечная запись"
 
 # :!~ Restorer
 msgid "E924: Current window was closed"
-msgstr "E924: В результате действий автокоманд текущее окно было закрыто"
+msgstr "E924: Закрытие ткущего окна вызвано исполнением автокоманд"
 
 # :!~ Restorer
 msgid "E925: Current quickfix was changed"
-msgstr "E925: В результате действий автокоманд список результатов был изменён"
+msgstr "E925: Изменение списка результатов вызвано исполнением автокоманд"
 
 # ~!:earlier
 # #Restorer: выводится при переходе по индексу списка результатов
@@ -6845,11 +6790,11 @@ msgstr "%sсписок результатов %d из %d; записей: %d "
 
 # :!~ Restorer
 msgid "E380: At bottom of quickfix stack"
-msgstr "E380: Достигнута нижняя граница списка результатов"
+msgstr "E380: Нет более старых списков результатов"
 
 # :!~ Restorer
 msgid "E381: At top of quickfix stack"
-msgstr "E381: Достигнута верхняя граница списка результатов"
+msgstr "E381: Нет более новых списков результатов"
 
 # :!~ Restorer
 # #Restorer: при исполнении команды `:chistory`
@@ -7060,7 +7005,6 @@ msgid "E867: (NFA) Unknown operator '\\%%%c'"
 msgstr "E867: НКА. Недопустимый метасимвол \\%%%c"
 
 # :!~ Restorer
-#. should never happen
 msgid "E868: Error building NFA with equivalence class!"
 msgstr "E868: НКА. Не удалось создать класс символьный эквивалент"
 
@@ -7074,12 +7018,10 @@ msgid "E870: (NFA regexp) Error reading repetition limits"
 msgstr "E870: НКА. Указаны недопустимые значения в интервальном квантификаторе"
 
 # :!~ Restorer
-#. Can't have a multi follow a multi.
 msgid "E871: (NFA regexp) Can't have a multi follow a multi !"
 msgstr "E871: НКА. Не допускается применение квантификатора для квантификатора"
 
 # :!~ Restorer
-#. Too many `('
 msgid "E872: (NFA regexp) Too many '('"
 msgstr "E872: НКА. Превышено допустимое количество подвыражений вида \\("
 
@@ -7190,7 +7132,7 @@ msgstr " РЕЖИМ ВИЗУАЛЬНЫЙ ПОСТРОЧНЫЙ"
 # :!~ Restorer
 # #Restorer: наименование режима. Выводится в командной строке по команде `ctrl+v`
 msgid " VISUAL BLOCK"
-msgstr " РЕЖИМ ВИЗУАЛЬНЫЙ БЛОЧНЫЙ"
+msgstr " РЕЖИМ ВИЗУАЛЬНЫЙ БЛОКОВЫЙ"
 
 # :!~ Restorer
 # #Restorer: наименование режима. Выводится в командной строке по команде `g h`
@@ -7205,7 +7147,7 @@ msgstr " РЕЖИМ ВЫБОРКИ ПОСТРОЧНЫЙ"
 # :!~ Restorer
 # #Restorer: наименование режима. Выводится в командной строке по команде `g ctrl+h`
 msgid " SELECT BLOCK"
-msgstr " РЕЖИМ ВЫБОРКИ БЛОЧНЫЙ"
+msgstr " РЕЖИМ ВЫБОРКИ БЛОКОВЫЙ"
 
 # :!~ Restorer
 # #Restorer: наименование режима. Выводится в командной строке по команде `q`
@@ -7232,33 +7174,32 @@ msgid "E386: Expected '?' or '/'  after ';'"
 msgstr ""
 "E386: В поисковом запросе после символа ';' должен быть символ '?' или '/'"
 
-# ~!:earlier
+# :!~ Restorer
 msgid " (includes previously listed match)"
-msgstr " (включает раннее показанные соответствия)"
+msgstr " (включает раннее показанные)"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `:checkpath` и `:checkpath!`
-#. cursor at status line
 msgid "--- Included files "
-msgstr "--- Подключаемые файлы "
+msgstr "--- Подключаемые файлы"
 
 # :!~ Restorer
 # #Restorer: дописывается к «--- Included files » только для `:checkpath`
 msgid "not found "
-msgstr "без проверки по месту "
+msgstr ", не найденные"
 
 # :!~ Restorer
 # #Restorer: дописывается к «--- Included files» по `:checkpath` и `:checkpath!`
 msgid "in path ---\n"
-msgstr "и их расположение ---\n"
+msgstr " в каталогах заданных в параметре 'path' ---\n"
 
 # ~!:earlier
 msgid "  (Already listed)"
 msgstr " (уже показано)"
 
-# ~!:earlier
+# :!~ Restorer
 msgid "  NOT FOUND"
-msgstr " НЕ НАЙДЕНО"
+msgstr " НЕ НАЙДЕН"
 
 # :!~ Restorer
 #, c-format
@@ -7349,7 +7290,7 @@ msgstr "Вариантов написания %ld"
 # #Restorer: выводится, например, по команде `z=`
 #, c-format
 msgid "Change \"%.*s\" to:"
-msgstr "Заменить \"%.*s\" на:"
+msgstr "Заменить \"%.*s\" словом:"
 
 # ~!:earlier
 # #Restorer: выводится, например, по команде `z=`
@@ -7735,7 +7676,6 @@ msgid "Reading back spell file..."
 msgstr "Считывание записанного файла правил написания ..."
 
 # :!~ Restorer
-#.
 msgid "Performing soundfolding..."
 msgstr "Построение префиксного «дерева» омофонов ..."
 
@@ -7810,7 +7750,6 @@ msgid "E763: Word characters differ between spell files"
 msgstr "E763: Кодировка символов различается в файлах правописания"
 
 # :!~ Restorer
-#. * file.
 msgid "E783: duplicate char in MAP entry"
 msgstr "E783: Обнаружен повтор символа в правиле MAP"
 
@@ -8216,7 +8155,6 @@ msgstr "E429: Не существует файл индексов \"%s\""
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `:tags`
-#. Highlight title
 msgid ""
 "\n"
 "  # TO tag         FROM line  in file/text"
@@ -8240,8 +8178,7 @@ msgstr ""
 # #Restorer: выводится при 'verbose'=>5
 msgid "Ignoring long line in tags file"
 msgstr ""
-"Не обработана строка в файле индексов, превышающая максимально допустимую "
-"длину"
+"Строка в файле индексов превышает допустимую длину. Обработка не выполнена"
 
 # :!~ Restorer
 #, c-format
@@ -8256,13 +8193,12 @@ msgstr "Перед байтом %ld"
 # :!~ Restorer
 #, c-format
 msgid "E432: Tags file not sorted: %s"
-msgstr "E432: Не отсортированный файл индексов %s"
+msgstr ""
+"E432: Обнаружены неупорядоченные по алфавиту записи в файле индексов %s"
 
 # :!~ Restorer
-#. never opened any tags file
 msgid "E433: No tags file"
-msgstr ""
-"E433: Не удалось найти файл индексов, указанный в значении параметра 'tags'"
+msgstr "E433: Требуемый файл индексов не указан в значении параметра 'tags'"
 
 # :!~ Restorer
 msgid "E434: Can't find tag pattern"
@@ -8276,7 +8212,7 @@ msgstr "E435: Не удалось найти индекс по заданному шаблону. Подбор вариантов"
 # #Restorer: выводится при 'verbose'>0
 #, c-format
 msgid "Duplicate field name: %s"
-msgstr "Обнаружено существующее поле с таким наименованием %s"
+msgstr "Обнаружено существующее поле с таким же наименованием %s"
 
 # :!~ Restorer
 msgid "' not known. Available builtin terminals are:"
@@ -8309,7 +8245,6 @@ msgstr "E437: Терминал обязан поддерживать команды перемещения курсора"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `:set termcap`
-#. Highlight title
 msgid ""
 "\n"
 "--- Terminal keys ---"
@@ -8370,7 +8305,7 @@ msgstr "Запуск командной оболочки\n"
 
 # :!~ Restorer
 msgid "Vim: Error reading input, exiting...\n"
-msgstr "Программа Vim: Ошибка чтения ввода. Завершение работы...\n"
+msgstr "Программа Vim. Ошибка чтения ввода. Завершение работы...\n"
 
 # :!~ Restorer
 # #Restorer: выводится при 'verbose'>0
@@ -8378,12 +8313,10 @@ msgid "Used CUT_BUFFER0 instead of empty selection"
 msgstr "Содержимое буфера обмена получено из буфера CUT_BUFFER0"
 
 # :!~ Restorer
-#. * file in a way it becomes shorter.
 msgid "E881: Line count changed unexpectedly"
 msgstr "E881: Непредвиденное изменение количества строк"
 
 # :!~ Restorer
-#. must display the prompt
 msgid "No undo possible; continue anyway"
 msgstr "Отмена изменений не доступна. Продолжить?"
 
@@ -8825,13 +8758,13 @@ msgstr ""
 "\n"
 "Версия для macOS"
 
-# ~!:earlier
+# :!~ Restorer
 msgid ""
 "\n"
 "macOS version w/o darwin feat."
 msgstr ""
 "\n"
-"Версия для macOS без darwin"
+"Версия для macOS без функциональности Darwin"
 
 # ~!:earlier
 msgid ""
@@ -8961,7 +8894,7 @@ msgstr "с графическим интерфейсом Cocoa."
 
 # :!~ Restorer
 msgid "  Features included (+) or not (-):\n"
-msgstr " В этой версии доступен (+) и недоступен (-) следующий функционал:\n"
+msgstr " В этой версии доступны (+) и недоступны (-) следующие компоненты:\n"
 
 # ~!:earlier
 msgid "   system vimrc file: \""
@@ -9019,21 +8952,21 @@ msgstr "          значение $VIM по умолчанию: \""
 msgid " f-b for $VIMRUNTIME: \""
 msgstr "   значение $VIMRUNTIME по умолчанию: \""
 
-# ~!:earlier
+# :!~ Restorer
 msgid "Compilation: "
-msgstr "Параметры компиляции: "
+msgstr "Параметры сборки: "
 
-# ~!:earlier
+# :!~ Restorer
 msgid "Compiler: "
-msgstr "Компилятор: "
+msgstr "Сборщик: "
 
-# ~!:earlier
+# :!~ Restorer
 msgid "Linking: "
-msgstr "Сборка: "
+msgstr "Связывание: "
 
-# ~!:earlier
+# :!~ Restorer
 msgid "  DEBUG BUILD"
-msgstr "  ОТЛАДОЧНАЯ СБОРКА"
+msgstr "  СБОРКА ДЛЯ ОТЛАДКИ"
 
 # :!~ Restorer
 msgid "VIM - Vi IMproved"
@@ -9093,14 +9026,14 @@ msgstr ""
 
 # :!~ Restorer
 msgid "Running in Vi compatible mode"
-msgstr "Работа в варианте совместимости с редактором Vi"
+msgstr "Программа работает в режиме совместимости с редактором Vi"
 
 # :!~ Restorer
 # #Restorer: пробелы не убирать, сделано для выравнивания сообщений
 # #Restorer: выравнивается по самому длинному подобному сообщению
 msgid "type  :set nocp<Enter>        for Vim defaults"
 msgstr ""
-"наберите :set nocp<ENTER>                чтобы включить весь функционал "
+"наберите :set nocp<ENTER>                чтобы активировать возможности "
 "Vim   "
 
 # :!~ Restorer
@@ -9147,14 +9080,13 @@ msgstr ""
 msgid "menu  Edit->Global Settings->Toggle Vi Compatible"
 msgstr ""
 "меню Правка->Общие параметры->Совместимость с Vi   чтобы "
-"включить             "
+"активировать         "
 
 # :!~ Restorer
 # #Restorer: пробелы не убирать, сделано для выравнивания сообщений
 msgid "                              for Vim defaults   "
 msgstr ""
-"                                                 весь функционал редактора "
-"Vim"
+"                                                 возможности редактора Vim"
 
 # :!~ Restorer
 msgid "Sponsor Vim development!"
@@ -9263,7 +9195,7 @@ msgstr "E803: Не удалось найти идентификационный номер %ld"
 
 # :!~ Restorer
 msgid "Edit with &multiple Vims"
-msgstr "Открыть каждый файл в отдельной программе Vi&m"
+msgstr "Открыть &каждый файл в отдельной программе Vim"
 
 # :!~ Restorer
 msgid "Edit with single &Vim"
@@ -9271,14 +9203,13 @@ msgstr "Открыть все файлы в одной программе &Vim"
 
 # :!~ Restorer
 msgid "Diff with Vim"
-msgstr "Открыть для сравнения в программе Vim"
+msgstr "Сравнить файлы в программе Vim"
 
 # :!~ Restorer
 msgid "Edit with &Vim"
 msgstr "Открыть в программе &Vim"
 
 # :!~ Restorer
-#. Now concatenate
 msgid "Edit with existing Vim - "
 msgstr "Открыть в работающей программе Vim - "
 
@@ -9309,7 +9240,6 @@ msgid "--No lines in buffer--"
 msgstr "-- Буфер не содержит текст --"
 
 # :!~ Restorer
-#.
 msgid "E470: Command aborted"
 msgstr "E470: Выполнение команды прервано"
 
@@ -9448,11 +9378,6 @@ msgstr ""
 # #Restorer: в UNIX-подобных системах. См. параметр 'fsync'
 msgid "E667: Fsync failed"
 msgstr "E667: Произошла ошибка при вызове системной функции fsync()"
-
-# :!~ Restorer
-#, c-format
-msgid "E370: Could not load library %s"
-msgstr "E370: Не удалось подключить файл динамической библиотеки %s"
 
 # :!~ Restorer
 #, c-format
@@ -9759,7 +9684,7 @@ msgstr "E78: Не удалось распознать наименование закладки"
 # :!~ Restorer
 msgid "E79: Cannot expand wildcards"
 msgstr ""
-"E79: После замены подстановочных символов наименование файла не распознано"
+"E79: После замены подстановочных символов, наименование файла не распознано"
 
 # :!~ Restorer
 msgid "E591: 'winheight' cannot be smaller than 'winminheight'"
@@ -10112,7 +10037,7 @@ msgstr "у объекта не удалось изменить свойство name"
 
 # :!~ Restorer
 msgid "mark name must be a single character"
-msgstr "наименование закладки состоит из одного символа"
+msgstr "наименование закладки должно состоять только из одного символа"
 
 # :!~ Restorer
 #, c-format
@@ -10191,7 +10116,7 @@ msgid ""
 "- append vim.path_hook to sys.path_hooks\n"
 "- append vim.VIM_SPECIAL_PATH to sys.path\n"
 msgstr ""
-"Месторасположение модуля с загрузчиком отсутствует в списке sysy_path_hooks\n"
+"Месторасположение модуля с загрузчиком отсутствует в списке sys.path_hooks\n"
 "Требуется сделать следующее:\n"
 "- добавить объект vim.path_hook в список sys.path_hooks\n"
 "- добавить объект vim.VIM_SPECIAL_PATH в список sys.path\n"
@@ -10203,10 +10128,6 @@ msgid ""
 msgstr ""
 "Месторасположение модуля отсутствует в списке sys.path\n"
 "Требуется добавить объект vim.VIM_SPECIAL_PATH в список sys.path"
-
-# :!~ Restorer
-msgid "E759: Format error in spell file"
-msgstr "E759: Недопустимый формат файла правил написания"
 
 # :!~ Restorer
 msgid ""
@@ -10257,13 +10178,3 @@ msgstr ""
 "Файлы языка Си (*.c, *.h)\t*.c;*.h\n"
 "Файлы языка Си++ (*.cpp, *.hpp)\t*.cpp;*.hpp\n"
 "Файлы редактора Vim (*.vim, _vimrc, _gvimrc)\t*.vim;_vimrc;_gvimrc\n"
-
-# :!~ Restorer
-msgid "Sorry, this command is disabled: the Perl library could not be loaded."
-msgstr "Не удалось подключить файл библиотеки языка Perl. Команда не выполнена"
-
-# :!~ Restorer
-msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
-msgstr ""
-"E299: Отсутствует модуль безопасности языка Perl. Исполнение команд в "
-"изолированной среде ограничено"
