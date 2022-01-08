@@ -1,8 +1,8 @@
 " Vim Keymap file for Russian characters
 " layout English-US 104 key 'QWERTY'
 "
-" Maintainer:	 Restorer <restorers@users.sourceforge.org>
-" Last Changed:	 25 Sep 2021
+" Maintainer:	 Restorer <restorer@mail2k.ru>
+" Last Changed:	 08 Jan 2022
 " Version:	 2.1
 " Description:	 описание дано после изображений клавиатуры
 
