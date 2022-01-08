@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Russian Vim program help files *.rux
-" Maintainer:   Restorer (restorers@users.sourceforge.net)
-" Last Change:  02 Jul 2021
+" Maintainer:   Restorer <restorer@mail2k.ru>
+" Last Change:  08 Jan 2022
 " 
 
 " Проверяем язык локали и установки опции 'helplang'
@@ -20,14 +20,10 @@ syntax match helpHeadline   "^[А-ЯЁ]\{2}[ .]\=[-,А-ЯЁA-Z0-9 .()]*"
 
 " Наименование справочника
 " новый заголовок
-" syntax match helpVim      "\<СПРАВОЧНИК ПО РЕДАКТОРУ VIM\>"
-"старый заголовок
-syntax match helpVim      "\<СПРАВОЧНИК ПО .*"
+syntax match helpVim      "\<СПРАВОЧНИК ПО РЕДАКТОРУ VIM\>"
 " новый заголовок
-"syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ РЕДАКТОРОМ VIM\>"
-"syntax match helpVim      "\<автор\%[ы:] .*$"
-"старый заголовок
-syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ .*"
+syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ РЕДАКТОРОМ VIM\>"
+syntax match helpVim      "\<автор\%[ы:] .*$"
 " Подсветка примечаний в тексте, начала примеров и т.п.
 syntax keyword helpNote     Примечание. Совет. Пример. Примеры:
 syntax keyword helpWarning   Внимание!
@@ -60,6 +56,5 @@ syntax region helpTrnsNote  start="\[Прим. перевод." end="]" contains
 "hi def link helpCommand     vimCommand
 " Определение группы подсветки примечаний переводчика
 hi def link helpTrnsNote    Comment
-" hi def link helpTrnsNote    Comment
 "
 " vim: ts=8 sw=2
