@@ -1,8 +1,8 @@
 " Menu Translations:	Russian
-" Maintainer:		Restorer <restorers@users.sourceforge.net>
+" Maintainer:		Restorer <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin <alyoshin.s@gmail.com>
 "			vassily ragosin <vrr[at]users.sourceforge.net>
-" Last Change:		26 Dec 2021
+" Last Change:		08 Jan 2022
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
