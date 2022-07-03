@@ -190,7 +190,7 @@ loadkeymap
 "	The SHIFT and ALT keys pressed
 <A-char-0x007b>	    <char-0x007b>       " LEFT CURLY BRACKET
 <A-char-0x007d>	    <char-0x007d>       " RIGHT CURLY BRACKET
-Р
+
 
 "		ALPHABETIC 2st ROW
 

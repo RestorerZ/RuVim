@@ -1,14 +1,14 @@
 " Menu Translations:	Russian
-" Maintainer:		Restorer <restorer@mail2k.ru>
-" Previous Maintainer:	Sergey Alyoshin <alyoshin.s@gmail.com>
-"			vassily ragosin <vrr[at]users.sourceforge.net>
-" Last Change:		08 Jan 2022
+" Maintainer:		Restorer, <restorer@mail2k.ru>
+" Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
+"			vassily ragosin, <vrr[at]users.sourceforge.net>
+" Last Change:		23 Feb 2022
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
 " Adopted for RuVim project by Vassily Ragosin.
-" First translation: Tim Alexeevsky <realtim [at] mail.ru>,
-" based on ukrainian translation by Bohdan Vlasyuk <bohdan@vstu.edu.ua>
+" First translation: Tim Alexeevsky, <realtim [at] mail.ru>,
+" based on ukrainian translation by Bohdan Vlasyuk, <bohdan@vstu.edu.ua>
 "
 "
 " Quit when menu translations have already been done.
@@ -44,7 +44,7 @@ menutrans &Find\.\.\.			&Найти\.\.\.
 menutrans &Credits			Со&авторы
 menutrans Co&pying			&Лицензия
 menutrans &Sponsor/Register		Сод&ействие\ и\ регистрация
-menutrans O&rphans			&Благотварительность
+menutrans O&rphans			&Благотворительность
 "--------------------
 menutrans &Version			&Текущая\ версия
 menutrans &About			&О\ программе
@@ -222,7 +222,7 @@ menutrans &Convert\ to\ HTML				Со&здать\ HTML-файл\ с\ CSS
 " Buffers menu
 "
 menutrans &Refresh\ menu				&Обновить\ список\ буферов
-menutrans &Delete					&Удалить\ буфер
+menutrans &Delete					&Закрыть\ буфер
 menutrans &Alternate					&Соседний\ буфер
 menutrans &Next						С&ледующий\ буфер
 menutrans &Previous					&Предыдущий\ буфер
@@ -284,7 +284,7 @@ if has("toolbar")
   if exists("*Do_toolbar_tmenu")
     delfun Do_toolbar_tmenu
   endif
-  fun Do_toolbar_tmenu()
+  def g:Do_toolbar_tmenu()
     tmenu ToolBar.New					Создать документ
     tmenu ToolBar.Open					Открыть файл
     tmenu ToolBar.Save					Сохранить файл
@@ -316,7 +316,7 @@ if has("toolbar")
     tmenu ToolBar.WinVSplit				Разделить окно по вертикали
     tmenu ToolBar.WinMaxWidth				Максимальная ширина текущего окна
     tmenu ToolBar.WinMinWidth				Минимальная ширина текущего окна
-  endfun
+  enddef
 endif
 "
 "
