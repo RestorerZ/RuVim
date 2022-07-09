@@ -19,9 +19,9 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0030\n"
+"Project-Id-Version: Vim 9.0.0048\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-07-03 11:21+0300\n"
+"POT-Creation-Date: 2022-07-09 21:21+0300\n"
 "PO-Revision-Date: 2022-07-03 11:56+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
@@ -1278,37 +1278,6 @@ msgid "No match at cursor, finding next"
 msgstr "Не найдено в текущей строке, продолжение поиска"
 
 # :!~ Restorer
-msgid "<cannot open> "
-msgstr "<не удалось открыть> "
-
-# :!~ Restorer
-msgid "Pathname:"
-msgstr "Маршрут:"
-
-# :!~ Restorer
-# #Restorer: наименование кнопки в диалоговом окне
-msgid "OK"
-msgstr "OK"
-
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
-# ~!:earlier
-# #Restorer: наименование кнопки в диалоговом окне
-msgid "Cancel"
-msgstr "Отмена"
-
-# :!~ Restorer
-msgid "Scrollbar Widget: Could not get geometry of thumb pixmap."
-msgstr "Не удалось получить размеры ползунка полосы прокрутки"
-
-# :!~ Restorer
-# #Restorer: заголовок окна
-msgid "Vim dialog"
-msgstr "Программа Vim"
-
-# :!~ Restorer
 msgid "_Save"
 msgstr "_Сохранить"
 
@@ -1335,12 +1304,26 @@ msgstr ""
 "Отмена (&C)"
 
 # :!~ Restorer
+# #Restorer: наименование кнопки в диалоговом окне
+msgid "OK"
+msgstr "OK"
+
+# :!~ Restorer
 msgid "Yes"
 msgstr "Да"
 
 # :!~ Restorer
 msgid "No"
 msgstr "Нет"
+
+# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
+# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
+# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
+# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
+# ~!:earlier
+# #Restorer: наименование кнопки в диалоговом окне
+msgid "Cancel"
+msgstr "Отмена"
 
 # :!~ Restorer
 msgid "Input _Methods"
@@ -1474,6 +1457,11 @@ msgstr "Д&а"
 # #Restorer: заголовок поля в окне выбора файлов
 msgid "Selection"
 msgstr "Выбрано"
+
+# :!~ Restorer
+# #Restorer: заголовок окна
+msgid "Vim dialog"
+msgstr "Программа Vim"
 
 # :!~ Restorer
 # #Restorer: наименование кнопки в окне поиска и замены
@@ -14205,7 +14193,7 @@ msgstr "настройки, указывающие, что будет записываться в viminfo-файл"
 
 # :!~ Restorer
 msgid "file name used for the viminfo file"
-msgstr "наименование файла используемого вместо файла .viminfо"
+msgstr "наименование файла, используемого вместо файла .viminfо"
 
 # :!~ Restorer
 msgid "what happens with a buffer when it's no longer in a window"
