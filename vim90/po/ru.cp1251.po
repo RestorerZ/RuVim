@@ -22,7 +22,7 @@ msgstr ""
 "Project-Id-Version: Vim 9.0.0048\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
 "POT-Creation-Date: 2022-07-09 21:21+0300\n"
-"PO-Revision-Date: 2022-07-03 11:56+0300\n"
+"PO-Revision-Date: 2022-07-09 21:56+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -13435,12 +13435,12 @@ msgstr ""
 # :!~ Restorer
 msgid "a <Tab> in an indent inserts 'shiftwidth' spaces"
 msgstr ""
-"при нажатии клавиши <Tab> вначале строки будет вставка пробелов\n"
+"при нажатии клавиши <TAB> вначале строки будет вставка пробелов\n"
 "как задано в параметре 'shiftwidth'"
 
 # :!~ Restorer
 msgid "if non-zero, number of spaces to insert for a <Tab>"
-msgstr "количество пробелов вставляемых при нажатии клавиши <Tab>"
+msgstr "количество пробелов вставляемых при нажатии клавиши <TAB>"
 
 # :!~ Restorer
 msgid "round to 'shiftwidth' for \"<<\" and \">>\""
@@ -13885,15 +13885,15 @@ msgstr "для команд оболочки использовать временный файл вместо конвейера"
 
 # :!~ Restorer
 msgid "program used for \"=\" command"
-msgstr "программа, используемая для команды \"=\""
+msgstr "программа, которая будет исполнена по команде \"=\""
 
 # :!~ Restorer
 msgid "program used to format lines with \"gq\" command"
-msgstr "программа, используемая командой \"gq\" для форматирования строк"
+msgstr "программа, используемая для форматирования строк по команде \"gq\""
 
 # :!~ Restorer
 msgid "program used for the \"K\" command"
-msgstr "программа, используемая для команды \"K\""
+msgstr "программа, которая будет исполнена по команде \"K\""
 
 # :!~ Restorer
 msgid "warn when using a shell command and a buffer has changes"
@@ -13952,7 +13952,7 @@ msgstr "Системные параметры"
 # :!~ Restorer
 msgid "use forward slashes in file names; for Unix-like shells"
 msgstr ""
-"использовать косую черту в наименованиях файлов;\n"
+"использовать наклонную черту в наименованиях файлов;\n"
 "для UNIX-подобных командных оболочек"
 
 # :!~ Restorer
@@ -14031,7 +14031,7 @@ msgstr "обработку двунаправленного письма выполняет терминал"
 
 # :!~ Restorer
 msgid "name of a keyboard mapping"
-msgstr "наименование используемого файла клавиатурных соответствий"
+msgstr "наименование используемого файла раскладки клавиатуры"
 
 # :!~ Restorer
 msgid "list of characters that are translated in Normal mode"
