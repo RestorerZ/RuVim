@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0048\n"
+"Project-Id-Version: Vim 9.0.0063\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-07-09 21:21+0300\n"
-"PO-Revision-Date: 2022-07-09 21:56+0300\n"
+"POT-Creation-Date: 2022-07-24 12:21+0300\n"
+"PO-Revision-Date: 2022-07-24 12:56+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -92,7 +92,7 @@ msgid "%s Autocommands for \"%s\""
 msgstr "для события %s автокоманды \"%s\""
 
 # ~!:earlier
-# #Restorer: выводится при значении 'verbose'=>9
+# #Restorer: выводится при значении 'verbose'=>8
 #, c-format
 msgid "Executing %s"
 msgstr "Выполнение %s"
@@ -7879,7 +7879,7 @@ msgstr "E475: Задано недопустимое значение аргумента для %s"
 # :!~ Restorer
 #, c-format
 msgid "E475: Invalid value for argument %s: %s"
-msgstr "E475: Задано недопустимое значение аргумента для %s %s"
+msgstr "E475: Задано недопустимое значение аргумента %s для %s"
 
 # :!~ Restorer
 msgid "E476: Invalid command"
@@ -10865,11 +10865,11 @@ msgstr ""
 
 # :!~ Restorer__
 msgid "E1095: Unreachable code after :return"
-msgstr "E1095: Не распознан код после команды :return"
+msgstr "E1095: Указанное после команды :return выражение не будет вычислено"
 
 # :!~ Restorer
 msgid "E1096: Returning a value in a function without a return type"
-msgstr "E1096: В функцию возвращено значения без указания типа"
+msgstr "E1096: Возвращаемое функцией значение задано без указания типа"
 
 # :!~ Restorer
 msgid "E1097: Line incomplete"
@@ -10888,8 +10888,8 @@ msgstr "E1099: Возникла нераспознанная ошибка при исполнении %s"
 #, c-format
 msgid "E1100: Command not supported in Vim9 script (missing :var?): %s"
 msgstr ""
-"E1100: Не поддерживается в командных файлах Vim9. Возможно, отсутствует "
-"команда :var :%s"
+"E1100: В языке Vim9 не поддерживается команда %s. Возможно, это переменная, "
+"но не указана команда :var"
 
 # :!~ Restorer__
 #, c-format
@@ -10936,22 +10936,22 @@ msgstr "E1108: Не удалось найти переменную %s"
 # :!~ Restorer
 #, c-format
 msgid "E1109: List item %d is not a List"
-msgstr "E1109: Тип данного элемента списка не является List %d"
+msgstr "E1109: Обнаружено, что тип %d элемента списка не является List"
 
 # :!~ Restorer
 #, c-format
 msgid "E1110: List item %d does not contain 3 numbers"
-msgstr "E1110: В данном элементе списка должно быть указано три числа %d"
+msgstr "E1110: Должны быть заданы все три элемента в списке %d"
 
 # :!~ Restorer
 #, c-format
 msgid "E1111: List item %d range invalid"
-msgstr "E1111: В данном элементе списка указан недопустимый диапазон %d"
+msgstr "E1111: Указан недопустимый диапазон в списке %d"
 
 # :!~ Restorer
 #, c-format
 msgid "E1112: List item %d cell width invalid"
-msgstr "E1112: В данном элементе списка указана недопустимая ширина ячейки %d"
+msgstr "E1112: Указана недопустимая ширина ячейки в списке %d"
 
 # :!~ Restorer
 #, c-format
@@ -10961,30 +10961,31 @@ msgstr "E1113: Обнаружено перекрытие диапазонов для значения 0x%lx"
 # :!~ Restorer_
 msgid "E1114: Only values of 0x100 and higher supported"
 msgstr ""
-"E1114: Для команды :setcellwidths допустимы символы из диапазона 0x100 и выше"
+"E1114: Для функции setcellwidths() допустимы символы из диапазона 0x100 и "
+"выше"
 
 # :!~ Restorer__
 msgid "E1115: \"assert_fails()\" fourth argument must be a number"
-msgstr ""
-"E1115: Для функции assert_fails() четвёртый аргумент должен быть числом"
+msgstr "E1115: В функции assert_fails() четвёртым аргументом должно быть число"
 
 # :!~ Restorer__
 msgid "E1116: \"assert_fails()\" fifth argument must be a string"
-msgstr "E1116: Для функции assert_fails() пятый аргумент должен быть строкой"
+msgstr "E1116: В функции assert_fails() пятым аргументом должна быть строка"
 
 # :!~ Restorer__
 msgid "E1117: Cannot use ! with nested :def"
 msgstr ""
-"E1117: Не допускается использовать модификатор ! с вложенными командами :def"
+"E1117: Не допускается указание модификатора ! для вложенных команд :def"
 
 # :!~ Restorer__
 msgid "E1118: Cannot change locked list"
-msgstr "E1118: Изменение списка не выполнено. Обнаружена блокировка списка"
+msgstr "E1118: Изменение списка не выполнено. Установлена блокировка списка"
 
 # :!~ Restorer_
 msgid "E1119: Cannot change locked list item"
 msgstr ""
-"E1119: Изменение элемента списка не выполнено. Обнаружена блокировка списка"
+"E1119: Изменение элемента списка не выполнено. Установлена блокировка "
+"элемента"
 
 # :!~ Restorer
 msgid "E1120: Cannot change dict"
@@ -11008,7 +11009,7 @@ msgstr "E1123: Отсутствует символ запятой перед аргументом %s"
 #, c-format
 msgid "E1124: \"%s\" cannot be used in legacy Vim script"
 msgstr ""
-"E1124: Команда \"%s\" может быть использована только в командном файле Vim9"
+"E1124: Команда \"%s\" может быть применена только в командном файле Vim9"
 
 # :!~ Restorer__
 msgid "E1125: Final requires a value"
@@ -11334,7 +11335,7 @@ msgstr ""
 # :!~ Restorer__
 #, c-format
 msgid "E1189: Cannot use :legacy with this command: %s"
-msgstr "E1189: Не допускается исполнение через команду :legacy команды %s"
+msgstr "E1189: Не допускается указание после команды :legacy команды %s"
 
 # :!~ Restorer
 msgid "E1190: One argument too few"
@@ -11695,6 +11696,7 @@ msgid "E1259: Missing name after imported name: %s"
 msgstr "E1259: Не указано наименование после импортируемого элемента %s"
 
 # :!~ Restorer__
+# # E1260: Не удалось сбросить значение элемента в импортированных данных %s
 #, c-format
 msgid "E1260: Cannot unlet an imported item: %s"
 msgstr "E1260: Не удалось убрать элемент в импортированных данных %s"
@@ -11856,6 +11858,11 @@ msgstr "E1289: Не удалось получить ожидаемый SIGALRM, ошибка %s"
 # :!~ Restorer__
 msgid "E1290: substitute nesting too deep"
 msgstr "E1290: Превышено допустимое количество вложенных команд замены"
+
+# :!~ Restorer__
+#, c-format
+msgid "E1291: Invalid argument: %ld"
+msgstr "E1291: Задан недопустимый аргумент %ld"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
@@ -14214,7 +14221,7 @@ msgstr "отображать буфер в списке буферов"
 msgid "set to \"msg\" to see all error messages"
 msgstr ""
 "чтобы отображались все сообщения об ошибках, присвойте\n"
-"этому параметру \"msg\""
+"этому параметру значение \"msg\""
 
 # :!~ Restorer
 msgid "whether to show the signcolumn"
