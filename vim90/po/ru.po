@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0063\n"
+"Project-Id-Version: Vim 9.0.0107\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-07-24 12:21+0300\n"
-"PO-Revision-Date: 2022-07-24 12:56+0300\n"
+"POT-Creation-Date: 2022-07-30 11:18+0300\n"
+"PO-Revision-Date: 2022-07-30 11:26+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -3685,7 +3685,7 @@ msgstr "выключения"
 # :!~ Restorer
 # #Restorer: чтобы передать смысл, дополнительная строка текста в переводе
 # #Restorer: всё-таки заключил слово «PATH» в знак процента, пока использую
-# #Restorer: перевод только для себя. Добваил #, no-c-format 
+# #Restorer: перевод только для себя. Добваил #, no-c-format
 # #Restorer: здесь подробности https://github.com/vim/vim/pull/6762#issuecomment-678662463
 #, no-c-format
 msgid ""
@@ -11685,7 +11685,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1272: Using type not in a script context: %s"
-msgstr "E1272: Вне командного файла использовано указание типа %s"
+msgstr "E1272: Обнаружено указание типа данных в ненадлежащем месте %s"
 
 # :!~ Restorer
 #, c-format
@@ -11700,8 +11700,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E1275: String or function required for ->(expr)"
 msgstr ""
-"E1275: Для команды ->(expr) тип данных аргумента должен быть String или "
-"Function"
+"E1275: Для команды ->(expr) тип данных должен быть String или Function"
 
 # :!~ Restorer
 #, c-format
@@ -11717,13 +11716,12 @@ msgstr "E1277: Компоненты Channel и Job не включены в да
 #, c-format
 msgid "E1278: Stray '}' without a matching '{': %s"
 msgstr ""
-"E1278: Обнаружена закрывающая фигурная скобка без соответствующей открывающей "
-"в %s"
+"E1278: Обнаружена закрывающая фигурная скобка без парной открывающей в %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1279: Missing '}': %s"
-msgstr "E1279: Отсутствует закрывающая фигурная скобка в %s"
+msgstr "E1279: Отсутствует парная закрывающая фигурная скобка в %s"
 
 # :!~ Restorer
 msgid "E1280: Illegal character in word"
@@ -11780,6 +11778,15 @@ msgstr "E1290: Превышено допустимое количество вл
 #, c-format
 msgid "E1291: Invalid argument: %ld"
 msgstr "E1291: Задан недопустимый аргумент %ld"
+
+# :!~ Restorer__
+msgid "E1292: Command-line window is already open"
+msgstr "E1292: Обнаружено, что окно командной строки уже существует"
+
+# :!~ Restorer__
+#, fuzzy__
+msgid "E1293: Cannot use a negative id after adding a textprop with text"
+msgstr "E1293: Не допускается указание отрицательного значения идентификатора"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
