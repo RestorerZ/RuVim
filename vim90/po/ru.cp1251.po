@@ -9,20 +9,20 @@
 #
 #   Restorer
 # Основные задачи, решаемые данной редакцией перевода:
-#   - Соответствие нормам и правилам русского языка;
-#   - Унифицированность сообщений;
-#   - Связанность сообщений;
-#   - Полнота и понимание сообщений без обращения к встроенной документации;
-#   - Лаконичность.
+#   - соответствие нормам и правилам русского языка;
+#   - унифицированность сообщений;
+#   - связанность сообщений;
+#   - полнота и понимание сообщений без обращения к встроенной документации;
+#   - лаконичность.
 # Насколько это, конечно, возможно и позволяет моя безграмотность,
 # и слабое знание языка первоисточника и предметной области.
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0107\n"
+"Project-Id-Version: Vim 9.0.0149\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-07-30 11:18+0300\n"
-"PO-Revision-Date: 2022-07-30 11:26+0300\n"
+"POT-Creation-Date: 2022-08-06 12:57+0300\n"
+"PO-Revision-Date: 2022-08-06 13:07+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -7864,22 +7864,22 @@ msgstr "E473: Внутренняя ошибка механизма обработки регулярных выражений"
 
 # :!~ Restorer
 msgid "E474: Invalid argument"
-msgstr "E474: Задан недопустимый тип аргумента"
+msgstr "E474: Задан недопустимый аргумент"
 
 # :!~ Restorer__
 #, c-format
 msgid "E475: Invalid argument: %s"
-msgstr "E475: Задан недопустимый аргумент %s"
+msgstr "E475: Задано недопустимое значение аргумента как %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E475: Invalid value for argument %s"
-msgstr "E475: Задано недопустимое значение аргумента для %s"
+msgstr "E475: Задано недопустимое значение для аргумента %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E475: Invalid value for argument %s: %s"
-msgstr "E475: Задано недопустимое значение аргумента %s для %s"
+msgstr "E475: Задано недопустимое значение для аргумента %s как %s"
 
 # :!~ Restorer
 msgid "E476: Invalid command"
@@ -7964,7 +7964,6 @@ msgid "E490: No fold found"
 msgstr "E490: Не обнаружено областей со свёрнутым текстом"
 
 # :!~ Restorer__
-# #Restorer: не момент перевода в документации нет описания ошибки
 #, c-format
 msgid "E491: JSON decode error at '%s'"
 msgstr "E491: Ошибка при декодировании '%s'"
@@ -8178,7 +8177,7 @@ msgstr "E529: Не допускается установка пустого значения для"
 
 # :!~ Restorer
 msgid "E530: Cannot change 'term' in the GUI"
-msgstr "E530: Не допускается изменение в графическом интерфейсе параметра"
+msgstr "E530: В графическом интерфейсе не допускается изменение параметра"
 
 # :!~ Restorer
 msgid "E531: Use \":gui\" to start the GUI"
@@ -8252,7 +8251,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E547: Illegal mouseshape"
-msgstr "E547: Задан недопустимый аргумент, определяющий форму указателя мыши"
+msgstr "E547: Задан недопустимый аргумент, определяющий вид указателя мыши"
 
 # :!~ Restorer
 msgid "E548: Digit expected"
@@ -8423,14 +8422,11 @@ msgstr "E585: Превышено допустимое количество вложений команд :while или :for"
 
 # :!~ Restorer
 msgid "E586: :continue without :while or :for"
-msgstr ""
-"E586: Обнаружена команда :continue не сопоставленная с командой :while или :"
-"for"
+msgstr "E586: Обнаружена команда :continue за пределами  цикла :while или :for"
 
 # :!~ Restorer
 msgid "E587: :break without :while or :for"
-msgstr ""
-"E587: Обнаружена команда :break не сопоставленная с командой :while или :for"
+msgstr "E587: Обнаружена команда :break за пределами цикла :while или :for"
 
 # :!~ Restorer
 msgid "E588: :endwhile without :while"
@@ -8451,13 +8447,13 @@ msgstr "E590: Обнаружено существующее окно просмотра. Отмена команды"
 # :!~ Restorer
 msgid "E591: 'winheight' cannot be smaller than 'winminheight'"
 msgstr ""
-"E591: Значение параметра 'winheight' не должно быть менее значения "
+"E591: Значение параметра 'winheight' не должно быть меньше значения "
 "'winminheight'"
 
 # :!~ Restorer
 msgid "E592: 'winwidth' cannot be smaller than 'winminwidth'"
 msgstr ""
-"E592: Значение параметра 'winwidth' не должно быть менее значения "
+"E592: Значение параметра 'winwidth' не должно быть меньше значения "
 "'winminwidth'"
 
 # :!~ Restorer
