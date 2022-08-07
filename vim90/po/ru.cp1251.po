@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0149\n"
+"Project-Id-Version: Vim 9.0.0162\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-08-06 12:57+0300\n"
-"PO-Revision-Date: 2022-08-06 13:07+0300\n"
+"POT-Creation-Date: 2022-08-07 16:44+0300\n"
+"PO-Revision-Date: 2022-08-07 16:50+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -8422,7 +8422,7 @@ msgstr "E585: Превышено допустимое количество вложений команд :while или :for"
 
 # :!~ Restorer
 msgid "E586: :continue without :while or :for"
-msgstr "E586: Обнаружена команда :continue за пределами  цикла :while или :for"
+msgstr "E586: Обнаружена команда :continue за пределами цикла :while или :for"
 
 # :!~ Restorer
 msgid "E587: :break without :while or :for"
@@ -13776,7 +13776,7 @@ msgstr "использовать файл подкачки для данного буфера"
 # :!~ Restorer
 msgid "\"sync\", \"fsync\" or empty; how to flush a swap file to disk"
 msgstr ""
-"как выполнять синхронизация файла подкачки на диске\n"
+"как выполнять синхронизацию файла подкачки на диске\n"
 "Возможные значения: \"sync\", \"fsync\" или нет значения"
 
 # :!~ Restorer
@@ -13877,11 +13877,13 @@ msgstr "как параметр 'shellquote', но применяется и для перенаправления"
 
 # :!~ Restorer
 msgid "characters to escape when 'shellxquote' is ("
-msgstr "экранируемые символы при значении параметра 'shellxquote' в ("
+msgstr "экранируемые символы, если у параметра 'shellxquote' значение ("
 
 # :!~ Restorer
 msgid "argument for 'shell' to execute a command"
-msgstr "аргумент указанной в 'shell' программы для исполнения команд"
+msgstr ""
+"ключ, указывающий командной оболочке завершение работы\n"
+"после исполнения команды"
 
 # :!~ Restorer
 msgid "used to redirect command output to a file"
@@ -14103,7 +14105,7 @@ msgstr "кодировка символов для текущего файла"
 
 # :!~ Restorer
 msgid "automatically detected character encodings"
-msgstr "автоматическое определение кодировки символов"
+msgstr "автоматически распознаваемые кодировки символов"
 
 # :!~ Restorer
 msgid "character encoding used by the terminal"
@@ -14115,11 +14117,11 @@ msgstr "функция, используемая для перекодирования символов"
 
 # :!~ Restorer
 msgid "delete combining (composing) characters on their own"
-msgstr "удаление комбинированных символов каждого по отдельности"
+msgstr "удаление одиночного символа в комбинированных символах"
 
 # :!~ Restorer
 msgid "maximum number of combining (composing) characters displayed"
-msgstr "максимальное количество комбинируемых символов для отображения"
+msgstr "количество отображаемых символов в одном комбинируемом символе"
 
 # :!~ Restorer
 msgid "key that activates the X input method"
@@ -14142,7 +14144,7 @@ msgid ""
 "when to use virtual editing: \"block\", \"insert\", \"all\"\n"
 "and/or \"onemore\""
 msgstr ""
-"для какого режима использовать виртуальное редактирование\n"
+"для каких режимов использовать виртуальное редактирование\n"
 "Возможные значения: \"block\", \"insert\", \"all\", \"onemore\""
 
 # :!~ Restorer
@@ -14156,8 +14158,8 @@ msgstr "загружать подключаемые модули при запуске программы"
 # :!~ Restorer
 msgid "enable reading .vimrc/.exrc/.gvimrc in the current directory"
 msgstr ""
-"разрешать обработку файлов .vimrc, .exrc, .gvimrc\n"
-"из текущего каталога"
+"разрешать обработку файлов .vimrc, .exrc или .gvimrc\n"
+"в текущем каталоге"
 
 # :!~ Restorer
 msgid "safer working with script files in the current directory"
@@ -14165,7 +14167,7 @@ msgstr "безопасная обработка командных файлов в текущем каталоге"
 
 # :!~ Restorer
 msgid "use the 'g' flag for \":substitute\""
-msgstr "использовать флаг 'g' для команды \":substitute\""
+msgstr "флаг 'g' для команды \":substitute\" установлен всегда"
 
 # :!~ Restorer
 msgid "'g' and 'c' flags of \":substitute\" toggle"
