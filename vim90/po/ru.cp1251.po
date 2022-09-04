@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0162\n"
+"Project-Id-Version: Vim 9.0.0376\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-08-07 16:44+0300\n"
-"PO-Revision-Date: 2022-08-07 16:50+0300\n"
+"POT-Creation-Date: 2022-09-04 15:05+0300\n"
+"PO-Revision-Date: 2022-09-04 16:50+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -2452,7 +2452,7 @@ msgstr "+\t\t\tУстановить курсор на последней строке открытого файла"
 
 # :!~ Restorer
 msgid "+<lnum>\t\tStart at line <lnum>"
-msgstr "+<lnum>\t\tУстановить курсор на <lnum> строке открытого файла"
+msgstr "+<номер>\t\tУстановить курсор на <номер> строки открытого файла"
 
 # :!~ Restorer
 msgid "--cmd <command>\tExecute <command> before loading any vimrc file"
@@ -3729,7 +3729,7 @@ msgid "(%d of %d)%s%s: "
 msgstr "(%d из %d)%s%s: "
 
 # ~!:earlier
-# #Restorer: подставляется в (%d of %d)%s%s: вместо первого %s если требуется
+# #Restorer: подставляется в (%d of %d)%s%s: вместо первого %s, если требуется
 msgid " (line deleted)"
 msgstr " (строка удалена)"
 
@@ -7945,6 +7945,11 @@ msgid "E487: Argument must be positive"
 msgstr "E487: Заданное значение должно быть положительным числом"
 
 # :!~ Restorer
+#, c-format
+msgid "E487: Argument must be positive: %s"
+msgstr "E487: Заданное значение %s должно быть положительным числом"
+
+# :!~ Restorer
 msgid "E488: Trailing characters"
 msgstr "E488: Обнаружены посторонние завершающие символы"
 
@@ -9382,7 +9387,7 @@ msgstr ""
 "Number"
 
 # :!~ Restorer
-msgid "E806: Using Float as a String"
+msgid "E806: Using a Float as a String"
 msgstr ""
 "E806: Обнаружено, что тип Float использован там, где ожидался тип данных "
 "String"
@@ -9657,9 +9662,10 @@ msgid "E859: Failed to convert returned python object to a Vim value"
 msgstr "E859: Ошибка преобразования объекта Python в тип данных программы Vim"
 
 # :!~ Restorer__
-msgid "E860: Need 'id' and 'type' with 'both'"
+msgid "E860: Need 'id' and 'type' or 'types' with 'both'"
 msgstr ""
-"E860: Если задан ключ 'both', должны быть заданы значения ключа 'id' и 'type'"
+"E860: Если задан ключ 'both', укажите значения ключа 'id' и 'type', либо "
+"'types'"
 
 # :!~ Restorer__
 msgid "E861: Cannot open a second popup with a terminal"
@@ -10436,13 +10442,15 @@ msgstr ""
 "аргументом"
 
 # :!~ Restorer__
-msgid "E1008: Missing <type>"
-msgstr "E1008: Не указано ключевое слово <type>"
+#, c-format
+msgid "E1008: Missing <type> after %s"
+msgstr "E1008: Не указан тип данныж, заключаемый в угловые скобки, для %s"
 
 # :!~ Restorer__
-msgid "E1009: Missing > after type"
+#, c-format
+msgid "E1009: Missing > after type: %s"
 msgstr ""
-"E1009: Отсутствует закрывающая угловая скобка после ключевого слова type"
+"E1009: Отсутствует закрывающая угловая скобка после указанного типа данных %s"
 
 # :!~ Restorer__
 #, c-format
@@ -11864,6 +11872,30 @@ msgstr "E1292: Обнаружено, что окно командной строки уже существует"
 # :!~ Restorer__
 msgid "E1293: Cannot use a negative id after adding a textprop with text"
 msgstr "E1293: Не допускается указание отрицательного значения идентификатора"
+
+# :!~ Restorer__
+msgid "E1294: Can only use text_align when column is zero"
+msgstr ""
+"E1294: Ключ 'text_align' допустим только при нулевом значении позиции колонки"
+
+# :!~ Restorer__
+msgid "E1295: Cannot specify both 'type' and 'types'"
+msgstr "E1295: Не допускается одновременное указание ключей 'type' и 'types'"
+
+# :!~ Restorer__
+msgid "E1296: Can only use left padding when column is zero"
+msgstr ""
+"E1296: Ключ 'text_padding_left' допустим только при нулевом значении колонки"
+
+# :!~ Restorer
+#, c-format
+msgid "E1297: Non-NULL Dictionary required for argument %d"
+msgstr "E1297: Для аргумента номер %d должен быть указан не пустой словарь"
+
+# :!~ Restorer
+#, c-format
+msgid "E1298: Non-NULL List required for argument %d"
+msgstr "E1298: Для аргумента номер %d должен быть указан не пустой список"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
