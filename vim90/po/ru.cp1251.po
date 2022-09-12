@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0376\n"
+"Project-Id-Version: Vim 9.0.0421\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-09-04 15:05+0300\n"
-"PO-Revision-Date: 2022-09-04 16:50+0300\n"
+"POT-Creation-Date: 2022-09-12 20:33+0300\n"
+"PO-Revision-Date: 2022-09-12 20:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -89,16 +89,16 @@ msgstr "Отсутствуют соответствующие автокоманды для события или файла %s"
 # :!~ Restorer
 #, c-format
 msgid "%s Autocommands for \"%s\""
-msgstr "для события %s автокоманды \"%s\""
+msgstr "по событию %s автокоманд для \"%s\""
 
 # ~!:earlier
-# #Restorer: выводится при значении 'verbose'=>8
+# #Restorer: выводится при значении 'verbose'>=8
 #, c-format
 msgid "Executing %s"
 msgstr "Выполнение %s"
 
 # ~!:earlier
-# #Restorer: выводится при значении 'verbose'=>9
+# #Restorer: выводится при значении 'verbose'>=9
 #, c-format
 msgid "autocommand %s"
 msgstr "автокоманда %s"
@@ -836,7 +836,7 @@ msgstr ""
 "наберите \"visual\""
 
 # ~!:earlier
-# #Restorer: выводится при значении 'verbose'=>9
+# #Restorer: выводится при значении 'verbose'>=9
 #, c-format
 msgid "Executing: %s"
 msgstr "Выполнение %s"
@@ -928,19 +928,19 @@ msgid "Untitled"
 msgstr "безымянный"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>13
+# #Restorer: выводится при 'verbose'>=13
 #, c-format
 msgid "Exception thrown: %s"
 msgstr "Исключительная ситуация %s"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>13
+# #Restorer: выводится при 'verbose'>=13
 #, c-format
 msgid "Exception finished: %s"
 msgstr "Завершена обработка исключительной ситуации %s"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>13
+# #Restorer: выводится при 'verbose'>=13
 #, c-format
 msgid "Exception discarded: %s"
 msgstr "Исключительная ситуация проигнорирована %s"
@@ -952,13 +952,13 @@ msgid "%s, line %ld"
 msgstr "%s, строка %ld"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>13
+# #Restorer: выводится при 'verbose'>=13
 #, c-format
 msgid "Exception caught: %s"
 msgstr "Обработка исключительной ситуации %s"
 
 # :!~ Restorer
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение. %s замещается на :continnue, :break, :finish
 # #Restorer: или Error and interrupt, или Interrupt
 #, c-format
@@ -966,7 +966,7 @@ msgid "%s made pending"
 msgstr "%s приостановлено"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение. %s замещается на :continnue, :break, :finish
 # #Restorer: или Error and interrupt, или Interrupt
 #, c-format
@@ -974,7 +974,7 @@ msgid "%s resumed"
 msgstr "%s возобновлено"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение. %s замещается на :continnue, :break, :finish
 # #Restorer: или Error and interrupt, или Interrupt
 #, c-format
@@ -982,27 +982,27 @@ msgid "%s discarded"
 msgstr "%s пропущено"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение.
 # #Restorer: к сообщению дописывается : и значение value из структуры except_T
 msgid "Exception"
 msgstr "Исключительная ситуация"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение.
 msgid "Error and interrupt"
 msgstr "Ошибка и прерывание"
 
 # ~!:earlier
 # #Restorer: заголовок окна в ГУИ и подставляемый текст в сообщение ex_eval.c
-# #Restorer: выводится при 'verbose'=>14 для ex_eval.c
+# #Restorer: выводится при 'verbose'>=14 для ex_eval.c
 # #Restorer: составное сообщение в ex_eval.c.
 msgid "Error"
 msgstr "Ошибка"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>14
+# #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение.
 msgid "Interrupt"
 msgstr "Прерывание"
@@ -3407,10 +3407,11 @@ msgstr " (+%lld с учётом BOM)"
 # #Restorer: может сразу написать это по-арабски
 msgid "W17: Arabic requires UTF-8, do ':set encoding=utf-8'"
 msgstr ""
-"W17: Для работы с арабской письменности, введите команду :set encoding=utf-8"
+"W17: Для работы с арабской письменностью, введите команду :set encoding=utf-8"
 
 # :!~ Restorer
 # #Restorer: выводится по команде `:set termcap`
+# --- Управляющие коды терминала ---
 msgid ""
 "\n"
 "--- Terminal codes ---"
@@ -3418,7 +3419,6 @@ msgstr ""
 "\n"
 "--- Команды терминала ---"
 
-# --- Управляющие коды терминала ---
 # :!~ Restorer
 # #Restorer: выводится по команде `:setglobal [all]`
 msgid ""
@@ -3639,7 +3639,7 @@ msgstr "Потеряно соединение XSMP по протоколу ICE"
 # #Restorer: выводится при 'verbose'>0
 #, c-format
 msgid "Could not load gpm library: %s"
-msgstr "E370: Не удалось подключить файл динамической библиотеки %s"
+msgstr "Не удалось подключить файл динамической библиотеки gpm, ошибка %s"
 
 # :!~ Restorer
 #, c-format
@@ -4036,7 +4036,7 @@ msgid "Scanning included file: %s"
 msgstr "Просмотр в подключаемом файле %s"
 
 # :!~ Restorer
-# #Restorer: выводится при verbose => 5
+# #Restorer: выводится при verbose >= 5
 #, c-format
 msgid "Searching included file %s"
 msgstr "Поиск подключаемого файла %s"
@@ -4639,7 +4639,7 @@ msgstr ""
 " №  на индекс      из строки   в файле или тексте"
 
 # :!~ Restorer
-# #Restorer: выводится при 'verbose'=>5
+# #Restorer: выводится при 'verbose'>=5
 msgid "Ignoring long line in tags file"
 msgstr ""
 "Строка в файле индексов превышает допустимую длину. Обработка не выполнена"
@@ -4650,7 +4650,7 @@ msgid "Before byte %ld"
 msgstr "Перед байтом %ld"
 
 # :!~ Restorer
-# #Restorer: выводится при 'verbose'=>5
+# #Restorer: выводится при 'verbose'>=5
 #, c-format
 msgid "Searching tags file %s"
 msgstr "Поиск в файле индексов %s"
@@ -4899,28 +4899,28 @@ msgid "W22: Text found after :endfunction: %s"
 msgstr "W22: Обнаружен посторонний текст после команды :endfunction %s"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>12
+# #Restorer: выводится при 'verbose'>=12
 # #Restorer: шаблон %s заменяется наименованием функции
 #, c-format
 msgid "calling %s"
 msgstr "вызов %s"
 
 # ~!:earlier
-# #Restorer: выводится при 'verbose'=>12
+# #Restorer: выводится при 'verbose'>=12
 # #Restorer: шаблон %s заменяется наименованием функции
 #, c-format
 msgid "%s aborted"
 msgstr "%s прервана"
 
 # :!~ Restorer
-# #Restorer: выводится при 'verbose'=>12
+# #Restorer: выводится при 'verbose'>=12
 # #Restorer: шаблон %s заменяется наименованием функции, #%ld --- значением
 #, c-format
 msgid "%s returning #%ld"
 msgstr "%s вернула #%ld"
 
 # :!~ Restorer
-# #Restorer: выводится при 'verbose'=>12
+# #Restorer: выводится при 'verbose'>=12
 # #Restorer: шаблон %s заменяется наименованием функции, %s --- значением
 #, c-format
 msgid "%s returning %s"
@@ -5536,25 +5536,26 @@ msgstr "# Значение параметра 'encoding' в момент записи файла\n"
 
 # :!~ Restorer__
 # #Restorer: отображается при 'verbose'>0
-# #Restorer: первый %s наименование файла, остальные на «info», «marks», «oldfiles»
+# #Restorer: первый %s наименование файла, остальные на «info», «marks»,
+# «oldfiles», «FAILED»
 #, c-format
 msgid "Reading viminfo file \"%s\"%s%s%s%s"
-msgstr "Считывание из viminfo-файла \"%s\"%s%s%s%s"
+msgstr "Считывание из viminfo-файла \"%s\":%s%s%s%s"
 
 # :!~ Restorer
 # #Restorer: подставляется в сообщение «Reading viminfo file \"%s\"%s%s%s»
 msgid " info"
-msgstr " информации"
+msgstr " общей информации;"
 
 # :!~ Restorer
 # #Restorer: подставляется в сообщение «Reading viminfo file \"%s\"%s%s%s»
 msgid " marks"
-msgstr " закладок"
+msgstr " сведений о закладках;"
 
 # :!~ Restorer
 # #Restorer: подставляется в сообщение «Reading viminfo file \"%s\"%s%s%s»
 msgid " oldfiles"
-msgstr " ранее редактируемых файлов"
+msgstr " сведений о ранее редактируемых файлах"
 
 # :!~ Restorer
 # #Restorer: подставляется в сообщение «Reading viminfo file \"%s\"%s%s%s»
@@ -8743,7 +8744,7 @@ msgstr ""
 "E678: Недопустимый символ в сокращённом символьном классе цифр %s%%[dxouU]"
 
 # :!~ Restorer
-# #Restorer: выводится, например, при значении рекурсии => 5
+# #Restorer: выводится, например, при значении рекурсии >= 5
 msgid "E679: Recursive loop loading syncolor.vim"
 msgstr "E679: Бесконечная повторная загрузка командного файла syncolor.vim"
 
@@ -9664,7 +9665,7 @@ msgstr "E859: Ошибка преобразования объекта Python в тип данных программы Vim"
 # :!~ Restorer__
 msgid "E860: Need 'id' and 'type' or 'types' with 'both'"
 msgstr ""
-"E860: Если задан ключ 'both', укажите значения ключа 'id' и 'type', либо "
+"E860: Если задан ключ 'both', укажите значение ключей 'id' и 'type', или "
 "'types'"
 
 # :!~ Restorer__
@@ -11731,7 +11732,7 @@ msgstr ""
 # :!~ Restorer
 # #Restorer: выводится только при установленном параметре 'verbose'
 msgid "E1265: Cannot use a partial here"
-msgstr "E1265: Не допускается указание функции с частичным применением"
+msgstr "E1265: Не допускается указание разделяемой функции"
 
 # :!~ Restorer
 msgid ""
@@ -11896,6 +11897,39 @@ msgstr "E1297: Для аргумента номер %d должен быть указан не пустой словарь"
 #, c-format
 msgid "E1298: Non-NULL List required for argument %d"
 msgstr "E1298: Для аргумента номер %d должен быть указан не пустой список"
+
+# :!~ Restorer
+msgid "E1299: Window unexpectedly closed while searching for tags"
+msgstr ""
+"E1299: Во время процедуры поиска индекса было непредвидено закрыто окно"
+
+# :!~ Restorer
+msgid "E1300: Cannot use a partial with dictionary for :defer"
+msgstr ""
+"E1300: Не допускается применение команды :defer к разделяемым словарным "
+"функция"
+
+# :!~ Restorer
+#, c-format
+msgid "E1301: String, Number, List or Blob required for argument %d"
+msgstr ""
+"E1301: Для аргумента №  %d тип данных должен быть String, Number, List или "
+"BLOB"
+
+# :!~ Restorer__
+msgid "E1302: Script variable was deleted"
+msgstr "E1302: Переменная командного файла была удалена"
+
+# :!~ Restorer__
+#, c-format
+msgid "E1303: Custom list completion function does not return a List but a %s"
+msgstr ""
+"E1303: Пользовательская функция подстановки вернула не тип данных List, а %s"
+
+# :!~ Restorer__
+#, c-format
+msgid "E1304: Cannot use type with this variable: %s"
+msgstr "E1304: Не допускается указание типа данных для переменной %s"
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
@@ -12542,8 +12576,6 @@ msgid "list of file names to search for tags"
 msgstr "перечень файлов содержащих индексы"
 
 # :!~ Restorer
-# # "Возможные значения: \"followic\" — учитывать значение параметра\n"
-# # "'ignorecase' либо \"ingore\" или \"match\""
 msgid ""
 "how to handle case when searching in tags files:\n"
 "\"followic\" to follow 'ignorecase', \"ignore\" or \"match\""
@@ -12717,11 +12749,11 @@ msgstr "количество колонок, используемых под столбец с номерами строк"
 
 # :!~ Restorer
 msgid "controls whether concealable text is hidden"
-msgstr "способ скрытия спрятанного текста"
+msgstr "способ скрытия текста, помеченного как скрытый"
 
 # :!~ Restorer
 msgid "modes in which text in the cursor line can be concealed"
-msgstr "режимы, в которых текст под курсором может быть скрыт"
+msgstr "режимы, в которых текст в позиции каретки может оставаться скрытым"
 
 # :!~ Restorer
 msgid "syntax, highlighting and spelling"
@@ -12848,12 +12880,15 @@ msgstr "оставлять неизменной высоту окна"
 msgid "keep the width of the window"
 msgstr "оставлять неизменной ширину окна"
 
+# :!~ Restorer
 msgid "minimal number of columns used for the current window"
 msgstr "минимальное количество колонок для активного окна"
 
+# :!~ Restorer
 msgid "minimal number of columns used for any window"
 msgstr "минимальное количество колонок для всех окон"
 
+# :!~ Restorer
 msgid "initial height of the help window"
 msgstr "начальная высота окна встроенной справочной системы"
 
@@ -12869,9 +12904,11 @@ msgstr "начальная высота окна просмотра"
 msgid "identifies the preview window"
 msgstr "определить окно как окна просмотра"
 
+# :!~ Restorer
 msgid "don't unload a buffer when no longer shown in a window"
 msgstr "не удалять буфер, когда он больше не отображается в окне"
 
+# :!~ Restorer
 msgid ""
 "\"useopen\" and/or \"split\"; which window to use when jumping\n"
 "to a buffer"
@@ -12883,20 +12920,29 @@ msgstr ""
 msgid "a new window is put below the current one"
 msgstr "размещать новое окна под текущим окном"
 
+# :!~ Restorer
 msgid "a new window is put right of the current one"
 msgstr "размещать новое окна справа от текущего окна"
 
+# :!~ Restorer
+msgid "determines scroll behavior when spliting windows"
+msgstr "определяет поведение каретки при изменении расположения окон"
+
+# :!~ Restorer
 msgid "this window scrolls together with other bound windows"
 msgstr "прокрутка текста синхронно с другим связанным окном"
 
+# :!~ Restorer
 msgid "\"ver\", \"hor\" and/or \"jump\"; list of options for 'scrollbind'"
 msgstr ""
 "настройки, используемые при включённом 'scrollbind'\n"
 "Возможные значения: \"ver\", \"her\", \"jump\""
 
+# :!~ Restorer
 msgid "this window's cursor moves together with other bound windows"
 msgstr "изменять позицию каретки синхронно с другим связанным окном"
 
+# :!~ Restorer
 msgid "size of a terminal window"
 msgstr "устанавливает размер окна терминала"
 
@@ -12906,14 +12952,15 @@ msgstr ""
 "коды клавиш, передаваемые в окно терминала перед отправкой\n"
 "команд редактора Vim"
 
+# :!~ Restorer
 msgid "max number of lines to keep for scrollback in a terminal window"
 msgstr ""
-"максимальное количество строк сохраняемых для прокрутки\n"
+"максимальное количество строк, сохраняемых для прокрутки\n"
 "в окне терминала"
 
 # :!~ Restorer__
 msgid "type of pty to use for a terminal window"
-msgstr "виртуальная консоль используемая при открытии окна терминала"
+msgstr "виртуальная консоль, используемая при открытии окна терминала"
 
 # :!~ Restorer
 msgid "name of the winpty dynamic library"
@@ -12923,6 +12970,7 @@ msgstr "файл динамически подключаемой библиотеки winpty"
 msgid "multiple tab pages"
 msgstr "Вкладки"
 
+# :!~ Restorer
 msgid "0, 1 or 2; when to use a tab pages line"
 msgstr ""
 "отображение панели вкладок\n"
@@ -12938,6 +12986,7 @@ msgstr ""
 msgid "custom tab pages line"
 msgstr "настройка вида панели вкладок"
 
+# :!~ Restorer
 msgid "custom tab page label for the GUI"
 msgstr "настройка подписей вкладок в графическом интерфейсе"
 
@@ -12965,7 +13014,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "terminal connection is fast"
-msgstr "использовать быстрое соединение с терминалом"
+msgstr "использовать высокоскоростное соединение с терминалом"
 
 msgid "request terminal key codes when an xterm is detected"
 msgstr "запрос кодов клавиш при обнаружении терминала xterm"
