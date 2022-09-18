@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0421\n"
-"Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-09-12 20:33+0300\n"
-"PO-Revision-Date: 2022-09-12 20:57+0300\n"
+"Project-Id-Version: Vim 9.0.0494\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-09-18 09:17+0300\n"
+"PO-Revision-Date: 2022-09-18 09:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -10716,11 +10716,6 @@ msgid "E1075: Namespace not supported: %s"
 msgstr "E1075: Данное пространство имён не поддерживается %s"
 
 # :!~ Restorer__
-msgid "E1076: This Vim is not compiled with float support"
-msgstr ""
-"E1076: Поддержка чисел с плавающей запятой не была активирована при компиляции"
-
-# :!~ Restorer__
 # #Restorer: та же беда с документацией
 # #Restorer: ага, это же всё новые фичи vim9script
 #, c-format
@@ -11829,7 +11824,8 @@ msgstr ""
 #, c-format
 msgid "E1301: String, Number, List or Blob required for argument %d"
 msgstr ""
-"E1301: Для аргумента №  %d тип данных должен быть String, Number, List или BLOB"
+"E1301: Для аргумента №  %d тип данных должен быть String, Number, List или "
+"BLOB"
 
 # :!~ Restorer__
 msgid "E1302: Script variable was deleted"
@@ -11845,6 +11841,11 @@ msgstr ""
 #, c-format
 msgid "E1304: Cannot use type with this variable: %s"
 msgstr "E1304: Не допускается указание типа данных для переменной %s"
+
+# :!~ Restorer
+msgid "E1305: Cannot use \"length\", \"end_col\" and \"end_lnum\" with \"text\""
+msgstr ""
+"E1305: Не разрешены ключи \"length\", \"end_col\" и \"end_lnum\" c ключом \"text\""
 
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
@@ -12834,7 +12835,8 @@ msgid "a new window is put right of the current one"
 msgstr "размещать новое окна справа от текущего окна"
 
 # :!~ Restorer
-msgid "determines scroll behavior when spliting windows"
+#, fuzzy__
+msgid "determines scroll behavior for split windows"
 msgstr "определяет поведение каретки при изменении расположения окон"
 
 # :!~ Restorer
@@ -12863,7 +12865,8 @@ msgstr ""
 
 # :!~ Restorer
 msgid "max number of lines to keep for scrollback in a terminal window"
-msgstr "максимальное количество строк, сохраняемых для прокрутки\n"
+msgstr ""
+"максимальное количество строк, сохраняемых для прокрутки\n"
 "в окне терминала"
 
 # :!~ Restorer__
@@ -12880,7 +12883,8 @@ msgstr "Вкладки"
 
 # :!~ Restorer
 msgid "0, 1 or 2; when to use a tab pages line"
-msgstr "отображение панели вкладок\n"
+msgstr ""
+"отображение панели вкладок\n"
 "Возможные значения: 0, 1 или 2"
 
 # :!~ Restorer
