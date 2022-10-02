@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0494\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-09-18 09:17+0300\n"
-"PO-Revision-Date: 2022-09-18 09:57+0300\n"
+"Project-Id-Version: Vim 9.0.0565\n"
+"Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
+"POT-Creation-Date: 2022-09-24 11:42+0300\n"
+"PO-Revision-Date: 2022-09-24 11:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -5625,12 +5625,10 @@ msgstr ""
 
 # :!~ Restorer
 # #Restorer: разбил на несколько строк, дабы передать смысл
-msgid "E11: Invalid in command-line window; <CR> executes, CTRL-C quits"
+msgid "E11: Invalid in command-line window; :q<CR> closes the window"
 msgstr ""
 "E11: Не разрешены команды перемещения в другой буфер из окна командной "
-"строки. Клавиша <ENTER> --- исполнение текущей команды и закрытие окна, "
-"комбинация CTRL+C --- перемещение курсора с копированием команды в командную "
-"строку"
+"строки. Наберите команду :q<ENTER>, чтобы закрыть это окно"
 
 # :!~ Restorer
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
@@ -7323,7 +7321,7 @@ msgstr ""
 # #Restorer: на момент перевода документация по этой ошибке отсутствует
 msgid "E362: Using a boolean value as a Float"
 msgstr ""
-"E362: Обнаружено, что логическое значение использовано там, где ожидался тип "
+"E362: Обнаружено, что задано логическое значение там, где ожидался тип "
 "данных Float"
 
 # :!~ Restorer
@@ -8545,8 +8543,7 @@ msgstr "E610: Нет соответствующих файлов для удаления из списка аргументов"
 # :!~ Restorer
 msgid "E611: Using a Special as a Number"
 msgstr ""
-"E611: Обнаружено, что тип Special использован там, где ожидался тип данных "
-"Number"
+"E611: Обнаружено, что задан тип Special там, где ожидался тип данных Number"
 
 # :!~ Restorer
 msgid "E612: Too many signs defined"
@@ -8728,10 +8725,10 @@ msgid "E675: No default font specified for multi-byte printing."
 msgstr "E675: Не задан шрифт по умолчанию при печати в многобайтовой кодировке"
 
 # :!~ Restorer
-msgid "E676: No matching autocommands for acwrite buffer"
+#, c-format
+msgid "E676: No matching autocommands for buftype=%s buffer"
 msgstr ""
-"E676: Отсутствуют необходимые автокоманды, чтобы записать буфер с типом "
-"acwrite"
+"E676: Отсутствуют необходимые автокоманды, чтобы записать тип буфера %s"
 
 # ~!:earlier
 msgid "E677: Error writing temp file"
@@ -8856,8 +8853,7 @@ msgstr "E702: Ошибка при выполнении сравнения в функции сортировки"
 # :!~ Restorer
 msgid "E703: Using a Funcref as a Number"
 msgstr ""
-"E703: Обнаружено, что тип Funcref использован там, где ожидался тип данных "
-"Number"
+"E703: Обнаружено, что задан тип Funcref там, где ожидался тип данных Number"
 
 # :!~ Restorer
 #, c-format
@@ -8980,26 +8976,24 @@ msgstr "E727: Задана недопустимая величина конечного значения"
 # :!~ Restorer
 msgid "E728: Using a Dictionary as a Number"
 msgstr ""
-"E728: Обнаружено, что тип Dictionary использован там, где ожидался тип "
-"данных Number"
+"E728: Обнаружено, что задан тип Dictionary там, где ожидался тип данных "
+"Number"
 
 # :!~ Restorer
 msgid "E729: Using a Funcref as a String"
 msgstr ""
-"E729: Обнаружено, что тип Funcref использован там, где ожидался тип данных "
-"String"
+"E729: Обнаружено, что задан тип Funcref там, где ожидался тип данных String"
 
 # :!~ Restorer
 msgid "E730: Using a List as a String"
 msgstr ""
-"E730: Обнаружено, что тип List использован там, где ожидался тип данных "
-"String"
+"E730: Обнаружено, что задан тип List там, где ожидался тип данных String"
 
 # :!~ Restorer
 msgid "E731: Using a Dictionary as a String"
 msgstr ""
-"E731: Обнаружено, что тип Dictionary использован там, где ожидался тип "
-"данных String"
+"E731: Обнаружено, что задан тип Dictionary там, где ожидался тип данных "
+"String"
 
 # :!~ Restorer
 msgid "E732: Using :endfor with :while"
@@ -9077,8 +9071,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E745: Using a List as a Number"
 msgstr ""
-"E745: Обнаружено, что тип List использован там, где ожидался тип данных "
-"Number"
+"E745: Обнаружено, что задан тип List там, где ожидался тип данных Number"
 
 # :!~ Restorer
 #, c-format
@@ -9384,14 +9377,12 @@ msgstr "E804: Операция деление по модулю не применима к данным типа Float"
 # :!~ Restorer
 msgid "E805: Using a Float as a Number"
 msgstr ""
-"E805: Обнаружено, что тип Float использован там, где ожидался тип данных "
-"Number"
+"E805: Обнаружено, что задан тип Float там, где ожидался тип данных Number"
 
 # :!~ Restorer
 msgid "E806: Using a Float as a String"
 msgstr ""
-"E806: Обнаружено, что тип Float использован там, где ожидался тип данных "
-"String"
+"E806: Обнаружено, что задан тип Float там, где ожидался тип данных String"
 
 # :!~ Restorer
 msgid "E807: Expected Float argument for printf()"
@@ -9827,25 +9818,22 @@ msgstr ""
 # :!~ Restorer
 msgid "E891: Using a Funcref as a Float"
 msgstr ""
-"E891: Обнаружено, что тип Funcref использован там, где ожидался тип данных "
-"Float"
+"E891: Обнаружено, что задан тип Funcref там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid "E892: Using a String as a Float"
 msgstr ""
-"E892: Обнаружено, что тип String использован там, где ожидался тип данных "
-"Float"
+"E892: Обнаружено, что задан тип String там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid "E893: Using a List as a Float"
 msgstr ""
-"E893: Обнаружено, что тип List использован там, где ожидался тип данных Float"
+"E893: Обнаружено, что задан тип List там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid "E894: Using a Dictionary as a Float"
 msgstr ""
-"E894: Обнаружено, что тип Dictionary использован там, где ожидался тип "
-"данных Float"
+"E894: Обнаружено, что задан тип Dictionary там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid ""
@@ -9930,8 +9918,7 @@ msgstr "E906: Отсутствуют открытые соединения"
 # :!~ Restorer
 msgid "E907: Using a special value as a Float"
 msgstr ""
-"E907: Обнаружено, что тип Special использован там, где ожидался тип данных "
-"Float"
+"E907: Обнаружено, что задан тип Special там, где ожидался тип данных Float"
 
 # :!~ Restorer
 #, c-format
@@ -9946,12 +9933,11 @@ msgstr ""
 # :!~ Restorer
 msgid "E910: Using a Job as a Number"
 msgstr ""
-"E910: Обнаружено, что тип Job использован там, где ожидался тип данных Number"
+"E910: Обнаружено, что задан тип Job там, где ожидался тип данных Number"
 
 # :!~ Restorer
 msgid "E911: Using a Job as a Float"
-msgstr ""
-"E911: Обнаружено, что тип Job использован там, где ожидался тип данных Float"
+msgstr "E911: Обнаружено, что задан тип Job там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid "E912: Cannot use ch_evalexpr()/ch_sendexpr() with a raw or nl channel"
@@ -9962,14 +9948,12 @@ msgstr ""
 # :!~ Restorer
 msgid "E913: Using a Channel as a Number"
 msgstr ""
-"E913: Обнаружено, что тип Channel использован там, где ожидался тип данных "
-"Number"
+"E913: Обнаружено, что задан тип Channel там, где ожидался тип данных Number"
 
 # :!~ Restorer
 msgid "E914: Using a Channel as a Float"
 msgstr ""
-"E914: Обнаружено, что тип Channel использован там, где ожидался тип данных "
-"Float"
+"E914: Обнаружено, что задан тип Channel там, где ожидался тип данных Float"
 
 # :!~ Restorer
 msgid "E915: in_io buffer requires in_buf or in_name to be set"
@@ -10258,19 +10242,17 @@ msgstr ""
 # :!~ Restorer_
 msgid "E974: Using a Blob as a Number"
 msgstr ""
-"E974: Обнаружено, что тип BLOB использован там, где ожидался тип данных "
-"Number"
+"E974: Обнаружено, что задан тип BLOB там, где ожидался тип данных Number"
 
 # :!~ Restorer_
 msgid "E975: Using a Blob as a Float"
 msgstr ""
-"E975: Обнаружено, что тип BLOB использован там, где ожидался тип данных Float"
+"E975: Обнаружено, что задан тип BLOB там, где ожидался тип данных Float"
 
 # :!~ Restorer_
 msgid "E976: Using a Blob as a String"
 msgstr ""
-"E976: Обнаружено, что тип BLOB использован там, где ожидался тип данных "
-"String"
+"E976: Обнаружено, что задан тип BLOB там, где ожидался тип данных String"
 
 # :!~ Restorer_
 msgid "E977: Can only compare Blob with Blob"
@@ -10466,26 +10448,26 @@ msgstr "E1011: Превышена допустимая длина наименования функции %s"
 # :!~ Restorer__
 #, c-format
 msgid "E1012: Type mismatch; expected %s but got %s"
-msgstr "E1012: Несоответствующий тип данных. Ожидался тип %s, но получен %s"
+msgstr "E1012: Несоответствующий тип данных. Ожидался тип %s, а получен %s"
 
 # :!~ Restorer__
 #, c-format
 msgid "E1012: Type mismatch; expected %s but got %s in %s"
 msgstr ""
-"E1012: Несоответствующий тип данных. Ожидался тип %s, но получен %s в %s"
+"E1012: Несоответствующий тип данных. Ожидался тип %s, а получен %s в %s"
 
 # :!~ Restorer__
 #, c-format
 msgid "E1013: Argument %d: type mismatch, expected %s but got %s"
 msgstr ""
-"E1013: Для аргумента %d обнаружен несоответствующий тип. Ожидался %s, но "
+"E1013: Для аргумента %d обнаружен несоответствующий тип. Ожидался %s, а "
 "получен %s"
 
 # :!~ Restorer__
 #, c-format
 msgid "E1013: Argument %d: type mismatch, expected %s but got %s in %s"
 msgstr ""
-"E1013: Для аргумента %d обнаружен несоответствующий тип. Ожидался %s, но "
+"E1013: Для аргумента %d обнаружен несоответствующий тип. Ожидался %s, а "
 "получен %s в %s"
 
 # :!~ Restorer__
@@ -10539,14 +10521,13 @@ msgstr "E1022: Требуется указание типа или данных инициализации"
 #, c-format
 msgid "E1023: Using a Number as a Bool: %lld"
 msgstr ""
-"E1023: Обнаружено, что тип Number использован там, где ожидалось логическое "
+"E1023: Обнаружено, что задан тип Number там, где ожидалось логическое "
 "значение %lld"
 
 # :!~ Restorer
 msgid "E1024: Using a Number as a String"
 msgstr ""
-"E1024: Обнаружено, что тип Number использован там, где ожидался тип данных "
-"String"
+"E1024: Обнаружено, что задан тип Number там, где ожидался тип данных String"
 
 # :!~ Restorer__
 msgid "E1025: Using } outside of a block scope"
@@ -10573,8 +10554,8 @@ msgstr "E1029: Переданный тип должен быть %s, а получен %s"
 #, c-format
 msgid "E1030: Using a String as a Number: \"%s\""
 msgstr ""
-"E1030: Обнаружено, что тип String использован там, где ожидался тип данных "
-"Number \"%s\""
+"E1030: Обнаружено, что задан тип String там, где ожидался тип данных Number "
+"\"%s\""
 
 # :!~ Restorer__
 msgid "E1031: Cannot use void value"
@@ -10992,7 +10973,7 @@ msgstr "E1120: Словарь не может быть изменён"
 
 # :!~ Restorer
 msgid "E1121: Cannot change dict item"
-msgstr "E1121: Элемент словаря не может быть изменён"
+msgstr "E1121: Запись в словаре не может быть измена"
 
 # :!~ Restorer
 #, c-format
@@ -11035,11 +11016,12 @@ msgstr "E1129: После команды :throw указана пустая строка"
 # :!~ Restorer__
 msgid "E1130: Cannot add to null list"
 msgstr ""
-"E1130: Данные тип List отсутствуют. Присоединение элементов не выполнено"
+"E1130: Данные с типом List отсутствуют. Присоединение элементов не выполнено"
 
 # :!~ Restorer__
 msgid "E1131: Cannot add to null blob"
-msgstr "E1131: Данные тип BLOB отсутствуют. Присоединение цифр не выполнено"
+msgstr ""
+"E1131: Данные с типом BLOB отсутствуют. Присоединение цифр не выполнено"
 
 # :!~ Restorer
 msgid "E1132: Missing function argument"
@@ -11048,17 +11030,18 @@ msgstr "E1132: Не указан аргумент функции"
 # :!~ Restorer__
 msgid "E1133: Cannot extend a null dict"
 msgstr ""
-"E1133: Данные тип Dictionary отсутствуют. Добавление элементов не выполнено"
+"E1133: Данные с типом Dictionary отсутствуют. Добавление записей не выполнено"
 
 # :!~ Restorer__
 msgid "E1134: Cannot extend a null list"
-msgstr "E1134: Данные тип List отсутствуют. Добавление элементов не выполнено"
+msgstr ""
+"E1134: Данные с типом List отсутствуют. Добавление элементов не выполнено"
 
 # :!~ Restorer
 #, c-format
 msgid "E1135: Using a String as a Bool: \"%s\""
 msgstr ""
-"E1135: Обнаружено, что тип String использован там, где ожидалось логическое "
+"E1135: Обнаружено, что задан тип String там, где ожидалось логическое "
 "значение \"%s\""
 
 # :!~ Restorer__
@@ -11076,8 +11059,8 @@ msgstr ""
 # :!~ Restorer__
 msgid "E1138: Using a Bool as a Number"
 msgstr ""
-"E1138: Обнаружено, что логическое значение использовано там, где ожидался "
-"тип данных Number"
+"E1138: Обнаружено, что задано логическое значение там, где ожидался тип "
+"данных Number"
 
 # :!~ Restorer__
 msgid "E1139: Missing matching bracket after dict key"
@@ -11199,14 +11182,14 @@ msgstr ""
 #, c-format
 msgid "E1163: Variable %d: type mismatch, expected %s but got %s"
 msgstr ""
-"E1163: Для переменной %d обнаружен несоответствующий тип. Ожидался %s, но "
+"E1163: Для переменной %d обнаружен несоответствующий тип. Ожидался %s, а "
 "получен %s"
 
 # :!~ Restorer__
 #, c-format
 msgid "E1163: Variable %d: type mismatch, expected %s but got %s in %s"
 msgstr ""
-"E1163: Для переменной %d обнаружен несоответствующий тип. Ожидался %s, но "
+"E1163: Для переменной %d обнаружен несоответствующий тип. Ожидался %s, а "
 "получен %s в %s"
 
 # :!~ Restorer
@@ -11932,6 +11915,10 @@ msgstr ""
 "E1305: Не разрешены ключи \"length\", \"end_col\" и \"end_lnum\" c ключом "
 "\"text\""
 
+# :!~ Restorer__
+msgid "E1306: Loop nesting too deep"
+msgstr "E1306: Превышено допустимое количество вложенных циклов"
+
 # :!~ Restorer
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 msgid "--No lines in buffer--"
@@ -11982,25 +11969,24 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "expected str() or unicode() instance, but got %s"
-msgstr "ожидался экземпляр str() или unicode(), но получен %s"
+msgstr "ожидался экземпляр str() или unicode(), а получен %s"
 
 # :!~ Restorer
 #, c-format
 msgid "expected bytes() or str() instance, but got %s"
-msgstr "ожидался экземпляр bytes() или str(), но получен %s"
+msgstr "ожидался экземпляр bytes() или str(), а получен %s"
 
 # :!~ Restorer
 #, c-format
 msgid ""
 "expected int(), long() or something supporting coercing to long(), but got %s"
 msgstr ""
-"ожидался экземпляр int(), long() или что-то приводимое к long(), но получен "
-"%s"
+"ожидался экземпляр int(), long() или что-то приводимое к long(), а получен %s"
 
 # :!~ Restorer
 #, c-format
 msgid "expected int() or something supporting coercing to int(), but got %s"
-msgstr "ожидался экземпляр int() или что-то приводимое к int(), но получен %s"
+msgstr "ожидался экземпляр int() или что-то приводимое к int(), а получен %s"
 
 # :!~ Restorer
 msgid "value is too large to fit into C int type"
@@ -12035,15 +12021,15 @@ msgstr "произошёл сбой при смене каталога"
 #, c-format
 msgid "expected 3-tuple as imp.find_module() result, but got %s"
 msgstr ""
-"результат функции imp.find_module() неизменяемый список из трёх элементов, "
-"но получен %s"
+"результат функции imp.find_module() неизменяемый список из трёх элементов, а "
+"получен %s"
 
 # :!~ Restorer
 #, c-format
 msgid "expected 3-tuple as imp.find_module() result, but got tuple of size %d"
 msgstr ""
-"результат функции imp.find_module() неизменяемый список из трёх элементов, "
-"но получено элементов %d"
+"результат функции imp.find_module() неизменяемый список из трёх элементов, а "
+"получено элементов %d"
 
 # :!~ Restorer
 msgid "internal error: imp.find_module returned tuple with NULL"
@@ -12071,7 +12057,7 @@ msgstr "значения ассоциативного массива изменились при перечислении элементов"
 # :!~ Restorer
 #, c-format
 msgid "expected sequence element of size 2, but got sequence of size %d"
-msgstr "ожидалась последовательность из двух элементов, но получено %d"
+msgstr "ожидалась последовательность из двух элементов, а получено %d"
 
 # :!~ Restorer
 msgid "list constructor does not accept keyword arguments"
@@ -12208,7 +12194,7 @@ msgstr "наименование закладки должно состоять только из одного символа"
 # :!~ Restorer
 #, c-format
 msgid "expected vim.Buffer object, but got %s"
-msgstr "ожидался объект vim.Buffer, но получен %s"
+msgstr "ожидался объект vim.Buffer, а получен %s"
 
 # :!~ Restorer
 #, c-format
@@ -12218,7 +12204,7 @@ msgstr "не удалось переключиться на указанный буфер %d"
 # :!~ Restorer
 #, c-format
 msgid "expected vim.Window object, but got %s"
-msgstr "ожидался объект vim.Window, но получен %s"
+msgstr "ожидался объект vim.Window, а получен %s"
 
 # :!~ Restorer
 msgid "failed to find window in the current tab page"
@@ -12231,7 +12217,7 @@ msgstr "не удалось переключиться на указанное окно"
 # :!~ Restorer
 #, c-format
 msgid "expected vim.TabPage object, but got %s"
-msgstr "ожидался объект vim.TabPage, но получен %s"
+msgstr "ожидался объект vim.TabPage, а получен %s"
 
 # :!~ Restorer
 msgid "did not switch to the specified tab page"
