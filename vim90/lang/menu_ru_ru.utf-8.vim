@@ -2,7 +2,7 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		23 Feb 2022
+" Last Change:		24 Oct 2022
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
@@ -96,8 +96,86 @@ menutrans &Global\ Settings			&Общие\ параметры
 menutrans F&ile\ Settings			Параметр&ы\ текущего\ буфера
 menutranslate Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выбора\ цве&товой\ схемы
 menutrans C&olor\ Scheme			Цветовая\ с&хема
+">>>----------------- Edit/Color Scheme
+menutrans blue					синяя
+menutrans darkblue				тёмно-синяя
+menutrans default				по\ умолчанию
+menutrans delek					ясень
+menutrans desert				пустыня
+menutrans elflord				лорд\ эльфов
+menutrans evening				вечер
+menutrans habamax				хабамакс
+menutrans industry				индустриальная
+menutrans koehler				сажа
+menutrans lunaperche				лунный\ свет
+menutrans morning				утро
+menutrans murphy				изумруд
+menutrans pablo					пабло
+menutrans peachpuff				персик
+menutrans quiet					спокойствие
+menutrans ron					рон
+menutrans torte					торт
+menutrans shine					блеск
+menutrans slate					сланец
+menutrans zellner				свечение
+"--------------------
 menutranslate Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
 menutrans &Keymap				&Раскладка\ клавиатуры
+">>>----------------- Edit/Keymap
+menutrans None                        		Нет
+menutrans accents				диакритическая
+menutrans arabic				арабская
+menutrans armenian-eastern			армянская\ (восточная)
+menutrans armenian-western			армянская\ (западная)
+menutrans belarusian-jcuken			беларусская\ (йцукен)
+menutrans bulgarian-bds				болгарская\ (БДС)
+menutrans bulgarian-phonetic			болгарская\ (фонетическая)
+menutrans canfr-win				канадская\ многоязычная\ (win)
+menutrans croatian				хорватская
+menutrans czech					чешская
+menutrans dvorak				Дворак
+menutrans esperanto				эсперанто
+menutrans french-azerty				французская\ (azerty)
+menutrans german-qwertz				немецкая\ (qwertz)
+menutrans greek					греческая
+menutrans hebrewp				иврит\ (фонетическая)
+menutrans hebrew				иврит
+menutrans kana					Кана
+menutrans kazakh-jcuken				казахская\ (йцукен)
+menutrans korean-dubeolsik			корейская\ (dubeolsik)
+menutrans korean				корейская
+menutrans lithuanian-baltic			литовская\ (балтийская)
+menutrans magyar				венгерская
+menutrans mongolian				монгольская
+menutrans oldturkic-orkhon			древнетюркская\ (Oрхон)
+menutrans oldturkic-yenisei			древнетюркская\ (Eнисей)
+menutrans persian-iranian			персидская\ (иранская)
+menutrans persian				персидская
+menutrans pinyin				пиньинь
+menutrans polish-slash				польская\ (косая\ черта)
+menutrans russian-dvorak			русская\ (Дворака)
+menutrans russian-jcukenmac			русская\ (йцукен\ для\ mac)
+menutrans russian-jcuken			русская\ (йцукен)
+menutrans russian-jcukenwintype			русская\ (машинописная\ йцукен\ для\ win)
+menutrans russian-jcukenwin			русская\ (йцукен\ для\ win)
+menutrans russian-typograph			русская\ (машинописная)
+menutrans russian-yawerty			русская\ (фонетическая)
+menutrans serbian-latin				сербская\ (латиница)
+menutrans serbian				сербская\
+menutrans sinhala-phonetic			сингальская\ (фонетическая)
+menutrans sinhala				сингальгская
+menutrans slovak				словацкая
+menutrans tamil					тамильская
+menutrans thaana-phonetic			тана\ (фонетическая)
+menutrans thaana				тана
+menutrans turkish-f				турецкая\ (f)
+menutrans turkish-q				турецкая\ (q)
+menutrans ukrainian-dvorak			украинская\ (Дворака)
+menutrans ukrainian-jcuken			украинская\ (йцукен)
+menutrans vietnamese-telex			вьетнамская\ (telex)
+menutrans vietnamese-viqr			вьетнамская\ (viqr)
+menutrans vietnamese-vni			вьетнамская\ (vni)
+"--------------------
 menutrans Select\ Fo&nt\.\.\.			&Шрифт\.\.\.
 ">>>----------------- Edit/Global settings
 menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсвечивать\ &совпадения<Tab>:set\ hls!
