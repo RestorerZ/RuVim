@@ -2,7 +2,7 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		23 Feb 2022
+" Last Change:		06 Nov 2022
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
@@ -81,14 +81,13 @@ menutrans Put\ &After<Tab>]p		Поместить\ по&сле<Tab>]p
 menutrans &Delete<Tab>x			&Удалить<Tab>x
 menutrans &Select\ All<Tab>ggVG		В&ыделить\ всё<Tab>gg\ SHIFT+V\ SHIFT+G
 "--------------------
-" Athena GUI only
-menutrans &Find<Tab>/				&Найти<Tab>/
-menutrans Find\ and\ Rep&lace<Tab>:%s		&Заменить<Tab>:%s
-" End Athena GUI only
-menutrans &Find\.\.\.<Tab>/			&Найти\.\.\.<Tab>/
-menutrans Find\ and\ Rep&lace\.\.\.		&Заменить\.\.\.
-menutrans Find\ and\ Rep&lace\.\.\.<Tab>:%s	&Заменить\.\.\.<Tab>:%s
-menutrans Find\ and\ Rep&lace\.\.\.<Tab>:s	&Заменить\.\.\.<Tab>:s
+" if has("win32") || has("gui_gtk") || has("gui_kde") || has("gui_motif")
+menutrans &Find\.\.\.			&Найти\.\.\.
+menutrans Find\ and\ Rep&lace\.\.\.	&Заменить\.\.\.
+" else
+menutrans &Find<Tab>/			&Найти<Tab>/
+menutrans Find\ and\ Rep&lace<Tab>:%s	&Заменить<Tab>:%s
+menutrans Find\ and\ Rep&lace<Tab>:s	&Заменить<Tab>:s
 "--------------------
 menutrans Settings\ &Window			&Все\ параметры\.\.\.
 menutrans Startup\ &Settings			Параметры\ запус&ка
@@ -98,6 +97,7 @@ menutranslate Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выб
 menutrans C&olor\ Scheme			Цветовая\ с&хема
 menutranslate Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
 menutrans &Keymap				&Раскладка\ клавиатуры
+menutrans None					Не\ использовать
 menutrans Select\ Fo&nt\.\.\.			&Шрифт\.\.\.
 ">>>----------------- Edit/Global settings
 menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсвечивать\ &совпадения<Tab>:set\ hls!
@@ -173,8 +173,8 @@ menutranslate Set\ language\ to\ "en_ca"		Включить\ для\ языка\ 
 menutranslate Set\ language\ to\ "en_gb"		Включить\ для\ языка\ "en_gb"
 menutranslate Set\ language\ to\ "en_nz"		Включить\ для\ языка\ "en_nz"
 menutranslate Set\ language\ to\ "en_us"		Включить\ для\ языка\ "en_us"
-menutranslate &Find\ More\ Languages			Проверка\ для\ других\ &языков
-let g:menutrans_set_lang_to =				'Включить проверку для языка'
+menutranslate &Find\ More\ Languages			Найти\ для\ других\ &языков
+let g:menutrans_set_lang_to =				'Включить для языка'
 ">>>---------------- Folds
 menutrans &Enable/Disable\ folds<Tab>zi			Показать\ или\ убрать\ структуру<Tab>zi
 menutrans &View\ Cursor\ Line<Tab>zv			Просмотр\ строки\ под\ &курсором<Tab>zv
@@ -191,7 +191,7 @@ menutrans Fold\ col&umn\ width				&Ширина\ столбца\ со\ знач�
 ">>>->>>----------- Tools/Folds/Fold Method
 menutrans M&anual					Установить\ вру&чную
 menutrans I&ndent					На\ основе\ о&тступов
-menutrans E&xpression					На\ основе\ рас&чётов
+menutrans E&xpression					На\ основе\ р&асчётов
 menutrans S&yntax					На\ основе\ &синтаксиса
 menutranslate &Diff					На\ основе\ различий\ в\ текстах
 menutrans Ma&rker					На\ основе\ &маркеров
@@ -243,7 +243,7 @@ menutrans Move\ &To					&Переместить
 menutrans Rotate\ &Up<Tab>^WR				Сдвинуть\ ввер&х<Tab>CTRL+W\ SHIFT+R
 menutrans Rotate\ &Down<Tab>^Wr				Сдвинуть\ в&низ<Tab>CTRL+W\ r
 "
-menutrans &Equal\ Size<Tab>^W=				Выровнять\ раз&мер<Tab>CTRL+W\ =
+menutrans &Equal\ Size<Tab>^W=				Выравнять\ раз&мер<Tab>CTRL+W\ =
 menutrans &Max\ Height<Tab>^W_				Максимальной\ в&ысоты<Tab>CTRL+W\ _
 menutrans M&in\ Height<Tab>^W1_				Минимальной\ высо&ты<Tab>CTRL+W\ 1_
 menutrans Max\ &Width<Tab>^W\|				Максимальной\ &ширины<Tab>CTRL+W\ \|
