@@ -1,10 +1,11 @@
 # RuVim
-## Редактор Vim на русском языке  Text editor Vim in Russian
+## Text editor Vim in Russian
+## Редактор Vim на русском языке
 Документация, меню, сообщения текстового редактора Vim для тех, кто думает по-русски.
 
-#### Версия программы, представленная здесь Vim __9.0__
+#### Перевод, представленный здесь, пердназначен для версии программы Vim __9.0__
 
-Предыдущие версии находятся в хранилище [RuVim-previous](https://github.com/RestorerZ/RuVim-previous)
+Переводы для предыдущих версий находятся в хранилище [RuVim-previous](https://github.com/RestorerZ/RuVim-previous)
 
 
 
