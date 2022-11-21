@@ -5,7 +5,7 @@
 
 #### Перевод, представленный здесь, пердназначен для версии программы Vim __9.0__
 
-Переводы для предыдущих версий находятся в хранилище [RuVim-previous](https://github.com/RestorerZ/RuVim-previous)
+Переводы для предыдущих версий программы находятся в хранилище [RuVim-previous](https://github.com/RestorerZ/RuVim-previous)
 
 
 
