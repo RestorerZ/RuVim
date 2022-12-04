@@ -19,10 +19,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.0912\n"
+"Project-Id-Version: Vim 9.0.1000\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-11-19 22:14+0300\n"
-"PO-Revision-Date: 2022-11-19 22:57+0300\n"
+"POT-Creation-Date: 2022-12-04 14:06+0300\n"
+"PO-Revision-Date: 2022-12-04 18:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -793,12 +793,12 @@ msgstr[2] "Выполнено %ld замен в %ld строках"
 # :!~ Restorer
 #, c-format
 msgid "Pattern found in every line: %s"
-msgstr "Во всех строках найдены совпадения с шаблоном %s"
+msgstr "Во всех строках найдены совпадения с образцом %s"
 
 # :!~ Restorer
 #, c-format
 msgid "Pattern not found: %s"
-msgstr "Не удалось найти совпадений с образцом %s"
+msgstr "Не удалось найти совпадения с образцом %s"
 
 # #Restorer: выводится по команде `:oldfiles` и `echo v:oldfiles`
 # :!~ Restorer
@@ -915,7 +915,7 @@ msgstr "Вставить файл"
 #, c-format
 msgid "Window position: X %d, Y %d"
 msgstr ""
-"Координаты верхнего левого угла окна программы по оси X: %d, по оси Y: %d"
+"Координаты верхнего левого угла окна программы по оси X: %d; по оси Y: %d"
 
 # #Restorer: заголовок окна, выводится по команде `:browse redir >`
 # :!~ Restorer
@@ -1174,7 +1174,7 @@ msgid ""
 "W12: Warning: File \"%s\" has changed and the buffer was changed in Vim as "
 "well"
 msgstr ""
-"W12: Внимание! Обнаружено не связанное изменение содержания буфера и файла "
+"W12: Внимание! Обнаружены не связанные изменения содержимого буфера и файла "
 "\"%s\""
 
 # :!~ Restorer
@@ -1318,10 +1318,6 @@ msgstr "Да"
 msgid "No"
 msgstr "Нет"
 
-# #Restorer: не хотелось бы, конечно, менять клавиши быстрого вызова, но из-за
-# #Restorer: того, что, как я понял, Vim обрабатывает клавиши быстрого вызова
-# #Restorer: не по скан- или виртуальным кодам клавиш, а по символьным значениям
-# #Restorer: (например, см. do_swapexists()) приходится как-то так извращаться
 # #Restorer: наименование кнопки в диалоговом окне
 # ~!: earlier
 msgid "Cancel"
@@ -1922,7 +1918,7 @@ msgstr "Не удалось зарегистрировать наименование сервера команд"
 # :!~ Restorer
 #, c-format
 msgid "%ld lines to indent... "
-msgstr "Выполняется изменение отступа в %ld строках... "
+msgstr "Выполнение изменения отступа в %ld строках... "
 
 # #Restorer: выводится при значении 'report' < %ld
 # :!~ Restorer
@@ -2288,15 +2284,15 @@ msgstr "--literal\t\tНе выполнять подстановку по маске в наименования файлов"
 
 # :!~ Restorer
 msgid "-register\t\tRegister this gvim for OLE"
-msgstr "-register\t\tРегистрировать программу gvim в пространстве OLE"
+msgstr "-register\t\tРегистрация программы gVim в пространстве OLE"
 
 # :!~ Restorer
 msgid "-unregister\t\tUnregister gvim for OLE"
-msgstr "-unregister\t\tОтменить регистрацию программы gvim в пространстве OLE"
+msgstr "-unregister\t\tОтмена регистрации программы gVim в пространстве OLE"
 
 # ~!: earlier
 msgid "-g\t\t\tRun using GUI (like \"gvim\")"
-msgstr "-g\t\t\tЗапустить с графическим интерфейсом (как \"gvim\")"
+msgstr "-g\t\t\tЗапуск программы с графическим интерфейсом (как \"gvim\")"
 
 # :!~ Restorer
 msgid "-f  or  --nofork\tForeground: Don't fork when starting GUI"
@@ -2305,23 +2301,23 @@ msgstr ""
 
 # :!~ Restorer
 msgid "-v\t\t\tVi mode (like \"vi\")"
-msgstr "-v\t\t\tЗапустить в режиме Vi (как \"vi\")"
+msgstr "-v\t\t\tЗапуск программы в режиме Vi (как \"vi\")"
 
 # :!~ Restorer
 msgid "-e\t\t\tEx mode (like \"ex\")"
-msgstr "-e\t\t\tЗапустить в режиме Ex (как \"ex\")"
+msgstr "-e\t\t\tЗапуск программы в Ex-режиме (как \"ex\")"
 
 # :!~ Restorer
 msgid "-E\t\t\tImproved Ex mode"
-msgstr "-E\t\t\tЗапустить в улучшенном режиме Ex"
+msgstr "-E\t\t\tЗапуск программы в улучшенном Ex-режиме"
 
 # :!~ Restorer
 msgid "-s\t\t\tSilent (batch) mode (only for \"ex\")"
-msgstr "-s\t\t\tЗапустить в режиме пакетной обработке (только для \"ex\")"
+msgstr "-s\t\t\tЗапуск в режиме пакетной обработки (для \"Ex-режима\")"
 
 # :!~ Restorer
 msgid "-d\t\t\tDiff mode (like \"vimdiff\")"
-msgstr "-d\t\t\tЗапустить в режиме сравнения различий (как \"vimdiff\")"
+msgstr "-d\t\t\tЗапуск в режиме сравнения различий (как \"vimdiff\")"
 
 # :!~ Restorer
 msgid "-y\t\t\tEasy mode (like \"evim\", modeless)"
@@ -2345,11 +2341,11 @@ msgstr "-M\t\t\tРабота без возможности внесения изменений в текст"
 
 # :!~ Restorer
 msgid "-b\t\t\tBinary mode"
-msgstr "-b\t\t\tЗапустить в режиме работы с двоичными данными"
+msgstr "-b\t\t\tЗапуск программы в режиме работы с двоичными данными"
 
 # :!~ Restorer
 msgid "-l\t\t\tLisp mode"
-msgstr "-l\t\t\tЗапустить в режиме Lisp"
+msgstr "-l\t\t\tЗапуск программы в режиме Lisp"
 
 # :!~ Restorer
 msgid "-C\t\t\tCompatible with Vi: 'compatible'"
@@ -2363,12 +2359,12 @@ msgstr "-N\t\t\tРабота в варианте неполной совместимости с редактором Vi"
 # :!~ Restorer
 msgid "-V[N][fname]\t\tBe verbose [level N] [log messages to fname]"
 msgstr ""
-"-V[N][файл]\t\tУстановить детализацию выводимых сообщений\n"
+"-V[N][файл]\t\tУстановка детализации выводимых сообщений\n"
 "\t\t\t   [указав требуемый уровень N] [и запись в файл]"
 
 # :!~ Restorer
 msgid "-D\t\t\tDebugging mode"
-msgstr "-D\t\t\tЗапустить в режиме отладки"
+msgstr "-D\t\t\tЗапуск программы в режиме отладки"
 
 # :!~ Restorer
 msgid "-n\t\t\tNo swap file, use memory only"
@@ -2376,12 +2372,12 @@ msgstr "-n\t\t\tРабота без создания файла подкачки на ГМД или ЖМД"
 
 # :!~ Restorer
 msgid "-r\t\t\tList swap files and exit"
-msgstr "-r\t\t\tВывести список файлов подкачки и завершить работу"
+msgstr "-r\t\t\tВывод перечня файлов подкачки и завершение работы"
 
 # #Restorer: добавил ещё один \t, чтобы выглядело единообразно
 # :!~ Restorer
 msgid "-r (with file name)\tRecover crashed session"
-msgstr "-r <файл>\t\tВосстановить аварийно завершённый сеанс"
+msgstr "-r <файл>\t\tВосстановление аварийно завершённого сеанс"
 
 # ~!: earlier
 msgid "-L\t\t\tSame as -r"
@@ -2401,11 +2397,11 @@ msgstr ""
 
 # :!~ Restorer
 msgid "-A\t\t\tStart in Arabic mode"
-msgstr "-A\t\t\tЗапустить с поддержкой письменности на арабском"
+msgstr "-A\t\t\tЗапуск программы с поддержкой арабской письменности"
 
 # :!~ Restorer
 msgid "-H\t\t\tStart in Hebrew mode"
-msgstr "-H\t\t\tЗапустить с поддержкой письменности на иврите"
+msgstr "-H\t\t\tЗапуск программы с поддержкой еврейской письменности"
 
 # ~!: earlier
 msgid "-T <terminal>\tSet terminal type to <terminal>"
@@ -2417,23 +2413,24 @@ msgstr "--not-a-term\t\tНе сообщать об отсутствии терминала для ввода-вывода"
 
 # :!~ Restorer
 msgid "--gui-dialog-file {fname}  For testing: write dialog text"
-msgstr "--gui-dialog-file {fname}  Запись сообщений ГИП. Для отладки"
+msgstr ""
+"--gui-dialog-file {fname}  Запись сообщения диалоговых окон. Для отладки"
 
 # :!~ Restorer
 msgid "--ttyfail\t\tExit if input or output is not a terminal"
-msgstr "--ttyfail\t\tЗавершить работу при отсутствии терминала ввода-вывода"
+msgstr "--ttyfail\t\tЗавершение работы при отсутствии терминала ввода-вывода"
 
 # :!~ Restorer
 msgid "-u <vimrc>\t\tUse <vimrc> instead of any .vimrc"
-msgstr "-u <файл>\t\tПрименить вместо файлов .vimrc указанный <файл>"
+msgstr "-u <файл>\t\tИспользование вместо файлов .vimrc указанного <файла>"
 
 # :!~ Restorer
 msgid "-U <gvimrc>\t\tUse <gvimrc> instead of any .gvimrc"
-msgstr "-U <файл>\t\tПрименить вместо файлов .gvimrc указанный <файл>"
+msgstr "-U <файл>\t\tИспользование вместо файлов .gvimrc указанного <файла>"
 
 # :!~ Restorer
 msgid "--noplugin\t\tDon't load plugin scripts"
-msgstr "--noplugin\t\tЗапустить без подключаемых внешних модулей"
+msgstr "--noplugin\t\tЗапуск программы без внешних подключаемых модулей"
 
 # \n\t\t.. для умещения в 80 столбцов (С. Алёшин)
 # :!~ Restorer
@@ -2455,19 +2452,19 @@ msgstr "-O[N]\t\tТо же, что и -o, но с вертикальным расположением окон"
 
 # :!~ Restorer
 msgid "+\t\t\tStart at end of file"
-msgstr "+\t\t\tУстановить курсор на последней строке открытого файла"
+msgstr "+\t\t\tУстановка каретки на последней строке открытого файла"
 
 # :!~ Restorer
 msgid "+<lnum>\t\tStart at line <lnum>"
-msgstr "+<номер>\t\tУстановить курсор на <номер> строки открытого файла"
+msgstr "+<номер>\t\tУстановка каретки на <номер> строки открытого файла"
 
 # :!~ Restorer
 msgid "--cmd <command>\tExecute <command> before loading any vimrc file"
-msgstr "--cmd <команда>\tВыполнить <команду> перед обработкой файла .vimrc"
+msgstr "--cmd <команда>\tВыполнение <команды> перед обработкой файла .vimrc"
 
 # ~!: earlier
 msgid "-c <command>\t\tExecute <command> after loading the first file"
-msgstr "-c <команда>\t\tВыполнить <команду> после загрузки первого файла"
+msgstr "-c <команда>\t\tВыполнение <команды> после загрузки первого файла"
 
 # :!~ Restorer
 msgid "-S <session>\t\tSource file <session> after loading the first file"
@@ -2479,11 +2476,11 @@ msgstr "-s <сценарий>\tСчитать команды режима команд из файла <сценария>"
 
 # :!~ Restorer
 msgid "-w <scriptout>\tAppend all typed commands to file <scriptout>"
-msgstr "-w <протокол>\tДобавлять все введённые команды в файл <протокола>"
+msgstr "-w <протокол>\tДобавление всех введённых команд в файл <протокола>"
 
 # :!~ Restorer
 msgid "-W <scriptout>\tWrite all typed commands to file <scriptout>"
-msgstr "-W <протокол>\tЗаписывать все введённые команды в файл <протокола>"
+msgstr "-W <протокол>\tЗапись всех введённых команд в файл <протокола>"
 
 # :!~ Restorer
 msgid "-x\t\t\tEdit encrypted files"
@@ -2496,7 +2493,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "-X\t\t\tDo not connect to X server"
-msgstr "-X\t\t\tЗапустить программу без подключения к X-серверу"
+msgstr "-X\t\t\tЗапуск программы без подключения к X-серверу"
 
 # :!~ Restorer
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
@@ -2521,6 +2518,7 @@ msgid ""
 msgstr ""
 "--remote-wait-silent <файлы>  То же, но без сообщений при отсутствии сервера"
 
+# #Restorer: добавил пару пробельных символов, дабы подравнять сообщение
 # :!~ Restorer
 msgid ""
 "--remote-tab[-wait][-silent] <files>  As --remote but use tab page per file"
@@ -2529,7 +2527,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "--remote-send <keys>\tSend <keys> to a Vim server and exit"
-msgstr "--remote-send <клавиши>\tОтправить на Vim-сервер коды <клавиш> и выйти"
+msgstr "--remote-send <клавиши>\tОтправка на Vim-сервер кодов <клавиш> и выход"
 
 # :!~ Restorer
 msgid "--remote-expr <expr>\tEvaluate <expr> in a Vim server and print result"
@@ -2537,17 +2535,15 @@ msgstr "--remote-expr <выраж>\tВычислить на Vim-сервере <выраж> и напечатать"
 
 # :!~ Restorer
 msgid "--serverlist\t\tList available Vim server names and exit"
-msgstr "--serverlist\t\tПоказать доступные Vim-серверы и завершить работу"
+msgstr "--serverlist\t\tВывод доступных Vim-серверов и завершение работы"
 
 # :!~ Restorer
 msgid "--servername <name>\tSend to/become the Vim server <name>"
-msgstr ""
-"--servername <назв>\tЗарегистрироваться либо подключиться к серверу <назв>"
+msgstr "--servername <назв>\tРегистрация либо подключение к серверу <назв>"
 
 # :!~ Restorer
 msgid "--startuptime <file>\tWrite startup timing messages to <file>"
-msgstr ""
-"--startuptime <файл>\tЗаписать метки времени запуска программы в <файл>"
+msgstr "--startuptime <файл>\tЗапись метки времени запуска программы в <файл>"
 
 # #Restorer: добавил один \t  чтобы выглядело единообразно
 # :!~ Restorer
@@ -2556,24 +2552,24 @@ msgstr "--log <файл>\t\tЗапись протокола на начальном этапе запуска программы"
 
 # :!~ Restorer
 msgid "-i <viminfo>\t\tUse <viminfo> instead of .viminfo"
-msgstr "-i <файл>\t\tНазначить вместо файла .viminfo указанный <файл>"
+msgstr "-i <файл>\t\tИспользование вместо файла .viminfo указанного <файла>"
 
 # \n\t\t.. для умещения в 80 столбцов (С. Алёшин)
 # #Restorer: убрал один \t и добавил пробелы, чтобы выглядело единообразно
 # :!~ Restorer
 msgid "--clean\t\t'nocompatible', Vim defaults, no plugins, no viminfo"
 msgstr ""
-"--clean\t\tЗапустить с настройками по умолчанию, в варианте\n"
+"--clean\t\tЗапуск программы с настройками по умолчанию, в варианте\n"
 "\t\t\t   частичной совместимости с редактором Vi,\n"
 "\t\t\t   без подключаемых модулей и файла .viminfo"
 
 # ~!: earlier
 msgid "-h  or  --help\tPrint Help (this message) and exit"
-msgstr "-h или --help\tВывести справку (это сообщение) и завершить работу"
+msgstr "-h или --help\tВывод справки (это сообщение) и завершение работы"
 
 # :!~ Restorer
 msgid "--version\t\tPrint version information and exit"
-msgstr "--version\t\tВывести информацию о версии программы и завершить работу"
+msgstr "--version\t\tВывод информации о версии программы и завершение работы"
 
 # :!~ Restorer
 msgid ""
@@ -2586,11 +2582,11 @@ msgstr ""
 # :!~ Restorer
 msgid "-display <display>\tRun Vim on <display>"
 msgstr ""
-"-display <display>\tВыполнить подключение программы к указанному X-серверу"
+"-display <display>\tЗапуск программы с подключением к указанному X-серверу"
 
 # :!~ Restorer
 msgid "-iconic\t\tStart Vim iconified"
-msgstr "-iconic\t\tЗапустить программу в свёрнутом виде"
+msgstr "-iconic\t\tЗапуск программы в свёрнутом виде"
 
 # :!~ Restorer
 msgid "-background <color>\tUse <color> for the background (also: -bg)"
@@ -2629,7 +2625,7 @@ msgstr ""
 
 # ~!: earlier
 msgid "-reverse\t\tUse reverse video (also: -rv)"
-msgstr "-reverse\t\tИспользовать инверсный видеорежим (или -rv)"
+msgstr "-reverse\t\tИспользование инверсного видеорежима (или -rv)"
 
 # ~!: earlier
 msgid "+reverse\t\tDon't use reverse video (also: +rv)"
@@ -2637,7 +2633,7 @@ msgstr "+reverse\t\tНе использовать инверсный видеорежим (или +rv)"
 
 # ~!: earlier
 msgid "-xrm <resource>\tSet the specified resource"
-msgstr "-xrm <ресурс>\tУстановить указанный <ресурс>"
+msgstr "-xrm <ресурс>\tУстановка указанного <ресурса>"
 
 # :!~ Restorer
 msgid ""
@@ -2650,7 +2646,7 @@ msgstr ""
 # :!~ Restorer
 msgid "-display <display>\tRun Vim on <display> (also: --display)"
 msgstr ""
-"-display <display>\tВыполнить подключение программы к X-серверу (--display)"
+"-display <display>\tПодключение программы к X-серверу <сервер> (--display)"
 
 # :!~ Restorer
 msgid "--role <role>\tSet a unique role to identify the main window"
@@ -2663,7 +2659,7 @@ msgstr "--socketid <xid>\tОткрыть программу внутри другого компонента GTK"
 
 # :!~ Restorer
 msgid "--echo-wid\t\tMake gvim echo the Window ID on stdout"
-msgstr "--echo-wid\t\tПоказать ИД окна программы Gvim в стандартном выводе"
+msgstr "--echo-wid\t\tПоказ ИД окна программы gVim в стандартном выводе"
 
 # :!~ Restorer
 msgid "-P <parent title>\tOpen Vim inside parent application"
@@ -2675,8 +2671,39 @@ msgstr "--windowid <HWND>\tОткрыть программу внутри другого компонента win32"
 
 # #Restorer: отображается при 'verbose'>0
 # :!~ Restorer
-msgid "Seen modifyOtherKeys: true"
-msgstr "Для терминала установлен режим modifyOtherKeys"
+msgid "Seen modifyOtherKeys: true\n"
+msgstr "Для терминала установлен режим modifyOtherKeys\n"
+
+# :!~ Restorer
+msgid "Unknown"
+msgstr "не определено"
+
+# :!~ Restorer
+msgid "Off"
+msgstr "отключен"
+
+# :!~ Restorer
+msgid "On"
+msgstr "включен"
+
+# :!~ Restorer
+msgid "Disabled"
+msgstr "недоступно"
+
+# :!~ Restorer
+msgid "Cleared"
+msgstr "сброшено"
+
+# #Restorer: отображается при 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "modifyOtherKeys detected: %s\n"
+msgstr "Состояние режима modifyOtherKeys: %s\n"
+
+# :!~ Restorer
+#, c-format
+msgid "Kitty keyboard protocol: %s\n"
+msgstr "Состояние «kitty» протокола обменна данных с клавиатурой: %s\n"
 
 # #Restorer: выводится, например, по команде `:abbreviata`
 # :!~ Restorer
@@ -2700,7 +2727,7 @@ msgid ""
 "mark line  col file/text"
 msgstr ""
 "\n"
-"закл. стрк клн  файл или текст"
+"закл. стрк  клн   файл или текст"
 
 # #Restorer: выводится по команде `:jumps`
 # :!~ Restorer
@@ -2709,7 +2736,7 @@ msgid ""
 " jump line  col file/text"
 msgstr ""
 "\n"
-"перех. стрк клн  файл или текст"
+"перех. стрк  клн   файл или текст"
 
 # #Restorer: выводится по команде `:changes`
 # :!~ Restorer
@@ -2718,7 +2745,7 @@ msgid ""
 "change line  col text"
 msgstr ""
 "\n"
-"коррек. стрк  клн  текст"
+"коррек. стрк  клн   текст"
 
 # #Restorer: выводится по команде `:recover`
 # :!~ Restorer
@@ -2825,9 +2852,11 @@ msgstr "???МНОЖЕСТВО СТРОК ОТСУТСТВУЕТ"
 msgid "???LINE COUNT WRONG"
 msgstr "???НЕ СОВПАДАЕТ КОЛИЧЕСТВО СТРОК"
 
+# ~!: earlier
 msgid "???EMPTY BLOCK"
 msgstr "???ПУСТОЙ БЛОК"
 
+# ~!: earlier
 msgid "???LINES MISSING"
 msgstr "???ОТСУТСТВУЮТ СТРОКИ"
 
@@ -3214,10 +3243,6 @@ msgstr "Прервано. "
 # :!~ Restorer
 msgid "Press ENTER or type command to continue"
 msgstr "Чтобы продолжить, нажмите клавишу <ENTER> или введите команду"
-
-# :!~ Restorer
-msgid "Unknown"
-msgstr "не определено"
 
 # #Restorer: при прокрутке сообщения. Название скрипта и номер строки
 # ~!: earlier
@@ -3986,12 +4011,12 @@ msgstr "режимной строке"
 # #Restorer: дописывается в «Last set from» по команде `:verbose set`
 # :!~ Restorer
 msgid "--cmd argument"
-msgstr "аргументе командной строки --cmd <команда>"
+msgstr "аргументе командной строки --cmd"
 
 # #Restorer: дописывается в «Last set from» по команде `:verbose set`
 # :!~ Restorer
 msgid "-c argument"
-msgstr "аргументе командной строки --c <команда>"
+msgstr "аргументе командной строки -c"
 
 # #Restorer: дописывается в «Last set from» по команде `:verbose set`
 # :!~ Restorer
@@ -5620,12 +5645,11 @@ msgstr ""
 "E10: После ввода символа \\ далее должна указываться одна из команд /, ? или "
 "&"
 
-# #Restorer: разбил на несколько строк, дабы передать смысл
 # :!~ Restorer
 msgid "E11: Invalid in command-line window; :q<CR> closes the window"
 msgstr ""
-"E11: Не разрешены команды перемещения в другой буфер из окна командной "
-"строки. Наберите команду :q<ENTER>, чтобы закрыть это окно"
+"E11: Данные действия неприменимы в окне командой строки. Чтобы закрыть это "
+"окно, наберите команду :q<ENTER>"
 
 # :!~ Restorer
 msgid "E12: Command not allowed from exrc/vimrc in current dir or tag search"
@@ -11890,6 +11914,11 @@ msgstr ""
 msgid "E1312: Not allowed to change the window layout in this autocmd"
 msgstr "E1312: Запрецено изменение расположения окон для этой автокоманды"
 
+# :!~ Restorer
+#, c-format
+msgid "E1313: Not allowed to add or remove entries (%s)"
+msgstr "E1313: Запрещено добавление или удаление записей для команды %s"
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
 msgid "--No lines in buffer--"
@@ -12984,6 +13013,10 @@ msgstr "запрос кодов клавиш при обнаружении терминала xterm"
 # :!~ Restorer
 msgid "terminal that requires extra redrawing"
 msgstr "дополнительная перерисовка терминала"
+
+# :!~ Restorer
+msgid "what keyboard protocol to use for which terminal"
+msgstr "используемый терминалом протокол обмена данных с клавиатурой"
 
 # :!~ Restorer
 msgid "recognize keys that start with <Esc> in Insert mode"
