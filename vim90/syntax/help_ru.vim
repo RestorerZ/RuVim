@@ -23,7 +23,7 @@ syntax match helpHeadline   "^[А-ЯЁ]\{2}[ .]\=[-,А-ЯЁA-Z0-9 .()]*"
 syntax match helpVim      "\<СПРАВОЧНИК ПО РЕДАКТОРУ VIM\>"
 " новый заголовок
 syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ РЕДАКТОРОМ VIM\>"
-syntax match helpVim      "\<автор\%[ы:] .*$"
+syntax match helpVim      "^\s\+\<автор\%[ы:] .*$"
 " Подсветка примечаний в тексте, начала примеров и т.п.
 syntax keyword helpNote     Примечание. Совет. Пример. Примеры:
 syntax keyword helpWarning   Внимание!
