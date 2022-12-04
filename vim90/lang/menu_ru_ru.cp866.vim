@@ -22,7 +22,7 @@ let g:did_menu_trans = 1
 let s:keepcpo= &cpo
 set cpo&vim
 
-scriptencoding utf-8
+scriptencoding cp866
 
 " Top
 menutrans &File				&” ©«
