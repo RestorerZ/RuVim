@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Russian Vim program help files *.rux
 " Maintainer:   Restorer <restorer@mail2k.ru>
-" Last Change:  08 Jan 2022
+" Last Change:  11 Dec 2022
 " 
 
 " Проверяем язык локали и установки опции 'helplang'
@@ -22,7 +22,7 @@ syntax match helpHeadline   "^[А-ЯЁ]\{2}[ .]\=[-,А-ЯЁA-Z0-9 .()]*"
 " новый заголовок
 syntax match helpVim      "\<СПРАВОЧНИК ПО РЕДАКТОРУ VIM\>"
 " новый заголовок
-syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ РЕДАКТОРОМ VIM\>"
+syntax match helpVim      "\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ ПО РЕДАКТОРУ VIM\>"
 syntax match helpVim      "^\s\+\<автор\%[ы:] .*$"
 " Подсветка примечаний в тексте, начала примеров и т.п.
 syntax keyword helpNote     Примечание. Совет. Пример. Примеры:
