@@ -27,10 +27,7 @@ syntax match helpVim      "^\s\+\<автор\%[ы:] .*$"
 " Подсветка примечаний в тексте, начала примеров и т.п.
 syntax keyword helpNote     Примечание. Совет. Пример. Примеры:
 syntax keyword helpWarning   Внимание!
-" в старой версии документации
-syntax keyword helpNote     Замечание:
-" в старой версии документации
-syntax keyword helpWarning   ВНИМАНИЕ! Предупреждение:
+" syntax keyword helpDeprecated	Устаревшая Не поддерживается
 " Подсветка Ex-команд в документации Vim
 syntax match helpCommand     "\":[0-9A-Za-z!]\+\""hs=s+1,he=e-1
 " Подсветка специальных обозначений
@@ -53,7 +50,7 @@ syntax region helpNotVi     start="{Доступно только" start="{В р
 " Подсветка примечаний переводчика
 syntax region helpTrnsNote  start="\[Прим. перевод." end="]" contains=helpComment
 " Определение группы подсветки Ex-команд в документации Vim
-"hi def link helpCommand     vimCommand
+hi def link helpCommand     vimCommand
 " Определение группы подсветки примечаний переводчика
 hi def link helpTrnsNote    Comment
 "
