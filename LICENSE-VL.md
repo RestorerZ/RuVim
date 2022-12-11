@@ -1,0 +1,189 @@
+_The text is in English. The text in Russian is given below._
+_Текст на английском языке. Текст на русском языке дан ниже._
+
+
+#### VIM LICENSE
+
+I)  There are no restrictions on distributing unmodified copies of Vim except
+    that they must include this license text.  You can also distribute
+    unmodified parts of Vim, likewise unrestricted except that they must
+    include this license text.  You are also allowed to include executables
+    that you made from the unmodified Vim sources, plus your own usage
+    examples and Vim scripts.
+
+II) It is allowed to distribute a modified (or extended) version of Vim,
+    including executables and/or source code, when the following four
+    conditions are met:
+    1) This license text must be included unmodified.
+    2) The modified Vim must be distributed in one of the following five ways:
+       a) If you make changes to Vim yourself, you must clearly describe in
+          the distribution how to contact you.  When the maintainer asks you
+          (in any way) for a copy of the modified Vim you distributed, you
+          must make your changes, including source code, available to the
+          maintainer without fee.  The maintainer reserves the right to
+          include your changes in the official version of Vim.  What the
+          maintainer will do with your changes and under what license they
+          will be distributed is negotiable.  If there has been no negotiation
+          then this license, or a later version, also applies to your changes.
+          The current maintainer is Bram Moolenaar <Bram@vim.org>.  If this
+          changes it will be announced in appropriate places (most likely
+          vim.sf.net, www.vim.org and/or comp.editors). When it is completely
+          impossible to contact the maintainer, the obligation to send him
+          your changes ceases.  Once the maintainer has confirmed that he has
+          received your changes they will not have to be sent again.
+       b) If you have received a modified Vim that was distributed as
+          mentioned under a) you are allowed to further distribute it
+          unmodified, as mentioned at I).  If you make additional changes the
+          text under a) applies to those changes.
+       c) Provide all the changes, including source code, with every copy of
+          the modified Vim you distribute.  This may be done in the form of a
+          context diff.  You can choose what license to use for new code you
+          add.  The changes and their license must not restrict others from
+          making their own changes to the official version of Vim.
+       d) When you have a modified Vim which includes changes as mentioned
+          under c), you can distribute it without the source code for the
+          changes if the following three conditions are met:
+          - The license that applies to the changes permits you to distribute
+            the changes to the Vim maintainer without fee or restriction, and
+            permits the Vim maintainer to include the changes in the official
+            version of Vim without fee or restriction.
+          - You keep the changes for at least three years after last
+            distributing the corresponding modified Vim.  When the maintainer
+            or someone who you distributed the modified Vim to asks you (in
+            any way) for the changes within this period, you must make them
+            available to him.
+          - You clearly describe in the distribution how to contact you.  This
+            contact information must remain valid for at least three years
+            after last distributing the corresponding modified Vim, or as long
+            as possible.
+       e) When the GNU General Public License (GPL) applies to the changes,
+          you can distribute the modified Vim under the GNU GPL version 2 or
+          any later version.
+    3) A message must be added, at least in the output of the ":version"
+       command and in the intro screen, such that the user of the modified Vim
+       is able to see that it was modified.  When distributing as mentioned
+       under 2)e) adding the message is only required for as far as this does
+       not conflict with the license used for the changes.
+    4) The contact information as required under 2)a) and 2)d) must not be
+       removed or changed, except that the person himself can make
+       corrections.
+
+III) If you distribute a modified version of Vim, you are encouraged to use
+     the Vim license for your changes and make them available to the
+     maintainer, including the source code.  The preferred way to do this is
+     by e-mail or by uploading the files to a server and e-mailing the URL.
+     If the number of changes is small (e.g., a modified Makefile) e-mailing a
+     context diff will do.  The e-mail address to be used is
+     <maintainer@vim.org>
+
+IV)  It is not allowed to remove this license from the distribution of the Vim
+     sources, parts of it or from a modified version.  You may use this
+     license for previous Vim releases instead of the license that they came
+     with, at your option.
+
+
+_The text is in Russian. The English text is given above._
+_Текст на русском языке. Текст на английском языке дан выше._
+
+
+#### ЛИЦЕНЗИЯ VIM
+
+I)  Неизменённые копии программы Vim могут распространяться без ограничения
+    при условии включения данного текста лицензии. Распространение
+    неизменённых копий отдельных частей программы Vim также возможно при
+    соблюдении условия о включении данного текста лицензии. Подобным образом
+    разрешается добавлять исполняемые файлы, скомпилированные из неизменённого
+    исходного кода программы Vim, а также собственные примеры использования и
+    командные файлы редактора Vim.
+
+II) Изменённую (или дополненную) версию программы Vim, включающую исполняемые
+    файлы и/или исходный код, допускается распространять при соблюдении
+    следующих четырёх условий:
+    1) Текст данной лицензии должен включаться в состав распространяемой
+    версии без изменений.
+    2) Изменённая версия программы Vim должна распространяться одним из
+    следующих пяти способов:
+       a) При внесении изменений в программу Vim, в дистрибутиве должны
+	  быть явно указаны контактные данные лица, внёсшего эти изменения.
+	  Ответственному разработчику по его запросу (в любой форме) должна
+	  быть безвозмездно предоставлена копия распространяемой изменённой
+	  версии программы Vim, включая её исходный код. Ответственный
+	  разработчик оставляет за собой право включать сделанные изменения в
+	  официальную версию программы Vim. Конкретные действия ответственного
+	  разработчика, относительно переданных изменений, а также
+	  лицензионные условия, на основании которых будет осуществляться их
+	  распространение, могут быть дополнительно согласованы. Если
+	  согласование не проводилось, сделанные изменения будут
+	  распространяться на условиях настоящей лицензии или более поздней её
+	  версии. В данное время ответственным разработчиком является Брам
+	  Моленар (Bram Moolenaar), <Bram@vim.org>. В случае изменения этой
+	  информации, актуальные данные будут опубликованы на соответствующих
+	  ресурсах (вероятнее всего по интернет‐адресам vim.sf.net,
+	  www.vim.org и/или comp.editors). В случае полной невозможности
+	  установить контакт с ответственным разработчиком, обязательства по
+	  отправке изменений утрачивают силу. После передачи подтверждения о
+	  получении изменений от ответственного разработчика, необходимость в
+	  повторной отправке копии изменённой программы Vim неприменима.
+       b) Если лицом получена изменённая версия программа Vim,
+	  распространяющаяся на условиях, указанных в ч. II) п. 2) пп. а)
+	  допускается дальнейшее её распространение этим лицом без внесения
+	  изменений и согласно ч. I) настоящей лицензии. В случае внесения
+	  дополнительных изменений, на эти изменения будут распространяться
+	  условия, указанные в ч. II) п. 2) пп. a).
+       c) Каждая копия распространяемой изменённой версии программы Vim должна
+	  включать информацию обо всех произведённых изменениях, включая
+	  исходный код. Эта информация может быть представлена в виде
+	  построчного сравнения файлов. Выбор лицензии, по условиям которой
+	  будет распространяться добавленный код, остаётся за автором этих
+	  изменений. Изменения и лицензия на эти изменения не должны запрещать
+	  другим лицам внесение своих собственных изменений в официальную
+	  версию программы Vim.
+       d) Изменённая версия программы Vim, содержащая изменения в соответствии
+	  с ч. II) п. 2 пп. c), может распространяться без исходного кода для
+	  этих изменений, при соблюдении следующих трёх условий:
+	  - Лицензия, применяемая к внесённым изменениям, предоставляет
+	    ответственному разработчику программы Vim возможность
+	    безвозмездного и неограниченного распространения этих изменений, а
+	    также право на безвозмездное и неограниченное включение этих
+	    изменений в официальную версию программы Vim.
+	  - Изменения должны сохраняться не менее трёх лет со времени
+	    распространения соответствующей изменённой версии программы Vim. В
+	    течение этого периода по запросу ответственного разработчика или
+	    другого пользователя изменённой версии программы Vim (в любой
+	    форме) необходимо предоставить исходный код данных изменений.
+	  - В дистрибутиве изменённой версии программы Vim должны быть явно
+	    указаны контактные данные лица, внёсшего эти изменения. Контактные
+	    данные должны сохранять актуальность в течение не менее трёх лет
+	    со времени последнего распространения соответствующей изменённой
+	    версии программы Vim или как можно дольше.
+       e) Если к изменениям, внесённым в программу Vim, применимы условия
+	  лицензии GNU General Public License (GPL), допускается
+	  распространение изменённой версия программы Vim на условиях лицензии
+	  GNU GPL версии 2 или любой более поздней версии этой лицензии.
+    3) Необходимо добавить соответствующую информацию, которая должна быть
+       выведена в результате выполнения команды ":version" в программе Vim, а
+       также на экране приветствия программы Vim, чтобы пользователь
+       изменённой версии программы Vim имел возможность определить, что он
+       пользуется изменённой версией. При распространении на условиях,
+       указанных в ч. II) п. 2) пп. e) такую информацию требуется добавлять
+       только в том случае, когда она не противоречит лицензии,
+       распространяющейся на эти изменения.
+    4) Контактная информация, которая указывается по требованию ч. II) п. 2)
+       пп. a) и ч. II) п. 2) пп. d) не должна удаляться или изменяться никем
+       другим, кроме автора, указавшего данную контактную информацию.
+
+III) При распространении изменённой версии программы Vim рекомендуется
+     пользоваться лицензией Vim для произведённых изменений и обеспечить
+     доступ к этим изменениям ответственного разработчика, включая исходный
+     код изменений. Предпочтительным способом предоставления доступа к
+     произведённым изменениям является отправка этих изменений по электронной
+     почте или загрузка файлов на сервер с отправкой URL-адреса по электронной
+     почте. Если количество изменений незначительно (например, изменения в
+     файле Makefile) достаточно будет отправить по электронной почте файл
+     построчного сравнения. Изменения или URL-адреса должны быть отправлены на
+     адрес электронной почты <maintainer@vim.org>
+
+IV)  Не допускается удаление данная лицензия из дистрибутива исходного кода
+     программы Vim, его отдельных частей или изменённой версии. Допускается
+     использование настоящей лицензию для предыдущих изменённых выпусков
+     программы Vim, взамен тех лицензий, с которыми они распространялись.
