@@ -1,8 +1,8 @@
-_The text is in English. The text in Russian is given below._
-_Текст на английском языке. Текст на русском языке дан ниже._
+The text is in English. The text in Russian is given below.
+Текст на английском языке. Текст на русском языке дан ниже.
 
 
-#### VIM LICENSE
+VIM LICENSE
 
 I)  There are no restrictions on distributing unmodified copies of Vim except
     that they must include this license text.  You can also distribute
@@ -82,11 +82,11 @@ IV)  It is not allowed to remove this license from the distribution of the Vim
      with, at your option.
 
 
-_The text is in Russian. The English text is given above._
-_Текст на русском языке. Текст на английском языке дан выше._
+The text is in Russian. The English text is given above.
+Текст на русском языке. Текст на английском языке дан выше.
 
 
-#### ЛИЦЕНЗИЯ VIM
+ЛИЦЕНЗИЯ VIM
 
 I)  Неизменённые копии программы Vim могут распространяться без ограничения
     при условии включения данного текста лицензии. Распространение
