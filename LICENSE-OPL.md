@@ -1,5 +1,5 @@
-*The text is in English. The text in Russian is given below.*
-*Текст на английском языке. Текст на русском языке дан ниже.*
+*The text is in English. The text in Russian is given below.*  
+*Текст на английском языке. Текст на русском языке дан ниже.*  
 
 
 #### Open Publication License
@@ -142,11 +142,13 @@ Send E-mail to opal@opencontent.org or simply reply to a previous post.
 
 To unsubscribe from the Open Publication Authors' List:
 Send E-mail to opal-request@opencontent.org with the word "unsubscribe" in the
-body.
+body.  
 
 
-*The text is in Russian. The English text is given above.*
-*Текст на русском языке. Текст на английском языке дан выше.*
+
+
+*The text is in Russian. The English text is given above.*  
+*Текст на русском языке. Текст на английском языке дан выше.*  
 
 
 #### Лицензия на Открытые Публикации
