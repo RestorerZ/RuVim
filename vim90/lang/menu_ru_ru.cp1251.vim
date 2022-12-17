@@ -52,7 +52,7 @@ menutrans &About			&О\ программе
 "
 " Submenu of File menu
 menutrans &Open\.\.\.<Tab>:e		&Открыть\.\.\.<Tab>:e
-menutrans Sp&lit-Open\.\.\.<Tab>:sp	От&крыть\ в\ новом\ окне\.\.\.<Tab>:vsplit
+menutrans Sp&lit-Open\.\.\.<Tab>:sp	От&крыть\ в\ новом\ окне\.\.\.<Tab>:sp
 menutrans Open\ Tab\.\.\.<Tab>:tabnew	Откры&ть\ в\ новой\ вкладке\.\.\.<Tab>:tabnew
 menutrans &New<Tab>:enew		Созд&ать<Tab>:enew
 menutrans &Close<Tab>:close		&Закрыть<Tab>:close
@@ -70,16 +70,16 @@ menutrans E&xit<Tab>:qa			В&ыход<Tab>:qa
 "
 " Submenu of Edit menu
 menutrans &Undo<Tab>u			&Отменить<Tab>u
-menutrans &Redo<Tab>^R			В&ернуть<Tab>CTRL+R
+menutrans &Redo<Tab>^R			В&ернуть<Tab>Ctrl+R
 menutrans Rep&eat<Tab>\.		Повторит&ь<Tab>\.
 "--------------------
 menutrans Cu&t<Tab>"+x			&Вырезать<Tab>"+x
 menutrans &Copy<Tab>"+y			&Копировать<Tab>"+y
-menutrans &Paste<Tab>"+gP		Вст&авить<Tab>"+g\ SHIFT+P
+menutrans &Paste<Tab>"+gP		Вст&авить<Tab>"+g\ Shift+P
 menutrans Put\ &Before<Tab>[p		Поместить\ п&еред<Tab>[p
 menutrans Put\ &After<Tab>]p		Поместить\ по&сле<Tab>]p
 menutrans &Delete<Tab>x			&Удалить<Tab>x
-menutrans &Select\ All<Tab>ggVG		В&ыделить\ всё<Tab>gg\ SHIFT+V\ SHIFT+G
+menutrans &Select\ All<Tab>ggVG		В&ыделить\ всё<Tab>gg\ Shift+V\ Shift+G
 "--------------------
 " if has("win32") || has("gui_gtk") || has("gui_kde") || has("gui_motif")
 menutrans &Find\.\.\.			&Найти\.\.\.
@@ -93,190 +93,189 @@ menutrans Settings\ &Window			&Все\ параметры\.\.\.
 menutrans Startup\ &Settings			Параметры\ запус&ка
 menutrans &Global\ Settings			&Общие\ параметры
 menutrans F&ile\ Settings			Параметр&ы\ текущего\ буфера
-menutranslate Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выбора\ цве&товой\ схемы
+menutrans Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выбора\ цве&товой\ схемы
 menutrans C&olor\ Scheme			Цветовая\ с&хема
-menutranslate Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
+menutrans Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
 menutrans &Keymap				&Раскладка\ клавиатуры
 menutrans None					Не\ использовать
 menutrans Select\ Fo&nt\.\.\.			&Шрифт\.\.\.
 ">>>----------------- Edit/Global settings
-menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсвечивать\ &совпадения<Tab>:set\ hls!
+menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсветка\ &совпадений<Tab>:set\ hls!
 menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!			&Регистронезависимый\ поиск<Tab>:set\ ic!
-menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!	Показывать\ парные\ &элементы<Tab>:set\ sm!
-menutrans &Context\ lines				Контекстных\ стр&ок\ для\ текущей\ строки
-menutrans &Virtual\ Edit				Вир&туальное\ редактирование
-menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!		Режим\ &вставки<Tab>:set\ im!
-menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!	&Совместимость\ с\ редактором\ Vi<Tab>:set\ cp!
-menutrans Search\ &Path\.\.\.				&Каталоги\ для\ поиска\ файлов\.\.\.
-menutrans Ta&g\ Files\.\.\.				Индексные\ файлы\.\.\.
+menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!	Подсветка\ парных\ &элементов<Tab>:set\ sm!
+menutrans &Context\ lines					Контекстных\ стр&ок
+menutrans &Virtual\ Edit					Вир&туальное\ редактирование
+menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!			Режим\ &вставки<Tab>:set\ im!
+menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!		&Совместимость\ с\ редактором\ Vi<Tab>:set\ cp!
+menutrans Search\ &Path\.\.\.					&Каталоги\ для\ поиска\ файлов\.\.\.
+menutrans Ta&g\ Files\.\.\.					Индексные\ файлы\.\.\.
 "
-menutrans Toggle\ &Toolbar			Показ\ &панели\ инструментов
-menutrans Toggle\ &Bottom\ Scrollbar		Показ\ полосы\ прокрутки\ вни&зу
-menutrans Toggle\ &Left\ Scrollbar		Показ\ полосы\ прокрутки\ с&лева
-menutrans Toggle\ &Right\ Scrollbar		Показ\ полосы\ прокрутки\ спр&ава
+menutrans Toggle\ &Toolbar		Показ\ &панели\ инструментов
+menutrans Toggle\ &Bottom\ Scrollbar	Показ\ полосы\ прокрутки\ вни&зу
+menutrans Toggle\ &Left\ Scrollbar	Показ\ полосы\ прокрутки\ с&лева
+menutrans Toggle\ &Right\ Scrollbar	Показ\ полосы\ прокрутки\ спр&ава
 ">>>->>>------------- Edit/Global settings/Virtual edit
-menutranslate Never				Выключено\ во\ всех\ режимах
-menutranslate Block\ Selection			Включено\ в\ режиме\ визуального\ блока
-menutranslate Insert\ mode			Включено\ в\ режиме\ вставки
-menutranslate Block\ and\ Insert		Включено\ в\ режимах\ визуального\ блока\ и\ вставки
-menutranslate Always				Включено\ во\ всех\ режимах
+menutrans Never				Выключено\ во\ всех\ режимах
+menutrans Block\ Selection		Включено\ в\ режиме\ визуального\ блока
+menutrans Insert\ mode			Включено\ в\ режиме\ вставки
+menutrans Block\ and\ Insert		Включено\ в\ режимах\ визуального\ блока\ и\ вставки
+menutrans Always			Включено\ во\ всех\ режимах
 ">>>----------------- Edit/File settings
 menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!		Показ\ &нумерации\ строк<Tab>:set\ nu!
 menutrans Toggle\ relati&ve\ Line\ Numbering<Tab>:set\ rnu!	Показ\ относите&льной\ нумерации\ строк<Tab>:set\ nru!
 menutrans Toggle\ &List\ Mode<Tab>:set\ list!			Показ\ &непечатаемых\ знаков<Tab>:set\ list!
 menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!		&Разбивка\ строк\ по\ границе\ окна<Tab>:set\ wrap!
 menutrans Toggle\ W&rapping\ at\ word<Tab>:set\ lbr!		Разбивка\ строк\ по\ &границе\ слов<Tab>:set\ lbr!
-menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!			Заменить\ символы\ &табуляции\ на\ пробелы<Tab>:set\ et!
-menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!		Установить\ отступ\ как\ у\ текущей\ &строки<Tab>:set\ ai!
-menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!		Установить\ отступ\ как\ в\ &языке\ Си<Tab>:set\ cin!
+menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!			Замена\ символов\ &табуляции\ на\ пробелы<Tab>:set\ et!
+menutrans Toggle\ &Auto\ Indenting<Tab>:set\ ai!		Установка\ отступа\ как\ у\ текущей\ &строки<Tab>:set\ ai!
+menutrans Toggle\ &C-Style\ Indenting<Tab>:set\ cin!		Установка\ отступа\ как\ в\ &языке\ Си<Tab>:set\ cin!
 ">>>---
-menutrans &Shiftwidth					Вели&чина\ отступа
-menutrans Soft\ &Tabstop				Ширина\ &табуляции
-menutrans Te&xt\ Width\.\.\.				&Ширина\ текста\.\.\.
-menutrans &File\ Format\.\.\.				&Формат\ файла\.\.\.
+menutrans &Shiftwidth				Вели&чина\ отступа
+menutrans Soft\ &Tabstop			Ширина\ &табуляции
+menutrans Te&xt\ Width\.\.\.			&Ширина\ текста\.\.\.
+menutrans &File\ Format\.\.\.			&Формат\ файла\.\.\.
 "
 "
 "
 " Submenu of Tools menu
-menutrans &Jump\ to\ this\ tag<Tab>g^]			&Перейти\ по\ индексному\ указателю<Tab>g\ CTRL+]
-menutrans Jump\ &back<Tab>^T				&Вернуться\ назад<Tab>CTRL+T
-menutrans Build\ &Tags\ File				Создать\ файл\ &индексов
+menutrans &Jump\ to\ this\ tag<Tab>g^]		&Перейти\ по\ указателю<Tab>g\ Ctrl+]
+menutrans Jump\ &back<Tab>^T			&Вернуться\ назад<Tab>Ctrl+T
+menutrans Build\ &Tags\ File			Создать\ файл\ с\ &индексами
 "-------------------
-menutrans &Folding					С&труктура\ текста
-menutrans &Spelling					Пр&авописание
-menutrans &Diff						&Сравнение\ текста
+menutrans &Folding				С&труктура\ текста
+menutrans &Spelling				Пр&авописание
+menutrans &Diff					&Сравнение\ текста
 "-------------------
-menutrans &Make<Tab>:make				Ко&мпиляция<Tab>:make
-menutrans &List\ Errors<Tab>:cl				Распознанные\ о&шибки<Tab>:cl
-menutrans L&ist\ Messages<Tab>:cl!			Вес&ь\ список\ результатов<Tab>:cl!
-menutrans &Next\ Error<Tab>:cn				Следу&ющая\ запись\ из\ списка<Tab>:cn
-menutrans &Previous\ Error<Tab>:cp			Пр&едыдущая\ запись\ из\ списка<Tab>:cp
-menutrans &Older\ List<Tab>:cold			Пред&ыдущий\ список\ результатов<Tab>:cold
-menutrans N&ewer\ List<Tab>:cnew			Пос&ледующий\ список\ результатов<Tab>:cnew
-menutrans Error\ &Window				Ок&но\ со\ списком\ результатов
-menutranslate Show\ Compiler\ Se&ttings\ in\ Menu	Показать\ меню\ выбора\ &компилятора
-menutrans Se&T\ Compiler				Выбрать\ &компилятор
+menutrans &Make<Tab>:make			Ко&мпиляция<Tab>:make
+menutrans &List\ Errors<Tab>:cl			Распознанные\ о&шибки<Tab>:cl
+menutrans L&ist\ Messages<Tab>:cl!		Вес&ь\ список\ результатов<Tab>:cl!
+menutrans &Next\ Error<Tab>:cn			Следу&ющая\ запись\ из\ списка<Tab>:cn
+menutrans &Previous\ Error<Tab>:cp		Пр&едыдущая\ запись\ из\ списка<Tab>:cp
+menutrans &Older\ List<Tab>:cold		Пред&ыдущий\ список\ результатов<Tab>:cold
+menutrans N&ewer\ List<Tab>:cnew		С&ледующий\ список\ результатов<Tab>:cnew
+menutrans Error\ &Window			Ок&но\ со\ списком\ результатов
+menutrans Show\ Compiler\ Se&ttings\ in\ Menu	Показать\ меню\ выбора\ &компилятора
+menutrans Se&T\ Compiler			Выбрать\ &компилятор
 "-------------------
-menutrans &Convert\ to\ HEX<Tab>:%!xxd			Прео&бразовать\ в\ HEX<Tab>:%!xxd
-menutrans Conve&rt\ back<Tab>:%!xxd\ -r			Преобразовать\ и&з\ HEX<Tab>:%!xxd\ -r
+menutrans &Convert\ to\ HEX<Tab>:%!xxd		Прео&бразовать\ в\ HEX<Tab>:%!xxd
+menutrans Conve&rt\ back<Tab>:%!xxd\ -r		Преобразовать\ и&з\ HEX<Tab>:%!xxd\ -r
 ">>>---------------- Tools/Spelling
-menutrans &Spell\ Check\ On				Автоматически\ &проверять
-menutrans Spell\ Check\ &Off				&Не\ выполнять\ проверку
-menutrans To\ &Next\ error<Tab>]s			С&ледующая\ ошибка<Tab>]s
-menutrans To\ &Previous\ error<Tab>[s			Пр&едыдущая\ ошибка<Tab>[s
-menutrans Suggest\ &Corrections<Tab>z=			Вариант&ы\ написания<Tab>z=
-menutrans &Repeat\ correction<Tab>:spellrepall		Заменить\ &все<Tab>:spellrepall
+menutrans &Spell\ Check\ On			Автоматически\ &проверять
+menutrans Spell\ Check\ &Off			&Не\ выполнять\ проверку
+menutrans To\ &Next\ error<Tab>]s		С&ледующая\ ошибка<Tab>]s
+menutrans To\ &Previous\ error<Tab>[s		Пр&едыдущая\ ошибка<Tab>[s
+menutrans Suggest\ &Corrections<Tab>z=		Вариант&ы\ написания<Tab>z=
+menutrans &Repeat\ correction<Tab>:spellrepall	Заменить\ &все<Tab>:spellrepall
 "-------------------
-menutranslate Set\ language\ to\ "en"			Включить\ для\ языка\ "en"
-menutranslate Set\ language\ to\ "en_au"		Включить\ для\ языка\ "en_au"
-menutranslate Set\ language\ to\ "en_ca"		Включить\ для\ языка\ "en_ca"
-menutranslate Set\ language\ to\ "en_gb"		Включить\ для\ языка\ "en_gb"
-menutranslate Set\ language\ to\ "en_nz"		Включить\ для\ языка\ "en_nz"
-menutranslate Set\ language\ to\ "en_us"		Включить\ для\ языка\ "en_us"
-menutranslate &Find\ More\ Languages			Найти\ для\ других\ &языков
-let g:menutrans_set_lang_to =				'Включить для языка'
+menutrans Set\ language\ to\ "en"		Включить\ для\ языка\ "en"
+menutrans Set\ language\ to\ "en_au"		Включить\ для\ языка\ "en_au"
+menutrans Set\ language\ to\ "en_ca"		Включить\ для\ языка\ "en_ca"
+menutrans Set\ language\ to\ "en_gb"		Включить\ для\ языка\ "en_gb"
+menutrans Set\ language\ to\ "en_nz"		Включить\ для\ языка\ "en_nz"
+menutrans Set\ language\ to\ "en_us"		Включить\ для\ языка\ "en_us"
+menutrans &Find\ More\ Languages		Найти\ для\ других\ &языков
+let g:menutrans_set_lang_to =			'Включить для языка'
 ">>>---------------- Folds
-menutrans &Enable/Disable\ folds<Tab>zi			Показать\ или\ убрать\ структуру<Tab>zi
-menutrans &View\ Cursor\ Line<Tab>zv			Просмотр\ строки\ под\ &курсором<Tab>zv
-menutrans Vie&w\ Cursor\ Line\ only<Tab>zMzx		Просмотр\ &только\ строки\ под\ курсором<Tab>z\ SHIFT+M\ zx
-menutrans C&lose\ more\ folds<Tab>zm			Свернуть\ вло&женные\ блоки\ структуры<Tab>zm
-menutrans &Close\ all\ folds<Tab>zM			Свернуть\ &все\ блоки\ структуры<Tab>z\ SHIFT+M
-menutrans &Open\ all\ folds<Tab>zR			Развернуть\ в&се\ блоки\ структуры<Tab>z\ SHIFT+R
-menutrans O&pen\ more\ folds<Tab>zr			Ра&звернуть\ вложенные\ блоки\ структуры<Tab>zr
-menutrans Fold\ Met&hod					&Метод\ разметки\ структуры
-menutrans Create\ &Fold<Tab>zf				Со&здать\ блок\ структуры<Tab>zf
-menutrans &Delete\ Fold<Tab>zd				&Убрать\ блок\ структуры<Tab>zd
-menutrans Delete\ &All\ Folds<Tab>zD			Убрать\ вс&е\ блоки\ структуры<Tab>z\ SHIFT+D
-menutrans Fold\ col&umn\ width				&Ширина\ столбца\ со\ значками\ структуры
+menutrans &Enable/Disable\ folds<Tab>zi		Показать\ или\ убрать\ структуру<Tab>zi
+menutrans &View\ Cursor\ Line<Tab>zv		Просмотр\ строки\ под\ &курсором<Tab>zv
+menutrans Vie&w\ Cursor\ Line\ only<Tab>zMzx	Просмотр\ &только\ строки\ под\ курсором<Tab>z\ Shift+M\ zx
+menutrans C&lose\ more\ folds<Tab>zm		Свернуть\ вло&женные\ блоки\ структуры<Tab>zm
+menutrans &Close\ all\ folds<Tab>zM		Свернуть\ &все\ блоки\ структуры<Tab>z\ Shift+M
+menutrans &Open\ all\ folds<Tab>zR		Развернуть\ в&се\ блоки\ структуры<Tab>z\ Shift+R
+menutrans O&pen\ more\ folds<Tab>zr		Ра&звернуть\ вложенные\ блоки\ структуры<Tab>zr
+menutrans Fold\ Met&hod				&Метод\ разметки\ структуры
+menutrans Create\ &Fold<Tab>zf			Со&здать\ блок\ структуры<Tab>zf
+menutrans &Delete\ Fold<Tab>zd			&Убрать\ блок\ структуры<Tab>zd
+menutrans Delete\ &All\ Folds<Tab>zD		Убрать\ вс&е\ блоки\ структуры<Tab>z\ Shift+D
+menutrans Fold\ col&umn\ width			&Ширина\ столбца\ со\ значками\ структуры
 ">>>->>>----------- Tools/Folds/Fold Method
-menutrans M&anual					Установить\ вру&чную
-menutrans I&ndent					На\ основе\ о&тступов
-menutrans E&xpression					На\ основе\ р&асчётов
-menutrans S&yntax					На\ основе\ &синтаксиса
-menutranslate &Diff					На\ основе\ различий\ в\ текстах
-menutrans Ma&rker					На\ основе\ &маркеров
+menutrans M&anual				Разметка\ вру&чную
+menutrans I&ndent				На\ основе\ о&тступов
+menutrans E&xpression				На\ основе\ р&асчётов
+menutrans S&yntax				На\ основе\ &синтаксиса
+menutrans &Diff					На\ основе\ различий\ в\ текстах
+menutrans Ma&rker				На\ основе\ &маркеров
 ">>>--------------- Sub of Tools/Diff
-menutrans &Update					О&бновить\ содержимое\ окон
-menutrans &Get\ Block					Перенести\ &в\ текущий\ буфер
-menutrans &Put\ Block					Перенести\ &из\ текущего\ буфера
+menutrans &Update				О&бновить\ содержимое\ окон
+menutrans &Get\ Block				Перенести\ &в\ текущий\ буфер
+menutrans &Put\ Block				Перенести\ &из\ текущего\ буфера
 ">>>--------------- Tools/Diff/Error window
-menutrans &Update<Tab>:cwin				О&бновить<Tab>:cwin
-menutrans &Close<Tab>:cclose				&Закрыть<Tab>:cclose
-menutrans &Open<Tab>:copen				&Открыть<Tab>:copen
+menutrans &Update<Tab>:cwin			О&бновить<Tab>:cwin
+menutrans &Close<Tab>:cclose			&Закрыть<Tab>:cclose
+menutrans &Open<Tab>:copen			&Открыть<Tab>:copen
 "
 "
 " Syntax menu
 "
-menutrans &Show\ File\ Types\ in\ menu			&Показать\ меню\ выбора\ типа\ файла
-menutrans Set\ '&syntax'\ only				А&ктивировать\ параметр\ 'syntax'
-menutrans Set\ '&filetype'\ too				Активировать\ пара&метр\ 'filetype'
-menutrans &Off						&Отключить\ подсветку
-menutrans &Manual					Включать\ подсветку\ вру&чную
-menutrans A&utomatic					Включать\ подсветку\ &автоматически
-menutrans on/off\ for\ &This\ file			Изменить\ режим\ для\ &текущего\ файла
-menutrans Co&lor\ test					Проверить\ поддер&живаемые\ цвета
-menutrans &Highlight\ test				Показать\ группы\ под&светки
-menutrans &Convert\ to\ HTML				Со&здать\ HTML-файл\ с\ CSS
+menutrans &Show\ File\ Types\ in\ menu		&Показать\ меню\ выбора\ типа\ файла
+menutrans Set\ '&syntax'\ only			А&ктивировать\ параметр\ 'syntax'
+menutrans Set\ '&filetype'\ too			Активировать\ пара&метр\ 'filetype'
+menutrans &Off					&Отключить\ подсветку
+menutrans &Manual				Включение\ подсветки\ вру&чную
+menutrans A&utomatic				Включение\ подсветки\ &автоматически
+menutrans on/off\ for\ &This\ file		Изменить\ режим\ для\ &текущего\ файла
+menutrans Co&lor\ test				Проверить\ поддер&живаемые\ цвета
+menutrans &Highlight\ test			Показать\ группы\ под&светки
+menutrans &Convert\ to\ HTML			Со&здать\ HTML-файл\ с\ CSS
 "
 "
 " Buffers menu
 "
-menutrans &Refresh\ menu				&Обновить\ список\ буферов
-menutrans &Delete					&Закрыть\ буфер
-menutrans &Alternate					&Соседний\ буфер
-menutrans &Next						С&ледующий\ буфер
-menutrans &Previous					&Предыдущий\ буфер
+menutrans &Refresh\ menu			&Обновить\ список\ буферов
+menutrans &Delete				&Закрыть\ буфер
+menutrans &Alternate				&Соседний\ буфер
+menutrans &Next					С&ледующий\ буфер
+menutrans &Previous				&Предыдущий\ буфер
 "
 "
 " Submenu of Window menu
 "
-menutrans &New<Tab>^Wn					&Создать<Tab>CTRL+W\ n
-menutrans S&plit<Tab>^Ws				Разделить\ по\ &горизонтали<Tab>CTRL+W\ s
-menutrans Split\ &Vertically<Tab>^Wv			Разделить\ по\ &вертикали<Tab>CTRL+W\ v
-menutrans Sp&lit\ To\ #<Tab>^W^^			С&оседний\ файл\ в\ новом\ окне<Tab>CTRL+W\ CTRL+^
-menutrans Split\ File\ E&xplorer			Диспетчер\ файлов
+menutrans &New<Tab>^Wn				&Создать<Tab>Ctrl+W\ n
+menutrans S&plit<Tab>^Ws			Разделить\ по\ &горизонтали<Tab>Ctrl+W\ s
+menutrans Split\ &Vertically<Tab>^Wv		Разделить\ по\ &вертикали<Tab>Ctrl+W\ v
+menutrans Sp&lit\ To\ #<Tab>^W^^		С&оседний\ файл\ в\ новом\ окне<Tab>Ctrl+W\ Ctrl+^
+menutrans Split\ File\ E&xplorer		Диспетчер\ файлов
 "
-menutrans &Close<Tab>^Wc				&Закрыть\ текущее\ окно<Tab>CTRL+W\ c
-menutrans Close\ &Other(s)<Tab>^Wo			З&акрыть\ другие\ окна<Tab>CTRL+W\ o
+menutrans &Close<Tab>^Wc			&Закрыть\ текущее\ окно<Tab>Ctrl+W\ c
+menutrans Close\ &Other(s)<Tab>^Wo		З&акрыть\ другие\ окна<Tab>Ctrl+W\ o
 "
-menutrans Move\ &To					&Переместить
-menutrans Rotate\ &Up<Tab>^WR				Сдвинуть\ ввер&х<Tab>CTRL+W\ SHIFT+R
-menutrans Rotate\ &Down<Tab>^Wr				Сдвинуть\ в&низ<Tab>CTRL+W\ r
+menutrans Move\ &To				&Переместить
+menutrans Rotate\ &Up<Tab>^WR			Сдвинуть\ ввер&х<Tab>Ctrl+W\ Shift+R
+menutrans Rotate\ &Down<Tab>^Wr			Сдвинуть\ в&низ<Tab>Ctrl+W\ r
 "
-menutrans &Equal\ Size<Tab>^W=				Выравнять\ раз&мер<Tab>CTRL+W\ =
-menutrans &Max\ Height<Tab>^W_				Максимальной\ в&ысоты<Tab>CTRL+W\ _
-menutrans M&in\ Height<Tab>^W1_				Минимальной\ высо&ты<Tab>CTRL+W\ 1_
-menutrans Max\ &Width<Tab>^W\|				Максимальной\ &ширины<Tab>CTRL+W\ \|
-menutrans Min\ Widt&h<Tab>^W1\|				Минимальной\ ш&ирины<Tab>CTRL+W\ 1\|
+menutrans &Equal\ Size<Tab>^W=			Выравнять\ раз&мер<Tab>Ctrl+W\ =
+menutrans &Max\ Height<Tab>^W_			Максимальной\ в&ысоты<Tab>Ctrl+W\ _
+menutrans M&in\ Height<Tab>^W1_			Минимальной\ высо&ты<Tab>Ctrl+W\ 1_
+menutrans Max\ &Width<Tab>^W\|			Максимальной\ &ширины<Tab>Ctrl+W\ \|
+menutrans Min\ Widt&h<Tab>^W1\|			Минимальной\ ш&ирины<Tab>Ctrl+W\ 1\|
 ">>>----------------- Submenu of Window/Move To
-menutrans &Top<Tab>^WK					В&верх<Tab>CTRL+W\ SHIFT+K
-menutrans &Bottom<Tab>^WJ				В&низ<Tab>CTRL+W\ SHIFT+J
-menutrans &Left\ side<Tab>^WH				В&лево<Tab>CTRL+W\ SHIFT+H
-menutrans &Right\ side<Tab>^WL				В&право<Tab>CTRL+W\ SHIFT+L
+menutrans &Top<Tab>^WK				В&верх<Tab>Ctrl+W\ Shift+K
+menutrans &Bottom<Tab>^WJ			В&низ<Tab>Ctrl+W\ Shift+J
+menutrans &Left\ side<Tab>^WH			В&лево<Tab>Ctrl+W\ Shift+H
+menutrans &Right\ side<Tab>^WL			В&право<Tab>Ctrl+W\ Shift+L
 "
 "
 " The popup menu
 "
 "
-menutrans &Undo						&Отменить
-menutrans Cu&t						&Вырезать
-menutrans &Copy						&Копировать
-menutrans &Paste					Вст&авить
-menutrans &Delete					&Удалить
-menutrans Select\ Blockwise				Блоковое\ выделение
-menutrans Select\ &Word					Выделить\ с&лово
-menutrans Select\ &Line					Выделить\ с&троку
-menutrans Select\ &Block				Выделить\ &блок
-menutrans Select\ &All					В&ыделить\ всё
-menutrans Select\ &Sentence				Выделить\ предло&жение
-menutrans Select\ Pa&ragraph				Выделить\ аб&зац
+menutrans &Undo					&Отменить
+menutrans Cu&t					&Вырезать
+menutrans &Copy					&Копировать
+menutrans &Paste				Вст&авить
+menutrans &Delete				&Удалить
+menutrans Select\ Blockwise			Блоковое\ выделение
+menutrans Select\ &Word				Выделить\ с&лово
+menutrans Select\ &Line				Выделить\ с&троку
+menutrans Select\ &Block			Выделить\ &блок
+menutrans Select\ &All				В&ыделить\ всё
+menutrans Select\ &Sentence			Выделить\ предло&жение
+menutrans Select\ Pa&ragraph			Выделить\ аб&зац
 "
 " The Spelling popup menu
 "
-"
-let g:menutrans_spell_change_ARG_to =			'Исправить\ "%s"'
-let g:menutrans_spell_add_ARG_to_word_list =		'Добавить\ "%s"\ в\ словарь'
-let g:menutrans_spell_ignore_ARG =			'Пропустить\ "%s"'
+let g:menutrans_spell_change_ARG_to =		'Исправить\ "%s"'
+let g:menutrans_spell_add_ARG_to_word_list =	'Добавить\ "%s"\ в\ словарь'
+let g:menutrans_spell_ignore_ARG =		'Пропустить\ "%s"'
 "
 " The GUI toolbar
 "
@@ -285,37 +284,37 @@ if has("toolbar")
     delfun Do_toolbar_tmenu
   endif
   def g:Do_toolbar_tmenu()
-    tmenu ToolBar.New					Создать документ
-    tmenu ToolBar.Open					Открыть файл
-    tmenu ToolBar.Save					Сохранить файл
-    tmenu ToolBar.SaveAll				Сохранить все файлы
-    tmenu ToolBar.Print					Печать
-    tmenu ToolBar.Undo					Отменить
-    tmenu ToolBar.Redo					Вернуть
-    tmenu ToolBar.Cut					Вырезать
-    tmenu ToolBar.Copy					Копировать
-    tmenu ToolBar.Paste					Вставить
-    tmenu ToolBar.Find					Найти...
-    tmenu ToolBar.FindNext				Найти следующее
-    tmenu ToolBar.FindPrev				Найти предыдущее
-    tmenu ToolBar.Replace				Заменить...
-    tmenu ToolBar.NewSesn				Создать сеанс редактирования
-    tmenu ToolBar.LoadSesn				Загрузить сеанс редактирования
-    tmenu ToolBar.SaveSesn				Сохранить сеанс редактирования
-    tmenu ToolBar.RunScript				Выполнить командный файл программы Vim
-    tmenu ToolBar.Shell					Командная оболочка
-    tmenu ToolBar.Make					Компиляция
-    tmenu ToolBar.RunCtags				Создать файл индексов
-    tmenu ToolBar.TagJump				Перейти по индексному указателю
-    tmenu ToolBar.Help					Справка
-    tmenu ToolBar.FindHelp				Поиск в документации
-    tmenu ToolBar.WinClose				Закрыть текущее окно
-    tmenu ToolBar.WinMax				Максимальная высота текущего окна
-    tmenu ToolBar.WinMin				Минимальная высота текущего окна
-    tmenu ToolBar.WinSplit				Разделить окно по горизонтали
-    tmenu ToolBar.WinVSplit				Разделить окно по вертикали
-    tmenu ToolBar.WinMaxWidth				Максимальная ширина текущего окна
-    tmenu ToolBar.WinMinWidth				Минимальная ширина текущего окна
+    tmenu ToolBar.New				Создать документ
+    tmenu ToolBar.Open				Открыть файл
+    tmenu ToolBar.Save				Сохранить файл
+    tmenu ToolBar.SaveAll			Сохранить все файлы
+    tmenu ToolBar.Print				Печать
+    tmenu ToolBar.Undo				Отменить
+    tmenu ToolBar.Redo				Вернуть
+    tmenu ToolBar.Cut				Вырезать
+    tmenu ToolBar.Copy				Копировать
+    tmenu ToolBar.Paste				Вставить
+    tmenu ToolBar.Find				Найти...
+    tmenu ToolBar.FindNext			Найти следующее
+    tmenu ToolBar.FindPrev			Найти предыдущее
+    tmenu ToolBar.Replace			Заменить...
+    tmenu ToolBar.NewSesn			Создать сеанс редактирования
+    tmenu ToolBar.LoadSesn			Загрузить сеанс редактирования
+    tmenu ToolBar.SaveSesn			Сохранить сеанс редактирования
+    tmenu ToolBar.RunScript			Выполнить командный файл программы Vim
+    tmenu ToolBar.Shell				Командная оболочка
+    tmenu ToolBar.Make				Компиляция
+    tmenu ToolBar.RunCtags			Создать файл с индексами
+    tmenu ToolBar.TagJump			Перейти по указателю
+    tmenu ToolBar.Help				Справка
+    tmenu ToolBar.FindHelp			Поиск в документации
+    tmenu ToolBar.WinClose			Закрыть текущее окно
+    tmenu ToolBar.WinMax			Максимальная высота текущего окна
+    tmenu ToolBar.WinMin			Минимальная высота текущего окна
+    tmenu ToolBar.WinSplit			Разделить окно по горизонтали
+    tmenu ToolBar.WinVSplit			Разделить окно по вертикали
+    tmenu ToolBar.WinMaxWidth			Максимальная ширина текущего окна
+    tmenu ToolBar.WinMinWidth			Минимальная ширина текущего окна
   enddef
 endif
 "
@@ -354,9 +353,9 @@ an 10.360.20 &File.Открыть\ в\ кодировке\.\.\..CP1251	:browse e ++enc=cp1251<CR>
 an 10.360.30 &File.Открыть\ в\ кодировке\.\.\..CP866	:browse e ++enc=cp866<CR>
 an 10.360.30 &File.Открыть\ в\ кодировке\.\.\..KOI8-R	:browse e ++enc=koi8-r<CR>
 an 10.360.40 &File.Открыть\ в\ кодировке\.\.\..UTF-8	:browse e ++enc=utf-8<CR>
-an 10.365.20 &File.Сохранить\ с\ кодировкой\.\.\..CP1251	:browse w ++enc=cp1251<CR>
+an 10.365.20 &File.Сохранить\ с\ кодировкой\.\.\..CP1251 :browse w ++enc=cp1251<CR>
 an 10.365.30 &File.Сохранить\ с\ кодировкой\.\.\..CP866	:browse w ++enc=cp866<CR>
-an 10.365.30 &File.Сохранить\ с\ кодировкой\.\.\..KOI8-R	:browse w ++enc=koi8-r<CR>
+an 10.365.30 &File.Сохранить\ с\ кодировкой\.\.\..KOI8-R :browse w ++enc=koi8-r<CR>
 an 10.365.40 &File.Сохранить\ с\ кодировкой\.\.\..UTF-8	:browse w ++enc=utf-8<CR>
 "
 
