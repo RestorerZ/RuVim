@@ -4,6 +4,7 @@
 #
 # vassily "vr" ragosin <vrr@users.sourceforge.net>, 2004
 # Sergey Alyoshin <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
+# Matvey Tarasov <matthewtarasov@yandex.ru>, 2022
 # Restorer <restorer@mail2k.ru>, 2017, 2020-2022
 #
 #
@@ -19,10 +20,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1000\n"
+"Project-Id-Version: Vim 9.0.1071\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-12-04 14:06+0300\n"
-"PO-Revision-Date: 2022-12-04 18:57+0300\n"
+"POT-Creation-Date: 2022-12-17 23:15+0300\n"
+"PO-Revision-Date: 2022-12-17 23:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -2174,7 +2175,7 @@ msgstr "Не удалось открыть на запись файл протокола \""
 # :!~ Restorer
 msgid "Vim: Error: Failure to start gvim from NetBeans\n"
 msgstr ""
-"Программа Vim. Не удалось запустить программу Gvim из среды разработки "
+"Программа Vim. Не удалось запустить программу gVim из среды разработки "
 "NetBeans\n"
 
 # :!~ Restorer
@@ -2292,7 +2293,7 @@ msgstr "-unregister\t\tОтмена регистрации программы gVim в пространстве OLE"
 
 # ~!: earlier
 msgid "-g\t\t\tRun using GUI (like \"gvim\")"
-msgstr "-g\t\t\tЗапуск программы с графическим интерфейсом (как \"gvim\")"
+msgstr "-g\t\t\tЗапуск программы с графическим интерфейсом (как \"gVim\")"
 
 # :!~ Restorer
 msgid "-f  or  --nofork\tForeground: Don't fork when starting GUI"
@@ -2414,7 +2415,7 @@ msgstr "--not-a-term\t\tНе сообщать об отсутствии терминала для ввода-вывода"
 # :!~ Restorer
 msgid "--gui-dialog-file {fname}  For testing: write dialog text"
 msgstr ""
-"--gui-dialog-file {fname}  Запись сообщения диалоговых окон. Для отладки"
+"--gui-dialog-file {файл}  Запись сообщения диалоговых окон. Для отладки"
 
 # :!~ Restorer
 msgid "--ttyfail\t\tExit if input or output is not a terminal"
@@ -2577,7 +2578,7 @@ msgid ""
 "Arguments recognised by gvim (Motif version):\n"
 msgstr ""
 "\n"
-"Аргументы запуска программы gvim (вариант для Motif):\n"
+"Аргументы запуска программы gVim (вариант для Motif):\n"
 
 # :!~ Restorer
 msgid "-display <display>\tRun Vim on <display>"
@@ -2620,8 +2621,7 @@ msgstr "-borderwidth <ширина>\tНазначить <ширину> рамки окна (или -bw)"
 
 # :!~ Restorer
 msgid "-scrollbarwidth <width>  Use a scrollbar width of <width> (also: -sw)"
-msgstr ""
-"-scrollbarwidth <ширина>\tНазначить <ширину> полосы прокрутки (или -sw)"
+msgstr "-scrollbarwidth <ширина> Назначить <ширину> полосы прокрутки (или -sw)"
 
 # ~!: earlier
 msgid "-reverse\t\tUse reverse video (also: -rv)"
@@ -2641,7 +2641,7 @@ msgid ""
 "Arguments recognised by gvim (GTK+ version):\n"
 msgstr ""
 "\n"
-"Аргументы запуска программы gvim (вариант для GTK+):\n"
+"Аргументы запуска программы gVim (вариант для GTK+):\n"
 
 # :!~ Restorer
 msgid "-display <display>\tRun Vim on <display> (also: --display)"
@@ -2703,7 +2703,7 @@ msgstr "Состояние режима modifyOtherKeys: %s\n"
 # :!~ Restorer
 #, c-format
 msgid "Kitty keyboard protocol: %s\n"
-msgstr "Состояние «kitty» протокола обменна данных с клавиатурой: %s\n"
+msgstr "Состояние протокола «kitty» обменна данными с клавиатурой: %s\n"
 
 # #Restorer: выводится, например, по команде `:abbreviata`
 # :!~ Restorer
@@ -3231,9 +3231,7 @@ msgstr "строка %4ld:"
 # #Restorer: добавил года
 # :!~ Restorer
 msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
-msgstr ""
-"Перевод на русский язык: Василий Рагозин, 2004; Сергей Алёшин, 2013-2019; "
-"Restorer, <restorer@mail2k.ru>, 2020-2022"
+msgstr "Перевод на русский язык: Restorer, 2020-2022, <restorer@mail2k.ru>"
 
 # #Restorer: отображается если нажаты CTRL+C (CTRL+BREAK) и далее про продолжение
 # :!~ Restorer
@@ -3741,12 +3739,12 @@ msgid ""
 "External commands will not pause after completion.\n"
 "See  :help win32-vimrun  for more information."
 msgstr ""
-"Не удалось найти файл VIMRUN.EXE по тем маршрутам,\n"
-"которые указаны в переменной окружения %PATH%.\n"
+"Не удалось найти файл VIMRUN.EXE в значении\n"
+"переменной окружения %PATH%.\n"
 "По этой причине после исполнения внешних команд,\n"
-"вызванных из программы GVim, окно командной оболочки\n"
+"вызванных из программы gVim, окно командной оболочки\n"
 "будет закрыто автоматически.\n"
-"Чтобы получить дополнительную информацию, наберите   :help win32-vimrun"
+"Чтобы получить дополнительную информацию, наберите  :help win32-vimrun"
 
 # #Restorer: заголовок окна
 # :!~ Restorer
@@ -5627,7 +5625,7 @@ msgstr "Открыть отмеченные файлы в программе Vim"
 # :!~ Restorer
 msgid "Error creating process: Check if gvim is in your path!"
 msgstr ""
-"Произошёл сбой при создании процесса. Проверьте, что программа Gvim "
+"Произошёл сбой при создании процесса. Проверьте, что программа gVim "
 "установлена в соответствующий каталог"
 
 # #Restorer: заголовок окна сообщения
@@ -9925,8 +9923,7 @@ msgstr "E908: Ожидался тип данных String, а получены недопустимые данные %s"
 
 # :!~ Restorer
 msgid "E909: Cannot index a special variable"
-msgstr ""
-"E909: Не допускается указание индекса для типа данных Special, Job, Channel"
+msgstr "E909: Не допускается указание индекса для спецальных типов данных"
 
 # :!~ Restorer
 msgid "E910: Using a Job as a Number"
@@ -9973,7 +9970,7 @@ msgstr "E918: Перед вызовом задания уже должен быть загружен буфер %s"
 # :!~ Restorer
 #, c-format
 msgid "E919: Directory not found in '%s': \"%s\""
-msgstr "E919: В указанных в параметре '%s' каталогах не удалось найти \"%s\""
+msgstr "E919: В каталогах, указанных в параметре '%s', не найдено \"%s\""
 
 # :!~ Restorer
 msgid "E920: _io file requires _name to be set"
@@ -11912,12 +11909,125 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1312: Not allowed to change the window layout in this autocmd"
-msgstr "E1312: Запрецено изменение расположения окон для этой автокоманды"
+msgstr "E1312: Запрещено изменение расположения окон для этой автокоманды"
 
 # :!~ Restorer
 #, c-format
 msgid "E1313: Not allowed to add or remove entries (%s)"
 msgstr "E1313: Запрещено добавление или удаление записей для команды %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1314: Class name must start with an uppercase letter: %s"
+msgstr "E1314: Наименование класса должно начинаться с прописной буквы %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1315: White space required after class name: %s"
+msgstr "E1315: Обязателен пробельный символ после наименования класса %s"
+
+# :!~ Restorer
+msgid "E1316: Class can only be defined in Vim9 script"
+msgstr ""
+"E1316: Тип данных Class может быть использован только в командных файлах Vim9"
+
+# :!~ Restorer
+#, c-format
+msgid "E1317: Invalid object member declaration: %s"
+msgstr "E1317: Недопустимое объявление элемента объекта %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1318: Not a valid command in a class: %s"
+msgstr "E1318: Недопустимая команда в объявлении класса %s"
+
+# :!~ Restorer
+msgid "E1319: Using a class as a Number"
+msgstr "E1319: Ожидался тип данных Number, а получен тип данных Class"
+
+# :!~ Restorer
+msgid "E1320: Using an object as a Number"
+msgstr "E1320: Ожидался тип данных Number, а получен тип данных Object"
+
+# :!~ Restorer
+msgid "E1321: Using a class as a Float"
+msgstr "E1321: Ожидался тип данных Float, а получен тип данных Class"
+
+# :!~ Restorer
+msgid "E1322: Using an object as a Float"
+msgstr "E1322: Ожидался тип данных Float, а получен тип данных Object"
+
+# :!~ Restorer
+msgid "E1323: Using a class as a String"
+msgstr "E1323: Ожидался тип данных String, а получен тип данных Class"
+
+# :!~ Restorer
+msgid "E1324: Using an object as a String"
+msgstr "E1324: Ожидался тип данных String, а получен тип данных Object"
+
+# :!~ Restorer
+#, c-format
+msgid "E1325: Method not found on class \"%s\": %s"
+msgstr "E1325: У класса \"%s\" не удалось обнаружить метод %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1326: Member not found on object \"%s\": %s"
+msgstr "E1326: У объекта \"%s\" не удалось обнаружить элемент %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1327: Object required, found %s"
+msgstr "E1327: Ожидался объект, получен %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1328: Constructor default value must be v:none: %s"
+msgstr "E1328: В конструкторе начальное значение должно быть v:none, а не %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1329: Cannot get object member type from initializer: %s"
+msgstr "E1329: Не удалось получить тип элемента объекта из инициализатора %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1330: Invalid type for object member: %s"
+msgstr "E1330: Для элемента объекта указан недопустимый тип %s"
+
+# :!~ Restorer
+msgid "E1331: Public must be followed by \"this\""
+msgstr ""
+"E1331: После модификатора доступа public должно быть указано ключевое слово "
+"\"this\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1332: Public object member name cannot start with underscore: %s"
+msgstr ""
+"E1332: Начальным символом наименования открытого элемента объекта не должен "
+"быть '_' %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1333: Cannot access private object member: %s"
+msgstr "E1333: Не удалось получить доступ к внутреннему элементу объекта %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1334: Object member not found: %s"
+msgstr "E1334: Не удалось найти элемент объекта %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1335: Object member is not writable: %s"
+msgstr "E1335: Отсутствуют права на запись элемента объекта %s"
+
+# :!~ Restorer
+msgid "E1336: Internal error: shortmess too long"
+msgstr ""
+"E1336: Внутренняя ошибка. Превышена доспстимая длина значения параметра "
+"'shortmess'"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
@@ -14242,7 +14352,7 @@ msgstr "загружать подключаемые модули при запуске программы"
 # :!~ Restorer
 msgid "enable reading .vimrc/.exrc/.gvimrc in the current directory"
 msgstr ""
-"разрешать обработку файлов .vimrc, .exrc или .gvimrc\n"
+"разрешить обработку файлов .vimrc, .exrc или .gvimrc\n"
 "в текущем каталоге"
 
 # :!~ Restorer
