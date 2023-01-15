@@ -5,7 +5,7 @@
 # vassily "vr" ragosin <vrr@users.sourceforge.net>, 2004
 # Sergey Alyoshin <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
 # Matvey Tarasov <matthewtarasov@yandex.ru>, 2022
-# Restorer <restorer@mail2k.ru>, 2017, 2020-2022
+# Restorer <restorer@mail2k.ru>, 2017, 2020-2023
 # URL: https://github.com/RestorerZ/RuVim
 #
 #
@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1108\n"
+"Project-Id-Version: Vim 9.0.1201\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2022-12-30 09:47+0300\n"
-"PO-Revision-Date: 2022-12-30 09:57+0300\n"
+"POT-Creation-Date: 2023-01-15 19:23+0300\n"
+"PO-Revision-Date: 2023-01-15 19:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -1095,7 +1095,8 @@ msgstr "[ОШИБКИ СЧИТЫВАНИЯ]"
 
 # :!~ Restorer
 msgid "Can't find temp file for conversion"
-msgstr "Не найден временный файл для изменения кодировки текста"
+msgstr ""
+"Отсутствует временный файл для выполнения операции изменения кодировки текста"
 
 # :!~ Restorer
 msgid "Conversion with 'charconvert' failed"
@@ -4265,12 +4266,12 @@ msgstr "В файле %s на строке %d недопустимое для выполнения поиска условие %s"
 #, c-format
 msgid "Expected REP(SAL) count in %s line %d"
 msgstr ""
-"В файле %s на строке %d для правил REP или REPSAL должно быть указано число"
+"В файле %s на строке %d для правил REP или REPSAL не указано количество"
 
 # :!~ Restorer
 #, c-format
 msgid "Expected MAP count in %s line %d"
-msgstr "В файле %s на строке %d для правила MAP должно быть указано число"
+msgstr "В файле %s на строке %d для правила MAP не указано количество"
 
 # :!~ Restorer
 #, c-format
@@ -5940,7 +5941,7 @@ msgstr "E85: Указанный буфер отсутствует в списке буферов"
 # :!~ Restorer
 #, c-format
 msgid "E86: Buffer %ld does not exist"
-msgstr "E86: Не существует буфер с номером %ld"
+msgstr "E86: Буфер под номером %ld не существует"
 
 # :!~ Restorer
 msgid "E87: Cannot go beyond last buffer"
@@ -5969,7 +5970,7 @@ msgstr "E91: Не задано значение параметра 'shell'"
 # :!~ Restorer
 #, c-format
 msgid "E92: Buffer %d not found"
-msgstr "E92: Не найден буфер %d"
+msgstr "E92: Буфер под номером %d не обнаружен"
 
 # :!~ Restorer
 #, c-format
@@ -6014,12 +6015,12 @@ msgstr "E101: Слияние не выполнено. Более двух буферов в режиме сравнения"
 # :!~ Restorer
 #, c-format
 msgid "E102: Can't find buffer \"%s\""
-msgstr "E102: Не найден буфер \"%s\""
+msgstr "E102: Не удалось найти буфер \"%s\""
 
 # :!~ Restorer
 #, c-format
 msgid "E103: Buffer \"%s\" is not in diff mode"
-msgstr "E103: Режим сравнения не активирован для буфера \"%s\""
+msgstr "E103: Не активирован режим сравнения для буфера \"%s\""
 
 # :!~ Restorer
 msgid "E104: Escape not allowed in digraph"
@@ -6027,7 +6028,7 @@ msgstr "E104: Не допускается указание клавиши <ESC> при задании диграфа"
 
 # :!~ Restorer
 msgid "E105: Using :loadkeymap not in a sourced file"
-msgstr "E105: Команда :loadkeymap применена вне командного файла"
+msgstr "E105: Команда :loadkeymap указана вне командного файла"
 
 # :!~ Restorer
 #, c-format
@@ -6413,7 +6414,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E184: No such user-defined command: %s"
-msgstr "E184: Не существует команда пользователя %s"
+msgstr "E184: Не существует команды пользователя %s"
 
 # :!~ Restorer
 #, c-format
@@ -9038,7 +9039,7 @@ msgstr "E755: Недопустимое наименование региона в файле %s"
 
 # :!~ Restorer
 msgid "E756: Spell checking is not possible"
-msgstr "E756: Невозможно выполнить проверку правописания"
+msgstr "E756: Проверка правописания не активирована"
 
 # :!~ Restorer
 msgid "E757: This does not look like a spell file"
@@ -10512,7 +10513,7 @@ msgstr "E1053: Не удалось импортировать \"%s\""
 # :!~ Restorer
 #, c-format
 msgid "E1054: Variable already declared in the script: %s"
-msgstr "E1054: Переменная объявлена в командном файле %s"
+msgstr "E1054: Эта переменная уже объявлена в командном файле %s"
 
 # :!~ Restorer
 msgid "E1055: Missing name after ..."
@@ -10671,7 +10672,7 @@ msgstr "E1090: Не допускается присвоение значения аргументу %s"
 # :!~ Restorer
 #, c-format
 msgid "E1091: Function is not compiled: %s"
-msgstr "E1091: Не компилированная функция %s"
+msgstr "E1091: Некомпилированная функция %s"
 
 # :!~ Restorer
 msgid "E1092: Cannot nest :redir"
@@ -11038,12 +11039,12 @@ msgstr "E1166: Не допускается указание диапазона для данных типа Dictionary"
 # :!~ Restorer
 #, c-format
 msgid "E1167: Argument name shadows existing variable: %s"
-msgstr "E1167: Аргумент имеет такое же наименование, как и переменная %s"
+msgstr "E1167: Наименование аргумента конфликтует с существующей переменной %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1168: Argument already declared in the script: %s"
-msgstr "E1168: Аргумент объявлен в командном файле %s"
+msgstr "E1168: Этот аргумент уже объявлен в командном файле %s"
 
 # :!~ Restorer
 #, c-format
@@ -11413,7 +11414,7 @@ msgstr "E1242: Запрещён пробел перед разделителем параметров в команде %s"
 
 # :!~ Restorer
 msgid "E1243: ASCII code not in 32-127 range"
-msgstr "E1243: Код символа вне диапазона значений 32-127 кодировки ASCII"
+msgstr "E1243: Код символа вне диапазона значений 32—127 кодировки ASCII"
 
 # :!~ Restorer
 #, c-format
@@ -11564,7 +11565,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1272: Using type not in a script context: %s"
-msgstr "E1272: Указание типа данных вне контекста командного файла %s"
+msgstr "E1272: Несоответствующий контекст для типа данных %s"
 
 # :!~ Restorer
 #, c-format
@@ -11776,8 +11777,8 @@ msgstr "E1314: Наименование класса должно начинаться с прописной буквы %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1315: White space required after class name: %s"
-msgstr "E1315: Требуется пробельный символ после наименования класса %s"
+msgid "E1315: White space required after name: %s"
+msgstr "E1315: Требуется пробельный символ после наименования %s"
 
 # :!~ Restorer
 msgid "E1316: Class can only be defined in Vim9 script"
@@ -11787,7 +11788,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1317: Invalid object member declaration: %s"
-msgstr "E1317: Недопустимое объявление члена объекта %s"
+msgstr "E1317: Недопустимое объявление атрибута объекта %s"
 
 # :!~ Restorer
 #, c-format
@@ -11821,12 +11822,12 @@ msgstr "E1324: Ожидался тип данных String, а получен Object"
 # :!~ Restorer
 #, c-format
 msgid "E1325: Method not found on class \"%s\": %s"
-msgstr "E1325: У класса \"%s\" не найден метод %s"
+msgstr "E1325: У класса \"%s\" отсутствует метод %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1326: Member not found on object \"%s\": %s"
-msgstr "E1326: У объекта \"%s\" не найден член %s"
+msgstr "E1326: У объекта \"%s\" отсутствует атрибут %s"
 
 # :!~ Restorer
 #, c-format
@@ -11841,12 +11842,12 @@ msgstr "E1328: В конструкторе начальное значение должно быть v:none, а не %s"
 # :!~ Restorer
 #, c-format
 msgid "E1329: Cannot get object member type from initializer: %s"
-msgstr "E1329: Не удалось получить тип члена объекта из инициализатора %s"
+msgstr "E1329: Не удалось получить тип атрибута объекта из конструктора %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1330: Invalid type for object member: %s"
-msgstr "E1330: Недопустимый тип данных члена объекта %s"
+msgstr "E1330: Недопустимый тип данных для атрибута объекта %s"
 
 # :!~ Restorer
 msgid "E1331: Public must be followed by \"this\" or \"static\""
@@ -11858,23 +11859,23 @@ msgstr ""
 #, c-format
 msgid "E1332: Public member name cannot start with underscore: %s"
 msgstr ""
-"E1332: Не допускается начальный символ '_' в наименовании открытого элемента "
+"E1332: Не допускается начальный символ '_' в наименовании открытого атрибута "
 "%s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1333: Cannot access private member: %s"
-msgstr "E1333: Не удалось получить доступ к внутреннему элементу %s"
+msgstr "E1333: Не удалось получить доступ к внутреннему атрибуту %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1334: Object member not found: %s"
-msgstr "E1334: Не найден элемент объекта %s"
+msgstr "E1334: У объекта отсутствует атрибут %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1335: Member is not writable: %s"
-msgstr "E1335: Отсутствуют права на запись элемента %s"
+msgstr "E1335: Атрибут доступен только для чтения %s"
 
 # :!~ Restorer
 msgid "E1336: Internal error: shortmess too long"
@@ -11884,12 +11885,12 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1337: Class member not found: %s"
-msgstr "E1337: Не найден элемент класса %s"
+msgstr "E1337: У класса отсутствует атрибут %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1338: Member not found on class \"%s\": %s"
-msgstr "E1338: У класса \"%s\" не найден элемент %s"
+msgstr "E1338: У класса \"%s\" отсутствует атрибут %s"
 
 # :!~ Restorer
 msgid ""
@@ -11898,6 +11899,101 @@ msgid ""
 msgstr ""
 "E1339: Запрещена вставка виртуального текста после применения отрицательного "
 "значения ИД"
+
+# :!~ Restorer
+#, c-format
+msgid "E1340: Argument already declared in the class: %s"
+msgstr "E1340: Обнаружено повторное объявление аргумента %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1341: Variable already declared in the class: %s"
+msgstr "E1341: Обнаружено повторное объявление перменной %s"
+
+# :!~ Restorer
+msgid "E1342: Interface can only be defined in Vim9 script"
+msgstr ""
+"E1342: Тип Interface может быть определён только в командных файлах Vim9"
+
+# :!~ Restorer
+#, c-format
+msgid "E1343: Interface name must start with an uppercase letter: %s"
+msgstr "E1343: Наименование интерфейса должно начинаться с прописной буквы %s"
+
+# :!~ Restorer
+msgid "E1344: Cannot initialize a member in an interface"
+msgstr "E1344: Не удалось инициализировать атрибут в интерфейсе"
+
+# :!~ Restorer
+#, c-format
+msgid "E1345: Not a valid command in an interface: %s"
+msgstr "E1345: Недопустимая команда в объявлении интерфейса %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1346: Interface name not found: %s"
+msgstr "E1346: Не удалось найти интерфейс с наименованием %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1347: Not a valid interface: %s"
+msgstr "E1347: Недопустимый интерфейс %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1348: Member \"%s\" of interface \"%s\" not implemented"
+msgstr "E1348: Не был реализован атрибут \"%s\" из интерфейса \"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1349: Function \"%s\" of interface \"%s\" not implemented"
+msgstr "E1349: Не был реализован метод \"%s\" из интерфейса \"%s\""
+
+# :!~ Restorer
+msgid "E1350: Duplicate \"implements\""
+msgstr "E1350: Повтор ключевого слова \"implements\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1351: Duplicate interface after \"implements\": %s"
+msgstr ""
+"E1351: Повтор наименования интрефейса после ключевого слова \"implements\" %s"
+
+# :!~ Restorer
+msgid "E1352: Duplicate \"extends\""
+msgstr "E1352: Повтор ключевого слова \"extends\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1353: Class name not found: %s"
+msgstr "E1353: Не удалось найти класс с наименованием %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1354: Cannot extend %s"
+msgstr "E1354: Не удалось выполнить наследование %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1355: Duplicate function: %s"
+msgstr "E1355: Повтор функции %s"
+
+# :!~ Restorer
+msgid "E1356: \"super\" must be followed by a dot"
+msgstr "E1356: Сразу после ключевого слова \"super\" должен быть символ точки"
+
+# :!~ Restorer
+msgid "E1357: Using \"super\" not in a class function"
+msgstr "E1357: Ключевое слово \"super\" допускается только для метода класса"
+
+# :!~ Restorer
+msgid "E1358: Using \"super\" not in a child class"
+msgstr "E1358: Ключевое слово \"super\" допускается только в дочернем классе"
+
+# :!~ Restorer
+msgid "E1359: Cannot define a \"new\" function in an abstract class"
+msgstr ""
+"E1359: Не допускается определение функции \"new\" к абстрактному классу"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
@@ -13244,8 +13340,16 @@ msgid "list of flags to make messages shorter"
 msgstr "флаги, управляющие количеством отображаемых сообщений программы"
 
 # :!~ Restorer
-msgid "show (partial) command keys in the status line"
-msgstr "отображать в строке состояния частично набранные команды"
+msgid "show (partial) command keys in location given by 'showcmdloc'"
+msgstr ""
+"отображение набранных команд там, где указанно в параметре\n"
+"'showcmdloc'"
+
+# :!~ Restorer
+msgid "location where to show the (partial) command keys for 'showcmd'"
+msgstr ""
+"задать место отображения команд при установленном параметре\n"
+"'showcmd'"
 
 # :!~ Restorer
 msgid "display the current mode in the status line"
@@ -13783,7 +13887,7 @@ msgstr ""
 # :!~ Restorer
 msgid "whether to make the backup as a copy or rename the existing file"
 msgstr ""
-"создавать резервную копию или копированием, или переименованием\n"
+"метод создания резервной копии: или копированием, или переименованием\n"
 "файла"
 
 # :!~ Restorer
