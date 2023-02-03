@@ -1,7 +1,7 @@
 " Vim syntax file
 " Language:     Russian Vim program help files *.rux
 " Maintainer:   Restorer <restorer@mail2k.ru>
-" Last Change:  11 Dec 2022
+" Last Change:  03 Feb 2023
 " 
 
 " Проверяем язык локали и установки опции 'helplang'
@@ -27,7 +27,7 @@ syntax match helpVim      "^\s\+\<автор\%[ы:] .*$"
 " Подсветка примечаний в тексте, начала примеров и т.п.
 syntax keyword helpNote     Примечание. Совет. Пример. Примеры:
 syntax keyword helpWarning   Внимание!
- syntax keyword helpDeprecated	Устаревшая устаревшая устаревший Устаревший
+syntax keyword helpDeprecated	Устаревшая устаревшая устаревший Устаревший
 " Подсветка Ex-команд в документации Vim
 syntax match helpCommand     "\":[0-9A-Za-z!]\+\""hs=s+1,he=e-1
 " Подсветка специальных обозначений
@@ -48,7 +48,7 @@ syntax match helpSpecial    "\[параметры]"
 syntax match helpSpecial    "CTRL-{символ}"
 syntax region helpNotVi     start="{Доступно только" start="{В редкторе Vim" start="{В редакторе Vi" end="}" contains=helpLeadBlank,helpHyperTextJump
 " Подсветка примечаний переводчика
-syntax region helpTrnsNote  start="\[" end=" — Примеч. пер.]" contains=helpComment
+syntax region helpTrnsNote  start="\[[А-Я]" end="Примеч\. пер\.\]" contains=helpComment
 " Определение группы подсветки Ex-команд в документации Vim
 hi def link helpCommand     vimCommand
 " Определение группы подсветки примечаний переводчика
