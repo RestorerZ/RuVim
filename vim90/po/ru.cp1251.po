@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1201\n"
+"Project-Id-Version: Vim 9.0.1276\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2023-01-15 19:23+0300\n"
-"PO-Revision-Date: 2023-01-15 19:57+0300\n"
+"POT-Creation-Date: 2023-02-03 18:53+0300\n"
+"PO-Revision-Date: 2023-02-03 19:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -7515,7 +7515,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E413: Too many arguments: \":highlight link %s\""
-msgstr "E413: Лишние параметры в команде \":highlight link %s\""
+msgstr "E413: Превышено количество параметры в команде \":highlight link %s\""
 
 # :!~ Restorer
 msgid "E414: Group has settings, highlight link ignored"
@@ -7957,7 +7957,7 @@ msgstr ""
 #, no-c-format
 msgid "E499: Empty file name for '%' or '#', only works with \":p:h\""
 msgstr ""
-"E499: Если буфер не связан с файлом, спецсимволы '%' или '#' применяют с "
+"E499: Если буфер не связан с файлом, спецсимвол '%' или '#' применяют с "
 "модификаторами \":p:h\""
 
 # :!~ Restorer
@@ -8450,7 +8450,7 @@ msgstr "E603: Для команды :catch не указана команда :try"
 
 # :!~ Restorer
 msgid "E604: :catch after :finally"
-msgstr "E604: Команды :catch указанная после команды :finally"
+msgstr "E604: Команды :catch указана после команды :finally"
 
 # :!~ Restorer
 #, c-format
@@ -8468,7 +8468,7 @@ msgstr "E607: Несколько следующих одна за другой команд :finally"
 # :!~ Restorer
 msgid "E608: Cannot :throw exceptions with 'Vim' prefix"
 msgstr ""
-"E608: Недопустимо указание в назначенных пользователем исключениях приставки "
+"E608: В назначенных пользователем исключениях запрещено указание приставки "
 "VIM"
 
 # :!~ Restorer
@@ -10783,9 +10783,9 @@ msgid "E1113: Overlapping ranges for 0x%lx"
 msgstr "E1113: Перекрытие диапазонов для значения 0x%lx"
 
 # :!~ Restorer
-msgid "E1114: Only values of 0x100 and higher supported"
+msgid "E1114: Only values of 0x80 and higher supported"
 msgstr ""
-"E1114: В функции setcellwidths() допустимы символы из диапазона 0x100 и выше"
+"E1114: В функции setcellwidths() допустимы символы из диапазона 0x80 и выше"
 
 # :!~ Restorer
 msgid "E1115: \"assert_fails()\" fourth argument must be a number"
@@ -11111,7 +11111,7 @@ msgstr "E1180: Допустим только тип данных List для остаточного параметра %s"
 # :!~ Restorer
 msgid "E1181: Cannot use an underscore here"
 msgstr ""
-"E1181: Здесь символ подчёркивания не допустим для пропуска аргумента функции"
+"E1181: Здесь символ подчёркивания недопустим для пропуска аргумента функции"
 
 # :!~ Restorer
 #, c-format
@@ -11371,7 +11371,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E1233: exists_compiled() can only be used in a :def function"
 msgstr ""
-"E1233: Функция exists_compiled() применяется только с функциями, заданных "
+"E1233: Функция exists_compiled() применяется только к функциями, заданными "
 "командой :def"
 
 # :!~ Restorer
@@ -11995,6 +11995,11 @@ msgid "E1359: Cannot define a \"new\" function in an abstract class"
 msgstr ""
 "E1359: Не допускается определение функции \"new\" к абстрактному классу"
 
+# :!~ Restorer
+#, c-format
+msgid "E476: Invalid command: %s, expected %s"
+msgstr "E476: Недопустимая команда %s, ожидалась команда %s"
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
 msgid "--No lines in buffer--"
@@ -12551,12 +12556,12 @@ msgstr "каталоги, в которых выполняется поиск файлов"
 # :!~ Restorer
 msgid ":cd without argument goes to the home directory"
 msgstr ""
-"разрешить переход в домашний каталог по команде `:cd`\n"
+"разрешить переход в домашний каталог по команде \":cd\"\n"
 "набранной без параметров"
 
 # :!~ Restorer
 msgid "list of directory names used for :cd"
-msgstr "каталоги, используемые при исполнении команды :cd"
+msgstr "каталоги, используемые при исполнении команды \":cd\""
 
 # :!~ Restorer
 msgid "change to directory of file in buffer"
@@ -12905,7 +12910,7 @@ msgstr "способ предоставления вариантов написания"
 
 # :!~ Restorer
 msgid "amount of memory used by :mkspell before compressing"
-msgstr "размер выделяемой памяти используемой командой :mkspell"
+msgstr "размер выделяемой памяти используемой командой \":mkspell\""
 
 # :!~ Restorer
 msgid "multiple windows"
@@ -13299,7 +13304,7 @@ msgstr "настройки форматирования при выводе на печать"
 
 # :!~ Restorer
 msgid "name of the printer to be used for :hardcopy"
-msgstr "принтер, используемый при исполнении команды :hardcopy"
+msgstr "принтер, используемый при исполнении команды \":hardcopy\""
 
 # :!~ Restorer
 msgid "expression used to print the PostScript file for :hardcopy"
