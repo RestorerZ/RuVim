@@ -2,12 +2,12 @@
 " layout English-US 104 key 'QWERTY'
 "
 " Maintainer:	 Restorer <restorer@mail2k.ru>
-" Last Changed:	 10 Dec 2022
-" Version:	 2.5
+" Last Changed:	 11 Feb 2023
+" Version:	 3.1
 " Description:	 описание дано после изображений клавиатуры
 
 " Расположение символов для русского языка при подключенном файле с раскладкой
-" клавиатуры «русская типографская» (russian-typograph.vim). Версия 2.5
+" клавиатуры «русская типографская» (russian-typograph.vim). Версия 3.1
 
 
 "		  Ни одна из клавиш модификаторов не нажата
@@ -85,6 +85,36 @@
 "	  '------'  '-----'--------------------------'------'  '------'
 
 
+"			 Нажаты клавиши ALT и CTRL
+
+"	  ,---,---,---,---,---,---,---,---,---,---,---,---,---,-------,
+"	  |   |   |   |   |   |   |   |   |   |   |   |   |   | <---  |
+"	  |---'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-----|
+"	  | ->| |   |   | у́ |   | е́ |   |   |   |   |   |   |   |     |
+"	  |-----',--',--',--',--',--',--',--',--',--',--',--',--'-----|
+"	  | Caps |   | ы́ |   | а́ |   |   | о́ |   |   |   | э́ |  Enter |
+"	  |------'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'--------|
+"	  | Shift  | я́ |   |   |   | и́ |   |   |   | ю́ |   |  Shift   |
+"	  |------,-',--'--,'---'---'---'---'---'---'-,-'---',--,------|
+"	  | CTRL |  | ALT |                          | ALT  |  | CTRL |
+"	  '------'  '-----'--------------------------'------'  '------'
+
+
+"			 Нажаты клавиши SHIFT, ALT и CTRL
+
+"	  ,---,---,---,---,---,---,---,---,---,---,---,---,---,-------,
+"	  |   |   |   |   |   |   |   |   |   |   |   |   |   | <---  |
+"	  |---'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-----|
+"	  | ->| |   |   | У́ |   | Е́ |   |   |   |   |   |   |   |     |
+"	  |-----',--',--',--',--',--',--',--',--',--',--',--',--'-----|
+"	  | Caps |   | Ы́ |   | А́ |   |   | О́ |   |   |   | Э́ |  Enter |
+"	  |------'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'--------|
+"	  | SHIFT  | Я́ |   |   |   | И́ |   |   |   | Ю́ |   |  SHIFT   |
+"	  |------,-',--'--,'---'---'---'---'---'---'-,-'---',--,------|
+"	  | CTRL |  | ALT |                          | ALT  |  | CTRL |
+"	  '------'  '-----'--------------------------'------'  '------'
+
+
 " Раскладка сделана на основе раскладки «русская машинопись» (KBDRU1.DLL),
 " поставляемой в составе ОС MS Windows.
 "
@@ -104,7 +134,7 @@ loadkeymap
 
 "		DIGITAL ROW
 
-"	The SHIFT key and ALT key is not pressed
+"	None of the modifier keys are pressed
 <char-0x0060>	    <char-0x0025>	" PERCENT SIGN
 <char-0x0031>	    <char-0x0021>	" EXCLAMATION MARK
 <char-0x0032>	    <char-0x2014>	" EM DASH
@@ -157,7 +187,7 @@ loadkeymap
 
 "		ALPHABETICAL 1st ROW
 
-"	The SHIFT key and ALT key is not pressed
+"	None of the modifier keys are pressed
 <char-0x0071>	    <char-0x0439>	" CYRILLIC SMALL LETTER SHORT I
 <char-0x0077>	    <char-0x0446>	" CYRILLIC SMALL LETTER TSE
 <char-0x0065>	    <char-0x0443>	" CYRILLIC SMALL LETTER U
@@ -193,10 +223,18 @@ loadkeymap
 <A-char-0x007b>	    <char-0x007b>       " LEFT CURLY BRACKET
 <A-char-0x007d>	    <char-0x007d>       " RIGHT CURLY BRACKET
 
+"	The ALT and CTRL key pressed
+<A-C-char-0x0065>    <char-0x0443><char-0x0301>	" CYRILLIC SMALL LETTER U with COMBINING ACUTE ACCENT
+<A-C-char-0x0074>    <char-0x0435><char-0x0301>	" CYRILLIC SMALL LETTER IE with COMBINING ACUTE ACCENT
+
+"	The SHIFT and ALT and CTRL keys pressed
+<S-A-C-char-0x0045>    <char-0x0423><char-0x0301>   " CYRILLIC CAPITAL LETTER U with COMBINING ACUTE ACCENT
+<S-A-C-char-0x0054>    <char-0x0415><char-0x0301>   " CYRILLIC CAPITAL LETTER IE with COMBINING ACUTE ACCENT
+
 
 "		ALPHABETIC 2st ROW
 
-"	The SHIFT key and ALT key is not pressed
+"	None of the modifier keys are pressed
 <char-0x0061>	    <char-0x0444>	" CYRILLIC SMALL LETTER EF
 <char-0x0073>	    <char-0x044b>	" CYRILLIC SMALL LETTER YERU
 <char-0x0064>	    <char-0x0432>	" CYRILLIC SMALL LETTER VE
@@ -229,10 +267,22 @@ loadkeymap
 "	The SHIFT and ALT keys pressed
 <A-char-0x0022>	    <char-0x0022>       " QUOTATION MARK
 
+"	The ALT and CTRL key pressed
+<A-C-char-0x0073>    <char-0x044b><char-0x0301>	" CYRILLIC SMALL LETTER YERU with COMBINING ACUTE ACCENT
+<A-C-char-0x0066>    <char-0x0430><char-0x0301>	" CYRILLIC SMALL LETTER A with COMBINING ACUTE ACCENT
+<A-C-char-0x006a>    <char-0x043e><char-0x0301>	" CYRILLIC SMALL LETTER O with COMBINING ACUTE ACCENT
+<A-C-char-0x0027>    <char-0x044d><char-0x0301>	" CYRILLIC SMALL LETTER E with COMBINING ACUTE ACCENT
+
+"	The SHIFT and ALT and CTRL keys pressed
+<S-A-C-char-0x0053>    <char-0x042b><char-0x0301>   " CYRILLIC CAPITAL LETTER YERU with COMBINING ACUTE ACCENT
+<S-A-C-char-0x0046>    <char-0x0410><char-0x0301>   " CYRILLIC CAPITAL LETTER A with COMBINING ACUTE ACCENT
+<S-A-C-char-0x004a>    <char-0x041e><char-0x0301>   " CYRILLIC CAPITAL LETTER O with COMBINING ACUTE ACCENT
+<S-A-C-char-0x0022>    <char-0x042d><char-0x0301>   " CYRILLIC CAPITAL LETTER E with COMBINING ACUTE ACCENT
+
 
 "		ALPHABETIC 3st ROW
 
-"	The SHIFT key and ALT key is not pressed
+"	None of the modifier keys are pressed
 <char-0x007a>	    <char-0x044f>	" CYRILLIC SMALL LETTER YA
 <char-0x0078>	    <char-0x0447>	" CYRILLIC SMALL LETTER CHE
 <char-0x0063>	    <char-0x0441>	" CYRILLIC SMALL LETTER ES
@@ -263,10 +313,20 @@ loadkeymap
 <A-char-0x003c>	    <char-0x003c>       " LESS-THAN SIGN
 <A-char-0x003e>	    <char-0x003e>       " GREATER-THAN SIGN
 
+"	The ALT and CTRL key pressed
+<A-C-char-0x007a>    <char-0x044f><char-0x0301>	" CYRILLIC SMALL LETTER YA with COMBINING ACUTE ACCENT
+<A-C-char-0x0062>    <char-0x0438><char-0x0301>	" CYRILLIC SMALL LETTER I with COMBINING ACUTE ACCENT
+<A-C-char-0x002e>    <char-0x044e><char-0x0301>	" CYRILLIC SMALL LETTER YU with COMBINING ACUTE ACCENT
+
+"	The SHIFT and ALT and CTRL keys pressed
+<S-A-C-char-0x005a>    <char-0x042f><char-0x0301>   " CYRILLIC CAPITAL LETTER YA with COMBINING ACUTE ACCENT
+<S-A-C-char-0x0042>    <char-0x0418><char-0x0301>   " CYRILLIC CAPITAL LETTER I with COMBINING ACUTE ACCENT
+<S-A-C-char-0x003e>    <char-0x042e><char-0x0301>   " CYRILLIC CAPITAL LETTER Y with COMBINING ACUTE ACCENT
+
 
 "		VK_OEM_5 key (scan code 2b)
 
-"	The SHIFT key and ALT key is not pressed
+"	None of the modifier keys are pressed
 <char-0x005c>	    <char-0x002f>	" SOLIDUS
 
 "	The SHIFT key is pressed
