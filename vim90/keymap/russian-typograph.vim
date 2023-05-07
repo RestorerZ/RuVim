@@ -2,12 +2,12 @@
 " layout English-US 104 key 'QWERTY'
 "
 " Maintainer:	 Restorer <restorer@mail2k.ru>
-" Last Changed:	 11 Feb 2023
-" Version:	 3.1
+" Last Changed:	 25 Apr 2023
+" Version:	 3.3
 " Description:	 описание дано после изображений клавиатуры
 
 " Расположение символов для русского языка при подключенном файле с раскладкой
-" клавиатуры «русская типографская» (russian-typograph.vim). Версия 3.1
+" клавиатуры «русская типографская» (russian-typograph.vim). Версия 3.3
 
 
 "		  Ни одна из клавиш модификаторов не нажата
@@ -43,7 +43,7 @@
 "			     Нажата клавиша ALT
 
 "	  ,---,---,---,---,---,---,---,---,---,---,---,---,---,-------,
-"	  | ` | № | – | “ | ” |   |   | … |   |   |   | ‑ | ± | <---  |
+"	  | ` | № | – | „ | “ |   |   | … |   |   |   | ‑ | ± | <---  |
 "	  |---'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-'-,-----|
 "	  | ->| |   |   |   |   |   |   |   |   |   |   | [ | ] |  \  |
 "	  |-----',--',--',--',--',--',--',--',--',--',--',--',--'-----|
@@ -168,8 +168,8 @@ loadkeymap
 <A-char-0x0060>	    <char-0x0060>	" GRAVE ACCENT 
 <A-char-0x0031>	    <char-0x2116>       " NUMERO SIGN
 <A-char-0x0032>	    <char-0x2013>	" EN DASH
-<A-char-0x0033>	    <char-0x201c>	" LEFT DOUBLE QUOTATION MARK
-<A-char-0x0034>	    <char-0x201d>	" RIGHT DOUBLE QUOTATION MARK
+<A-char-0x0033>	    <char-0x201e>	" DOUBLE LOW-9 QUOTATION MARK
+<A-char-0x0034>	    <char-0x201c>	" LEFT DOUBLE QUOTATION MARK
 <A-char-0x0037>	    <char-0x2026>	" HORIZONTAL ELLIPSIS
 <A-char-0x002d>	    <char-0x2011>	" NON-BREAKING HYPHEN
 <A-char-0x003d>	    <char-0x00b1>	" PLUS-MINUS SIGN
