@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1392\n"
+"Project-Id-Version: Vim 9.0.1520\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2023-03-07 19:51+0300\n"
-"PO-Revision-Date: 2023-03-07 19:57+0300\n"
+"POT-Creation-Date: 2023-05-07 19:07+0300\n"
+"PO-Revision-Date: 2023-05-07 19:37+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -233,6 +233,11 @@ msgstr "Окончание"
 msgid "Top"
 msgstr "Начало"
 
+# :!~ Restorer
+#, c-format
+msgid "%d%%"
+msgstr "%d%%"
+
 # #Restorer: в строке состояния для буфера с окном запроса и уведомления
 # :!~ Restorer
 msgid "[Prompt]"
@@ -400,6 +405,51 @@ msgstr "Введённые пароли не совпадают!"
 # :!~ Restorer
 msgid "[crypted]"
 msgstr "[шифровано]"
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using custom opslimit \"%llu\" for Key derivation."
+msgstr ""
+"xChaCha20v2: для получения ключа применено нестандартное значение opslimit "
+"\"%llu\""
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using default opslimit \"%llu\" for Key derivation."
+msgstr ""
+"xChaCha20v2: для получения ключа применено стандартное значение opslimit "
+"\"%llu\""
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using custom memlimit \"%lu\" for Key derivation."
+msgstr ""
+"xChaCha20v2: для получения ключа применено нестандартное значение memlimit "
+"\"%lu\""
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using default memlimit \"%lu\" for Key derivation."
+msgstr ""
+"xChaCha20v2: для получения ключа применено стандартное значение memlimit "
+"\"%lu\""
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using custom algorithm \"%d\" for Key derivation."
+msgstr ""
+"xChaCha20v2: для получения ключа применён нестандартный алгоритм \"%d\""
+
+# #Restorer: выводится при значении 'verbose'>0
+# :!~ Restorer
+#, c-format
+msgid "xchacha20v2: using default algorithm \"%d\" for Key derivation."
+msgstr "xChaCha20v2: для получения ключа применён стандартный алгоритм \"%d\""
 
 # :!~ Restorer
 msgid "Entering Debug mode.  Type \"cont\" to continue."
@@ -2862,6 +2912,10 @@ msgid "??? from here until ???END lines may have been inserted/deleted"
 msgstr ""
 "Строки, которые были добавлены или удалены, помещены между метками ??? и ???"
 "END"
+
+# :!~ Restorer
+msgid "??? lines may be missing"
+msgstr "??? эти строки, возможно, утрачены"
 
 # :!~ Restorer
 msgid "???END"
@@ -7517,7 +7571,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E413: Too many arguments: \":highlight link %s\""
-msgstr "E413: Превышено количество параметры в команде \":highlight link %s\""
+msgstr "E413: Превышено количество параметров в команде \":highlight link %s\""
 
 # :!~ Restorer
 msgid "E414: Group has settings, highlight link ignored"
@@ -7946,7 +8000,8 @@ msgstr ""
 # :!~ Restorer
 msgid "E496: No autocommand buffer number to substitute for \"<abuf>\""
 msgstr ""
-"E496: Отсутствует буфер для замещения в автокоманде спецсимвола \"<abuf>\""
+"E496: Отсутствует номер буфер для замещения в автокоманде спецсимвола "
+"\"<abuf>\""
 
 # :!~ Restorer
 msgid "E497: No autocommand match name to substitute for \"<amatch>\""
@@ -9884,10 +9939,6 @@ msgid "E921: Invalid callback argument"
 msgstr "E921: Недопустимый тип обработчика сообщений"
 
 # :!~ Restorer
-msgid "E922: Expected a dict"
-msgstr "E922: Предполагалось указание на тип Dictionary"
-
-# :!~ Restorer
 msgid "E923: Second argument of function() must be a list or a dict"
 msgstr ""
 "E923: В функции function() аргумент номер 2 должен быть списком или словарём"
@@ -10763,11 +10814,6 @@ msgstr "E1107: Тип данных должен быть String, List, Dictionary или BLOB"
 
 # :!~ Restorer
 #, c-format
-msgid "E1108: Item not found: %s"
-msgstr "E1108: Не удалось найти компонент %s"
-
-# :!~ Restorer
-#, c-format
 msgid "E1109: List item %d is not a List"
 msgstr "E1109: Тип %d элемента списка не является List"
 
@@ -10897,12 +10943,6 @@ msgid "E1136: <Cmd> mapping must end with <CR> before second <Cmd>"
 msgstr ""
 "E1136: Назначаемая через <Cmd> команда не завершается <CR> перед следующей "
 "<Cmd>"
-
-# :!~ Restorer
-#, c-format
-msgid "E1137: <Cmd> mapping must not include %s key"
-msgstr ""
-"E1137: Назначаемая через <Cmd> команда не может содержать в себе клавиши %s"
 
 # :!~ Restorer
 msgid "E1138: Using a Bool as a Number"
@@ -11469,11 +11509,6 @@ msgid "E1252: String, List or Blob required for argument %d"
 msgstr "E1252: Тип данных аргумента номер %d должен быть String, List или BLOB"
 
 # :!~ Restorer
-#, c-format
-msgid "E1253: String expected for argument %d"
-msgstr "E1253: Для аргумента номер %d ожидался тип данных String"
-
-# :!~ Restorer
 msgid "E1254: Cannot use script variable in for loop"
 msgstr ""
 "E1254: Не допускается указание локальных переменных в команде цикла :for"
@@ -12017,6 +12052,10 @@ msgstr "E1362: Не допускается указание инициализированного типа данных Object"
 # :!~ Restorer
 msgid "E1363: Incomplete type"
 msgstr "E1363: Обнаружен неполный тип"
+
+# :!~ Restorer
+msgid "E1364: Warning: Pointer block corrupted"
+msgstr "E1364: Внимание! Повреждён блок указателей"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
