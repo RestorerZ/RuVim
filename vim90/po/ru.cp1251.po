@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1520\n"
+"Project-Id-Version: Vim 9.0.1603\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2023-05-07 19:07+0300\n"
-"PO-Revision-Date: 2023-05-07 19:37+0300\n"
+"POT-Creation-Date: 2023-06-04 12:10+0300\n"
+"PO-Revision-Date: 2023-06-04 12:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -62,7 +62,7 @@ msgstr ""
 # #Restorer: выводится при просмотре списка автокоманд
 # ~!: earlier
 msgid "--Deleted--"
-msgstr "--Удалено--"
+msgstr "-- Удалено --"
 
 # :!~ Restorer
 #, c-format
@@ -172,16 +172,16 @@ msgstr "[нет изменений]"
 # #Restorer: например, по команде `CTRL+G`
 # ~!: earlier
 msgid "[Read errors]"
-msgstr "[ошибки при считывании]"
+msgstr "[ошибки считывания]"
 
 # #Restorer: например, по команде `CTRL+G` или в строке состояния
-# #Restorer: добавляется к сообщению в командной строке при операциях с файлом
-# ~!: earlier
+# #Restorer: в командной строке при операциях с файлом и при 'shm' = r
+# :!~ Restorer
 msgid "[RO]"
 msgstr "[ТДЧ]"
 
 # #Restorer: например, по команде `CTRL+G`
-# #Restorer: добавляется к сообщению в командной строке при операциях с файлом
+# #Restorer: в командной строке при операциях с файлом
 # ~!: earlier
 msgid "[readonly]"
 msgstr "[только для чтения]"
@@ -191,15 +191,15 @@ msgstr "[только для чтения]"
 #, c-format
 msgid "%ld line --%d%%--"
 msgid_plural "%ld lines --%d%%--"
-msgstr[0] "%ld строка --%d%%--"
-msgstr[1] "%ld строки --%d%%--"
-msgstr[2] "%ld строк --%d%%--"
+msgstr[0] "%ld строка -- %d %% --"
+msgstr[1] "%ld строки -- %d %% --"
+msgstr[2] "%ld строк -- %d %% --"
 
 # #Restorer: например, по команде `CTRL+G`
 # :!~ Restorer
 #, c-format
 msgid "line %ld of %ld --%d%%-- col "
-msgstr "строка %ld из %ld --%d%%-- колонка "
+msgstr "строка %ld из %ld -- %d %% -- колонка "
 
 # #Restorer: в заголовке окна
 # :!~ Restorer
@@ -236,7 +236,35 @@ msgstr "Начало"
 # :!~ Restorer
 #, c-format
 msgid "%d%%"
-msgstr "%d%%"
+msgstr "%d %%"
+
+# #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
+# #Restorer: редактировании нескольких файлов
+# ~!: Restorer
+#, c-format
+msgid " (%d of %d)"
+msgstr " (%d из %d)"
+
+# #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
+# #Restorer: редактировании нескольких файлов
+# ~!: Restorer
+#, c-format
+msgid " ((%d) of %d)"
+msgstr " ((%d) из %d)"
+
+# #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
+# #Restorer: редактировании нескольких файлов
+# ~!: Restorer
+#, c-format
+msgid " (file %d of %d)"
+msgstr " (файл %d из %d"
+
+# #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
+# #Restorer: редактировании нескольких файлов
+# ~!: Restorer
+#, c-format
+msgid " (file (%d) of %d)"
+msgstr " (файл (%d) из %d"
 
 # #Restorer: в строке состояния для буфера с окном запроса и уведомления
 # :!~ Restorer
@@ -298,22 +326,22 @@ msgstr "[изменена кодировка]"
 msgid "[Device]"
 msgstr "[устройство]"
 
-# #Restorer: скорее всего в командной строке при операциях с файлом
-# ~!: earlier
+# #Restorer: в командной строке при операциях добавления в файл и при 'shm' = w
+# :!~ Restorer
 msgid " [a]"
-msgstr " [д]"
+msgstr " [доб.]"
 
-# #Restorer: скорее всего в командной строке при операциях с файлом
+# #Restorer: в командной строке при операциях добавления в файл
 # ~!: earlier
 msgid " appended"
 msgstr " добавлено"
 
-# #Restorer: скорее всего в командной строке при операциях с файлом
-# ~!: earlier
+# #Restorer: в командной строке при операциях записи файла и при 'shm' = w
+# :!~ Restorer
 msgid " [w]"
-msgstr " [з]"
+msgstr " [зап.]"
 
-# #Restorer: скорее всего в командной строке при операциях с файлом
+# #Restorer: в командной строке при операциях записи файла
 # ~!: earlier
 msgid " written"
 msgstr " записано"
@@ -524,8 +552,8 @@ msgstr "аргумента функции extend()"
 #, c-format
 msgid "Not enough memory to use internal diff for buffer \"%s\""
 msgstr ""
-"Встроенному механизму сравнения недостаточно памяти для считывания буфера "
-"\"%s\""
+"Встроенному механизму сравнения недостаточно памяти на считывание буфера \"%s"
+"\""
 
 # #Restorer: выводится в заголовке окна выбора файла
 # :!~ Restorer
@@ -908,13 +936,6 @@ msgstr ""
 "Диапазон указан в обратной последовательности. Поменять значения местами?"
 
 # :!~ Restorer
-msgid ""
-"INTERNAL: Cannot use EX_DFLALL with ADDR_NONE, ADDR_UNSIGNED or ADDR_QUICKFIX"
-msgstr ""
-"Внутренняя ошибка. Не допускается указание команды EX_DFLALL с адресами вида "
-"ADDR_NONE, ADDR_UNSIGNED или ADDR_QUICKFIX"
-
-# :!~ Restorer
 #, c-format
 msgid "%d more file to edit.  Quit anyway?"
 msgid_plural "%d more files to edit.  Quit anyway?"
@@ -1232,7 +1253,7 @@ msgstr "Чтобы получить дополнительную информацию, наберите \":help W12\""
 #, c-format
 msgid "W11: Warning: File \"%s\" has changed since editing started"
 msgstr ""
-"W11: Внимание! После считывания в буфер произошло изменение файла \"%s\""
+"W11: Внимание! После считывания в буфер, произошло изменение файла \"%s\""
 
 # :!~ Restorer
 msgid "See \":help W11\" for more info."
@@ -1242,7 +1263,8 @@ msgstr "Чтобы получить дополнительную информацию, наберите \":help W11\""
 #, c-format
 msgid "W16: Warning: Mode of file \"%s\" has changed since editing started"
 msgstr ""
-"W16: Внимание! После считывания в буфер изменены прав доступа к файлу \"%s\""
+"W16: Внимание! После считывания в буфер, изменены права доступа к файлу \"%s"
+"\""
 
 # :!~ Restorer
 msgid "See \":help W16\" for more info."
@@ -1637,7 +1659,7 @@ msgstr "Отсутствует текст для печати"
 # :!~ Restorer
 #, c-format
 msgid "Printing page %d (%d%%)"
-msgstr "Печать страницы %d (%d%%)"
+msgstr "Печать страницы %d (%d %%)"
 
 # ~!: earlier
 #, c-format
@@ -3477,7 +3499,7 @@ msgstr ""
 # ~!: earlier
 #, c-format
 msgid "(+%lld for BOM)"
-msgstr " (+%lld с учётом BOM)"
+msgstr " (+%lld с учётом МПБ)"
 
 # #Restorer: может сразу написать это по-арабски
 # :!~ Restorer
@@ -3520,13 +3542,6 @@ msgid ""
 msgstr ""
 "\n"
 "--- Параметры ---"
-
-# #Restorer: выводится как внутренняя ошибка
-# #Restorer: дописывается к сообщению «set_string_option_direct()»
-# :!~ Restorer
-#, c-format
-msgid "For option %s"
-msgstr "для параметра %s"
 
 # #Restorer: отображается как `не удалось открыть intuition.library!?\n`
 # :!~ Restorer
@@ -5789,11 +5804,6 @@ msgstr ""
 "E37: Данные в буфере не сохранены (чтобы игнорировать, укажите модификатор !)"
 
 # :!~ Restorer
-msgid "E38: Null argument"
-msgstr ""
-"E38: Внутренняя ошибка. В функцию передан аргумент со значение указателя NULL"
-
-# :!~ Restorer
 msgid "E39: Number expected"
 msgstr "E39: В качестве аргумента должно быть указано число"
 
@@ -5810,16 +5820,6 @@ msgstr "E41: Не достаточно памяти!"
 # :!~ Restorer
 msgid "E42: No Errors"
 msgstr "E42: Отсутствуют записи в списке результатов"
-
-# :!~ Restorer
-msgid "E43: Damaged match string"
-msgstr ""
-"E43: Внутренняя ошибка. Сбой в механизме обработки регулярных выражений"
-
-# :!~ Restorer
-msgid "E44: Corrupted regexp program"
-msgstr ""
-"E44: Внутренняя ошибка. Сбой в механизме обработки регулярных выражений"
 
 # :!~ Restorer
 msgid "E45: 'readonly' option is set (add ! to override)"
@@ -6408,12 +6408,10 @@ msgstr "E172: Не указан маркер"
 # :!~ Restorer
 #, c-format
 msgid "E173: %d more file to edit"
-msgstr "E173: Осталось не отредактированных файлов: %d"
-
-# :!~ Restorer
-#, c-format
-msgid "E173: %d more files to edit"
-msgstr "E173: Осталось не отредактированных файлов: %d"
+msgid_plural "E173: %d more files to edit"
+msgstr[0] "E173: Остался не отредактированным %d файл"
+msgstr[1] "E173: Остались не отредактированными %d файла"
+msgstr[2] "E173: Остались не отредактированными %d файлов"
 
 # :!~ Restorer
 #, c-format
@@ -6648,9 +6646,6 @@ msgstr "E220: Не указана закрывающая фигурная скобка"
 msgid "E221: Marker cannot start with lower case letter"
 msgstr "E221: Наименование маркера должно начинаться с прописной буквы"
 
-msgid "E222: Add to internal buffer that was already read from"
-msgstr "E222: Добавление во внутренний буфер, данные из которого уже считаны"
-
 # :!~ Restorer
 msgid "E223: Recursive mapping"
 msgstr "E223: Превышено количество переназначений клавиатурной команды"
@@ -6676,12 +6671,6 @@ msgid "E227: Mapping already exists for %s"
 msgstr "E227: Обнаружена существующая клавиатурная команда %s"
 
 # :!~ Restorer
-msgid "E228: makemap: Illegal mode"
-msgstr ""
-"E228: Внутренняя функция makemap(). Недопустимый режим для клавиатурной "
-"команды"
-
-# :!~ Restorer
 msgid "E229: Cannot start the GUI"
 msgstr "E229: Графический интерфейс программы не может быть запущен"
 
@@ -6693,12 +6682,6 @@ msgstr "E230: Не удалось считать содержимое файла \"%s\""
 # :!~ Restorer
 msgid "E231: 'guifontwide' invalid"
 msgstr "E231: Недопустимое значение параметра 'guifontwide'"
-
-# :!~ Restorer
-msgid "E232: Cannot create BalloonEval with both message and callback"
-msgstr ""
-"E232: Внутренняя ошибка. Сбой создания всплывающей выноски содержащей и "
-"текст, и результат функций"
 
 # :!~ Restorer
 msgid "E233: Cannot open display"
@@ -6843,7 +6826,6 @@ msgstr "E261: Отсутствует подключение к базе данных cscope номер %s"
 msgid "E262: Error reading cscope connection %d"
 msgstr "E262: Ошибка при считывании из базы данных cscope номер %d"
 
-# #ifdef FEAT_PYTHON
 # :!~ Restorer
 msgid ""
 "E263: Sorry, this command is disabled, the Python library could not be "
@@ -6852,55 +6834,45 @@ msgstr ""
 "E263: Не удалось подключить файл библиотеки языка Python. Команда не "
 "выполнена"
 
-# #ifdef FEAT_PYTHON
 # :!~ Restorer
 msgid "E264: Python: Error initialising I/O objects"
 msgstr ""
 "E264: Ошибка при инициализации модулем языка Python объектов ввода-вывода"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E265: $_ must be an instance of String"
 msgstr "E265: Переменная $_ должна быть экземпляром объекта String"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid ""
 "E266: Sorry, this command is disabled, the Ruby library could not be loaded."
 msgstr ""
 "E266: Не удалось подключить файл библиотеки языка Ruby. Команда не выполнена"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E267: Unexpected return"
 msgstr "E267: Непредвиденное появление инструкции return"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E268: Unexpected next"
 msgstr "E268: Непредвиденное появление инструкции next"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E269: Unexpected break"
 msgstr "E269: Непредвиденное появление инструкции break"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E270: Unexpected redo"
 msgstr "E270: Непредвиденное появление инструкции redo"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 msgid "E271: Retry outside of rescue clause"
 msgstr "E271: Обнаружена инструкция retry вне блока rescue"
 
-# #ifdef FEAT_RUBY
 # ~!: earlier
 msgid "E272: Unhandled exception"
 msgstr "E272: Необработанное исключение"
 
-# #ifdef FEAT_RUBY
 # :!~ Restorer
 #, c-format
 msgid "E273: Unknown longjmp status %d"
@@ -6929,15 +6901,6 @@ msgstr "E277: Не удалось считать ответ сервера"
 msgid "E279: Sorry, ++shell is not supported on this system"
 msgstr ""
 "E279: Аргумент ++shell не поддерживается для данной операционной системы"
-
-# #ifdef FEAT_TCL
-# :!~ Restorer
-msgid ""
-"E280: TCL FATAL ERROR: reflist corrupt!? Please report this to vim-dev@vim."
-"org"
-msgstr ""
-"E280: Критическая ошибка TCL. Возможно, повреждён список ссылок. Сообщите об "
-"этом по адресу vim-dev@vim.org"
 
 # :!~ Restorer
 #, c-format
@@ -6985,15 +6948,6 @@ msgid "E290: List or number required"
 msgstr "E290: Значением аргумента {поз} должно быть число либо перечень чисел"
 
 # :!~ Restorer
-#, c-format
-msgid "E292: Invalid count for del_bytes(): %ld"
-msgstr "E292: Для внутренней функции del_bytes() недопустимое значение %ld"
-
-# :!~ Restorer
-msgid "E293: Block was not locked"
-msgstr "E293: Внутренняя ошибка. Блок памяти не блокирован"
-
-# :!~ Restorer
 msgid "E294: Seek error in swap file read"
 msgstr "E294: Ошибка поиска блока данных при считывании файла подкачки"
 
@@ -7008,18 +6962,6 @@ msgstr "E296: Ошибка поиска блока данных при записи файла подкачки"
 # :!~ Restorer
 msgid "E297: Write error in swap file"
 msgstr "E297: Ошибка записи блока данных в файл подкачки"
-
-# :!~ Restorer
-msgid "E298: Didn't get block nr 0?"
-msgstr "E298: Внутренняя ошибка. Не удалось получить блок номер 0"
-
-# :!~ Restorer
-msgid "E298: Didn't get block nr 1?"
-msgstr "E298: Внутренняя ошибка. Не удалось получить блок номер 1"
-
-# :!~ Restorer
-msgid "E298: Didn't get block nr 2?"
-msgstr "E298: Внутренняя ошибка. Не удалось получить блок номер 2"
 
 # :!~ Restorer
 msgid "E299: Perl evaluation forbidden in sandbox without the Safe module"
@@ -7044,10 +6986,6 @@ msgstr "E302: Не удалось переименовать файл подкачки"
 #, c-format
 msgid "E303: Unable to open swap file for \"%s\", recovery impossible"
 msgstr "E303: Не удалось открыть файл подкачки. Невозможно восстановить \"%s\""
-
-# :!~ Restorer
-msgid "E304: ml_upd_block0(): Didn't get block 0??"
-msgstr "E304: Внутренняя ошибка. Не удалось получить блок номер 0"
 
 # :!~ Restorer
 #, c-format
@@ -7098,61 +7036,13 @@ msgid "E314: Preserve failed"
 msgstr "E314: Ошибка при обновлении файла подкачки"
 
 # :!~ Restorer
-#, c-format
-msgid "E315: ml_get: Invalid lnum: %ld"
-msgstr ""
-"E315: Внутренняя функция ml_get(). Недопустимое значение номера строки %ld"
-
-# #Restorer: %d - номер буфера в списке, %s - наименование
-# :!~ Restorer
-#, c-format
-msgid "E316: ml_get: Cannot find line %ld in buffer %d %s"
-msgstr ""
-"E316: Внутренняя функция ml_get(). Не найдена строка номер %ld в буфере %d %s"
-
-# :!~ Restorer
-msgid "E317: Pointer block id wrong"
-msgstr "E317: Внутренняя ошибка. Недопустимый идентификатор блока указателей"
-
-# :!~ Restorer
-msgid "E317: Pointer block id wrong 2"
-msgstr "E317: Внутренняя ошибка. Недопустимый идентификатор блока указателей 2"
-
-# :!~ Restorer
-msgid "E317: Pointer block id wrong 3"
-msgstr "E317: Внутренняя ошибка. Недопустимый идентификатор блока указателей 3"
-
-# :!~ Restorer
-msgid "E317: Pointer block id wrong 4"
-msgstr "E317: Внутренняя ошибка. Недопустимый идентификатор блока указателей 4"
-
-# :!~ Restorer
-msgid "E318: Updated too many blocks?"
-msgstr "E318: Внутренняя ошибка. Возможно, обновлено большее количество блоков"
-
-# :!~ Restorer
 msgid "E319: Sorry, the command is not available in this version"
 msgstr "E319: Команда недоступна в данной версии программы"
 
 # :!~ Restorer
 #, c-format
-msgid "E320: Cannot find line %ld"
-msgstr "E320: Внутренняя ошибка. Не найдена строка номер %ld"
-
-# :!~ Restorer
-#, c-format
 msgid "E321: Could not reload \"%s\""
 msgstr "E321: Не удалось выполнить перезагрузку буфера \"%s\""
-
-# :!~ Restorer
-#, c-format
-msgid "E322: Line number out of range: %ld past the end"
-msgstr "E322: Внутренняя ошибка. Номер строки превышает диапазон на %ld"
-
-# :!~ Restorer
-#, c-format
-msgid "E323: Line count wrong in block %ld"
-msgstr "E323: Внутренняя ошибка. Недопустимое количество строк в блоке %ld"
 
 # :!~ Restorer
 msgid "E324: Can't open PostScript output file"
@@ -7227,8 +7117,10 @@ msgid "E339: Pattern too long"
 msgstr "E339: Превышена длина регулярного выражения"
 
 # :!~ Restorer
-msgid "E341: Internal error: lalloc(0, )"
-msgstr "E341: Внутренняя ошибка. Функция lalloc(0, )"
+msgid "E340: Internal error; if you can reproduce please report a bug"
+msgstr ""
+"E340: Внутренняя ошибка. Если возможно её воспроизвести, сообщите "
+"разработчику"
 
 # :!~ Restorer
 #, c-format
@@ -7305,10 +7197,6 @@ msgstr "E354: Недопустимое наименование регистра '%s'"
 #, c-format
 msgid "E355: Unknown option: %s"
 msgstr "E355: Не удалось распознать наименование параметра %s"
-
-# :!~ Restorer
-msgid "E356: get_varp ERROR"
-msgstr "E356: Внутренняя ошибка. Функция get_varp()"
 
 # :!~ Restorer
 #, c-format
@@ -7686,18 +7574,6 @@ msgid "E437: Terminal capability \"cm\" required"
 msgstr "E437: Терминал обязан поддерживать команды перемещения курсора"
 
 # :!~ Restorer
-msgid "E438: u_undo: Line numbers wrong"
-msgstr "E438: Внутренняя функция u_undoredo(). Несоответствие количества строк"
-
-# :!~ Restorer
-msgid "E439: Undo list corrupt"
-msgstr "E439: Внутренняя ошибка. Повреждены записи изменений"
-
-# :!~ Restorer
-msgid "E440: Undo line missing"
-msgstr "E440: Внутренняя ошибка. Утрачены записи изменений"
-
-# :!~ Restorer
 msgid "E441: There is no preview window"
 msgstr "E441: Отсутствует окно просмотра"
 
@@ -7857,10 +7733,6 @@ msgstr "E471: Требуется указать параметр команды"
 # :!~ Restorer
 msgid "E472: Command failed"
 msgstr "E472: Ошибка при выполнении команды"
-
-# :!~ Restorer
-msgid "E473: Internal error in regexp"
-msgstr "E473: Внутренняя ошибка механизма обработки регулярных выражений"
 
 # :!~ Restorer
 msgid "E474: Invalid argument"
@@ -8138,7 +8010,7 @@ msgstr "E519: Не поддерживается параметр"
 
 # :!~ Restorer
 msgid "E520: Not allowed in a modeline"
-msgstr "E520: Запрещена установка параметра в режимной строке"
+msgstr "E520: Для режимной строки запрещена установка параметра"
 
 # :!~ Restorer
 msgid "E521: Number required after ="
@@ -8352,18 +8224,11 @@ msgid "E568: Duplicate cscope database not added"
 msgstr "E568: Указанная база данных cscope уже подключена"
 
 # :!~ Restorer
-msgid "E570: Fatal error in cs_manage_matches"
-msgstr ""
-"E570: Внутренняя функция cs_manage_matches(). Произошла критическая ошибка"
-
-# #ifdef FEAT_TCL
-# :!~ Restorer
 msgid ""
 "E571: Sorry, this command is disabled: the Tcl library could not be loaded."
 msgstr ""
 "E571: Не удалось подключить файл библиотеки языка Tcl. Команда не выполнена"
 
-# #ifdef FEAT_TCL
 # :!~ Restorer
 #, c-format
 msgid "E572: Exit code %d"
@@ -8469,7 +8334,6 @@ msgid "E593: Need at least %d lines"
 msgstr "E593: Минимальное значение количества строк %d"
 
 # :!~ Restorer
-# # E594: Минимальное значение количества колонок %d
 #, c-format
 msgid "E594: Need at least %d columns"
 msgstr "E594: Минимальное количество колонок %d"
@@ -8608,6 +8472,14 @@ msgstr "E625: Не удалось открыть базу данных программы cscope %s"
 msgid "E626: Cannot get cscope database information"
 msgstr "E626: Не удалось получить информацию о базе данных программы cscope"
 
+#, c-format
+msgid "E627: Missing colon: %s"
+msgstr "E627: Отсутствует символ двоеточие в команде %s"
+
+#, c-format
+msgid "E628: Missing ! or / in: %s"
+msgstr "E628: Отсутствует символ ! или / в команде %s"
+
 # :!~ Restorer
 #, c-format
 msgid "E630: %s(): Write while not connected"
@@ -8618,6 +8490,91 @@ msgstr ""
 #, c-format
 msgid "E631: %s(): Write failed"
 msgstr "E631: Ошибка при выполнении записи функцией %s()"
+
+# :!~ Restorer
+msgid "E632: Invalid buffer identifier in getLength"
+msgstr "E632: Недопустимый идентификатор буфера в функции getLength"
+
+# :!~ Restorer
+msgid "E633: Invalid buffer identifier in getText"
+msgstr "E633: Недопустимый идентификатор буфера в функции getText"
+
+# :!~ Restorer
+msgid "E634: Invalid buffer identifier in remove"
+msgstr "E634: Недопустимый идентификатор буфера в функции remove"
+
+# :!~ Restorer
+msgid "E635: Invalid buffer identifier in insert"
+msgstr "E635: Недопустимый идентификатор буфера в функции insert"
+
+# :!~ Restorer
+msgid "E636: Invalid buffer identifier in create"
+msgstr "E636: Недопустимый идентификатор буфера в команде create"
+
+# :!~ Restorer
+msgid "E637: Invalid buffer identifier in startDocumentListen"
+msgstr "E637: Недопустимый идентификатор буфера в команде startDocumentListen"
+
+# :!~ Restorer
+msgid "E638: Invalid buffer identifier in stopDocumentListen"
+msgstr "E638: Недопустимый идентификатор буфера в команде stopDocumentListen"
+
+# :!~ Restorer
+msgid "E639: Invalid buffer identifier in setTitle"
+msgstr "E639: Недопустимый идентификатор буфера в команде setTitle"
+
+# :!~ Restorer
+msgid "E640: Invalid buffer identifier in initDone"
+msgstr "E640: Недопустимый идентификатор буфера в команде initDone"
+
+# :!~ Restorer
+msgid "E641: Invalid buffer identifier in setBufferNumber"
+msgstr "E641: Недопустимый идентификатор буфера в команде setBufferNumber"
+
+# :!~ Restorer
+#, c-format
+msgid "E642: File %s not found in setBufferNumber"
+msgstr "E642: Не удалось найти указанный в команде setBufferNumber файл %s"
+
+# :!~ Restorer
+msgid "E643: Invalid buffer identifier in setFullName"
+msgstr "E643: Недопустимый идентификатор буфера в команде setFullName"
+
+# :!~ Restorer
+msgid "E644: Invalid buffer identifier in editFile"
+msgstr "E644: Недопустимый идентификатор буфера в команде editFile"
+
+# :!~ Restorer
+msgid "E645: Invalid buffer identifier in setVisible"
+msgstr "E645: Недопустимый идентификатор буфера в команде setVisible"
+
+# :!~ Restorer
+msgid "E646: Invalid buffer identifier in setModified"
+msgstr "E646: Недопустимый идентификатор буфера в команде setModified"
+
+# :!~ Restorer
+msgid "E647: Invalid buffer identifier in setDot"
+msgstr "E647: Недопустимый идентификатор буфера в команде setDot"
+
+# :!~ Restorer
+msgid "E648: Invalid buffer identifier in close"
+msgstr "E648: Недопустимый идентификатор буфера в команде close"
+
+# :!~ Restorer
+msgid "E649: Invalid buffer identifier in close"
+msgstr "E649: Недопустимый идентификатор буфера в команде close"
+
+# :!~ Restorer
+msgid "E650: Invalid buffer identifier in defineAnnoType"
+msgstr "E650: Недопустимый идентификатор буфера в команде defineAnnoType"
+
+# :!~ Restorer
+msgid "E651: Invalid buffer identifier in addAnno"
+msgstr "E651: Недопустимый идентификатор буфера в команде addAnno"
+
+# :!~ Restorer
+msgid "E652: Invalid buffer identifier in getAnno"
+msgstr "E652: Недопустимый идентификатор буфера в функции getAnno"
 
 # :!~ Restorer
 #, c-format
@@ -9474,11 +9431,6 @@ msgid "E830: Undo number %ld not found"
 msgstr "E830: Не найдено изменение номер %ld"
 
 # :!~ Restorer
-msgid "E831: bf_key_init() called with empty password"
-msgstr ""
-"E831: Внутренняя функция bf_key_init(). Вызов с нулевым значением аргумента"
-
-# :!~ Restorer
 #, c-format
 msgid "E832: Non-encrypted file has encrypted undo file: %s"
 msgstr ""
@@ -9706,11 +9658,6 @@ msgstr "E875: НКА. Не удалось преобразовать все постфиксные записи"
 # :!~ Restorer
 msgid "E876: (NFA regexp) Not enough space to store the whole NFA"
 msgstr "E876: НКА. Недостаточно памяти для сохранения всех состояний механизма"
-
-# :!~ Restorer
-#, c-format
-msgid "E877: (NFA regexp) Invalid character class: %d"
-msgstr "E877: НКА. Не удалось распознать символьный класс %d"
 
 # :!~ Restorer
 msgid "E878: (NFA regexp) Could not allocate memory for branch traversal!"
@@ -10028,10 +9975,6 @@ msgstr "E941: Обнаружено, что указанный сервер уже работает"
 msgid "E942: +clientserver feature not available"
 msgstr "E942: Компонент +clientserver недоступен в этой версии программы"
 
-# ~!: earlier
-msgid "E943: Command table needs to be updated, run 'make cmdidxs'"
-msgstr "E943: Таблица команд должна быть обновлена. Выполните 'make cmdidxs'"
-
 # :!~ Restorer
 msgid "E944: Reverse range in character class"
 msgstr "E944: Задан обратный порядок значений в символьном классе"
@@ -10139,10 +10082,6 @@ msgstr "E965: Не указаны наименования типов свойств текста"
 #, c-format
 msgid "E966: Invalid line number: %ld"
 msgstr "E966: Недопустимый номер строки %ld"
-
-# :!~ Restorer
-msgid "E967: Text property info corrupted"
-msgstr "E967: Внутренняя ошибка. Повреждена информация о свойствах текста"
 
 # :!~ Restorer
 msgid "E968: Need at least one of 'id' or 'type'"
@@ -10468,7 +10407,7 @@ msgstr "E1030: Ожидался тип данных Number, а получен String \"%s\""
 
 # :!~ Restorer
 msgid "E1031: Cannot use void value"
-msgstr "E1031: Не допускается использовать пустое значение"
+msgstr "E1031: Не допускается указание на недействительное значение"
 
 # :!~ Restorer
 msgid "E1032: Missing :catch or :finally"
@@ -10483,7 +10422,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1034: Cannot use reserved name %s"
-msgstr "E1034: Зарезервированное слово в наименование переменной %s"
+msgstr "E1034: Обнаружено использование зарезервированного слова %s"
 
 # :!~ Restorer
 #, no-c-format
@@ -10518,7 +10457,6 @@ msgstr ""
 "vim9script"
 
 # :!~ Restorer
-# # E1041: Обнаружено повторное определение компонента \"%s\"
 #, c-format
 msgid "E1041: Redefining script item: \"%s\""
 msgstr "E1041: Переопределение компонента командного файла \"%s\""
@@ -10748,8 +10686,9 @@ msgid "E1094: Import can only be used in a script"
 msgstr "E1094: Команда :import должна указываться только в командном файле"
 
 # :!~ Restorer
-msgid "E1095: Unreachable code after :return"
-msgstr "E1095: Указанное после команды :return выражение не будет вычислено"
+#, c-format
+msgid "E1095: Unreachable code after :%s"
+msgstr "E1095: Не обработано выражение после команды :%s"
 
 # :!~ Restorer
 msgid "E1096: Returning a value in a function without a return type"
@@ -10800,13 +10739,12 @@ msgid "E1105: Cannot convert %s to string"
 msgstr "E1105: Не допускается преобразование к строке для %s"
 
 # :!~ Restorer
-msgid "E1106: One argument too many"
-msgstr "E1106: Количество аргументов превышено на 1"
-
-# :!~ Restorer
 #, c-format
-msgid "E1106: %d arguments too many"
-msgstr "E1106: Количество аргументов превышено на %d"
+msgid "E1106: One argument too many"
+msgid_plural "E1106: %d arguments too many"
+msgstr[0] "E1106: В функцию передано на один аргумент больше"
+msgstr[1] "E1106: В функцию передано на %d аргумента больше"
+msgstr[2] "E1106: В функцию передано на %d аргументов больше"
 
 # :!~ Restorer
 msgid "E1107: String, List, Dict or Blob required"
@@ -10911,15 +10849,16 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1129: Throw with empty string"
-msgstr "E1129: После команды :throw указана пустая строка"
+msgstr "E1129: После команды :throw отсутствует выражение"
 
 # :!~ Restorer
 msgid "E1130: Cannot add to null list"
-msgstr "E1130: Не допускается добавление элементов к пустому списку"
+msgstr ""
+"E1130: Данные с типом List отсутствуют. Добавление элементов не выполнено"
 
 # :!~ Restorer
 msgid "E1131: Cannot add to null blob"
-msgstr "E1131: Не допускается добавление цифр к пустому BLOB"
+msgstr "E1131: Данные с типом BLOB отсутствуют. Добавление цифр не выполнено"
 
 # :!~ Restorer
 msgid "E1132: Missing function argument"
@@ -10927,11 +10866,14 @@ msgstr "E1132: Не указан аргумент функции"
 
 # :!~ Restorer
 msgid "E1133: Cannot extend a null dict"
-msgstr "E1133: Не допускается присоединение записей к пустому словарю"
+msgstr ""
+"E1133: Данные с типом Dictionary отсутствуют. Присоединение записей не "
+"выполнено"
 
 # :!~ Restorer
 msgid "E1134: Cannot extend a null list"
-msgstr "E1134: Не допускается присоединение элементов к пустому списку"
+msgstr ""
+"E1134: Данные с типом List отсутствуют. Присоединение элементов не выполнено"
 
 # :!~ Restorer
 #, c-format
@@ -10958,12 +10900,13 @@ msgstr "E1140: Параметр команды :for должен быть в виде вложенного списка"
 
 # :!~ Restorer
 msgid "E1141: Indexable type required"
-msgstr "E1141: Требуется тип данных поддерживающих индексацию"
+msgstr "E1141: Требуется тип данных допускающих индексацию"
 
 # :!~ Restorer
 msgid "E1142: Calling test_garbagecollect_now() while v:testing is not set"
 msgstr ""
-"E1142: Вызов функции test_garbagecollect_now() не задана переменная v:testing"
+"E1142: При вызове функции test_garbagecollect_now() не задана переменная v:"
+"testing"
 
 # :!~ Restorer
 #, c-format
@@ -11001,15 +10944,15 @@ msgstr "E1149: Недопустимое значение переменной после перегрузки функции %s"
 
 # :!~ Restorer
 msgid "E1150: Script variable type changed"
-msgstr "E1150: Изменён типа переменной"
+msgstr "E1150: Изменён тип переменной"
 
 # :!~ Restorer
 msgid "E1151: Mismatched endfunction"
-msgstr "E1151: Обнаружена несогласующаяся команда :endfunction"
+msgstr "E1151: Обнаружена несоответствующая команда :endfunction"
 
 # :!~ Restorer
 msgid "E1152: Mismatched enddef"
-msgstr "E1152: Обнаружена несогласующаяся команда :enddef"
+msgstr "E1152: Обнаружена несоответствующая команда :enddef"
 
 # :!~ Restorer
 #, c-format
@@ -11027,7 +10970,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1156: Cannot change the argument list recursively"
-msgstr "E1156: Не допускается рекурсивное изменение списка файлов"
+msgstr "E1156: Не допускается рекурсивное изменение перечня файлов"
 
 # :!~ Restorer
 msgid "E1157: Missing return type"
@@ -11098,7 +11041,7 @@ msgstr "E1168: Этот аргумент уже объявлен в командном файле %s"
 # :!~ Restorer
 #, c-format
 msgid "E1169: Expression too recursive: %s"
-msgstr "E1169: Большая рекурсивность выражения %s"
+msgstr "E1169: Выражение слишком рекурсивное %s"
 
 # :!~ Restorer
 msgid "E1170: Cannot use #{ to start a comment"
@@ -11201,13 +11144,12 @@ msgid "E1189: Cannot use :legacy with this command: %s"
 msgstr "E1189: Не допускается указание после команды :legacy команды %s"
 
 # :!~ Restorer
-msgid "E1190: One argument too few"
-msgstr "E1190: Количество аргументов меньше на 1"
-
-# :!~ Restorer
 #, c-format
-msgid "E1190: %d arguments too few"
-msgstr "E1190: Количество аргументов меньше на %d"
+msgid "E1190: One argument too few"
+msgid_plural "E1190: %d arguments too few"
+msgstr[0] "E1190: В функцию передано на один аргумент меньше"
+msgstr[1] "E1190: В функцию передано на %d аргумента меньше"
+msgstr[2] "E1190: В функцию передано на %d аргументов меньше"
 
 # :!~ Restorer
 #, c-format
@@ -11226,15 +11168,15 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1194: Cannot encrypt header, not enough space"
-msgstr "E1194: Не удалось зашифровать заголовок. Не достаточно памяти"
+msgstr "E1194: Не удалось зашифровать заголовок. Недостаточно памяти"
 
 # :!~ Restorer
 msgid "E1195: Cannot encrypt buffer, not enough space"
-msgstr "E1195: Не удалось зашифровать файл. Не достаточно памяти"
+msgstr "E1195: Не удалось зашифровать файл. Недостаточно памяти"
 
 # :!~ Restorer
 msgid "E1196: Cannot decrypt header, not enough space"
-msgstr "E1196: Не удалось расшифровать заголовок. Не достаточно памяти"
+msgstr "E1196: Не удалось расшифровать заголовок. Недостаточно памяти"
 
 # :!~ Restorer
 msgid "E1197: Cannot allocate_buffer for encryption"
@@ -11246,7 +11188,7 @@ msgstr "E1198: Ошибка расшифровки. Недопустимый заголовок"
 
 # :!~ Restorer
 msgid "E1199: Cannot decrypt buffer, not enough space"
-msgstr "E1199: Не удалось расшифровать файл. Не достаточно памяти"
+msgstr "E1199: Не удалось расшифровать файл. Недостаточно памяти"
 
 # :!~ Restorer
 msgid "E1200: Decryption failed!"
@@ -11287,7 +11229,7 @@ msgstr "E1207: Выражение неприменимо %s"
 
 # :!~ Restorer
 msgid "E1208: -complete used without allowing arguments"
-msgstr "E1208: Не задан требуемый атрибут при указании атрибута -complete"
+msgstr "E1208: Не задан требуемый параметр при указании атрибута -complete"
 
 # :!~ Restorer
 #, c-format
@@ -11420,7 +11362,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E1233: exists_compiled() can only be used in a :def function"
 msgstr ""
-"E1233: Функция exists_compiled() применяется только к функциями, заданными "
+"E1233: Функция exists_compiled() применяется только к функциям определёнными "
 "командой :def"
 
 # :!~ Restorer
@@ -11919,11 +11861,6 @@ msgstr "E1334: У объекта отсутствует атрибут %s"
 #, c-format
 msgid "E1335: Member is not writable: %s"
 msgstr "E1335: Атрибут доступен только для чтения %s"
-
-# :!~ Restorer
-msgid "E1336: Internal error: shortmess too long"
-msgstr ""
-"E1336: Внутренняя ошибка. Превышена длина значения параметра 'shortmess'"
 
 # :!~ Restorer
 #, c-format
@@ -12556,7 +12493,7 @@ msgstr "перечень флагов для настройки совместимости с редактором Vi"
 
 # :!~ Restorer
 msgid "use Insert mode as the default mode"
-msgstr "режиме вставки как основной режим работы редактора Vim"
+msgstr "режим вставки как основной режим работы редактора Vim"
 
 # :!~ Restorer
 msgid "paste mode, insert typed text literally"
@@ -14520,3 +14457,8 @@ msgstr "подключаемый файл динамической библиотеки языка MzScheme"
 # :!~ Restorer
 msgid "name of the MzScheme GC dynamic library"
 msgstr "подключаемый файл динамической библиотеки MzScheme GC"
+
+# :!~ Restorer
+msgid "You discovered the command-line window! You can close it with \":q\"."
+msgstr ""
+"Активировано окно командной строки. Чтобы его закрыть, введите команду \":q\""
