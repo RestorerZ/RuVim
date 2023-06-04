@@ -160,7 +160,7 @@ menutrans Se&T\ Compiler			Выбрать\ &компилятор
 menutrans &Convert\ to\ HEX<Tab>:%!xxd		Прео&бразовать\ в\ HEX<Tab>:%!xxd
 menutrans Conve&rt\ back<Tab>:%!xxd\ -r		Преобразовать\ и&з\ HEX<Tab>:%!xxd\ -r
 ">>>---------------- Tools/Spelling
-menutrans &Spell\ Check\ On			Автоматически\ &проверять
+menutrans &Spell\ Check\ On			Выполнять\ &проверку
 menutrans Spell\ Check\ &Off			&Не\ выполнять\ проверку
 menutrans To\ &Next\ error<Tab>]s		С&ледующая\ ошибка<Tab>]s
 menutrans To\ &Previous\ error<Tab>[s		Пр&едыдущая\ ошибка<Tab>[s
