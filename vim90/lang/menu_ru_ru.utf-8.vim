@@ -2,7 +2,7 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		11 Dec 2022
+" Last Change:		08 Jul 2023
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
@@ -89,10 +89,10 @@ menutrans &Find<Tab>/			&Найти<Tab>/
 menutrans Find\ and\ Rep&lace<Tab>:%s	&Заменить<Tab>:%s
 menutrans Find\ and\ Rep&lace<Tab>:s	&Заменить<Tab>:s
 "--------------------
-menutrans Settings\ &Window			&Все\ параметры\.\.\.
+menutrans Settings\ &Window			Все\ &параметры\.\.\.
 menutrans Startup\ &Settings			Параметры\ запус&ка
-menutrans &Global\ Settings			&Общие\ параметры
-menutrans F&ile\ Settings			Параметр&ы\ текущего\ буфера
+menutrans &Global\ Settings			О&бщие\ параметры
+menutrans F&ile\ Settings			Пара&метры\ текущего\ буфера
 menutrans Show\ C&olor\ Schemes\ in\ Menu	Показать\ меню\ выбора\ цве&товой\ схемы
 menutrans C&olor\ Scheme			Цветовая\ с&хема
 menutrans Show\ &Keymaps\ in\ Menu		Показать\ меню\ выбора\ раскладки\ к&лавиатуры
@@ -100,7 +100,7 @@ menutrans &Keymap				&Раскладка\ клавиатуры
 menutrans None					Не\ использовать
 menutrans Select\ Fo&nt\.\.\.			&Шрифт\.\.\.
 ">>>----------------- Edit/Global settings
-menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсветка\ &совпадений<Tab>:set\ hls!
+menutrans Toggle\ Pattern\ &Highlight<Tab>:set\ hls!		Подсветка\ сов&падений<Tab>:set\ hls!
 menutrans Toggle\ &Ignoring\ Case<Tab>:set\ ic!			&Регистронезависимый\ поиск<Tab>:set\ ic!
 menutrans Toggle\ &Showing\ Matched\ Pairs<Tab>:set\ sm!	Подсветка\ парных\ &элементов<Tab>:set\ sm!
 menutrans &Context\ lines					Контекстных\ стр&ок
@@ -108,9 +108,9 @@ menutrans &Virtual\ Edit					Вир&туальное\ редактировани
 menutrans Toggle\ Insert\ &Mode<Tab>:set\ im!			Режим\ &вставки<Tab>:set\ im!
 menutrans Toggle\ Vi\ C&ompatibility<Tab>:set\ cp!		&Совместимость\ с\ редактором\ Vi<Tab>:set\ cp!
 menutrans Search\ &Path\.\.\.					&Каталоги\ для\ поиска\ файлов\.\.\.
-menutrans Ta&g\ Files\.\.\.					Индексные\ файлы\.\.\.
+menutrans Ta&g\ Files\.\.\.					И&ндексные\ файлы\.\.\.
 "
-menutrans Toggle\ &Toolbar		Показ\ &панели\ инструментов
+menutrans Toggle\ &Toolbar		Показ\ панели\ &инструментов
 menutrans Toggle\ &Bottom\ Scrollbar	Показ\ полосы\ прокрутки\ вни&зу
 menutrans Toggle\ &Left\ Scrollbar	Показ\ полосы\ прокрутки\ с&лева
 menutrans Toggle\ &Right\ Scrollbar	Показ\ полосы\ прокрутки\ спр&ава
@@ -123,7 +123,7 @@ menutrans Always			Включено\ во\ всех\ режимах
 ">>>----------------- Edit/File settings
 menutrans Toggle\ Line\ &Numbering<Tab>:set\ nu!		Показ\ &нумерации\ строк<Tab>:set\ nu!
 menutrans Toggle\ relati&ve\ Line\ Numbering<Tab>:set\ rnu!	Показ\ относите&льной\ нумерации\ строк<Tab>:set\ nru!
-menutrans Toggle\ &List\ Mode<Tab>:set\ list!			Показ\ &непечатаемых\ знаков<Tab>:set\ list!
+menutrans Toggle\ &List\ Mode<Tab>:set\ list!			Показ\ не&печатаемых\ знаков<Tab>:set\ list!
 menutrans Toggle\ Line\ &Wrapping<Tab>:set\ wrap!		&Разбивка\ строк\ по\ границе\ окна<Tab>:set\ wrap!
 menutrans Toggle\ W&rapping\ at\ word<Tab>:set\ lbr!		Разбивка\ строк\ по\ &границе\ слов<Tab>:set\ lbr!
 menutrans Toggle\ Tab\ &Expanding<Tab>:set\ et!			Замена\ символов\ &табуляции\ на\ пробелы<Tab>:set\ et!
@@ -167,16 +167,16 @@ menutrans To\ &Previous\ error<Tab>[s		Пр&едыдущая\ ошибка<Tab>[
 menutrans Suggest\ &Corrections<Tab>z=		Вариант&ы\ написания<Tab>z=
 menutrans &Repeat\ correction<Tab>:spellrepall	Заменить\ &все<Tab>:spellrepall
 "-------------------
-menutrans Set\ language\ to\ "en"		Включить\ для\ языка\ "en"
-menutrans Set\ language\ to\ "en_au"		Включить\ для\ языка\ "en_au"
-menutrans Set\ language\ to\ "en_ca"		Включить\ для\ языка\ "en_ca"
-menutrans Set\ language\ to\ "en_gb"		Включить\ для\ языка\ "en_gb"
-menutrans Set\ language\ to\ "en_nz"		Включить\ для\ языка\ "en_nz"
-menutrans Set\ language\ to\ "en_us"		Включить\ для\ языка\ "en_us"
-menutrans &Find\ More\ Languages		Найти\ для\ других\ &языков
-let g:menutrans_set_lang_to =			'Включить для языка'
+menutrans Set\ language\ to\ "en"		Проверка\ языка\ "en"
+menutrans Set\ language\ to\ "en_au"		Проверка\ языка\ "en_au"
+menutrans Set\ language\ to\ "en_ca"		Проверка\ языка\ "en_ca"
+menutrans Set\ language\ to\ "en_gb"		Проверка\ языка\ "en_gb"
+menutrans Set\ language\ to\ "en_nz"		Проверка\ языка\ "en_nz"
+menutrans Set\ language\ to\ "en_us"		Проверка\ языка\ "en_us"
+menutrans &Find\ More\ Languages		Найти\ другие\ &языки
+let g:menutrans_set_lang_to =			'Проверка языка'
 ">>>---------------- Folds
-menutrans &Enable/Disable\ folds<Tab>zi		Показать\ или\ убрать\ структуру<Tab>zi
+menutrans &Enable/Disable\ folds<Tab>zi		&Показать\ или\ убрать\ структуру<Tab>zi
 menutrans &View\ Cursor\ Line<Tab>zv		Просмотр\ строки\ под\ &курсором<Tab>zv
 menutrans Vie&w\ Cursor\ Line\ only<Tab>zMzx	Просмотр\ &только\ строки\ под\ курсором<Tab>z\ Shift+M\ zx
 menutrans C&lose\ more\ folds<Tab>zm		Свернуть\ вло&женные\ блоки\ структуры<Tab>zm
@@ -199,7 +199,7 @@ menutrans Ma&rker				На\ основе\ &маркеров
 menutrans &Update				О&бновить\ содержимое\ окон
 menutrans &Get\ Block				Перенести\ &в\ текущий\ буфер
 menutrans &Put\ Block				Перенести\ &из\ текущего\ буфера
-">>>--------------- Tools/Diff/Error window
+">>>--------------- Tools/Error window
 menutrans &Update<Tab>:cwin			О&бновить<Tab>:cwin
 menutrans &Close<Tab>:cclose			&Закрыть<Tab>:cclose
 menutrans &Open<Tab>:copen			&Открыть<Tab>:copen
@@ -216,7 +216,7 @@ menutrans A&utomatic				Включение\ подсветки\ &автомат�
 menutrans on/off\ for\ &This\ file		Изменить\ режим\ для\ &текущего\ файла
 menutrans Co&lor\ test				Проверить\ поддер&живаемые\ цвета
 menutrans &Highlight\ test			Показать\ группы\ под&светки
-menutrans &Convert\ to\ HTML			Со&здать\ HTML-файл\ с\ CSS
+menutrans &Convert\ to\ HTML			Прео&бразовать\ текущий\ файл\ в\ HTML
 "
 "
 " Buffers menu
@@ -243,11 +243,11 @@ menutrans Move\ &To				&Переместить
 menutrans Rotate\ &Up<Tab>^WR			Сдвинуть\ ввер&х<Tab>Ctrl+W\ Shift+R
 menutrans Rotate\ &Down<Tab>^Wr			Сдвинуть\ в&низ<Tab>Ctrl+W\ r
 "
-menutrans &Equal\ Size<Tab>^W=			Выравнять\ раз&мер<Tab>Ctrl+W\ =
-menutrans &Max\ Height<Tab>^W_			Максимальной\ в&ысоты<Tab>Ctrl+W\ _
-menutrans M&in\ Height<Tab>^W1_			Минимальной\ высо&ты<Tab>Ctrl+W\ 1_
-menutrans Max\ &Width<Tab>^W\|			Максимальной\ &ширины<Tab>Ctrl+W\ \|
-menutrans Min\ Widt&h<Tab>^W1\|			Минимальной\ ш&ирины<Tab>Ctrl+W\ 1\|
+menutrans &Equal\ Size<Tab>^W=			Выравнивание\ раз&мера<Tab>Ctrl+W\ =
+menutrans &Max\ Height<Tab>^W_			Максимальная\ в&ысота<Tab>Ctrl+W\ _
+menutrans M&in\ Height<Tab>^W1_			Минимальная\ высо&та<Tab>Ctrl+W\ 1_
+menutrans Max\ &Width<Tab>^W\|			Максимальная\ &ширина<Tab>Ctrl+W\ \|
+menutrans Min\ Widt&h<Tab>^W1\|			Минимальная\ ш&ирина<Tab>Ctrl+W\ 1\|
 ">>>----------------- Submenu of Window/Move To
 menutrans &Top<Tab>^WK				В&верх<Tab>Ctrl+W\ Shift+K
 menutrans &Bottom<Tab>^WJ			В&низ<Tab>Ctrl+W\ Shift+J
