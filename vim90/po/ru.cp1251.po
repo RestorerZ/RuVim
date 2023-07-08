@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1603\n"
+"Project-Id-Version: Vim 9.0.1674\n"
 "Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2023-06-04 12:10+0300\n"
-"PO-Revision-Date: 2023-06-04 12:57+0300\n"
+"POT-Creation-Date: 2023-07-08 01:47+0300\n"
+"PO-Revision-Date: 2023-07-08 01:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -204,7 +204,7 @@ msgstr "строка %ld из %ld -- %d %% -- колонка "
 # #Restorer: в заголовке окна
 # :!~ Restorer
 msgid "[No Name]"
-msgstr "[Безымянный]"
+msgstr "[безымянный]"
 
 # #Restorer: в заголовке окна
 # ~!: earlier
@@ -415,7 +415,7 @@ msgstr "Внимание! Используется ненадёжное шифрование. Подробнее см. :help 'cm'"
 # :!~ Restorer
 msgid "Note: Encryption of swapfile not supported, disabling swap file"
 msgstr ""
-"Текущий буфер без файла подкачки. Шифрование файла подкачки не поддерживается"
+"Шифрование файла подкачки не поддерживается. Текущий буфер без файла подкачки"
 
 # ~!: earlier
 msgid "Enter encryption key: "
@@ -4878,11 +4878,11 @@ msgstr "Завершено считывание файла изменений %s"
 
 # :!~ Restorer
 msgid "Already at oldest change"
-msgstr "Достигнута самая первая запись изменений"
+msgstr "Достигнута первая запись изменений"
 
 # :!~ Restorer
 msgid "Already at newest change"
-msgstr "Достигнута самая последняя запись изменений"
+msgstr "Достигнута последняя запись изменений"
 
 # #Restorer: выводится в командной строке при отмене или возврате изменений
 # #Restorer: из-за того, что сначала выводится число, надо как-то извернуться
@@ -7159,7 +7159,7 @@ msgstr "E347: В каталогах из параметра 'path' нет файла \"%s\""
 
 # :!~ Restorer
 msgid "E348: No string under cursor"
-msgstr "E348: В позиции курсора отсутствует строка для выполнения поиска"
+msgstr "E348: В позиции курсора отсутствует текст для выполнения поиска"
 
 # :!~ Restorer
 msgid "E349: No identifier under cursor"
@@ -7487,6 +7487,10 @@ msgid "E418: Illegal value: %s"
 msgstr "E418: Недопустимое значение параметра %s"
 
 # :!~ Restorer
+msgid "E418: I'm a teapot"
+msgstr "E418: Я ведь только чайник"
+
+# :!~ Restorer
 msgid "E419: FG color unknown"
 msgstr "E419: Не удалось получить цвет текста для установки значения параметра"
 
@@ -7567,7 +7571,7 @@ msgstr "E435: Не найден индекс по заданному шаблону. Подбор вариантов"
 # :!~ Restorer
 #, c-format
 msgid "E436: No \"%s\" entry in termcap"
-msgstr "E436: Не найдена в базе termcap запись \"%s\""
+msgstr "E436: В базе termcap не найдена запись \"%s\""
 
 # :!~ Restorer
 msgid "E437: Terminal capability \"cm\" required"
@@ -7912,6 +7916,10 @@ msgstr "не является файлом или устройством, доступным для записи"
 msgid "E503: \"%s\" is not a file or writable device"
 msgstr "E503: \"%s\" не является файлом или устройством, доступным для записи"
 
+# :!~ Restorer
+msgid "E503: Coffee is currently not available"
+msgstr "E503: Кофе ещё не готов"
+
 # #Restorer: ошибка E504:
 # :!~ Restorer
 msgid "is read-only (cannot override: \"W\" in 'cpoptions')"
@@ -8010,7 +8018,7 @@ msgstr "E519: Не поддерживается параметр"
 
 # :!~ Restorer
 msgid "E520: Not allowed in a modeline"
-msgstr "E520: Для режимной строки запрещена установка параметра"
+msgstr "E520: В режимной строке запрещена установка параметра"
 
 # :!~ Restorer
 msgid "E521: Number required after ="
@@ -8028,7 +8036,7 @@ msgstr "E522: В базе termcap отсутствует запись"
 
 # :!~ Restorer
 msgid "E523: Not allowed here"
-msgstr "E523: Запрещено выполнение данных действий в целях безопасности"
+msgstr "E523: В целях безопасности данные действия запрещены"
 
 # :!~ Restorer
 msgid "E524: Missing colon"
@@ -8941,7 +8949,7 @@ msgstr "E733: Для команды :for указана команда :endwhile"
 # :!~ Restorer
 #, c-format
 msgid "E734: Wrong variable type for %s="
-msgstr "E734: Недопустимый тип переменной для данной операции %s="
+msgstr "E734: Недопустимый тип операнда для данной операции %s="
 
 # :!~ Restorer
 msgid "E735: Can only compare Dictionary with Dictionary"
@@ -10422,7 +10430,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E1034: Cannot use reserved name %s"
-msgstr "E1034: Обнаружено использование зарезервированного слова %s"
+msgstr "E1034: Обнаружено использование зарезервированного слова в %s"
 
 # :!~ Restorer
 #, no-c-format
@@ -10736,7 +10744,7 @@ msgstr "E1104: Не указана закрывающая угловая скобка"
 # :!~ Restorer
 #, c-format
 msgid "E1105: Cannot convert %s to string"
-msgstr "E1105: Не допускается преобразование к строке для %s"
+msgstr "E1105: Не допускается преобразование к строковому типу для %s"
 
 # :!~ Restorer
 #, c-format
@@ -11964,11 +11972,11 @@ msgstr "E1356: Сразу после ключевого слова \"super\" должен быть символ точки"
 
 # :!~ Restorer
 msgid "E1357: Using \"super\" not in a class function"
-msgstr "E1357: Ключевое слово \"super\" допускается только для метода класса"
+msgstr "E1357: Ключевое слово \"super\" допустимо только для метода класса"
 
 # :!~ Restorer
 msgid "E1358: Using \"super\" not in a child class"
-msgstr "E1358: Ключевое слово \"super\" допускается только в дочернем классе"
+msgstr "E1358: Ключевое слово \"super\" допустимо только в дочернем классе"
 
 # :!~ Restorer
 msgid "E1359: Cannot define a \"new\" function in an abstract class"
@@ -11980,7 +11988,7 @@ msgstr "E1360: Обнаружен неинициализированный тип данных Object"
 
 # :!~ Restorer
 msgid "E1361: Cannot use color \"none\", did you mean \"NONE\"?"
-msgstr "E1361: Параметр \"NONE\" должен быть записан прописными буквами"
+msgstr "E1361: Значение \"NONE\" должно быть записано прописными буквами"
 
 # :!~ Restorer
 msgid "E1362: Cannot use a non-null object"
