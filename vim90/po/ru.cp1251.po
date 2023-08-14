@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1674\n"
-"Report-Msgid-Bugs-To: Bram Moolenaar <Bram@vim.org>\n"
-"POT-Creation-Date: 2023-07-08 01:47+0300\n"
-"PO-Revision-Date: 2023-07-08 01:57+0300\n"
+"Project-Id-Version: Vim 9.0.1712\n"
+"Report-Msgid-Bugs-To: The Vim Project <vim-dev@vim.org>\n"
+"POT-Creation-Date: 2023-08-13 21:39+0300\n"
+"PO-Revision-Date: 2023-08-12 22:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim\n"
 "Language: ru_RU\n"
@@ -3293,7 +3293,7 @@ msgstr "строка %4ld:"
 
 # #Restorer: выводится, например, по команде `:messages`
 # :!~ Restorer
-msgid "Messages maintainer: Bram Moolenaar <Bram@vim.org>"
+msgid "Messages maintainer: The Vim Project"
 msgstr "Restorer, перевод на русский язык, 2020, <restorer@mail2k.ru>"
 
 # #Restorer: отображается если нажаты CTRL+C (CTRL+BREAK) и далее про продолжение
@@ -5737,7 +5737,7 @@ msgstr "E22: Превышено количество вызовов командного файла программы Vim"
 
 # :!~ Restorer
 msgid "E23: No alternate file"
-msgstr "E23: Не существует соседних файлов"
+msgstr "E23: Отсутствуют соседние файлы"
 
 # :!~ Restorer
 msgid "E24: No such abbreviation"
@@ -7488,7 +7488,7 @@ msgstr "E418: Недопустимое значение параметра %s"
 
 # :!~ Restorer
 msgid "E418: I'm a teapot"
-msgstr "E418: Я ведь только чайник"
+msgstr "E418: Это же чайник"
 
 # :!~ Restorer
 msgid "E419: FG color unknown"
@@ -11049,7 +11049,7 @@ msgstr "E1168: Этот аргумент уже объявлен в командном файле %s"
 # :!~ Restorer
 #, c-format
 msgid "E1169: Expression too recursive: %s"
-msgstr "E1169: Выражение слишком рекурсивное %s"
+msgstr "E1169: Выражение слишком рекурсивно %s"
 
 # :!~ Restorer
 msgid "E1170: Cannot use #{ to start a comment"
@@ -12002,10 +12002,91 @@ msgstr "E1363: Обнаружен неполный тип"
 msgid "E1364: Warning: Pointer block corrupted"
 msgstr "E1364: Внимание! Повреждён блок указателей"
 
+# :!~ Restorer
+#, c-format
+msgid "E1400: Cannot mix positional and non-positional arguments: %s"
+msgstr "E1400: Указаны как позиционные, так и не позиционные спецификаторы %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1401: format argument %d unused in $-style format: %s"
+msgstr "E1401: Аргумент номер %d не указан в позиционных спецификаторах %s"
+
+# :!~ Restorer
+#, c-format
+msgid ""
+"E1402: Positional argument %d used as field width reused as different type: "
+"%s/%s"
+msgstr ""
+"E1402: Позиционный спецификатор номер %d указна с типом %s, а в спецификации "
+"ширины с типом %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1403: Positional argument %d out of bounds: %s"
+msgstr ""
+"E1403: Спецификатор позиции номер %d не соответствует количеству аргументов "
+"%s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1404: Positional argument %d type used inconsistently: %s/%s"
+msgstr ""
+"E1404: Спецификатор позиции номер %d указан с несовпадающими типами %s/%s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1405: Invalid format specifier: %s"
+msgstr "E1405: Недопустимые спецификаторы формата %s"
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
 msgid "--No lines in buffer--"
 msgstr "-- Буфер не содержит текст --"
+
+# :!~ Restorer
+msgid "int"
+msgstr "int"
+
+# :!~ Restorer
+msgid "long int"
+msgstr "long int"
+
+# :!~ Restorer
+msgid "long long int"
+msgstr "long long int"
+
+# :!~ Restorer
+msgid "unsigned int"
+msgstr "unsigned int"
+
+# :!~ Restorer
+msgid "unsigned long int"
+msgstr "unsigned long int"
+
+# :!~ Restorer
+msgid "unsigned long long int"
+msgstr "unsigned long long int"
+
+# :!~ Restorer
+msgid "pointer"
+msgstr "pointer"
+
+# :!~ Restorer
+msgid "percent"
+msgstr "percent"
+
+# :!~ Restorer
+msgid "char"
+msgstr "char"
+
+# :!~ Restorer
+msgid "string"
+msgstr "string"
+
+# :!~ Restorer
+msgid "float"
+msgstr "float"
 
 # :!~ Restorer
 msgid "search hit TOP, continuing at BOTTOM"
