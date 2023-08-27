@@ -2,7 +2,8 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		08 Jul 2023
+" Last Change:		23 Aug 2023
+" Generated from menu_ru_ru.utf-8.vim, DO NOT EDIT
 " URL:			https://github.com/RestorerZ/RuVim
 "
 "
@@ -53,7 +54,7 @@ menutrans &About			&О\ программе
 " Submenu of File menu
 menutrans &Open\.\.\.<Tab>:e		&Открыть\.\.\.<Tab>:e
 menutrans Sp&lit-Open\.\.\.<Tab>:sp	От&крыть\ в\ новом\ окне\.\.\.<Tab>:sp
-menutrans Open\ Tab\.\.\.<Tab>:tabnew	Откры&ть\ в\ новой\ вкладке\.\.\.<Tab>:tabnew
+menutrans Open\ &Tab\.\.\.<Tab>:tabnew	Откры&ть\ в\ новой\ вкладке\.\.\.<Tab>:tabnew
 menutrans &New<Tab>:enew		Созд&ать<Tab>:enew
 menutrans &Close<Tab>:close		&Закрыть<Tab>:close
 "--------------------
@@ -167,14 +168,14 @@ menutrans To\ &Previous\ error<Tab>[s		Пр&едыдущая\ ошибка<Tab>[s
 menutrans Suggest\ &Corrections<Tab>z=		Вариант&ы\ написания<Tab>z=
 menutrans &Repeat\ correction<Tab>:spellrepall	Заменить\ &все<Tab>:spellrepall
 "-------------------
-menutrans Set\ language\ to\ "en"		Проверка\ языка\ "en"
-menutrans Set\ language\ to\ "en_au"		Проверка\ языка\ "en_au"
-menutrans Set\ language\ to\ "en_ca"		Проверка\ языка\ "en_ca"
-menutrans Set\ language\ to\ "en_gb"		Проверка\ языка\ "en_gb"
-menutrans Set\ language\ to\ "en_nz"		Проверка\ языка\ "en_nz"
-menutrans Set\ language\ to\ "en_us"		Проверка\ языка\ "en_us"
-menutrans &Find\ More\ Languages		Найти\ другие\ &языки
-let g:menutrans_set_lang_to =			'Проверка языка'
+menutrans Set\ language\ to\ "en"		Проверка\ для\ языка\ "en"
+menutrans Set\ language\ to\ "en_au"		Проверка\ для\ языка\ "en_au"
+menutrans Set\ language\ to\ "en_ca"		Проверка\ для\ языка\ "en_ca"
+menutrans Set\ language\ to\ "en_gb"		Проверка\ для\ языка\ "en_gb"
+menutrans Set\ language\ to\ "en_nz"		Проверка\ для\ языка\ "en_nz"
+menutrans Set\ language\ to\ "en_us"		Проверка\ для\ языка\ "en_us"
+menutrans &Find\ More\ Languages		Найти\ для\ других\ &языков
+let g:menutrans_set_lang_to =			'Проверка для языка'
 ">>>---------------- Folds
 menutrans &Enable/Disable\ folds<Tab>zi		&Показать\ или\ убрать\ структуру<Tab>zi
 menutrans &View\ Cursor\ Line<Tab>zv		Просмотр\ строки\ под\ &курсором<Tab>zv
@@ -182,7 +183,7 @@ menutrans Vie&w\ Cursor\ Line\ only<Tab>zMzx	Просмотр\ &только\ строки\ под\ кур
 menutrans C&lose\ more\ folds<Tab>zm		Свернуть\ вло&женные\ блоки\ структуры<Tab>zm
 menutrans &Close\ all\ folds<Tab>zM		Свернуть\ &все\ блоки\ структуры<Tab>z\ Shift+M
 menutrans &Open\ all\ folds<Tab>zR		Развернуть\ в&се\ блоки\ структуры<Tab>z\ Shift+R
-menutrans O&pen\ more\ folds<Tab>zr		Ра&звернуть\ вложенные\ блоки\ структуры<Tab>zr
+menutrans O&pen\ more\ folds<Tab>zr		Ра&звернуть\ вложенный\ блок\ структуры<Tab>zr
 menutrans Fold\ Met&hod				&Метод\ разметки\ структуры
 menutrans Create\ &Fold<Tab>zf			Со&здать\ блок\ структуры<Tab>zf
 menutrans &Delete\ Fold<Tab>zd			&Убрать\ блок\ структуры<Tab>zd
@@ -327,15 +328,15 @@ let g:menutrans_help_dialog = "Наберите команду или слово, которые требуется най
 "
 " Search path dialog
 "
-let g:menutrans_path_dialog = "Введите через запятую наименования каталогов, где будет выполняться поиск файлов"
+let g:menutrans_path_dialog = "Укажите через запятую наименования каталогов, где будет выполняться поиск файлов"
 "
 " Tag files dialog
 "
-let g:menutrans_tags_dialog = "Введите через запятую наименования файлов индексов"
+let g:menutrans_tags_dialog = "Укажите через запятую наименования файлов индексов"
 "
 " Text width dialog
 "
-let g:menutrans_textwidth_dialog = "Введите количество символов для установки ширины текста\nЧтобы отменить форматирование, введите 0"
+let g:menutrans_textwidth_dialog = "Укажите количество символов для установки ширины текста\nЧтобы отменить форматирование, укажите 0"
 "
 " File format dialog
 "
