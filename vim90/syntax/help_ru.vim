@@ -1,6 +1,6 @@
 " Vim syntax file
 " Language:     Russian Vim program help files *.rux
-" Maintainer:   Restorer <restorer@mail2k.ru>
+" Maintainer:   Restorer, <restorer@mail2k.ru>
 " Last Change:  03 Feb 2023
 " 
 
