@@ -2,10 +2,10 @@
 #
 # Об условиях использования читайте в редакторе Vim ":help uganda"
 #
-# vassily "vr" ragosin <vrr@users.sourceforge.net>, 2004
-# Sergey Alyoshin <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
-# Matvey Tarasov <matthewtarasov@yandex.ru>, 2022
-# Restorer <restorer@mail2k.ru>, 2017, 2020-2023
+# vassily "vr" ragosin, <vrr@users.sourceforge.net>, 2004
+# Sergey Alyoshin, <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
+# Matvey Tarasov, <matthewtarasov@yandex.ru>, 2022
+# Restorer, <restorer@mail2k.ru>, 2017, 2020-2023
 # URL: https://github.com/RestorerZ/RuVim
 #
 #
@@ -21,12 +21,12 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Vim 9.0.1757\n"
-"Report-Msgid-Bugs-To: The Vim Project\n"
-"POT-Creation-Date: 2023-08-20 00:01+0300\n"
-"PO-Revision-Date: 2023-08-20 00:57+0300\n"
+"Project-Id-Version: RuVim_0.9001787.240823\n"
+"Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
+"POT-Creation-Date: 2023-08-24 23:24+0300\n"
+"PO-Revision-Date: 2023-08-24 23:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
-"Language-Team: RuVim\n"
+"Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CP1251\n"
@@ -157,7 +157,7 @@ msgstr "W14: Внимание! Перечень наименований файлов заполнен полностью"
 # :!~ Restorer
 #, c-format
 msgid "line %ld"
-msgstr "курсор на строке %ld"
+msgstr "каретка на строке %ld"
 
 # #Restorer: например, по команде `CTRL+G`
 # :!~ Restorer
@@ -1993,7 +1993,7 @@ msgstr[2] "В %ld строках изменён отступ"
 
 # :!~ Restorer
 msgid " Keyword completion (^N^P)"
-msgstr " Подстановка слова под курсором CTRL+N или CTRL+P"
+msgstr " Подстановка слова под кареткой CTRL+N или CTRL+P"
 
 # :!~ Restorer
 msgid " ^X mode (^]^D^E^F^I^K^L^N^O^Ps^U^V^Y)"
@@ -3453,7 +3453,7 @@ msgstr[0] "%d строка изменена"
 msgstr[1] "%d строки изменено"
 msgstr[2] "%d строк изменено"
 
-# #Restorer: добавляется к сообщению о позиции курсора при блоковом выделении
+# #Restorer: добавляется к сообщению о позиции каретки при блоковом выделении
 # :!~ Restorer
 #, c-format
 msgid "%ld Cols; "
@@ -3494,7 +3494,7 @@ msgstr ""
 "Колонка %s из %s; строка %ld из %ld; слово %lld из %lld; литера %lld из "
 "%lld; байт %lld из %lld"
 
-# #Restorer: добавляется к сообщению о позиции курсора из предыдущих msgid
+# #Restorer: добавляется к сообщению о позиции каретки из предыдущих msgid
 # #Restorer: вставил пробел перед скобкой, посмотрим, как будет выглядеть
 # ~!: earlier
 #, c-format
@@ -3859,7 +3859,7 @@ msgstr "Переключение на механизм «поиск с возвратом» для поискового шаблона: "
 # #Restorer: это сообщение для отладки. Надо ли...
 # :!~ Restorer
 msgid "External submatches:\n"
-msgstr "Внешние подвыражения:\n"
+msgstr "Внешние подвыражение:\n"
 
 # #Restorer: это сообщение для отладки. Надо ли...
 # :!~ Restorer
@@ -5090,7 +5090,7 @@ msgid ""
 "macOS version w/o darwin feat."
 msgstr ""
 "\n"
-"Версия для macOS без функциональности Darwin"
+"Версия для macOS без системы Darwin"
 
 # ~!: earlier
 msgid ""
@@ -5821,7 +5821,7 @@ msgstr "E40: Не удалось открыть файл со списком результатов %s"
 
 # :!~ Restorer
 msgid "E41: Out of memory!"
-msgstr "E41: Не достаточно памяти!"
+msgstr "E41: Недостаточно памяти!"
 
 # :!~ Restorer
 msgid "E42: No Errors"
@@ -6302,7 +6302,7 @@ msgstr "E148: Не указан шаблон поиска для команды :global"
 # :!~ Restorer
 #, c-format
 msgid "E149: Sorry, no help for %s"
-msgstr "E149: Не найдена документацию по %s"
+msgstr "E149: Не найдена документация по %s"
 
 # :!~ Restorer
 #, c-format
@@ -6792,7 +6792,7 @@ msgstr "E252: В наборе шрифтов %s шрифт '%s' не является моноширинным"
 # :!~ Restorer
 #, c-format
 msgid "E253: Fontset name: %s"
-msgstr "E253: В наборе шрифтов %s"
+msgstr "E253: Набор шрифтов %s"
 
 # :!~ Restorer
 #, c-format
@@ -7131,7 +7131,7 @@ msgstr ""
 # :!~ Restorer
 #, c-format
 msgid "E342: Out of memory!  (allocating %lu bytes)"
-msgstr "E342: Не достаточно памяти! (выделяется %lu байт)"
+msgstr "E342: Недостаточно памяти! (выделяется %lu байт)"
 
 # :!~ Restorer
 #, c-format
@@ -7165,11 +7165,11 @@ msgstr "E347: В каталогах из параметра 'path' нет файла \"%s\""
 
 # :!~ Restorer
 msgid "E348: No string under cursor"
-msgstr "E348: В позиции курсора отсутствует текст для выполнения поиска"
+msgstr "E348: В позиции каретки отсутствует текст для выполнения поиска"
 
 # :!~ Restorer
 msgid "E349: No identifier under cursor"
-msgstr "E349: В позиции курсора отсутствует слово для выполнения поиска"
+msgstr "E349: В позиции каретки отсутствует слово для выполнения поиска"
 
 # :!~ Restorer
 msgid "E350: Cannot create fold with current 'foldmethod'"
@@ -7581,7 +7581,7 @@ msgstr "E436: В базе termcap не найдена запись \"%s\""
 
 # :!~ Restorer
 msgid "E437: Terminal capability \"cm\" required"
-msgstr "E437: Терминал обязан поддерживать команды перемещения курсора"
+msgstr "E437: Терминал обязан поддерживать команды перемещения каретки"
 
 # :!~ Restorer
 msgid "E441: There is no preview window"
@@ -7608,7 +7608,7 @@ msgstr "E445: В других окнах имеются не сохранённые данные"
 
 # :!~ Restorer
 msgid "E446: No file name under cursor"
-msgstr "E446: Не удалось распознать наименование файла в позиции курсора"
+msgstr "E446: Не удалось распознать наименование файла в позиции каретки"
 
 # :!~ Restorer
 #, c-format
@@ -8435,10 +8435,23 @@ msgstr "E612: Превышено количество назначений значков"
 msgid "E613: Unknown printer font: %s"
 msgstr "E613: Не распознан шрифт в параметре 'printfont' %s"
 
+# :!~ Restorer
+msgid "E614: Class required"
+msgstr "E614: Тип данных должен быть Class"
+
+# :!~ Restorer
+msgid "E615: Object required"
+msgstr "E615: Тип данных должен быть Object"
+
+# :!~ Restorer
+#, c-format
+msgid "E616: Object required for argument %d"
+msgstr "E616: Тип данных аргумента номер %d должен быть Object"
+
 # #Restorer: должен, по идее, отображаться также `сообщение: <указанный параметр>`
 # :!~ Restorer
 msgid "E617: Cannot be changed in the GTK GUI"
-msgstr "E617: Не допускается изменение в графическом интерфейсе GTK параметра"
+msgstr "E617: В графическом интерфейсе GTK не может быть изменён параметр"
 
 # :!~ Restorer
 #, c-format
@@ -8776,6 +8789,11 @@ msgid "E692: Invalid operation for List"
 msgstr "E692: Недопустимая операция сравнения для типа данных List"
 
 # :!~ Restorer
+#, c-format
+msgid "E693: List or Class required for argument %d"
+msgstr "E693: Тип данных аргумента номер %d должен быть List или Class"
+
+# :!~ Restorer
 msgid "E694: Invalid operation for Funcrefs"
 msgstr "E694: Недопустимая операция сравнения для типа данных Funcref"
 
@@ -8833,7 +8851,7 @@ msgid "E705: Variable name conflicts with existing function: %s"
 msgstr "E705: Наименования переменной и функции совпадают %s"
 
 # :!~ Restorer
-#| msgid "E712: Argument of %s must be a List or Dictionary"
+#, c-format
 msgid "E706: Argument of %s must be a List, String or Dictionary"
 msgstr ""
 "E706: В функции %s тип аргумента должен быть List, String или Dictionary"
@@ -9503,9 +9521,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E842: No line number to use for \"<slnum>\""
-msgstr ""
-"E842: Отсутствует номер строки для замещения в команде :source спецсимвола "
-"\"<slnum>\""
+msgstr "E842: Отсутствует номер строки для замещения спецсимвола \"<slnum>\""
 
 # :!~ Restorer
 msgid "E843: Error while updating swap file crypt"
@@ -10064,7 +10080,7 @@ msgstr "E957: Задан некорректный номер окна"
 
 # :!~ Restorer
 msgid "E958: Job already finished"
-msgstr "E958: Задание в буфере терминала завершило работу"
+msgstr "E958: Задание в буфере терминала уже завершено"
 
 # :!~ Restorer
 msgid "E959: Invalid diff format."
@@ -10187,8 +10203,8 @@ msgstr ""
 # :!~ Restorer
 msgid "E986: Cannot modify the tag stack within tagfunc"
 msgstr ""
-"E986: Не допускается изменение стека индексов в функции, заданной в "
-"параметре 'tagfunc'"
+"E986: Не допускается изменение стека индексов через функцию параметра "
+"'tagfunc'"
 
 # :!~ Restorer
 msgid "E987: Invalid return value from tagfunc"
@@ -11865,7 +11881,7 @@ msgstr ""
 #, c-format
 msgid "E1332: Public member name cannot start with underscore: %s"
 msgstr ""
-"E1332: Наименование открытого атрибута не может начинаться с символа '_' %s"
+"E1332: Наименование общего атрибута не может начинаться с символа '_' %s"
 
 # :!~ Restorer
 #, c-format
@@ -12015,6 +12031,11 @@ msgid "E1364: Warning: Pointer block corrupted"
 msgstr "E1364: Внимание! Повреждён блок указателей"
 
 # :!~ Restorer
+msgid "E1365: Cannot use a return type with the \"new\" function"
+msgstr ""
+"E1365: Не допускается указание типа возвращаемого значения для функции new()"
+
+# :!~ Restorer
 #, c-format
 msgid "E1400: Cannot mix positional and non-positional arguments: %s"
 msgstr "E1400: Указаны как позиционные, так и не позиционные спецификаторы %s"
@@ -12055,11 +12076,11 @@ msgstr "E1405: Недопустимые спецификаторы формата %s"
 #, c-format
 msgid "E1406: Member \"%s\": type mismatch, expected %s but got %s"
 msgstr ""
-"E1406: Несоответствующий тип элемента \"%s\". Ожидался %s, а получен %s"
+"E1406: Несоответствующий тип атрибута \"%s\". Ожидался %s, а получен %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1407: Method \"%s\": type mismatch, expected %s but got %s"
+msgid "E1407: Member \"%s\": type mismatch, expected %s but got %s"
 msgstr "E1407: Несоответствующий тип метода \"%s\". Ожидался %s, а получен %s"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
@@ -12360,7 +12381,7 @@ msgstr "указанные свойства являются неизменяемыми: buffer"
 
 # :!~ Restorer
 msgid "cursor position outside buffer"
-msgstr "заданная позиция курсора выходит за пределы количества строк в буфере"
+msgstr "заданная позиция каретки выходит за пределы количества строк в буфере"
 
 # :!~ Restorer
 msgid "no such window"
@@ -13016,7 +13037,7 @@ msgstr "способ предоставления вариантов написания"
 
 # :!~ Restorer
 msgid "amount of memory used by :mkspell before compressing"
-msgstr "размер выделяемой памяти используемой командой \":mkspell\""
+msgstr "размер выделяемой памяти, используемой командой \":mkspell\""
 
 # :!~ Restorer
 msgid "multiple windows"
@@ -13826,7 +13847,7 @@ msgstr "функция, используемая для показа содержимого свёрнутых строк"
 msgid "set to \"all\" to close a fold when the cursor leaves it"
 msgstr ""
 "установите значение \"all\", чтобы свернуть строки блока структуры,\n"
-"когда курсор выйдет за его границы"
+"когда каретка выйдет за его границы"
 
 # :!~ Restorer
 msgid "specifies for which commands a fold will be opened"
@@ -14500,13 +14521,13 @@ msgstr "что делать, когда буфер больше не отображается ни в одном окне"
 # :!~ Restorer
 msgid "empty, \"nofile\", \"nowrite\", \"quickfix\", etc.: type of buffer"
 msgstr ""
-"установить вид буфера\n"
+"установить тип буфера\n"
 "Возможные значения: \"nofile\", \"nowrite\", \"quickfix\" или\n"
 "нет значения"
 
 # :!~ Restorer
 msgid "whether the buffer shows up in the buffer list"
-msgstr "отображать буфер в списке буферов"
+msgstr "отображать наименование буфера в списке буферов"
 
 # :!~ Restorer
 msgid "set to \"msg\" to see all error messages"
