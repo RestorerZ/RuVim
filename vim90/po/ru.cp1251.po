@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9001876.060923\n"
+"Project-Id-Version: RuVim_0.9001885.090923\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-09-06 14:30+0300\n"
-"PO-Revision-Date: 2023-09-06 14:57+0300\n"
+"POT-Creation-Date: 2023-09-09 11:34+0300\n"
+"PO-Revision-Date: 2023-09-09 11:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -3796,8 +3796,8 @@ msgid ""
 msgstr ""
 "Не удалось найти файл VIMRUN.EXE в каталогах,\n"
 "указанных в переменной окружения %PATH%.\n"
-"После исполнения внешних команд,\n"
-"окно командной оболочки будет сразу закрыто.\n"
+"Окно командной оболочки будет закрыто сразу\n"
+"после выполнения внешних команд.\n"
 "Чтобы получить дополнительную информацию, наберите  :help win32-vimrun"
 
 # #Restorer: заголовок окна
@@ -12058,6 +12058,24 @@ msgstr "E1369: Повтор атрибута %s"
 # :!~ Restorer
 msgid "E1370: Cannot define a \"new\" function as static"
 msgstr "E1370: Не допускается определение функции new() как статической"
+
+# :!~ Restorer
+msgid "E1371: Abstract must be followed by \"def\" or \"static\""
+msgstr ""
+"E1371: После ключевого слова abstract требуется ключевое слово \"def\" или "
+"\"static\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1372: Abstract method \"%s\" cannot be defined in a concrete class"
+msgstr ""
+"E1372: Не допускается определение в реальном классе абстрактного метода \"%s"
+"\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1373: Abstract method \"%s\" is not implemented"
+msgstr "E1373: Не реализован абстрактный метод \"%s\""
 
 # :!~ Restorer
 #, c-format
