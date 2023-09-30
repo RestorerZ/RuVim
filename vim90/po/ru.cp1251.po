@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9001899.150923\n"
+"Project-Id-Version: RuVim_0.9001964.300923\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-09-15 23:01+0300\n"
-"PO-Revision-Date: 2023-09-15 23:57+0300\n"
+"POT-Creation-Date: 2023-09-30 22:07+0300\n"
+"PO-Revision-Date: 2023-09-30 22:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -1585,17 +1585,17 @@ msgstr "наименование шрифта font%d %s"
 # :!~ Restorer
 #, c-format
 msgid "Font%d width is not twice that of font0"
-msgstr "ширина шрифта font%d должна быть вдвое больше ширины шрифта font0"
+msgstr "ширина символов font%d должна быть вдвое больше ширины символов font0"
 
 # :!~ Restorer
 #, c-format
 msgid "Font0 width: %d"
-msgstr "ширина шрифта font0 %d"
+msgstr "ширина символов font0 %d"
 
 # :!~ Restorer
 #, c-format
 msgid "Font%d width: %d"
-msgstr "ширина шрифта font%d %d"
+msgstr "ширина символов font%d %d"
 
 # #Restorer: выводится в информационном окне
 # :!~ Restorer
@@ -2805,7 +2805,7 @@ msgid ""
 "change line  col text"
 msgstr ""
 "\n"
-"  Изм. Стр.  Кол.   Текст"
+" Изм.  Стр.  Кол.   Текст"
 
 # #Restorer: выводится по команде `:recover`
 # :!~ Restorer
@@ -5271,14 +5271,15 @@ msgstr "  СБОРКА ДЛЯ ОТЛАДКИ"
 
 # :!~ Restorer
 msgid "VIM - Vi IMproved"
-msgstr "VIM --- Vi IMproved (улучшенный Vi)"
+msgstr "VIM — Vi IMproved (улучшенный Vi)"
 
 # ~!: earlier
 msgid "version "
 msgstr "версия "
 
-# #Restorer: фамилию написал как в ru.wikipedia.org. Надо посмотреть как правильно
-# #Restorer: фамилия переводится на русский как «Мельников» (www.moolenaar.net)
+# #Restorer: фамилию написал как в ru.wikipedia.org. Посмотрел. Согласно
+# #Restorer: книге "Имена собственные на стыке языков и культур" так и пишется.
+# #Restorer: фамилия переводится на русский как «Мельников» (см. www.moolenaar.net)
 # :!~ Restorer
 msgid "by Bram Moolenaar et al."
 msgstr "Брам Моленар и другие"
@@ -5286,8 +5287,7 @@ msgstr "Брам Моленар и другие"
 # :!~ Restorer
 msgid "Vim is open source and freely distributable"
 msgstr ""
-"Редактор Vim --- свободно распространяемая программа с открытым исходным "
-"кодом"
+"Редактор Vim — свободно распространяемая программа с открытым исходным кодом"
 
 # :!~ Restorer
 msgid "Help poor children in Uganda!"
@@ -5582,7 +5582,7 @@ msgid ""
 "# Jumplist (newest first):\n"
 msgstr ""
 "\n"
-"# Журнал переходов (вначале более новые):\n"
+"# Журнал переходов (в начале более новые):\n"
 
 # :!~ Restorer
 #, c-format
@@ -6105,7 +6105,8 @@ msgstr "E108: Не существует переменной \"%s\""
 
 # :!~ Restorer
 msgid "E109: Missing ':' after '?'"
-msgstr "E109: Отсутствует символ двоеточия ':' в команде проверки условия '?'"
+msgstr ""
+"E109: Отсутствует символ двоеточия ':' в операторе проверки условия '?'"
 
 # :!~ Restorer
 msgid "E110: Missing ')'"
@@ -6221,7 +6222,7 @@ msgstr "E131: Удаление не выполнено. Эта функция сейчас используется %s"
 # :!~ Restorer
 msgid "E132: Function call depth is higher than 'maxfuncdepth'"
 msgstr ""
-"E132: Превышено количество вызовов функций, заданное в параметре "
+"E132: Количество вызовов функций превышает значение в параметре "
 "'maxfuncdepth'"
 
 # :!~ Restorer
@@ -6382,7 +6383,7 @@ msgstr "E165: Это последний файл"
 
 # :!~ Restorer
 msgid "E166: Can't open linked file for writing"
-msgstr "E166: Ссылочнй файл не может использоваться для записи"
+msgstr "E166: Ссылочный файл не может использоваться для записи"
 
 # :!~ Restorer
 msgid "E167: :scriptencoding used outside of a sourced file"
@@ -6741,7 +6742,7 @@ msgstr ""
 #, c-format
 msgid "E243: Argument not supported: \"-%s\"; Use the OLE version."
 msgstr ""
-"E243: Не поддерживается аргумент командной строки \"-%s\". Требуется версия "
+"E243: Не поддерживается аргумент командной строки -%s. Требуется версия "
 "программы с поддержкой технологии OLE"
 
 # :!~ Restorer
@@ -6782,7 +6783,7 @@ msgstr "E250: В наборе шрифтов %s отсутствуют шрифты для кодировок:"
 # :!~ Restorer
 msgid "E251: VIM instance registry property is badly formed.  Deleted!"
 msgstr ""
-"E251: Уделено зарегистрированное программой Vim свойство недопустимого "
+"E251: Удалено зарегистрированное программой Vim свойство недопустимого "
 "формата"
 
 # :!~ Restorer
@@ -7440,7 +7441,7 @@ msgstr "E407: Для этого параметра запрещено значение %s"
 # :!~ Restorer
 #, c-format
 msgid "E408: %s must be first in contains list"
-msgstr "E408: В значениях параметра contains вначале указывается значение %s"
+msgstr "E408: В значениях параметра contains первым указывается значение %s"
 
 # :!~ Restorer
 #, c-format
@@ -8438,10 +8439,6 @@ msgstr "E613: Не распознан шрифт в параметре 'printfont' %s"
 # :!~ Restorer
 msgid "E614: Class required"
 msgstr "E614: Тип данных должен быть Class"
-
-# :!~ Restorer
-msgid "E615: Object required"
-msgstr "E615: Тип данных должен быть Object"
 
 # :!~ Restorer
 #, c-format
@@ -10102,8 +10099,8 @@ msgstr "E962: Переданный в функцию аргумент имеет недопустимое значение '%s'"
 
 # :!~ Restorer
 #, c-format
-msgid "E963: Setting %s to value with wrong type"
-msgstr "E963: Недопустимый тип значения для переменной %s"
+msgid "E963: Setting v:%s to value with wrong type"
+msgstr "E963: Недопустимый тип значения для переменной v:%s"
 
 # :!~ Restorer
 #, c-format
@@ -10278,7 +10275,8 @@ msgstr "E997: Не найдена вкладка под номером %d"
 # :!~ Restorer
 #, c-format
 msgid "E998: Reduce of an empty %s with no initial value"
-msgstr "E998: Функция reduce() вызвана для пустого %s и начального значения"
+msgstr ""
+"E998: Функция reduce() вызвана для пустого %s и без начального значения"
 
 # :!~ Restorer
 #, c-format
@@ -11741,7 +11739,8 @@ msgstr "E1302: Переменная командного файла была удалена"
 #, c-format
 msgid "E1303: Custom list completion function does not return a List but a %s"
 msgstr ""
-"E1303: Пользовательская функция подстановки вернула не тип данных List, а %s"
+"E1303: От пользовательской функции подстановки ожидался тип данных List, а "
+"получен %s"
 
 # :!~ Restorer
 #, c-format
@@ -11809,8 +11808,8 @@ msgstr ""
 
 # :!~ Restorer
 #, c-format
-msgid "E1317: Invalid object member declaration: %s"
-msgstr "E1317: Недопустимое объявление атрибута объекта %s"
+msgid "E1317: Invalid object variable declaration: %s"
+msgstr "E1317: Недопустимое объявление переменной объекта %s"
 
 # :!~ Restorer
 #, c-format
@@ -11848,13 +11847,13 @@ msgstr "E1325: У класса \"%s\" отсутствует метод %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1326: Member not found on object \"%s\": %s"
-msgstr "E1326: У объекта \"%s\" отсутствует атрибут %s"
+msgid "E1326: Variable not found on object \"%s\": %s"
+msgstr "E1326: У объекта \"%s\" отсутствует переменная %s"
 
 # :!~ Restorer
 #, c-format
 msgid "E1327: Object required, found %s"
-msgstr "E1327: Ожидался объект, а получен %s"
+msgstr "E1327: Ожидался Object, а получен %s"
 
 # :!~ Restorer
 #, c-format
@@ -11863,45 +11862,35 @@ msgstr "E1328: В конструкторе начальным значением должно быть v:none, а не %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1329: Cannot get object member type from initializer: %s"
-msgstr "E1329: Не удалось получить тип атрибута объекта из конструктора %s"
-
-# :!~ Restorer
-#, c-format
-msgid "E1330: Invalid type for object member: %s"
-msgstr "E1330: Недопустимый тип данных для атрибута объекта %s"
+msgid "E1330: Invalid type for object variable: %s"
+msgstr "E1330: Недопустимый тип данных переменной объекта %s"
 
 # :!~ Restorer
 msgid "E1331: Public must be followed by \"this\" or \"static\""
 msgstr ""
-"E1331: После модификатора доступа public требуется ключевое слово \"this\" "
-"или \"static\""
+"E1331: После модификатора доступа \"public\" требуется ключевое слово \"this"
+"\" или \"static\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1332: Public member name cannot start with underscore: %s"
+msgid "E1332: Public variable name cannot start with underscore: %s"
 msgstr ""
-"E1332: Наименование общего атрибута не может начинаться с символа '_' %s"
+"E1332: Наименование общей переменной не должно начинаться с символа '_' %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1333: Cannot access private member: %s"
-msgstr "E1333: Отсутствует доступ к внутреннему атрибуту %s"
+msgid "E1333: Cannot access private variable: %s"
+msgstr "E1333: Отсутствует доступ к внутренней переменной %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1335: Member is not writable: %s"
-msgstr "E1335: Атрибут доступен только для чтения %s"
+msgid "E1335: Variable \"%s\" in class \"%s\" is not writable"
+msgstr "E1335: Переменная \"%s\" в классе \"%s\" является неизменяемой"
 
 # :!~ Restorer
 #, c-format
-msgid "E1337: Class member \"%s\" not found in class \"%s\""
-msgstr "E1337: У класса \"%2$s\" отсутствует атрибут класса \"%1$s\""
-
-# :!~ Restorer
-#, c-format
-msgid "E1338: Member not found on class \"%s\": %s"
-msgstr "E1338: У класса \"%s\" отсутствует атрибут %s"
+msgid "E1337: Class variable \"%s\" not found in class \"%s\""
+msgstr "E1337: У класса \"%2$s\" отсутствует переменная класса \"%1$s\""
 
 # :!~ Restorer
 msgid ""
@@ -11932,8 +11921,8 @@ msgid "E1343: Interface name must start with an uppercase letter: %s"
 msgstr "E1343: Наименование интерфейса должно начинаться с прописной буквы %s"
 
 # :!~ Restorer
-msgid "E1344: Cannot initialize a member in an interface"
-msgstr "E1344: Не удалось инициализировать атрибут в интерфейсе"
+msgid "E1344: Cannot initialize a variable in an interface"
+msgstr "E1344: Не удалось инициализировать переменную в интерфейсе"
 
 # :!~ Restorer
 #, c-format
@@ -11952,12 +11941,12 @@ msgstr "E1347: Недопустимый интерфейс %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1348: Member \"%s\" of interface \"%s\" not implemented"
-msgstr "E1348: Не реализован атрибут \"%s\" из интерфейса \"%s\""
+msgid "E1348: Variable \"%s\" of interface \"%s\" is not implemented"
+msgstr "E1348: Не реализована переменная \"%s\" из интерфейса \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1349: Function \"%s\" of interface \"%s\" not implemented"
+msgid "E1349: Method \"%s\" of interface \"%s\" is not implemented"
 msgstr "E1349: Не реализован метод \"%s\" из интерфейса \"%s\""
 
 # :!~ Restorer
@@ -11994,7 +11983,7 @@ msgid "E1356: \"super\" must be followed by a dot"
 msgstr "E1356: Сразу после ключевого слова \"super\" должен быть символ точки"
 
 # :!~ Restorer
-msgid "E1357: Using \"super\" not in a class function"
+msgid "E1357: Using \"super\" not in a class method"
 msgstr "E1357: Ключевое слово \"super\" допустимо только для метода класса"
 
 # :!~ Restorer
@@ -12002,8 +11991,8 @@ msgid "E1358: Using \"super\" not in a child class"
 msgstr "E1358: Ключевое слово \"super\" допустимо только в дочернем классе"
 
 # :!~ Restorer
-msgid "E1359: Cannot define a \"new\" function in an abstract class"
-msgstr "E1359: Не допускается определение функции new() в абстрактном классе"
+msgid "E1359: Cannot define a \"new\" method in an abstract class"
+msgstr "E1359: Не допускается определение метода \"new\" в абстрактном классе"
 
 # :!~ Restorer
 msgid "E1360: Using a null object"
@@ -12026,9 +12015,9 @@ msgid "E1364: Warning: Pointer block corrupted"
 msgstr "E1364: Внимание! Повреждён блок указателей"
 
 # :!~ Restorer
-msgid "E1365: Cannot use a return type with the \"new\" function"
+msgid "E1365: Cannot use a return type with the \"new\" method"
 msgstr ""
-"E1365: Не допускается указание типа возвращаемого значения для функции new()"
+"E1365: Не допускается указание типа возвращаемого значения для метода \"new\""
 
 # :!~ Restorer
 #, c-format
@@ -12037,31 +12026,31 @@ msgstr "E1366: Отсутствует доступ к внутреннему методу %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1367: Access level of member \"%s\" of interface \"%s\" is different"
+msgid "E1367: Access level of variable \"%s\" of interface \"%s\" is different"
 msgstr ""
-"E1367: Несоответствующий уровень доступа для атрибута \"%s\" в интерфейсе "
+"E1367: Несоответствующий уровень доступа для переменной \"%s\" из интерфейса "
 "\"%s\""
 
 # :!~ Restorer
-msgid "E1368: Static cannot be followed by \"this\" in a member name"
+msgid "E1368: Static cannot be followed by \"this\" in a variable name"
 msgstr ""
 "E1368: Не допускается указание после ключевого слова \"static\" ключевого "
 "слова \"this\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1369: Duplicate member: %s"
-msgstr "E1369: Повтор атрибута %s"
+msgid "E1369: Duplicate variable: %s"
+msgstr "E1369: Повтор переменной %s"
 
 # :!~ Restorer
-msgid "E1370: Cannot define a \"new\" function as static"
-msgstr "E1370: Не допускается определение функции new() как статической"
+msgid "E1370: Cannot define a \"new\" method as static"
+msgstr "E1370: Не допускается определение метода \"new\" как статического"
 
 # :!~ Restorer
 msgid "E1371: Abstract must be followed by \"def\" or \"static\""
 msgstr ""
-"E1371: После ключевого слова abstract требуется ключевое слово \"def\" или "
-"\"static\""
+"E1371: После ключевого слова \"abstract\" требуется ключевое слово \"def\" "
+"или \"static\""
 
 # :!~ Restorer
 #, c-format
@@ -12077,84 +12066,162 @@ msgstr "E1373: Не реализован абстрактный метод \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1374: Class member \"%s\" accessible only inside class \"%s\""
-msgstr "E1374: Атрибут класса \"%s\" доступен только внутри класса \"%s\""
+msgid "E1374: Class variable \"%s\" accessible only inside class \"%s\""
+msgstr "E1374: Переменная класса \"%s\" доступна только внутри класса \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1375: Class member \"%s\" accessible only using class \"%s\""
-msgstr "E1375: Атрибут класса \"%s\" доступен только через класс \"%s\""
+msgid "E1375: Class variable \"%s\" accessible only using class \"%s\""
+msgstr "E1375: Переменная класса \"%s\" доступна только через класс \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1376: Object member \"%s\" accessible only using class \"%s\" object"
+msgid "E1376: Object variable \"%s\" accessible only using class \"%s\" object"
 msgstr ""
-"E1376: Атрибут объекта \"%s\" доступен только через объект класса \"%s\""
-
-# :!~ Restorer
-msgid "E1377: Static member is not supported in an interface"
-msgstr "E1377: Статические атрибуты не поддерживаются в интерфейсах"
+"E1376: Переменная объекта \"%s\" доступна только через объект класса \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1378: Access level of method \"%s\" is different in class \"%s\""
+msgid "E1377: Access level of method \"%s\" is different in class \"%s\""
 msgstr ""
-"E1378: Несоответствующий уровень доступа для метода \"%s\" в классе \"%s\""
+"E1377: Несоответствующий уровень доступа для метода \"%s\" в классе \"%s\""
+
+# :!~ Restorer
+msgid "E1378: Static member not supported in an interface"
+msgstr "E1378: Статические члены не поддерживаются в интерфейсах"
+
+# :!~ Restorer
+msgid "E1379: Private variable not supported in an interface"
+msgstr "E1379: Внутренние переменные не поддерживаются в интерфейсах"
+
+# :!~ Restorer
+msgid "E1380: Private method not supported in an interface"
+msgstr "E1380: Внутренние методы не поддерживаются в интерфейсах"
+
+# :!~ Restorer
+msgid "E1381: Interface cannot use \"implements\""
+msgstr "E1381: Интерфейс не может использовать ключевое слово \"implements\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1400: Cannot mix positional and non-positional arguments: %s"
-msgstr "E1400: Указаны как позиционные, так и не позиционные спецификаторы %s"
+msgid "E1382: Variable \"%s\": type mismatch, expected %s but got %s"
+msgstr ""
+"E1382: Несоответствующий тип данных переменной \"%s\". Ожидался %s, а "
+"получен %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1401: format argument %d unused in $-style format: %s"
-msgstr "E1401: Аргумент номер %d не указан в позиционных спецификаторах %s"
+msgid "E1383: Method \"%s\": type mismatch, expected %s but got %s"
+msgstr "E1383: Несоответствующий тип метода \"%s\". Ожидался %s, а получен %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1384: Class method \"%s\" accessible only inside class \"%s\""
+msgstr "E1384: Метод класса \"%s\" доступен только внутри класса \"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1385: Class method \"%s\" accessible only using class \"%s\""
+msgstr "E1385: Метод класса \"%s\" доступен только через класс \"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1386: Object method \"%s\" accessible only using class \"%s\" object"
+msgstr "E1386: Метод объекта \"%s\" доступен только через объект класса \"%s\""
+
+# :!~ Restorer
+msgid "E1387: Public variable not supported in an interface"
+msgstr "E1387: Общие переменные не поддерживаются в интерфейсах"
+
+# :!~ Restorer
+msgid "E1388: Public keyword not supported for a method"
+msgstr "E1388: Ключевое слово \"public\" не применимо к методу"
+
+# :!~ Restorer
+msgid "E1389: Missing name after implements"
+msgstr "E1389: Не указано наименование после ключевого слова \"implements\""
 
 # :!~ Restorer
 #, c-format
 msgid ""
-"E1402: Positional argument %d used as field width reused as different type: "
+"E1390: Cannot use an object variable \"this.%s\" except with the \"new\" "
+"method"
+msgstr ""
+"E1390: Переменная объекта \"this.%s\" может указываться только в методе \"new"
+"\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1391: Cannot (un)lock variable \"%s\" in class \"%s\""
+msgstr ""
+"E1391: Не удалось изменить состояние блокировки переменной \"%s\" в классе "
+"\"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1392: Cannot (un)lock class variable \"%s\" in class \"%s\""
+msgstr ""
+"E1392: Не удалось изменить состояние блокировки переменной класса \"%s\" в "
+"классе \"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1500: Cannot mix positional and non-positional arguments: %s"
+msgstr "E1500: Указаны как позиционные, так и не позиционные спецификаторы %s"
+
+# :!~ Restorer
+#, c-format
+msgid "E1501: format argument %d unused in $-style format: %s"
+msgstr "E1501: Аргумент номер %d не указан в позиционных спецификаторах %s"
+
+# :!~ Restorer
+#, c-format
+msgid ""
+"E1502: Positional argument %d used as field width reused as different type: "
 "%s/%s"
 msgstr ""
-"E1402: Для аргумента номер %d в спецификации позиции указан тип %s, а в "
+"E1502: Для аргумента номер %d в спецификации позиции указан тип %s, а в "
 "спецификации ширины — тип %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1403: Positional argument %d out of bounds: %s"
+msgid "E1503: Positional argument %d out of bounds: %s"
 msgstr ""
-"E1403: Спецификатор позиции номер %d не соответствует количеству аргументов "
+"E1503: Спецификатор позиции номер %d не соответствует количеству аргументов "
 "%s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1404: Positional argument %d type used inconsistently: %s/%s"
+msgid "E1504: Positional argument %d type used inconsistently: %s/%s"
 msgstr ""
-"E1404: Для спецификатора позиции номер %d указаны различающиеся типы %s/%s"
+"E1504: Для спецификатора позиции номер %d указан несоответствующий тип %s/%s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1405: Invalid format specifier: %s"
-msgstr "E1405: Недопустимые спецификаторы формата %s"
+msgid "E1505: Invalid format specifier: %s"
+msgstr "E1505: Недопустимые спецификаторы формата %s"
 
 # :!~ Restorer
-#, c-format
-msgid "E1406: Member \"%s\": type mismatch, expected %s but got %s"
+msgid "E1506: Buffer too small to copy xattr value or key"
 msgstr ""
-"E1406: Несоответствующий тип атрибута \"%s\". Ожидался %s, а получен %s"
+"E1506: Малый размер буфера для копирования значения или наименования "
+"расширенного атрибута"
 
 # :!~ Restorer
-#, c-format
-msgid "E1407: Method \"%s\": type mismatch, expected %s but got %s"
-msgstr "E1407: Несоответствующий тип метода \"%s\". Ожидался %s, а получен %s"
+msgid "E1507: Extended attributes are not supported by the filesystem"
+msgstr "E1507: В файловой системе не поддерживаются расширенные атрибуты"
 
 # :!~ Restorer
-#, c-format
-msgid "E1409: Cannot directly access interface \"%s\" static member \"%s\""
+msgid ""
+"E1508: size of the extended attribute value is larger than the maximum size "
+"allowed"
 msgstr ""
-"E1409: Недопускается прямое обращение к статическому атрибуту \"%2$s\" "
-"интерфейса \"%1$s\""
+"E1508: Значение расширенного атрибута превышает максимально допустимый размер"
+
+# :!~ Restorer
+msgid "E1509: error occured when reading or writing extended attribute"
+msgstr ""
+"E1509: Произошла ошибка при считывании или записи расширенного атрибута"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
@@ -12942,7 +13009,7 @@ msgstr "символы, после которых выполняется разбивка длинных строк"
 # :!~ Restorer
 msgid "string to put before wrapped screen lines"
 msgstr ""
-"символы, отображаемые вначале строки визуально разбитой на\n"
+"символы, отображаемые в начале строки визуально разбитой на\n"
 "несколько строк"
 
 # :!~ Restorer
@@ -13813,7 +13880,7 @@ msgstr ""
 # :!~ Restorer
 msgid "a <Tab> in an indent inserts 'shiftwidth' spaces"
 msgstr ""
-"при нажатии клавиши <TAB> вначале строки будет вставка пробелов\n"
+"при нажатии клавиши <TAB> в начале строки будет вставка пробелов\n"
 "как задано в параметре 'shiftwidth'"
 
 # :!~ Restorer
