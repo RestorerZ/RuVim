@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9001964.300923\n"
+"Project-Id-Version: RuVim_0.9001968.011023\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-09-30 22:07+0300\n"
-"PO-Revision-Date: 2023-09-30 22:57+0300\n"
+"POT-Creation-Date: 2023-10-01 11:51+0300\n"
+"PO-Revision-Date: 2023-10-01 11:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -12204,8 +12204,7 @@ msgstr "E1505: Недопустимые спецификаторы формата %s"
 # :!~ Restorer
 msgid "E1506: Buffer too small to copy xattr value or key"
 msgstr ""
-"E1506: Малый размер буфера для копирования значения или наименования "
-"расширенного атрибута"
+"E1506: Недостаточный размер буфера для копирования расширенного атрибута"
 
 # :!~ Restorer
 msgid "E1507: Extended attributes are not supported by the filesystem"
@@ -12213,13 +12212,13 @@ msgstr "E1507: В файловой системе не поддерживаются расширенные атрибуты"
 
 # :!~ Restorer
 msgid ""
-"E1508: size of the extended attribute value is larger than the maximum size "
+"E1508: Size of the extended attribute value is larger than the maximum size "
 "allowed"
 msgstr ""
 "E1508: Значение расширенного атрибута превышает максимально допустимый размер"
 
 # :!~ Restorer
-msgid "E1509: error occured when reading or writing extended attribute"
+msgid "E1509: Error occured when reading or writing extended attribute"
 msgstr ""
 "E1509: Произошла ошибка при считывании или записи расширенного атрибута"
 
