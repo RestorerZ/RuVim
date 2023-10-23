@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9001968.011023\n"
+"Project-Id-Version: RuVim_0.9002059.231023\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-10-01 11:51+0300\n"
-"PO-Revision-Date: 2023-10-01 11:57+0300\n"
+"POT-Creation-Date: 2023-10-23 10:49+0300\n"
+"PO-Revision-Date: 2023-10-23 11:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -2485,7 +2485,7 @@ msgstr "-u <файл>\t\tПрименить вместо файлов .vimrc указанный <файл>"
 
 # :!~ Restorer
 msgid "-U <gvimrc>\t\tUse <gvimrc> instead of any .gvimrc"
-msgstr "-U <файл>\t\tПрименить вместо файлов .gvimrc указанный <файла>"
+msgstr "-U <файл>\t\tПрименить вместо файлов .gvimrc указанный <файл>"
 
 # :!~ Restorer
 msgid "--noplugin\t\tDon't load plugin scripts"
@@ -8770,8 +8770,9 @@ msgstr ""
 "выражения"
 
 # :!~ Restorer
-msgid "E689: Can only index a List, Dictionary or Blob"
-msgstr "E689: Индекс разрешён только для типа данных List, Dictionary или BLOB"
+#, c-format
+msgid "E689: Index not allowed after a %s: %s"
+msgstr "E689: Не допускается указание индекса для типа данных %s в %s"
 
 # :!~ Restorer
 msgid "E690: Missing \"in\" after :for"
@@ -10245,7 +10246,7 @@ msgstr "E994: Команда запрещена во всплывающем окне"
 
 # :!~ Restorer
 msgid "E995: Cannot modify existing variable"
-msgstr "E995: Не допускается изменение значения существующей переменной"
+msgstr "E995: Не удалось изменить значение существующей переменной"
 
 # :!~ Restorer
 msgid "E996: Cannot lock a range"
@@ -10694,7 +10695,7 @@ msgstr "E1088: Не допускается импортирование командным файлом самого себя"
 # :!~ Restorer
 #, c-format
 msgid "E1089: Unknown variable: %s"
-msgstr "E1089: Не распознана переменная %s"
+msgstr "E1089: Не распознана переменная \"%s\""
 
 # :!~ Restorer
 #, c-format
@@ -10704,7 +10705,7 @@ msgstr "E1090: Не допускается присвоение значения аргументу %s"
 # :!~ Restorer
 #, c-format
 msgid "E1091: Function is not compiled: %s"
-msgstr "E1091: Некомпилированная функция %s"
+msgstr "E1091: Некомпилированная функция \"%s\""
 
 # :!~ Restorer
 msgid "E1092: Cannot nest :redir"
@@ -10770,7 +10771,7 @@ msgstr "E1104: Не указана закрывающая угловая скобка"
 # :!~ Restorer
 #, c-format
 msgid "E1105: Cannot convert %s to string"
-msgstr "E1105: Не допускается преобразование к строковому типу для %s"
+msgstr "E1105: Не поддерживается преобразование к строковому типу для %s"
 
 # :!~ Restorer
 #, c-format
@@ -11188,7 +11189,7 @@ msgstr[2] "E1190: В функцию передано на %d аргументов меньше"
 # :!~ Restorer
 #, c-format
 msgid "E1191: Call to function that failed to compile: %s"
-msgstr "E1191: Ошибка компиляции при обращении к функции %s"
+msgstr "E1191: Обращение к некомпилированной функции \"%s\""
 
 # :!~ Restorer
 msgid "E1192: Empty function name"
@@ -11197,8 +11198,7 @@ msgstr "E1192: Отсутствует наименование функции"
 # :!~ Restorer
 msgid "E1193: cryptmethod xchacha20 not built into this Vim"
 msgstr ""
-"E1193: Алгоритм шифрования «XChaCha20» не поддерживается в данной программе "
-"Vim"
+"E1193: Алгоритм шифрования «XChaCha20» не поддерживается в данной версии Vim"
 
 # :!~ Restorer
 msgid "E1194: Cannot encrypt header, not enough space"
@@ -11239,8 +11239,8 @@ msgstr "E1202: Запрещён пробельный символ после '%s' в %s"
 
 # :!~ Restorer
 #, c-format
-msgid "E1203: Dot can only be used on a dictionary: %s"
-msgstr "E1203: Символ точка используется только в типе данных Dictionary %s"
+msgid "E1203: Dot not allowed after a %s: %s"
+msgstr "E1203: Не допускается символ точки для типа данных %s в %s"
 
 # :!~ Restorer
 #, c-format
@@ -11632,7 +11632,7 @@ msgstr "E1281: Атом '\\%%#=%c' должен указываться перед поисковым шаблоном"
 
 # :!~ Restorer
 msgid "E1282: Bitshift operands must be numbers"
-msgstr "E1282: Операнды операции битового сдвига должны быть числами"
+msgstr "E1282: Операнды операции побитового сдвига должны быть числами"
 
 # :!~ Restorer
 msgid "E1283: Bitshift amount must be a positive number"
@@ -11842,13 +11842,13 @@ msgstr "E1324: Ожидался тип данных String, а получен Object"
 
 # :!~ Restorer
 #, c-format
-msgid "E1325: Method not found on class \"%s\": %s"
-msgstr "E1325: У класса \"%s\" отсутствует метод %s"
+msgid "E1325: Method \"%s\" not found in class \"%s\""
+msgstr "E1325: У класса \"%s\" отсутствует метод \"%s\""
 
 # :!~ Restorer
 #, c-format
-msgid "E1326: Variable not found on object \"%s\": %s"
-msgstr "E1326: У объекта \"%s\" отсутствует переменная %s"
+msgid "E1326: Variable \"%s\" not found in object \"%s\""
+msgstr "E1326: У объекта \"%s\" отсутствует переменная \"%s\""
 
 # :!~ Restorer
 #, c-format
@@ -11879,8 +11879,9 @@ msgstr ""
 
 # :!~ Restorer
 #, c-format
-msgid "E1333: Cannot access private variable: %s"
-msgstr "E1333: Отсутствует доступ к внутренней переменной %s"
+msgid "E1333: Cannot access private variable \"%s\" in class \"%s\""
+msgstr ""
+"E1333: Отсутствует доступ к внутренней переменной \"%s\" в классе \"%s\""
 
 # :!~ Restorer
 #, c-format
@@ -12207,10 +12208,6 @@ msgstr ""
 "E1506: Недостаточный размер буфера для копирования расширенного атрибута"
 
 # :!~ Restorer
-msgid "E1507: Extended attributes are not supported by the filesystem"
-msgstr "E1507: В файловой системе не поддерживаются расширенные атрибуты"
-
-# :!~ Restorer
 msgid ""
 "E1508: Size of the extended attribute value is larger than the maximum size "
 "allowed"
@@ -12218,7 +12215,7 @@ msgstr ""
 "E1508: Значение расширенного атрибута превышает максимально допустимый размер"
 
 # :!~ Restorer
-msgid "E1509: Error occured when reading or writing extended attribute"
+msgid "E1509: Error occurred when reading or writing extended attribute"
 msgstr ""
 "E1509: Произошла ошибка при считывании или записи расширенного атрибута"
 
