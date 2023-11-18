@@ -6,7 +6,7 @@
 # Sergey Alyoshin, <alyoshin.s@gmail.com>, 2013-2014, 2016, 2018-2019
 # Matvey Tarasov, <matthewtarasov@yandex.ru>, 2022
 # Restorer, <restorer@mail2k.ru>, 2017, 2020-2023
-# URL: https://github.com/RestorerZ/RuVim
+#
 # Generated from ru.po, DO NOT EDIT.
 #
 #   Restorer
@@ -21,18 +21,18 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9002091.051123\n"
+"Project-Id-Version: RuVim_0.9002112.181123\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-11-05 18:50+0300\n"
-"PO-Revision-Date: 2023-11-05 19:57+0300\n"
+"POT-Creation-Date: 2023-11-18 18:08+0300\n"
+"PO-Revision-Date: 2023-11-18 18:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=CP1251\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 # #Restorer: выводится при анализе (профилировании) программы, функции и т. п.
 # ~!: earlier
@@ -552,8 +552,8 @@ msgstr "аргумента функции extend()"
 #, c-format
 msgid "Not enough memory to use internal diff for buffer \"%s\""
 msgstr ""
-"Встроенному механизму сравнения недостаточно памяти на считывание буфера \"%s"
-"\""
+"Встроенному механизму сравнения недостаточно памяти на считывание буфера "
+"\"%s\""
 
 # #Restorer: выводится в заголовке окна выбора файла
 # :!~ Restorer
@@ -1262,8 +1262,8 @@ msgstr "Чтобы получить дополнительную информацию, наберите \":help W11\""
 #, c-format
 msgid "W16: Warning: Mode of file \"%s\" has changed since editing started"
 msgstr ""
-"W16: Внимание! После считывания в буфер, изменены права доступа к файлу \"%s"
-"\""
+"W16: Внимание! После считывания в буфер, изменены права доступа к файлу "
+"\"%s\""
 
 # :!~ Restorer
 msgid "See \":help W16\" for more info."
@@ -7596,7 +7596,7 @@ msgstr ""
 # :!~ Restorer
 msgid "E443: Cannot rotate when another window is split"
 msgstr ""
-"E443: Не применимо к окнам, имеющим различие либо по высоте, либо по ширине"
+"E443: Неприменимо к окнам, имеющим различие либо по высоте, либо по ширине"
 
 # :!~ Restorer
 msgid "E444: Cannot close last window"
@@ -7605,7 +7605,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E445: Other window contains changes"
-msgstr "E445: В других окнах имеются не сохранённые данные"
+msgstr "E445: В других окнах имеются несохранённые данные"
 
 # :!~ Restorer
 msgid "E446: No file name under cursor"
@@ -7849,7 +7849,7 @@ msgstr "E488: Посторонние завершающие символы %s"
 msgid "E489: No call stack to substitute for \"<stack>\""
 msgstr ""
 "E489: Отсутствует командный файл в стеке вызовов для замещения спецсимвола "
-"\"<stack>\""
+"<stack>"
 
 # :!~ Restorer
 msgid "E490: No fold found"
@@ -7876,26 +7876,23 @@ msgstr "E494: Необходимо указать команду :write или :write>>"
 
 # :!~ Restorer
 msgid "E495: No autocommand file name to substitute for \"<afile>\""
-msgstr ""
-"E495: Отсутствует файл для замещения в автокоманде спецсимвола \"<afile>\""
+msgstr "E495: Отсутствует файл для замещения в автокоманде спецсимвола <afile>"
 
 # :!~ Restorer
 msgid "E496: No autocommand buffer number to substitute for \"<abuf>\""
 msgstr ""
-"E496: Отсутствует номер буфер для замещения в автокоманде спецсимвола "
-"\"<abuf>\""
+"E496: Отсутствует номер буфер для замещения в автокоманде спецсимвола <abuf>"
 
 # :!~ Restorer
 msgid "E497: No autocommand match name to substitute for \"<amatch>\""
 msgstr ""
-"E497: Отсутствует образец для замещения в автокоманде спецсимвола \"<amatch>"
-"\""
+"E497: Отсутствует образец для замещения в автокоманде спецсимвола <amatch>"
 
 # :!~ Restorer
 msgid "E498: No :source file name to substitute for \"<sfile>\""
 msgstr ""
 "E498: Отсутствует командный файл для замещения в команде :source спецсимвола "
-"\"<sfile>\""
+"<sfile>"
 
 # :!~ Restorer
 #, no-c-format
@@ -9518,7 +9515,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E842: No line number to use for \"<slnum>\""
-msgstr "E842: Отсутствует номер строки для замещения спецсимвола \"<slnum>\""
+msgstr "E842: Отсутствует номер строки для замещения спецсимвола <slnum>"
 
 # :!~ Restorer
 msgid "E843: Error while updating swap file crypt"
@@ -10090,7 +10087,7 @@ msgstr "E960: Ошибка при активации встроенного механизма сравнения"
 
 # :!~ Restorer
 msgid "E961: No line number to use for \"<sflnum>\""
-msgstr "E961: Отсутствует номер строки для замещения спецсимвола \"<sflnum>\""
+msgstr "E961: Отсутствует номер строки для замещения спецсимвола <sflnum>"
 
 # :!~ Restorer
 #, c-format
@@ -11593,8 +11590,7 @@ msgstr "E1273: НКА. Не указано значение в \\%%%c"
 
 # :!~ Restorer
 msgid "E1274: No script file name to substitute for \"<script>\""
-msgstr ""
-"E1274: Отсутствует командный файл для замещения спецсимвола \"<script>\""
+msgstr "E1274: Отсутствует командный файл для замещения спецсимвола <script>"
 
 # :!~ Restorer
 msgid "E1275: String or function required for ->(expr)"
@@ -11761,7 +11757,8 @@ msgstr "E1306: Превышено количество вложенных циклов"
 #, c-format
 msgid "E1307: Argument %d: Trying to modify a const %s"
 msgstr ""
-"E1307: Для аргумента номер %d попытка изменения константного значения %s"
+"E1307: Обнаружена попытка изменения константного значения %2$s у аргумента "
+"номер %1$d"
 
 # :!~ Restorer
 msgid "E1308: Cannot resize a window in another tab page"
@@ -11867,8 +11864,8 @@ msgstr "E1330: Недопустимый тип данных переменной объекта %s"
 # :!~ Restorer
 msgid "E1331: Public must be followed by \"this\" or \"static\""
 msgstr ""
-"E1331: После модификатора доступа \"public\" требуется ключевое слово \"this"
-"\" или \"static\""
+"E1331: После модификатора доступа \"public\" требуется ключевое слово "
+"\"this\" или \"static\""
 
 # :!~ Restorer
 #, c-format
@@ -11878,9 +11875,8 @@ msgstr ""
 
 # :!~ Restorer
 #, c-format
-msgid "E1333: Cannot access private variable \"%s\" in class \"%s\""
-msgstr ""
-"E1333: Отсутствует доступ к внутренней переменной \"%s\" в классе \"%s\""
+msgid "E1333: Cannot access protected variable \"%s\" in class \"%s\""
+msgstr "E1333: Ограничен доступ к защищённой переменной \"%s\" в классе \"%s\""
 
 # :!~ Restorer
 #, c-format
@@ -11922,7 +11918,7 @@ msgstr "E1343: Наименование интерфейса должно начинаться с прописной буквы %s"
 
 # :!~ Restorer
 msgid "E1344: Cannot initialize a variable in an interface"
-msgstr "E1344: Не удалось инициализировать переменную в интерфейсе"
+msgstr "E1344: Не допускается инициализировать переменные в интерфейсе"
 
 # :!~ Restorer
 #, c-format
@@ -12021,8 +12017,8 @@ msgstr ""
 
 # :!~ Restorer
 #, c-format
-msgid "E1366: Cannot access private method: %s"
-msgstr "E1366: Отсутствует доступ к внутреннему методу %s"
+msgid "E1366: Cannot access protected method: %s"
+msgstr "E1366: Ограничен доступ к защищённому методу %s"
 
 # :!~ Restorer
 #, c-format
@@ -12048,15 +12044,14 @@ msgstr "E1370: Не допускается определение метода \"new\" как статического"
 
 # :!~ Restorer
 msgid "E1371: Abstract must be followed by \"def\""
-msgstr ""
-"E1371: После ключевого слова \"abstract\" требуется ключевое слово \"def\""
+msgstr "E1371: После ключевого слова \"abstract\" требуется команда :def"
 
 # :!~ Restorer
 #, c-format
 msgid "E1372: Abstract method \"%s\" cannot be defined in a concrete class"
 msgstr ""
-"E1372: Не допускается определение в реальном классе абстрактного метода \"%s"
-"\""
+"E1372: Не допускается определение в реальном классе абстрактного метода "
+"\"%s\""
 
 # :!~ Restorer
 #, c-format
@@ -12087,19 +12082,19 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1378: Static member not supported in an interface"
-msgstr "E1378: Статические члены не поддерживаются в интерфейсах"
+msgstr "E1378: Интерфейсы не поддерживают статические члены"
 
 # :!~ Restorer
-msgid "E1379: Private variable not supported in an interface"
-msgstr "E1379: Внутренние переменные не поддерживаются в интерфейсах"
+msgid "E1379: Protected variable not supported in an interface"
+msgstr "E1379: Интерфейсы не поддерживают защищённые переменные"
 
 # :!~ Restorer
-msgid "E1380: Private method not supported in an interface"
-msgstr "E1380: Внутренние методы не поддерживаются в интерфейсах"
+msgid "E1380: Protected method not supported in an interface"
+msgstr "E1380: Интерфейсы не поддерживают защищённые методы"
 
 # :!~ Restorer
 msgid "E1381: Interface cannot use \"implements\""
-msgstr "E1381: Интерфейс не может использовать ключевое слово \"implements\""
+msgstr "E1381: Для интерфейса неприменимо ключевое слово \"implements\""
 
 # :!~ Restorer
 #, c-format
@@ -12130,11 +12125,11 @@ msgstr "E1386: Метод объекта \"%s\" доступен только через объект класса \"%s\""
 
 # :!~ Restorer
 msgid "E1387: Public variable not supported in an interface"
-msgstr "E1387: Общие переменные не поддерживаются в интерфейсах"
+msgstr "E1387: Интерфейсы не поддерживают общие переменные"
 
 # :!~ Restorer
 msgid "E1388: Public keyword not supported for a method"
-msgstr "E1388: Ключевое слово \"public\" не применимо к методу"
+msgstr "E1388: Ключевое слово \"public\" неприменимо к методу"
 
 # :!~ Restorer
 msgid "E1389: Missing name after implements"
@@ -12146,8 +12141,8 @@ msgid ""
 "E1390: Cannot use an object variable \"this.%s\" except with the \"new\" "
 "method"
 msgstr ""
-"E1390: Переменная объекта \"this.%s\" может указываться только в методе \"new"
-"\""
+"E1390: Переменная объекта \"this.%s\" может указываться только в методе "
+"\"new\""
 
 # :!~ Restorer
 #, c-format
@@ -12220,8 +12215,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "E1404: Abstract cannot be used in an interface"
-msgstr ""
-"E1404: Недопускается использование ключевого слова \"abstract\" в интерфейсах"
+msgstr "E1404: Интерфейсы не поддерживают ключевое слово \"abstract\""
 
 # :!~ Restorer
 #, c-format
@@ -13950,7 +13944,7 @@ msgstr "количество пробелов, вставляемых при нажатии клавиши <TAB>"
 msgid "round to 'shiftwidth' for \"<<\" and \">>\""
 msgstr ""
 "приводить к значению, заданному в параметре 'shiftwidth'\n"
-"для команд \"<<\" и \">>\""
+"для команд :<< и :>>"
 
 # :!~ Restorer
 msgid "expand <Tab> to spaces in Insert mode"
