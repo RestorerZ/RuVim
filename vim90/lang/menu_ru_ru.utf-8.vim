@@ -3,8 +3,8 @@
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
 " Last Change:		23 Aug 2023
-" Original translations
 " URL:			https://github.com/RestorerZ/RuVim
+" Original translations
 "
 "
 " Adopted for RuVim project by Vassily Ragosin.
@@ -347,7 +347,7 @@ let menutrans_no_file = "[Безымянный]"
 
 " Menus to handle Russian encodings
 " Thanks to Pavlo Bohmat for the idea
-" vassily ragosin <vrr[at]users.sourceforge.net>
+" vassily ragosin, <vrr[at]users.sourceforge.net>
 "
 an 10.355 &File.-SEP-					<Nop>
 an 10.360.20 &File.Открыть\ в\ кодировке\.\.\..CP1251	:browse e ++enc=cp1251<CR>
