@@ -7,7 +7,7 @@
 # Matvey Tarasov, <matthewtarasov@yandex.ru>, 2022
 # Restorer, <restorer@mail2k.ru>, 2017, 2020-2023
 #
-# Original translations.
+# Generated from ru.po, DO NOT EDIT.
 #
 #   Restorer
 # Основные задачи, решаемые данной редакцией перевода:
@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9002173.161223\n"
+"Project-Id-Version: RuVim_0.9002185.251223\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2023-12-16 17:56+0300\n"
-"PO-Revision-Date: 2023-12-16 18:57+0300\n"
+"POT-Creation-Date: 2023-12-25 16:17+0300\n"
+"PO-Revision-Date: 2023-12-25 18:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -5685,7 +5685,8 @@ msgstr "Прервано"
 
 # :!~ Restorer
 msgid "E10: \\ should be followed by /, ? or &"
-msgstr "E10: После символа \\ требуется указать одну из команд /, ? или &"
+msgstr ""
+"E10: После символа '\\' требуется указать одну из команд `/`, `?` или `&`"
 
 # :!~ Restorer
 msgid "E11: Invalid in command-line window; :q<CR> closes the window"
@@ -7215,8 +7216,7 @@ msgstr "E357: Отсутствует сопоставленный символ в параметре 'langmap' для %s"
 #, c-format
 msgid "E358: 'langmap': Extra characters after semicolon: %s"
 msgstr ""
-"E358: В значении параметра 'langmap' посторонние символы после разделителя ; "
-"%s"
+"E358: В параметре 'langmap' посторонние символы после разделителя ';' %s"
 
 # :!~ Restorer
 msgid "E359: Screen mode setting not supported"
@@ -7344,7 +7344,7 @@ msgstr "E385: Достигнута нижняя граница документа. Нет совпадений с %s"
 # :!~ Restorer
 msgid "E386: Expected '?' or '/'  after ';'"
 msgstr ""
-"E386: В поисковом запросе после символа ';' указывается команда '?' или '/'"
+"E386: В поисковом запросе после символа ';' указывается команда `?` или `/`"
 
 # :!~ Restorer
 msgid "E387: Match is on current line"
@@ -7426,7 +7426,7 @@ msgstr "E404: Недопустимые параметры команды `:syntax sync` %s"
 # :!~ Restorer
 #, c-format
 msgid "E405: Missing equal sign: %s"
-msgstr "E405: Не указан символ знака равенства после %s"
+msgstr "E405: Не указан знак равенства после %s"
 
 # :!~ Restorer
 #, c-format
@@ -7551,8 +7551,7 @@ msgstr "E429: Не существует файл индексов \"%s\""
 # :!~ Restorer
 #, c-format
 msgid "E430: Tag file path truncated for %s\n"
-msgstr ""
-"E430: Выполнено усечение маршрута до допустимой длины к файлу индексов %s\n"
+msgstr "E430: Выполнено усечение маршрута для файла индексов %s\n"
 
 # :!~ Restorer
 #, c-format
@@ -8026,7 +8025,7 @@ msgstr "E520: В режимной строке запрещена установка параметра"
 
 # :!~ Restorer
 msgid "E521: Number required after ="
-msgstr "E521: Требуется числовое значение сразу после знака равно"
+msgstr "E521: Требуется числовое значение сразу после знака равенства"
 
 # :!~ Restorer
 #, c-format
@@ -10172,7 +10171,7 @@ msgstr "E980: Эмуляция низкоуровневого ввода не поддерживается"
 
 # :!~ Restorer
 msgid "E981: Command not allowed in rvim"
-msgstr "E981: Команда запрещена в варианте программы rvim"
+msgstr "E981: Команда запрещена в варианте программы rVim"
 
 # :!~ Restorer
 msgid "E982: ConPTY is not available"
@@ -10869,7 +10868,7 @@ msgstr "E1126: Не допускается указание команда :let в командном файле Vim9"
 
 # :!~ Restorer
 msgid "E1127: Missing name after dot"
-msgstr "E1127: Не указано наименование ключа после знака точки"
+msgstr "E1127: Не указано наименование ключа после символа точки"
 
 # :!~ Restorer
 msgid "E1128: } without {"
@@ -12037,8 +12036,8 @@ msgid ""
 "E1368: Static must be followed by \"var\" or \"def\" or \"final\" or "
 "\"const\""
 msgstr ""
-"E1368: После ключевого слова \"static\" требуется комада :var или :def, либо "
-"ключевое слово \"final\" или \"const\""
+"E1368: После ключевого слова \"static\" требуется команда :var или :def, "
+"либо ключевое слово \"final\" или \"const\""
 
 # :!~ Restorer
 #, c-format
@@ -12182,7 +12181,7 @@ msgstr "E1395: Не допускается изменение псевдонима типа \"%s\""
 # :!~ Restorer
 #, c-format
 msgid "E1396: Type alias \"%s\" already exists"
-msgstr "E1396: Псеводним типа уже определён \"%s\""
+msgstr "E1396: Псевдоним типа уже определён \"%s\""
 
 # :!~ Restorer
 msgid "E1397: Missing type alias name"
@@ -12195,7 +12194,7 @@ msgstr "E1398: Не указан тип для псевдонима типа"
 # :!~ Restorer
 msgid "E1399: Type can only be used in a script"
 msgstr ""
-"E1399: Псевдоним типа можжет быть определён только на уровне командного файла"
+"E1399: Псевдоним типа может быть определён только на уровне командного файла"
 
 # :!~ Restorer
 #, c-format
@@ -12216,7 +12215,7 @@ msgstr "E1402: Ожидался тип данных String, а получен псевдоним типа \"%s\""
 #, c-format
 msgid "E1403: Type alias \"%s\" cannot be used as a value"
 msgstr ""
-"E1403: Недопускается в качестве значения указывать псевдоним типа \"%s\""
+"E1403: Не допускается в качестве значения указывать псевдоним типа \"%s\""
 
 # :!~ Restorer
 msgid "E1404: Abstract cannot be used in an interface"
@@ -12225,7 +12224,7 @@ msgstr "E1404: Интерфейсы не поддерживают ключевое слово \"abstract\""
 # :!~ Restorer
 #, c-format
 msgid "E1405: Class \"%s\" cannot be used as a value"
-msgstr "E1405: Недопускается в качестве значения указывать класс \"%s\""
+msgstr "E1405: Не допускается в качестве значения указывать класс \"%s\""
 
 # :!~ Restorer
 msgid "E1406: Cannot use a Class as a variable or value"
@@ -12246,12 +12245,17 @@ msgstr "E1408: Интерфейсы не поддерживают финализированные переменные"
 #, c-format
 msgid "E1409: Cannot change read-only variable \"%s\" in class \"%s\""
 msgstr ""
-"E1409: Не допускается изменение доступной только для чтения перменной \"%s\" "
-"в классе \"%s\""
+"E1409: Не допускается изменение доступной только для чтения переменной "
+"\"%s\" в классе \"%s\""
 
 # :!~ Restorer
 msgid "E1410: Const variable not supported in an interface"
 msgstr "E1410: Интерфейсы не поддерживают константные переменные"
+
+# :!~ Restorer
+#, c-format
+msgid "E1411: Missing dot after object \"%s\""
+msgstr "E1411: Не указан символ точки после наименования объекта %s"
 
 # :!~ Restorer
 #, c-format
@@ -13596,7 +13600,7 @@ msgstr "область экрана, остающаяся не занятой окном программы (в пикселях)"
 
 # :!~ Restorer
 msgid "list of ASCII characters that can be combined into complex shapes"
-msgstr "перечень символов в кодировке ASCII, используемых для составных знаков"
+msgstr "перечень символов в кодировке ASCII, используемых в составных символах"
 
 # :!~ Restorer
 msgid "options for text rendering"
