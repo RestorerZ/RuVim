@@ -7,7 +7,7 @@
 # Matvey Tarasov, <matthewtarasov@yandex.ru>, 2022
 # Restorer, <restorer@mail2k.ru>, 2017, 2020-2023
 #
-# Original translations.
+# Generated from ru.po, DO NOT EDIT.
 #
 #   Restorer
 # Основные задачи, решаемые данной редакцией перевода:
@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010029.150124\n"
+"Project-Id-Version: RuVim_0.9010059.260124\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2024-01-15 19:49+0300\n"
-"PO-Revision-Date: 2024-01-15 19:57+0300\n"
+"POT-Creation-Date: 2024-01-26 14:54+0300\n"
+"PO-Revision-Date: 2024-01-26 14:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -75,7 +75,6 @@ msgstr "W19: Удаление активной группы автокоманд"
 
 # #Restorer: отображается, например, по команде `:autocmd`
 # ~!: earlier
-#. Highlight title
 msgid ""
 "\n"
 "--- Autocommands ---"
@@ -209,7 +208,6 @@ msgstr "[безымянный]"
 
 # #Restorer: в заголовке окна
 # ~!: earlier
-#. must be a help buffer
 msgid "help"
 msgstr "справка"
 
@@ -237,7 +235,6 @@ msgstr "Начало"
 
 # #Restorer: локализуемое значение процента
 # :!~ Restorer
-#. localized percentage value
 #, c-format
 msgid "%d%%"
 msgstr "%d %%"
@@ -270,6 +267,10 @@ msgstr " (файл %d из %d"
 msgid " (file (%d) of %d)"
 msgstr " (файл (%d) из %d"
 
+# :!~ Restorer
+msgid "[Command Line]"
+msgstr "[командная строка]"
+
 # #Restorer: в строке состояния для буфера с окном запроса и уведомления
 # :!~ Restorer
 msgid "[Prompt]"
@@ -287,9 +288,6 @@ msgstr "[временный]"
 
 # #Restorer: при записи изменённого извне файла
 # :!~ Restorer
-#. don't overwrite messages here
-#. must give this prompt
-#. don't use emsg() here, don't want to flush the buffers
 msgid "WARNING: The file has been changed since reading it!!!"
 msgstr "Внимание! Файл был изменён уже после того, как считан в буфер"
 
@@ -374,12 +372,10 @@ msgid "No display"
 msgstr "Отсутствует подключение к X-серверу"
 
 # :!~ Restorer
-#. Failed to send, abort.
 msgid ": Send failed.\n"
 msgstr " Сбой передачи\n"
 
 # :!~ Restorer
-#. Let vim start normally.
 msgid ": Send failed. Trying to execute locally\n"
 msgstr " Сбой передачи. Попытка выполнить локально\n"
 
@@ -711,10 +707,6 @@ msgstr ""
 # #Restorer: используется как кнопка по умолчанию в окнах сообщений ГИП
 # :!~ Restorer
 #.
-#. * Yes this is ugly, I don't particularly like it either.  But doing it
-#. * this way has the compelling advantage that translations need not to
-#. * be touched at all.  See below what 'ok' and 'ync' are used for.
-#.
 msgid "&Ok"
 msgstr "&OK"
 
@@ -1014,7 +1006,6 @@ msgstr "безымянный"
 
 # #Restorer: выводится при 'verbose'>=13
 # ~!: earlier
-#. always scroll up, don't overwrite
 #, c-format
 msgid "Exception thrown: %s"
 msgstr "Исключительная ситуация %s"
@@ -1039,7 +1030,6 @@ msgstr "%s, строка %ld"
 
 # #Restorer: выводится при 'verbose'>=13
 # ~!: earlier
-#. always scroll up, don't overwrite
 #, c-format
 msgid "Exception caught: %s"
 msgstr "Обработка исключительной ситуации %s"
@@ -1091,13 +1081,8 @@ msgstr "Ошибка"
 # #Restorer: выводится при 'verbose'>=14
 # #Restorer: составное сообщение.
 # ~!: earlier
-#. if (pending & CSTP_INTERRUPT)
 msgid "Interrupt"
 msgstr "Прерывание"
-
-# :!~ Restorer
-msgid "[Command Line]"
-msgstr "[командная строка]"
 
 # #Restorer: в UNIX-подобных системах
 # #Restorer: и ещё ошибка E502:
@@ -1137,7 +1122,6 @@ msgid "Vim: Reading from stdin...\n"
 msgstr "Программа Vim. Считывание из стандартного потока ввода...\n"
 
 # :!~ Restorer
-#. make a copy, gui_write() may try to change it
 msgid "Reading from stdin..."
 msgstr "Считывание из стандартного потока ввода..."
 
@@ -1432,13 +1416,11 @@ msgstr "Чем:"
 
 # #Restorer: заголовок переключателя в окне поиска и замены
 # :!~ Restorer
-#. whole word only button
 msgid "Match whole word only"
 msgstr "Только слово целиком"
 
 # #Restorer: заголовок переключателя в окне поиска и замены
 # :!~ Restorer
-#. match case button
 msgid "Match case"
 msgstr "С учётом регистра"
 
@@ -1449,7 +1431,6 @@ msgstr "Направление"
 
 # #Restorer: заголовок переключателя в окне поиска и замены
 # ~!: earlier
-#. 'Up' and 'Down' buttons
 msgid "Up"
 msgstr "Вверх"
 
@@ -1585,8 +1566,6 @@ msgstr "Заменить"
 # #Restorer: заголовок окна
 # #Restorer: это только заполнитель
 # :!~ Restorer
-#. We fake this: Use a filter that doesn't select anything and a default
-#. file name that won't be used.
 msgid "Not Used"
 msgstr "Not Used"
 
@@ -1649,7 +1628,6 @@ msgstr "Шрифт:"
 
 # #Restorer: наименование переключателя в окне выбора шрифта
 # ~!: earlier
-#. create toggle button
 msgid "Show size in Points"
 msgstr "Показывать размер в пунктах"
 
@@ -1941,7 +1919,6 @@ msgid "not implemented yet"
 msgstr "пока не реализовано"
 
 # :!~ Restorer
-#. ???
 msgid "cannot set line(s)"
 msgstr "не удалось заменить строки"
 
@@ -2024,12 +2001,10 @@ msgid " Keyword completion (^N^P)"
 msgstr " Подстановка слова под кареткой CTRL+N или CTRL+P"
 
 # :!~ Restorer
-#. CTRL_X_NORMAL, ^P/^N compl.
 msgid " ^X mode (^]^D^E^F^I^K^L^N^O^Ps^U^V^Y)"
 msgstr " Режим подстановки CTRL+X и CTRL+ (] D E F I K L N O P S U V Y)"
 
 # :!~ Restorer
-#. CTRL_X_SCROLL: depends on state
 msgid " Whole line completion (^L^N^P)"
 msgstr " Подстановка целой строки CTRL+L и CTRL+N или CTRL+P"
 
@@ -2050,7 +2025,6 @@ msgid " Definition completion (^D^N^P)"
 msgstr " Подстановка определений CTRL+D и CTRL+N или CTRL+P"
 
 # :!~ Restorer
-#. CTRL_X_FINISHED
 msgid " Dictionary completion (^K^N^P)"
 msgstr " Подстановка из словаря CTRL+K и CTRL+N или CTRL+P"
 
@@ -2059,7 +2033,6 @@ msgid " Thesaurus completion (^T^N^P)"
 msgstr " Подстановка из словаря синонимов CTRL+T и CTRL+N или CTRL+P"
 
 # :!~ Restorer
-#. CTRL_X_EVAL doesn't use msg.
 msgid " Command-line completion (^V^N^P)"
 msgstr " Подстановка команд редактора Vim CTRL+V и CTRL+N или CTRL+P"
 
@@ -2101,13 +2074,11 @@ msgid " (replace) Scroll (^E/^Y)"
 msgstr " (замена) Прокрутка текста клавишами CTRL+E и CTRL+Y"
 
 # :!~ Restorer
-#. reset in msg_trunc_attr()
 #, c-format
 msgid "Scanning: %s"
 msgstr "Просмотр %s"
 
 # :!~ Restorer
-#. reset in msg_trunc_attr()
 msgid "Scanning tags."
 msgstr "Просмотр файла индексов"
 
@@ -2120,9 +2091,6 @@ msgid " Adding"
 msgstr " Добавление"
 
 # ~!: earlier
-#. showmode might reset the internal line pointers, so it must
-#. be called before line = ml_get(), or when this address is no
-#. longer needed.  -- Acevedo.
 msgid "-- Searching..."
 msgstr "-- Поиск..."
 
@@ -2292,7 +2260,6 @@ msgid "Vim: Warning: Input is not from a terminal\n"
 msgstr "Программа Vim. Внимание! Ввод осуществляется не с терминала\n"
 
 # :!~ Restorer
-#. just in case..
 msgid "pre-vimrc command line"
 msgstr "команды, выполняемые перед обработкой файла .vimrc"
 
@@ -2821,7 +2788,6 @@ msgstr "Закладки не установлены"
 
 # #Restorer: выводится по команде `:marks`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 "mark line  col file/text"
@@ -2831,7 +2797,6 @@ msgstr ""
 
 # #Restorer: выводится по команде `:jumps`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 " jump line  col file/text"
@@ -2841,7 +2806,6 @@ msgstr ""
 
 # #Restorer: выводится по команде `:changes`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 "change line  col text"
@@ -3018,8 +2982,6 @@ msgstr ""
 "Можете удалить файл подкачки."
 
 # :!~ Restorer
-#. Warn there could be an active Vim on the same file, the user may
-#. want to kill it.
 msgid ""
 "\n"
 "Note: process STILL RUNNING: "
@@ -3032,7 +2994,6 @@ msgid "Using crypt key from swap file for the text file.\n"
 msgstr "Для текстового файла используется пароль из файла подкачки\n"
 
 # :!~ Restorer
-#. use msg() to start the scrolling properly
 msgid "Swap files found:"
 msgstr "Обнаруженные файлы подкачки:"
 
@@ -3199,8 +3160,6 @@ msgstr "Который имеет более позднюю дату, чем обнаруженный файл подкачки\n"
 # #Restorer: добавлен второй "\n" и сдвинут к границе экрана,
 # #Restorer: чтобы выделить текст визуально
 # :!~ Restorer
-#. Some of these messages are long to allow translation to
-#. other languages.
 msgid ""
 "\n"
 "(1) Another program may be editing the same file.  If this is the case,\n"
@@ -3307,7 +3266,6 @@ msgstr ""
 
 # #Restorer: отображается, например, по команде `:menu`
 # ~!: earlier
-#. list the matching menu mappings
 msgid ""
 "\n"
 "--- Menus ---"
@@ -3340,8 +3298,6 @@ msgstr "строка %4ld:"
 
 # #Restorer: выводится, например, по команде `:messages`
 # :!~ Restorer
-#. Translator: Please replace the name and email address
-#. with the appropriate text for your translation.
 msgid "Messages maintainer: The Vim Project"
 msgstr "Restorer, перевод на русский язык, 2020, <restorer@mail2k.ru>"
 
@@ -3479,7 +3435,6 @@ msgstr[2] "Сдвиг %ld строк в направлении -%s- выполнен %d раз"
 
 # #Restorer: выводится при исполнении оператора `d` с большим кол-вом текста
 # :!~ Restorer
-#. must display the prompt
 msgid "cannot yank; delete anyway"
 msgstr "Не удалось сохранить текст во временный регистр. Выполнить удаление?"
 
@@ -3673,9 +3628,6 @@ msgid "Printing '%s'"
 msgstr "Печать '%s'"
 
 # :!~ Restorer
-#. Default font name for current language on MS-Windows.
-#. If not translated, falls back to "Consolas".
-#. This must be a fixed-pitch font.
 msgid "DefaultFontNameForWindows"
 msgstr "Consolas"
 
@@ -3956,7 +3908,6 @@ msgstr[2] "%ld строк скопировано%s"
 
 # #Restorer: выводится, например, по команде `:registers` или `:display`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 "Type Name Content"
@@ -4162,7 +4113,6 @@ msgstr " (включает раннее показанные)"
 
 # #Restorer: выводится, например, по команде `:checkpath` и `:checkpath!`
 # :!~ Restorer
-#. cursor at status line
 msgid "--- Included files "
 msgstr "--- Подключаемые файлы"
 
@@ -4274,8 +4224,6 @@ msgid "Warning: Cannot find word list \"%s.%s.spl\" or \"%s.ascii.spl\""
 msgstr "Внимание! Не найден файл \"%s.%s.spl\" или \"%s.ascii.spl\""
 
 # :!~ Restorer
-#. This is probably an error.  Give a warning and
-#. accept the words anyway.
 #, c-format
 msgid "Warning: region %s not supported"
 msgstr "Внимание! Проверка правописания не поддерживается для региона %s"
@@ -4567,9 +4515,6 @@ msgstr "Считывание записанного файла правил написания..."
 
 # :!~ Restorer
 #.
-#. * Go through the trie of good words, soundfold each word and add it to
-#. * the soundfold trie.
-#.
 msgid "Performing soundfolding..."
 msgstr "Построение префиксного «дерева» омофонов..."
 
@@ -4632,8 +4577,6 @@ msgstr "Вариантов написания %ld"
 
 # #Restorer: выводится, например, по команде `z=`
 # ~!: earlier
-#. for when 'cmdheight' > 1
-#. avoid more prompt
 #, c-format
 msgid "Change \"%.*s\" to:"
 msgstr "Заменить \"%.*s\" словом "
@@ -4757,7 +4700,6 @@ msgstr "Не существует файл индексов \"%s\""
 
 # #Restorer: шаблон %s заменяется на «or more», если есть другие файлы индексов
 # :!~ Restorer
-#. Give an indication of the number of matching tags
 #, c-format
 msgid "tag %d of %d%s"
 msgstr "индексов %d из %d%s"
@@ -4783,7 +4725,6 @@ msgstr "Файл\n"
 
 # #Restorer: выводится, например, по команде `:tags`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 "  # TO tag         FROM line  in file/text"
@@ -4824,7 +4765,6 @@ msgstr "по умолчанию '"
 
 # #Restorer: выводится, например, по команде `:set termcap`
 # :!~ Restorer
-#. Highlight title
 msgid ""
 "\n"
 "--- Terminal keys ---"
@@ -4865,10 +4805,6 @@ msgid "finished"
 msgstr "завершено"
 
 # :!~ Restorer
-#. Quoting "man strftime":
-#. > If the length of the result string (including the terminating
-#. > null byte) would exceed max bytes, then strftime() returns 0,
-#. > and the contents of the array are undefined.
 msgid "(Invalid)"
 msgstr "(недопустимое значение)"
 
@@ -4900,7 +4836,6 @@ msgstr ""
 "Программа Vim. Ошибка считывания из входного потока. Завершение работы...\n"
 
 # :!~ Restorer
-#. must display the prompt
 msgid "No undo possible; continue anyway"
 msgstr "Отмена изменений недоступна. Продолжить?"
 
@@ -5652,7 +5587,6 @@ msgstr ""
 
 # #Restorer: в viminfo-файле
 # :!~ Restorer
-#. Write the jumplist with -'
 msgid ""
 "\n"
 "# Jumplist (newest first):\n"
@@ -5661,7 +5595,6 @@ msgstr ""
 "# Журнал переходов (в начале более новые):\n"
 
 # :!~ Restorer
-#. Write the info:
 #, c-format
 msgid "# This viminfo file was generated by Vim %s.\n"
 msgstr "# Этот viminfo-файл автоматически создан программой Vim %s.\n"
@@ -6622,8 +6555,8 @@ msgid "E197: Cannot set language to \"%s\""
 msgstr "E197: Не удалось изменить региональные настройки для \"%s\""
 
 # :!~ Restorer
-msgid "E199: Active window or buffer deleted"
-msgstr "E199: Удаление текущего окна или буфера"
+msgid "E199: Active window or buffer changed or deleted"
+msgstr "E199: Удаление или изменение текущего окна или буфера"
 
 # :!~ Restorer
 msgid "E200: *ReadPre autocommands made the file unreadable"
@@ -12397,10 +12330,18 @@ msgstr ""
 msgid "E1510: Value too large: %s"
 msgstr "E1510: Превышена допустимая величина в значении %s"
 
+# :!~ Restorer
+#, c-format
+msgid "E1511: Wrong number of characters for field \"%s\""
+msgstr "E1511: В данном поле указано недопустимое количество символов \"%s\""
+
+# :!~ Restorer
+#, c-format
+msgid "E1512: Wrong character width for field \"%s\""
+msgstr "E1512: В данном поле не поддерживаются полноширинные символы \"%s\""
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
-#. type of cmdline window or 0
-#. result of cmdline window or 0
 msgid "--No lines in buffer--"
 msgstr "-- Буфер не содержит текст --"
 
@@ -12449,8 +12390,6 @@ msgid "float"
 msgstr "float"
 
 # :!~ Restorer
-#.
-#. * Some messages that can be shared are included here.
 #.
 msgid "search hit TOP, continuing at BOTTOM"
 msgstr "Поиск будет продолжен от НИЖНЕЙ ГРАНИЦЫ документа"
@@ -12598,7 +12537,6 @@ msgid "list index out of range"
 msgstr "индекс списка выходит за границы диапазона"
 
 # :!~ Restorer
-#. No more suitable format specifications in python-2.3
 #, c-format
 msgid "internal error: failed to get Vim list item %d"
 msgstr ""
@@ -12854,31 +12792,26 @@ msgstr ""
 
 # #Restorer: используется для файла desktop
 # :!~ Restorer
-#. Translators: This is the Application Name used in the GVim desktop file
 msgid "GVim"
 msgstr "gVim"
 
 # #Restorer: используется для файла desktop
 # ~!: earlier
-#. Translators: This is the Generic Application Name used in the Vim desktop file
 msgid "Text Editor"
 msgstr "Текстовый редактор"
 
 # #Restorer: используется для файла desktop
 # :!~ Restorer
-#. Translators: This is the comment used in the Vim desktop file
 msgid "Edit text files"
 msgstr "Редактировать текстовые файлы"
 
 # #Restorer: используется для файла desktop
 # ~!: earlier
-#. Translators: Search terms to find this application. Do NOT change the semicolons! The list MUST also end with a semicolon!
 msgid "Text;editor;"
 msgstr "текст;текстовый редактор;"
 
 # #Restorer: используется для файла desktop
 # ~!: earlier
-#. Translators: This is the Application Name used in the Vim desktop file
 msgid "Vim"
 msgstr "Vim"
 
