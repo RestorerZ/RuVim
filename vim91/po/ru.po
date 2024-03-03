@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010059.260124\n"
+"Project-Id-Version: RuVim_0.9010146.030324\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2024-01-26 14:54+0300\n"
-"PO-Revision-Date: 2024-01-26 14:57+0300\n"
+"POT-Creation-Date: 2024-03-03 13:47+0300\n"
+"PO-Revision-Date: 2024-03-03 14:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -691,7 +691,7 @@ msgstr "Чжуинь (бопомофо)"
 
 # :!~ Restorer
 msgid "Not enough memory to set references, garbage collection aborted!"
-msgstr "Сборка мусора прервана! Недостаточно памяти для установки ссылок"
+msgstr "Сбор мусора прерван! Недостаточно памяти для установки ссылок"
 
 # #Restorer: выводится при значении 'verbose'>0
 # :!~ Restorer
@@ -6067,6 +6067,11 @@ msgstr "E104: Не допускается указание клавиши <ESC> 
 # :!~ Restorer
 msgid "E105: Using :loadkeymap not in a sourced file"
 msgstr "E105: Команда :loadkeymap указана вне командного файла"
+
+# :!~ Restorer
+#, c-format
+msgid "E106: Unsupported diff output format: %s"
+msgstr "E106: Указанный формат результата сравнения не поддерживается %s"
 
 # :!~ Restorer
 #, c-format
