@@ -21,10 +21,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010146.030324\n"
+"Project-Id-Version: RuVim_0.9010158.080324\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2024-03-03 13:47+0300\n"
-"PO-Revision-Date: 2024-03-03 14:57+0300\n"
+"POT-Creation-Date: 2024-03-08 12:57+0300\n"
+"PO-Revision-Date: 2024-03-08 13:57+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -2490,11 +2490,11 @@ msgstr "--ttyfail\t\tЗавершить работу при отсутствии терминала ввода-вывода"
 
 # :!~ Restorer
 msgid "-u <vimrc>\t\tUse <vimrc> instead of any .vimrc"
-msgstr "-u <файл>\t\tПрименить вместо файлов .vimrc указанный <файл>"
+msgstr "-u <файл>\t\tИспользовать вместо файлов .vimrc указанный <файл>"
 
 # :!~ Restorer
 msgid "-U <gvimrc>\t\tUse <gvimrc> instead of any .gvimrc"
-msgstr "-U <файл>\t\tПрименить вместо файлов .gvimrc указанный <файл>"
+msgstr "-U <файл>\t\tИспользовать вместо файлов .gvimrc указанный <файл>"
 
 # :!~ Restorer
 msgid "--noplugin\t\tDon't load plugin scripts"
@@ -2511,7 +2511,7 @@ msgstr ""
 # :!~ Restorer
 msgid "-o[N]\t\tOpen N windows (default: one for each file)"
 msgstr ""
-"-o[N]\t\tСоздать окна для N файлов (по умолчанию создаётся\n"
+"-o[N]\t\tСоздание окон для N файлов (по умолчанию создаётся\n"
 "\t\t\t   по одному окну на каждый файл)"
 
 # :!~ Restorer
@@ -2528,19 +2528,19 @@ msgstr "+<номер>\t\tУстановка каретки на <номер> строки открытого файла"
 
 # :!~ Restorer
 msgid "--cmd <command>\tExecute <command> before loading any vimrc file"
-msgstr "--cmd <команда>\tВыполнение <команды> перед обработкой файла .vimrc"
+msgstr "--cmd <команда>\tИсполнение <команды> перед обработкой файла .vimrc"
 
 # ~!: earlier
 msgid "-c <command>\t\tExecute <command> after loading the first file"
-msgstr "-c <команда>\t\tВыполнение <команды> после загрузки первого файла"
+msgstr "-c <команда>\t\tИсполнение <команды> после считывания первого файла"
 
 # :!~ Restorer
 msgid "-S <session>\t\tSource file <session> after loading the first file"
-msgstr "-S <сеанс>\t\tВыполнение файла <сеанса> после загрузки первого файла"
+msgstr "-S <сеанс>\t\tЗапуск файла <сеанса> после считывания первого файла"
 
 # :!~ Restorer
 msgid "-s <scriptin>\tRead Normal mode commands from file <scriptin>"
-msgstr "-s <сценарий>\tСчитать команды режима команд из файла <сценария>"
+msgstr "-s <сценарий>\tСчитывание команд режима команд из файла <сценария>"
 
 # :!~ Restorer
 msgid "-w <scriptout>\tAppend all typed commands to file <scriptout>"
@@ -2556,8 +2556,7 @@ msgstr "-x\t\t\tИспользовать шифрование при считывании и записи файлов"
 
 # :!~ Restorer
 msgid "-display <display>\tConnect Vim to this particular X-server"
-msgstr ""
-"-display <display>\tВыполнить подключение программы к указанному X-серверу"
+msgstr "-display <display>\tПодключение программы к указанному X-серверу"
 
 # :!~ Restorer
 msgid "-X\t\t\tDo not connect to X server"
@@ -2620,7 +2619,7 @@ msgstr ""
 
 # :!~ Restorer
 msgid "-i <viminfo>\t\tUse <viminfo> instead of .viminfo"
-msgstr "-i <файл>\t\tИспользование вместо файла .viminfo указанного <файла>"
+msgstr "-i <файл>\t\tИспользовать вместо файла .viminfo указанный <файл>"
 
 # \n\t\t.. для умещения в 80 столбцов (С. Алёшин)
 # :!~ Restorer
@@ -9700,6 +9699,11 @@ msgid "E876: (NFA regexp) Not enough space to store the whole NFA"
 msgstr "E876: НКА. Недостаточно памяти для сохранения всех состояний механизма"
 
 # :!~ Restorer
+#, c-format
+msgid "E877: (NFA regexp) Invalid character class: %d"
+msgstr "E877: НКА. Не удалось распознать символьный класс %d"
+
+# :!~ Restorer
 msgid "E878: (NFA regexp) Could not allocate memory for branch traversal!"
 msgstr "E878: НКА. Не удалось выделить память для обхода ветви!"
 
@@ -12278,6 +12282,15 @@ msgstr "E1411: Не указан символ точки после наименования объекта %s"
 
 # :!~ Restorer
 #, c-format
+msgid "E1412: Builtin object method \"%s\" not supported"
+msgstr "E1412: Не поддерживается встроенный метод объекта \"%s\""
+
+# :!~ Restorer
+msgid "E1413: Builtin class method not supported"
+msgstr "E1413: В классе не доступны встроенные методы"
+
+# :!~ Restorer
+#, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
 msgstr "E1500: Указаны как позиционные, так и не позиционные спецификаторы %s"
 
@@ -12344,6 +12357,10 @@ msgstr "E1511: В данном поле указано недопустимое количество символов \"%s\""
 #, c-format
 msgid "E1512: Wrong character width for field \"%s\""
 msgstr "E1512: В данном поле не поддерживаются полноширинные символы \"%s\""
+
+# :!~ Restorer
+msgid "E1513: Cannot edit buffer. 'winfixbuf' is enabled"
+msgstr "E1513: Буфер не может быть изменён. Установлен параметр 'winfixbuf'"
 
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 # :!~ Restorer
@@ -13334,6 +13351,10 @@ msgstr "минимальное количество строк для активного окна"
 # :!~ Restorer
 msgid "minimal number of lines used for any window"
 msgstr "минимальное количество строк для всех окон"
+
+# :!~ Restorer
+msgid "keep window focused on a single buffer"
+msgstr "закрепить за окном один буфер"
 
 # :!~ Restorer
 msgid "keep the height of the window"
