@@ -22,10 +22,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010672.120824\n"
+"Project-Id-Version: RuVim_0.9010678.160824\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-08-12 13:58+0300\n"
-"PO-Revision-Date: 2024-08-12 14:09+0300\n"
+"PO-Revision-Date: 2024-08-16 11:44+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -1042,9 +1042,8 @@ msgid "[dos]"
 msgstr "[dos]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
-# ~!: earlier
 msgid "[dos format]"
-msgstr "[формат dos]"
+msgstr "[в формате dos]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
 # ~!: earlier
@@ -1052,9 +1051,8 @@ msgid "[mac]"
 msgstr "[mac]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
-# ~!: earlier
 msgid "[mac format]"
-msgstr "[формат mac]"
+msgstr "[в формате mac]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
 # ~!: earlier
@@ -1062,9 +1060,8 @@ msgid "[unix]"
 msgstr "[unix]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
-# ~!: earlier
 msgid "[unix format]"
-msgstr "[формат unix]"
+msgstr "[в формате unix]"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
 # ~!: earlier
@@ -2057,7 +2054,7 @@ msgid "-R\t\t\tReadonly mode (like \"view\")"
 msgstr "-R\t\t\tРабота в варианте только для чтения (как \"view\")"
 
 msgid "-Z\t\t\tRestricted mode (like \"rvim\")"
-msgstr "-Z\t\t\tРабота с ограниченной функциональностью (как \"rvim\")"
+msgstr "-Z\t\t\tРабота с ограничением функциональности (как \"rvim\")"
 
 msgid "-m\t\t\tModifications (writing files) not allowed"
 msgstr "-m\t\t\tРабота без возможности сохранения изменений"
@@ -2084,7 +2081,7 @@ msgstr ""
 "\t\t\t   [указав требуемый уровень N] [и файл для записи]"
 
 msgid "-D\t\t\tDebugging mode"
-msgstr "-D\t\t\tЗапуск программы в режиме отладки"
+msgstr "-D\t\t\tЗапуск программы в режиме диагностики"
 
 msgid "-n\t\t\tNo swap file, use memory only"
 msgstr "-n\t\t\tРабота без создания файла подкачки на ГМД или ЖМД"
@@ -2094,7 +2091,7 @@ msgstr "-r\t\t\tВывод перечня файлов подкачки и завершение работы"
 
 # #Restorer: добавил ещё один \t, чтобы выглядело единообразно
 msgid "-r (with file name)\tRecover crashed session"
-msgstr "-r <файл>\t\tВосстановление аварийно завершённого сеанс"
+msgstr "-r <файл>\t\tВосстановление аварийно завершённого сеанса"
 
 # ~!: earlier
 msgid "-L\t\t\tSame as -r"
@@ -2732,7 +2729,7 @@ msgstr ""
 "чтобы выполнить восстановление данных (подробнее см. `:help recovery`).\n"
 
 msgid "    If you did this already, delete the swap file \""
-msgstr "cb80aa2d53e56d3aba3b3c439fb467f29a750c5e \""
+msgstr "Если это уже было сделано, то удалите файл подкачки \""
 
 msgid ""
 "\"\n"
