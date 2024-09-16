@@ -22,10 +22,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010678.160824\n"
+"Project-Id-Version: RuVim_0.9010733.170924\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-12 13:58+0300\n"
-"PO-Revision-Date: 2024-08-16 11:44+0300\n"
+"POT-Creation-Date: 2024-09-17 02:14+0300\n"
+"PO-Revision-Date: 2024-09-17 02:16+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -435,7 +435,8 @@ msgstr "XChaCha20v2: для получения ключа применён ст�
 
 msgid "Entering Debug mode.  Type \"cont\" to continue."
 msgstr ""
-"Выполнено переключение в режим отладки. Чтобы продолжить, наберите \"cont\""
+"Выполнено переключение в режим диагностики. Чтобы продолжить, наберите \"cont"
+"\""
 
 # #Restorer: команды `:debug`; выводится при изменении в точке останова
 #, c-format
@@ -2121,7 +2122,7 @@ msgstr "--not-a-term\t\tНе сообщать об отсутствии терм
 
 msgid "--gui-dialog-file {fname}  For testing: write dialog text"
 msgstr ""
-"--gui-dialog-file {файл}  Запись сообщений диалоговых окон. Для отладки"
+"--gui-dialog-file {файл}  Запись сообщений диалоговых окон. Для диагностики"
 
 msgid "--ttyfail\t\tExit if input or output is not a terminal"
 msgstr "--ttyfail\t\tЗавершить работу при отсутствии терминала ввода-вывода"
@@ -4541,7 +4542,7 @@ msgid "Linking: "
 msgstr "Связывание: "
 
 msgid "  DEBUG BUILD"
-msgstr "  СБОРКА ДЛЯ ОТЛАДКИ"
+msgstr "  СБОРКА ДЛЯ ДИАГНОСТИКИ"
 
 msgid "VIM - Vi IMproved"
 msgstr "VIM — Vi IMproved (улучшенный Vi)"
@@ -4728,7 +4729,7 @@ msgstr "строки ввода"
 
 # #Restorer: запись в viminfo-файл журнала (history) команд, поиска и проч.
 msgid "Debug Line"
-msgstr "команд отладки"
+msgstr "команд диагностики"
 
 msgid ""
 "\n"
