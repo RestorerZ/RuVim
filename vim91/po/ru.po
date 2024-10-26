@@ -22,10 +22,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9010733.170924\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 02:14+0300\n"
-"PO-Revision-Date: 2024-09-17 02:16+0300\n"
+"Project-Id-Version: RuVim_0.9010814.261024\n"
+"Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
+"POT-Creation-Date: 2024-10-26 21:02+0300\n"
+"PO-Revision-Date: 2024-10-26 21:39+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -216,31 +216,27 @@ msgstr "%d %%"
 
 # #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
 # #Restorer: редактировании нескольких файлов
-# ~!: Restorer
 #, c-format
 msgid " (%d of %d)"
 msgstr " (%d из %d)"
 
 # #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
 # #Restorer: редактировании нескольких файлов
-# ~!: Restorer
 #, c-format
 msgid " ((%d) of %d)"
 msgstr " ((%d) из %d)"
 
 # #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
 # #Restorer: редактировании нескольких файлов
-# ~!: Restorer
 #, c-format
 msgid " (file %d of %d)"
-msgstr " (файл %d из %d"
+msgstr " (файл %d из %d)"
 
 # #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
 # #Restorer: редактировании нескольких файлов
-# ~!: Restorer
 #, c-format
 msgid " (file (%d) of %d)"
-msgstr " (файл (%d) из %d"
+msgstr " (файл (%d) из %d)"
 
 msgid "[Command Line]"
 msgstr "[командная строка]"
@@ -3856,7 +3852,7 @@ msgstr "Не обработано слов с символами, не вход�
 # #Restorer: с версии 8.2 подставляется наименования сжимаемого «дерева» - %s
 #, c-format
 msgid "Compressed %s: %ld of %ld nodes; %ld (%ld%%) remaining"
-msgstr "Сжато узлов %s: %ld из %ld. Осталось %ld (%ld%%)"
+msgstr "Сжато узлов %s: %ld из %ld. Осталось %ld (%ld %%)"
 
 msgid "Reading back spell file..."
 msgstr "Считывание записанного файла правил написания..."
@@ -4480,9 +4476,8 @@ msgstr " В этой версии включены (+) и отключены (-)
 msgid "   system vimrc file: \""
 msgstr "           общесистемный файл vimrc: \""
 
-# ~!: earlier
 msgid "     user vimrc file: \""
-msgstr "        пользовательский файл vimrc: \""
+msgstr "   1-ый пользовательский файл vimrc: \""
 
 msgid " 2nd user vimrc file: \""
 msgstr "   2-ой пользовательский файл vimrc: \""
@@ -4493,9 +4488,8 @@ msgstr "   3-ий пользовательский файл vimrc: \""
 msgid " 4th user vimrc file: \""
 msgstr "   4-ый пользовательский файл vimrc: \""
 
-# ~!: earlier
 msgid "      user exrc file: \""
-msgstr "         пользовательский файл exrc: \""
+msgstr "    1-ый пользовательский файл exrc: \""
 
 # ~!: earlier
 msgid "  2nd user exrc file: \""
@@ -4505,9 +4499,8 @@ msgstr "    2-ой пользовательский файл exrc: \""
 msgid "  system gvimrc file: \""
 msgstr "          общесистемный файл gvimrc: \""
 
-# ~!: earlier
 msgid "    user gvimrc file: \""
-msgstr "       пользовательский файл gvimrc: \""
+msgstr "  1-ый пользовательский файл gvimrc: \""
 
 # ~!: earlier
 msgid "2nd user gvimrc file: \""
@@ -5089,7 +5082,7 @@ msgstr "E69: Отсутствует закрывающая квадратная 
 
 #, c-format
 msgid "E70: Empty %s%%[]"
-msgstr "E70: Отсутствуют элементы в классе факультативных элементов %s%%[]"
+msgstr "E70: Отсутствуют записи в классе факультативных элементов %s%%[]"
 
 #, c-format
 msgid "E71: Invalid character after %s%%"
@@ -10220,6 +10213,9 @@ msgstr "E1512: В данном поле не поддерживаются пол
 msgid "E1513: Cannot switch buffer. 'winfixbuf' is enabled"
 msgstr "E1513: Не удалось сменить буфер. Установлен параметр 'winfixbuf'"
 
+msgid "E1514: 'findexpr' did not return a List type"
+msgstr "E1514: Значение параметра 'findexpr' не является типом данных List"
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 msgid "--No lines in buffer--"
 msgstr "-- Буфер не содержит текст --"
@@ -11454,6 +11450,10 @@ msgstr "работа команд CTRL+N и CTRL+P при подстановке
 
 msgid "whether to use a popup menu for Insert mode completion"
 msgstr "использовать всплывающее меню при подстановке в режиме вставки"
+
+msgid "popup menu item align order"
+msgstr ""
+"порядок отображения элементов во всплывающем меню при подстановке"
 
 msgid "options for the Insert mode completion info popup"
 msgstr "информация во всплывающем меню при подстановке в режиме вставки"
