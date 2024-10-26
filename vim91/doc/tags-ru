@@ -472,6 +472,7 @@ undo_indent	usr_51.rux	/*undo_indent*
 usenet	intro.rux	/*usenet*
 user-manual	usr_toc.rux	/*user-manual*
 using-<Plug>	usr_51.rux	/*using-<Plug>*
+usr	usr_toc.rux	/*usr*
 usr_01.txt	usr_01.rux	/*usr_01.txt*
 usr_02.txt	usr_02.rux	/*usr_02.txt*
 usr_03.txt	usr_03.rux	/*usr_03.txt*
