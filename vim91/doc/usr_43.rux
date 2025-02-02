@@ -1,4 +1,4 @@
-*usr_43.txt*	для Vim version 9.1		   редакция от 05 окт 2024 г.
+*usr_43.txt*	       для Vim version 9.1	   редакция от 05 окт 2024 г.
 
 		  РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ ПО РЕДАКТОРУ VIM
 			     автор Брам Моленар
@@ -40,15 +40,15 @@
    Если используемая система не UNIX-подобная, то посмотрите значение
    параметра 'runtimepath', чтобы узнать в каких каталогах редактором Vim
    выполняется поиск каталога «ftplugin»
->
+>vim
 	set runtimepath
 <
    Лучше всего использовать самый первый каталог из этого списка значений (до
    первой запятой). Если не устраивает значение по умолчанию, то добавьте
    необходимое наименование каталога в параметр 'runtimepath' в файле |vimrc|.
 
-2. Создайте файл «~/.vim/ftplugin/c.vim» со следующим текстом:
->
+2. Создайте файл «~/.vim/ftplugin/c.vim» содержащем следующие строки:
+>vim
 	setlocal softtabstop=4
 	noremap <buffer> <LocalLeader>c o/**************<CR><CR>/<Esc>
 	let b:undo_ftplugin = "setl softfabstop< | unmap <buffer> <LocalLeader><"
@@ -79,7 +79,7 @@
 наклонная черта.
 
 Примеры модулей типов файлов можно найти в каталоге
->
+>vi
 	$VIMRUNTIME/ftplugin/
 <
 Подробнее о создании модуля типа файла можно прочитать здесь — |write-plugin|.
@@ -96,7 +96,7 @@
 Создайте файл «filetype.vim», который содержит автокоманду для определения и
 присвоения этого типа файла (автокоманды описываются в параграфе |40.3|.).
 Например,
->
+>vim
 	augroup filetypedetect
 	au BufNewFile,BufRead *.xyz	setf xyz
 	augroup END
@@ -117,7 +117,7 @@
 Предположим, что все файлы в каталоге «/usr/share/scripts/» являются файлами
 на языке программирования Ruby, хотя и не имеют стандартного для него
 расширения файла. В этом случае изменим предыдущий пример следующим образом:
->
+>vim
 	augroup filetypedetect
 	au BufNewFile,BufRead *.xyz			setf xyz
 	au BufNewFile,BufRead /usr/share/scripts/*	setf ruby
@@ -135,14 +135,14 @@
 К тому же определение типа текстового файла будем выполнять в другом командном
 файле типов файла, который поместим в каталог, обрабатываемый раньше, чем
 каталог «after», например, «~/.vim/filetype.vim»
->
+>vim
 	augroup filetypedetect
 	au BufNewFile,BufRead *.txt			setf text
 	augroup END
 <
 А тип файлов языка Ruby будет определяться в самом конце, в файле находящемся
 в «~/.vim/after/filetype.vim»
->
+>vim
 	augroup filetypedetect
 	au BufNewFile,BufRead /usr/share/scripts/*	setf ruby
 	augroup END
@@ -186,7 +186,7 @@
 Для распознавания такого командного файла создайте в каталоге настроек
 редактора Vim (тот же каталог, где находится файл «filetype.vim») файл
 «scripts.vim». Содержимое этого файла может быть таким:
->
+>vim
 	if did_filetype()
 	  finish
 	endif
