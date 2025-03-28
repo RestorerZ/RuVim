@@ -1,4 +1,4 @@
-*usr_52.txt*	       для Vim version 9.1	   редакция от 07 окт 2024 г.
+*usr_52.txt*	       для Vim version 9.1	   редакция от 17 мар 2025 г.
 
 		  РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ ПО РЕДАКТОРУ VIM
 			      автор Брам Моленар
@@ -407,12 +407,10 @@ COMMENT PACKAGE
 
 HIGHLIGHT YANK PLUGIN
 
-Ниже дан пример подсветки скопированной области. В этом примере используется
-функция |getregionpos()|, доступная начиная с версии редактора Vim 9.1.0446.
-
-Скопируйте следующий программный код в новый командный файл и поместите этот
-файл в каталог «plugin». Этот модуль будет загружен при следующем запуске
-редактора Vim.   |add-plugin|
+Редактор Vim поставляется с пакетом модуля highlight-yank, написанного с
+использованием нового синтаксиса Vim9. Установка этого пакета описана в
+параграфе |hlyank-install|. Ниже дан пример упрощённой реализация этого
+функционала.
 >vim
 	vim9script
 
@@ -424,11 +422,10 @@ HIGHLIGHT YANK PLUGIN
 	    endif
 	    var [beg, end] = [getpos("'["), getpos("']")]
 	    var type = v:event.regtype ?? 'v'
-	    var pos = getregionpos(beg, end, {type: type})
-	    var end_offset = (type == 'V' || v:event.inclusive) ? 1 : 0
+	    var pos = getregionpos(beg, end, {type: type, exclusive: false})
 	    var m = matchaddpos(hlgroup, pos->mapnew((_, v) => {
 	      var col_beg = v[0][2] + v[0][3]
-	      var col_end = v[1][2] + v[1][3] + end_offset
+	      var col_end = v[1][2] + v[1][3] + 1
 	      return [v[0][1], col_beg, col_end - col_beg]
 	    }))
 	    var winid = win_getid()
