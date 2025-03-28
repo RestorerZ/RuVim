@@ -24,7 +24,7 @@ syntax match helpVim		"\<РЕДАКТОР VIM — общий обзор\>"
 syntax match helpVim		"\<СПРАВОЧНИК ПО РЕДАКТОРУ VIM\>"
 " Синтаксис наименования руководства пользователя
 syntax match helpVim		"\<РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ ПО РЕДАКТОРУ VIM\>"
-" Синтаксис авторока статьи справочника, руководства пользователя
+" Синтаксис автора статьи справочника, руководства пользователя
 syntax match helpAutor		"^\s\+\<автор\%[ы:] .*$"
 " Синтаксис примечаний в тексте, начала примеров и т. п.
 syntax keyword helpNote		Примечание\. Совет\. Пример\. Прмимер, Примеры:
@@ -55,7 +55,7 @@ syntax region helpNotVi		start="{Доступно только" start="{В ре�
 " Синтаксис примечаний переводчика
 syntax region helpTrnsNote	start="\[Примеч\. перев\. — " end="\]\." contains=helpComment
 " Определение группы подсветки Ex-команд внутри строки документации Vim
-hi def link helpCommand		SpecialComment
+hi def link helpCommand		VimCommand
 " Определение группы подсветки примеров в документации Vim
 hi def link helpExample		SpecialComment
 "hi def link helpExample		PreCondit
