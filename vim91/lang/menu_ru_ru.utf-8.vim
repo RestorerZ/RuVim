@@ -2,15 +2,14 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		23 Aug 2023
+" Last Change:		25 May 2025
 " URL:			https://github.com/RestorerZ/RuVim
-" Original translations
-"
 "
 " Adopted for RuVim project by Vassily Ragosin.
 " First translation: Tim Alexeevsky, <realtim [at] mail.ru>,
 " based on ukrainian translation by Bohdan Vlasyuk, <bohdan@vstu.edu.ua>
 "
+" Original translations
 "
 " Quit when menu translations have already been done.
 "
@@ -264,7 +263,7 @@ menutrans Cu&t					&Вырезать
 menutrans &Copy					&Копировать
 menutrans &Paste				Вст&авить
 menutrans &Delete				&Удалить
-menutrans Select\ Blockwise			Блоковое\ выделение
+menutrans Select\ Blockwise			Блочное\ выделение
 menutrans Select\ &Word				Выделить\ с&лово
 menutrans Select\ &Line				Выделить\ с&троку
 menutrans Select\ &Block			Выделить\ &блок
