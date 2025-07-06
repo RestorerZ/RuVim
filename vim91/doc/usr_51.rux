@@ -1,4 +1,4 @@
-*usr_51.txt*	       для Vim version 9.1	   редакция от 13 ноя 2024 г.
+*usr_51.txt*		для Vim version 9.1	редакция от 13 нояб. 2024 г.
 
 		  РУКОВОДСТВО ПОЛЬЗОВАТЕЛЯ ПО РЕДАКТОРУ VIM
 			      автор Брам Моленар
@@ -181,7 +181,7 @@ Vim с тем, чтобы им могли пользоваться многие 
 случае, если она не существует. А значит, пользователь может добавить в файл
 «vimrc»
 >vim
-	map ,c  <Plug>TypecorrectAdd;
+	map ,c	<Plug>TypecorrectAdd;
 <
 чтобы последовательность клавиш для команды вместо «_a» или «\a» была «,c».
 
@@ -222,7 +222,7 @@ Vim с тем, чтобы им могли пользоваться многие 
 <
 Теперь, когда пользователь вводит «\a», то выполняются следующие действия:
 >vim
-	\a  ->  <Plug>TypecorrectAdd;  ->  <SID>Add  ->  :call <SID>Add(...)
+	\a  ->	<Plug>TypecorrectAdd;  ->  <SID>Add  ->  :call <SID>Add(...)
 <
 В случае, если другой командный файл использует клавиатурную команду для
 <SID>Add, то это будет уже иная клавиатурная команда, с другим идентификатором
@@ -416,7 +416,7 @@ Vim с тем, чтобы им могли пользоваться многие 
   6	There are currently only a few corrections.  Add your own if you like.
   7
   8	Mappings:
-  9	<Leader>a   or   <Plug>TypecorrAdd;
+  9	<Leader>a   or	 <Plug>TypecorrAdd;
  10		Add a correction for the word under the cursor.
  11
  12	Commands:
@@ -719,7 +719,7 @@ exists("*s:Func")	Проверка существования данной фу�
 Проще всего показать это на примере. Это команда, которая позволяет
 редактировать все стандартные модули для компиляторов:
 >vim
-        next $VIMRUNTIME/compiler/*.vim
+	next $VIMRUNTIME/compiler/*.vim
 <
 Для перехода к следующему модулю воспользуйтесь командой |:next|.
 

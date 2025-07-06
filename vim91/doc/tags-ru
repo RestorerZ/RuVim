@@ -308,6 +308,7 @@ Q_vi	quickref.rux	/*Q_vi*
 Q_vm	quickref.rux	/*Q_vm*
 Q_wi	quickref.rux	/*Q_wi*
 Q_wq	quickref.rux	/*Q_wq*
+Russian	russian.rux	/*Russian*
 Tab	intro.rux	/*Tab*
 Uganda	uganda.rux	/*Uganda*
 Vi	intro.rux	/*Vi*
@@ -488,6 +489,13 @@ register	sponsor.rux	/*register*
 register-faq	sponsor.rux	/*register-faq*
 register-functions	usr_41.rux	/*register-functions*
 restore-cursor	usr_05.rux	/*restore-cursor*
+russian	russian.rux	/*russian*
+russian-intro	russian.rux	/*russian-intro*
+russian-issues	russian.rux	/*russian-issues*
+russian-keymap	russian.rux	/*russian-keymap*
+russian-l18n	russian.rux	/*russian-l18n*
+russian-l18n-support	russian.rux	/*russian-l18n-support*
+russian.txt	russian.rux	/*russian.txt*
 script	usr_41.rux	/*script*
 send-money	sponsor.rux	/*send-money*
 server-functions	usr_41.rux	/*server-functions*
@@ -577,6 +585,7 @@ vim-mac	intro.rux	/*vim-mac*
 vim-modes	intro.rux	/*vim-modes*
 vim-modes-intro	intro.rux	/*vim-modes-intro*
 vim-script-intro	usr_41.rux	/*vim-script-intro*
+vim-script-notation	usr_41.rux	/*vim-script-notation*
 vim-security	intro.rux	/*vim-security*
 vim-use	intro.rux	/*vim-use*
 vim9-declarations	usr_41.rux	/*vim9-declarations*
