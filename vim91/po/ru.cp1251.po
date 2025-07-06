@@ -22,10 +22,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9011415.280525\n"
+"Project-Id-Version: RuVim_0.9011512.050725\n"
 "Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2025-05-28 20:04+0300\n"
-"PO-Revision-Date: 2025-05-28 21:48+0300\n"
+"POT-Creation-Date: 2025-07-05 20:20+0300\n"
+"PO-Revision-Date: 2025-07-05 22:44+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -212,10 +212,14 @@ msgstr "Окончание"
 msgid "Top"
 msgstr "Начало"
 
-# #Restorer: локализуемое значение процента позиции буфера
+# #Restorer: локализуемое значение процента
 #, c-format
-msgid "%2d%%"
-msgstr "%2d %%"
+msgid "%d%%"
+msgstr "%d %%"
+
+#, c-format
+msgid "%2s"
+msgstr "%2s"
 
 # #Restorer: выводится в заголовке окна, строке состояния, комндной строке при
 # #Restorer: редактировании нескольких файлов
@@ -356,6 +360,13 @@ msgstr " Сбой при отправке выражения\n"
 # #Restorer: выводится при 'verbose'>0
 msgid "Used CUT_BUFFER0 instead of empty selection"
 msgstr "Содержимое буфера обмена получено из буфера CUT_BUFFER0"
+
+msgid "Could not find a way to access the clipboard."
+msgstr "Не удалось получить доступ к буферу обмена"
+
+#, c-format
+msgid "Switched to clipboard method '%s'."
+msgstr "Переключение на метод доступа к буферу обмена '%s'"
 
 # #Restorer: отображается по команде `i_CTRL+X`, если отключен вид «окно меню»
 msgid "tagname"
@@ -609,6 +620,10 @@ msgstr "Катакана"
 # ~!: earlier
 msgid "Bopomofo"
 msgstr "Чжуинь (бопомофо)"
+
+#, c-format
+msgid "%ld,"
+msgstr "%ld, "
 
 # #Restorer: выводится при значении 'verbose'>0
 msgid ""
@@ -1062,6 +1077,10 @@ msgstr "[unix]"
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
 msgid "[unix format]"
 msgstr "[в формате unix]"
+
+#, c-format
+msgid "%s%ldL, %lldB"
+msgstr "%s%ldс, %lldБ"
 
 # #Restorer: добавляется к сообщению в командной строке при операциях с файлом
 #, c-format
@@ -2185,6 +2204,9 @@ msgstr "-display <display>\tПодключение программы к указанному X-серверу"
 msgid "-X\t\t\tDo not connect to X server"
 msgstr "-X\t\t\tЗапуск программы без подключения к X-серверу"
 
+msgid "-Y\t\t\tDo not connect to Wayland compositor"
+msgstr "-Y\t\t\tЗапуск программы без подключения к Wayland Compositor"
+
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
 msgstr ""
 "--remote <файлы>\tРедактирование <файлов> на Vim-сервере, если доступен"
@@ -3121,7 +3143,7 @@ msgstr ""
 "Программа Vim. Получена ошибка от X-сервера\n"
 
 #, c-format
-msgid "restoring display %s"
+msgid "restoring X11 display %s"
 msgstr "Восстановление подключения к X-серверу %s"
 
 msgid "Testing the X display failed"
@@ -4325,6 +4347,13 @@ msgstr "Не требуется компиляция функции %s%s%s"
 msgid "%s (%s, compiled %s)"
 msgstr "%s (%s, сборка от %s)"
 
+msgid ""
+"\n"
+"MS-Windows ARM64 GUI/console version"
+msgstr ""
+"\n"
+"Версия для MS Windows ARM64 с графическим и консольным интерфейсом"
+
 # #Restorer: см. VIMDLL в Make_mvc.mak
 msgid ""
 "\n"
@@ -4343,6 +4372,13 @@ msgstr ""
 
 msgid ""
 "\n"
+"MS-Windows ARM64 GUI version"
+msgstr ""
+"\n"
+"Версия для MS Windows ARM64 с графическим интерфейсом"
+
+msgid ""
+"\n"
 "MS-Windows 64-bit GUI version"
 msgstr ""
 "\n"
@@ -4358,6 +4394,13 @@ msgstr ""
 # ~!: earlier
 msgid " with OLE support"
 msgstr " с поддержкой OLE"
+
+msgid ""
+"\n"
+"MS-Windows ARM64 console version"
+msgstr ""
+"\n"
+"Версия для MS Windows ARM64 консольная"
 
 msgid ""
 "\n"
@@ -4856,6 +4899,16 @@ msgstr " НЕ ВЫПОЛНЕНО"
 #, c-format
 msgid "Writing viminfo file \"%s\""
 msgstr "Запись viminfo-файла \"%s\""
+
+msgid "wayland protocol error -> "
+msgstr "Ошибка Wayland протокола ->"
+
+#, c-format
+msgid "restoring Wayland display %s"
+msgstr "восстановление подключения к Wayland серверу %s"
+
+msgid "failed restoring, lost connection to Wayland display"
+msgstr "сбой восстановления, потеряно подключение к Wayland серверу"
 
 # #Restorer: выводится при исполнении команд `CTRL+W SHIFT+T` или `CTRL+W o`
 msgid "Already only one window"
@@ -10372,6 +10425,9 @@ msgstr "E1546: Не допускается переключение в закрытый буфер"
 msgid "E1547: This version of Vim does support :redrawtabpanel"
 msgstr "E1547: Данная версия программы не поддерживает команду :redrawtabpanel"
 
+msgid "E1548: Wayland connection is unavailable"
+msgstr "E1548: Подключение к Wayland серверу отсутствует"
+
 # #Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 msgid "--No lines in buffer--"
 msgstr "-- Буфер не содержит текст --"
@@ -11027,7 +11083,7 @@ msgid ""
 "include \"uhex\" to show unprintable characters as a hex number"
 msgstr ""
 "\"lastline\" — индикация, если строка частично отображена в окне\n"
-"\"uhex\" — показ непечатаемых символов как шестнадцатеричное значение"
+"\"uhex\" — непечатаемые символы как шестнадцатеричное значение"
 
 msgid ""
 "characters to use for the status line, folds, diffs, buffer text, filler "
@@ -11077,11 +11133,14 @@ msgid "number of columns to use for the line number"
 msgstr "количество колонок, используемых под столбец с номерами строк"
 
 msgid "maximum number of quickfix lists that can be stored in history"
-msgstr "максимальное количество списков результатов, записываемое в журнал"
+msgstr ""
+"максимальное количество списков результатов,\n"
+"записываемое в журнал"
 
 msgid "maximum number of location lists that can be stored in history"
 msgstr ""
-"максимальное количество локальных списков результатов, записываемое в журнал"
+"максимальное количество локальных списков результатов,\n"
+"записываемое в журнал"
 
 msgid "controls whether concealable text is hidden"
 msgstr "способ скрытия текста, помеченного как скрытый"
@@ -11362,8 +11421,8 @@ msgstr "активировать окно при перемещении на него указателя «мыши»"
 
 msgid "the window with the mouse pointer scrolls with the mouse wheel"
 msgstr ""
-"прокрутка колёсиком «мыши» содержимого окна, в котором находится\n"
-"указатель «мыши»"
+"прокрутка колёсиком «мыши» содержимого окна, в котором\n"
+"находится указатель «мыши»"
 
 msgid "hide the mouse pointer while typing"
 msgstr "скрывать указатель «мыши» при наборе текста"
@@ -11419,7 +11478,9 @@ msgid "room (in pixels) left above/below the window"
 msgstr "область экрана (в пикселях), остающаяся не занятой окном программы"
 
 msgid "list of ASCII characters that can be combined into complex shapes"
-msgstr "перечень символов кодировки ASCII, используемых в составных символах"
+msgstr ""
+"перечень символов кодировки ASCII, используемых\n"
+"в составных символах"
 
 msgid "options for text rendering"
 msgstr "настройки визуализации текста"
@@ -11457,7 +11518,9 @@ msgid "use balloon evaluation in the GUI"
 msgstr "включение всплывающих выносок в графическом интерфейсе"
 
 msgid "use balloon evaluation in the terminal"
-msgstr "включение всплывающих выносок в окне терминала"
+msgstr ""
+" \n"
+"включение всплывающих выносок в окне терминала"
 
 msgid "expression to show in balloon eval"
 msgstr "функция, используемая для создания всплывающей выноски"
@@ -11505,8 +11568,8 @@ msgstr "настройки, используемые для вывода сообщений"
 
 msgid "show (partial) command keys in location given by 'showcmdloc'"
 msgstr ""
-"отображать набираемые команды в месте которое указанно в параметре\n"
-"'showcmdloc'"
+"отображать набираемые команды в месте которое указанно\n"
+"в параметре 'showcmdloc'"
 
 msgid "location where to show the (partial) command keys for 'showcmd'"
 msgstr ""
@@ -11573,6 +11636,20 @@ msgstr ""
 "\"unnamed\" — регистр * использовать как безымянный регистр\n"
 "\"autoselect\" — выделенный текст всегда помещать в буфер обмена"
 
+msgid "Ordered list of possible methods for accessing the clipboard"
+msgstr "Последовательность возможных методов доступа к буферу обмена"
+
+msgid "Timeout to use when polling for data to read or write in wayland"
+msgstr "Интервал опроса сервера Wayland для чтения или запси данных"
+
+msgid "Wayland seat to use"
+msgstr "Местоположение, используемое Wayland"
+
+msgid ""
+"Enable wayland focus stealing functionality in order to access the clipboard"
+msgstr ""
+"Включит функцианал Wayland по перехвату фокуса для доступа к буферу обмена"
+
 msgid "\"startsel\" and/or \"stopsel\"; what special keys can do"
 msgstr ""
 "действия, которые могут выполнять специальные клавиши\n"
@@ -11631,13 +11708,15 @@ msgstr "работа команд CTRL+N и CTRL+P при подстановке в режиме вставки"
 msgid "use fuzzy collection for specific completion modes"
 msgstr ""
 " \n"
-"использовать неполные коллекции для указанных режимов подстановки"
+"применять неполные коллекции для указанных режимов подстановки"
 
 msgid "whether to use a popup menu for Insert mode completion"
 msgstr "использовать всплывающее меню при подстановке в режиме вставки"
 
 msgid "popup menu item align order"
-msgstr "порядок отображения элементов во всплывающем меню при подстановке"
+msgstr ""
+" \n"
+"порядок показа элементов во всплывающем меню при подстановке"
 
 msgid "options for the Insert mode completion info popup"
 msgstr "информация во всплывающем меню при подстановке в режиме вставки"
@@ -11670,11 +11749,11 @@ msgstr "функция, используемая для подстановки из тезаурус"
 
 msgid "adjust case of a keyword completion match"
 msgstr ""
-"корректировка регистра символов для соответствующих ключевых слов\n"
+"корректировка регистра символов для совпадающих ключевых слов\n"
 "при подстановке"
 
 msgid "enable entering digraphs with c1 <BS> c2"
-msgstr "ввод диграфов с использованием клавиши BACKSPACE; сим1 <BS> сим2"
+msgstr "ввод диграфов посредством клавиши BACKSPACE; сим1 <BS> сим2"
 
 msgid "the \"~\" command behaves like an operator"
 msgstr "использовать команду `~` как оператор"
@@ -11709,23 +11788,21 @@ msgid "tabs and indenting"
 msgstr "Табуляция и отступы"
 
 msgid "number of spaces a <Tab> in the text stands for"
-msgstr "число пропусков в тексте, обозначающее табуляцию"
+msgstr "количество колонок между двумя позициями табуляции"
 
 msgid "number of spaces used for each step of (auto)indent"
-msgstr "количество пробелов, вставляемых на каждом шаге установки отступа"
+msgstr "количество пробелов, добавляемых на каждом шаге вставки отступа"
 
 msgid "list of number of spaces a tab counts for"
-msgstr "список количества пробелов, на которое отсчитывается табуляция"
+msgstr "список количества колонок межуд позициями табуляции"
 
 msgid "list of number of spaces a soft tabsstop counts for"
-msgstr ""
-"список количества пробелов, на которое отсчитывается расстановка\n"
-"«мягкой» табуляции"
+msgstr "список количества колонок между «мягкими» позциями табуляции"
 
 msgid "a <Tab> in an indent inserts 'shiftwidth' spaces"
 msgstr ""
-"при нажатии клавиши <TAB> , в начале строки будет вставка пробелов\n"
-"как задано в параметре 'shiftwidth'"
+"при нажатии клавиши <TAB>, в начале строки будет вставка\n"
+"пробелов, как задано в параметре 'shiftwidth'"
 
 msgid "if non-zero, number of spaces to insert for a <Tab>"
 msgstr "количество пробелов, вставляемых при нажатии клавиши <TAB>"
@@ -11806,8 +11883,8 @@ msgstr "функция, используемая для показа содержимого свёрнутых строк"
 
 msgid "set to \"all\" to close a fold when the cursor leaves it"
 msgstr ""
-"установите значение \"all\", чтобы свернуть строки блока структуры,\n"
-"когда каретка выйдет за его границы"
+"установите значение \"all\", чтобы свернуть строки блока\n"
+"структуры, когда каретка выйдет за его границы"
 
 msgid "specifies for which commands a fold will be opened"
 msgstr "задаёт команды, для которых будут развёрнуты свёрнутые строки"
@@ -11952,8 +12029,8 @@ msgstr "расширение файла, используемое для резервной копии"
 
 msgid "automatically write a file when leaving a modified buffer"
 msgstr ""
-"автоматически сохранять изменения в буфере при переключении на\n"
-"другой файл"
+"автоматически сохранять изменения в буфере при переключении\n"
+"на другой файл"
 
 msgid "as 'autowrite', but works with more commands"
 msgstr "как параметр 'autowrite', но применяется и для других команд"
@@ -12396,7 +12473,7 @@ msgstr "подключаемый файл динамической библиотеки языка MzScheme"
 msgid "name of the MzScheme GC dynamic library"
 msgstr "подключаемый файл динамической библиотеки MzScheme GC"
 
-msgid "0, 1 or 2; when to use a tab pages in tabpanel"
+msgid "0, 1 or 2; when to use the tabpanel"
 msgstr ""
 "отображение панели вкладок\n"
 "Возможные значения: 0, 1 или 2"
