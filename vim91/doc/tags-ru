@@ -398,7 +398,6 @@ gross-national-happiness	intro.rux	/*gross-national-happiness*
 gui-functions	usr_41.rux	/*gui-functions*
 help-context	help.rux	/*help-context*
 help-summary	usr_02.rux	/*help-summary*
-help-tags	tags-ru	1
 help.txt	help.rux	/*help.txt*
 highlighting-functions	usr_41.rux	/*highlighting-functions*
 history-functions	usr_41.rux	/*history-functions*
@@ -528,8 +527,6 @@ time-functions	usr_41.rux	/*time-functions*
 timer-functions	usr_41.rux	/*timer-functions*
 tuple-functions	usr_41.rux	/*tuple-functions*
 tutor	usr_01.rux	/*tutor*
-typecorrect-settings	usr_51.rux	/*typecorrect-settings*
-typecorrect.txt	usr_51.rux	/*typecorrect.txt*
 uganda	uganda.rux	/*uganda*
 uganda.txt	uganda.rux	/*uganda.txt*
 undo_ftplugin	usr_51.rux	/*undo_ftplugin*
