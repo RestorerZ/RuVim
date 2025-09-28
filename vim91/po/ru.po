@@ -22,10 +22,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: RuVim_0.9011591.260725\n"
-"Report-Msgid-Bugs-To: The Vim Project, <vim-dev@vim.org>\n"
-"POT-Creation-Date: 2025-07-26 11:52+0300\n"
-"PO-Revision-Date: 2025-07-26 13:40+0300\n"
+"Project-Id-Version: RuVim_0.9011797.270925\n"
+"Report-Msgid-Bugs-To: vim-dev@vim.org\n"
+"POT-Creation-Date: 2025-09-27 11:57+0300\n"
+"PO-Revision-Date: 2025-09-27 12:50+0300\n"
 "Last-Translator: Restorer, <restorer@mail2k.ru>\n"
 "Language-Team: RuVim, https://github.com/RestorerZ/RuVim\n"
 "Language: ru_RU\n"
@@ -350,6 +350,9 @@ msgstr " Сбой передачи. Попытка выполнить локал
 #, c-format
 msgid "%d of %d edited"
 msgstr "отредактировано %d из %d"
+
+msgid "Socket server not online:Send expression failed"
+msgstr "Сбой при отправке выражения. Не подключен сервер сокетов"
 
 msgid "No display: Send expression failed.\n"
 msgstr "Сбой при отправке выражения. Отсутствует подключение\n"
@@ -2023,14 +2026,16 @@ msgid ""
 "case."
 msgstr ""
 "\n"
-"Чтобы распознавался аргумент в верхнем регистре, добавьте перед ним символ /"
+"Чтобы аргумент распознавался в верхнем регистре, добавьте перед ним символ / "
+"(прим. -/R)"
 
 msgid ""
 "\n"
 "Or, where supported, SET PROC/PARSE=EXT, or else quote upper-case material."
 msgstr ""
 "\n"
-"или, если поддерживается, SET PROC/PARSE=EXT, либо заключите в кавычки."
+"Или, если доступно, SET PROC/PARSE=EXT, либо заключите в кавычки то, что "
+"должно быть в верхнем регистре"
 
 msgid ""
 "\n"
@@ -2214,6 +2219,9 @@ msgstr "-X\t\t\tЗапуск программы без подключения к
 
 msgid "-Y\t\t\tDo not connect to Wayland compositor"
 msgstr "-Y\t\t\tЗапуск программы без подключения к Wayland Compositor"
+
+msgid "--clientserver <socket|x11> Backend for clientserver communication"
+msgstr "--clientserver <socket|x11> Тип подключение между клиентом и сервером"
 
 msgid "--remote <files>\tEdit <files> in a Vim server if possible"
 msgstr ""
@@ -2868,11 +2876,21 @@ msgstr "-- Далее --"
 msgid " SPACE/d/j: screen/page/line down, b/u/k: up, q: quit "
 msgstr " SPACE/d/j - вниз, b/u/k - вверх на экран/страницу/строку; q - отбой "
 
+msgid "W24: Clipboard register not available. See :h W24"
+msgstr "W24: Регистр буфера обмена недоступен. Подробнее см. :h W24"
+
 msgid "W23: Clipboard register not available, using register 0"
 msgstr "W23: Регистр буфера обмена недоступен. Будет использован регистр 0"
 
-msgid "W24: Clipboard register not available. See :h W24"
-msgstr "W24: Регистр буфера обмена недоступен. Подробнее см. :h W24"
+msgid "W23: Clipboard register + not available, using register 0"
+msgstr ""
+"W23: Регистр + в качестве буфера обмена недоступен. Будет использован "
+"регистр 0"
+
+msgid "W23: Clipboard register * not available, using register 0"
+msgstr ""
+"W23: Регистр * в качестве буфера обмена недоступен. Будет использован "
+"регистр 0"
 
 # Restorer: заголовок окна
 msgid "Question"
@@ -3255,6 +3273,10 @@ msgstr ""
 #, c-format
 msgid "XSMP SmcOpenConnection failed: %s"
 msgstr "Функция SmcOpenConnection() вернула ошибку %s"
+
+#, c-format
+msgid "Failed creating socket directory: %s"
+msgstr "Произошёл сбой при создании каталога сокета %s"
 
 # ~!: earlier
 msgid "At line"
@@ -4444,7 +4466,7 @@ msgid ""
 "OpenVMS (build) arch, version"
 msgstr ""
 "\n"
-"Версия для OpenVMS"
+"Версия для OpenVMS (build) arch"
 
 msgid ""
 "\n"
@@ -9865,8 +9887,8 @@ msgid "E1329: Invalid class variable declaration: %s"
 msgstr "E1329: Недопустимое объявление переменной класса %s"
 
 #, c-format
-msgid "E1330: Invalid type for object variable: %s"
-msgstr "E1330: Недопустимый тип данных переменной объекта %s"
+msgid "E1330: Invalid type used in variable declaration: %s"
+msgstr "E1330: Указан недопустимый тип данных в объявлении переменной %s"
 
 msgid ""
 "E1331: public must be followed by \"var\" or \"static\" or \"final\" or "
@@ -10175,8 +10197,7 @@ msgid "E1413: Builtin class method not supported"
 msgstr "E1413: В классе не доступны встроенные методы"
 
 msgid "E1414: Enum can only be defined in Vim9 script"
-msgstr ""
-"E1414: Тип данных Enum может быть определён только в командных файлах Vim9"
+msgstr "E1414: Тип Enum может быть определён только в командных файлах Vim9"
 
 #, c-format
 msgid "E1415: Enum name must start with an uppercase letter: %s"
@@ -10186,15 +10207,15 @@ msgid "E1416: Enum cannot extend a class or enum"
 msgstr "E1416: Тип Enum не может наследоваться в классах или других типах Enum"
 
 msgid "E1417: Abstract cannot be used in an Enum"
-msgstr "E1417: Интерфейсы не поддерживают типы данных Enum"
+msgstr "E1417: Интерфейсы не поддерживают типы Enum"
 
 #, c-format
 msgid "E1418: Invalid enum value declaration: %s"
-msgstr "E1418: Недопустимое объявление переменной типа данных Enum %s"
+msgstr "E1418: Недопустимое объявление значения в типе Enum %s"
 
 #, c-format
 msgid "E1419: Not a valid command in an Enum: %s"
-msgstr "E1419: Недопустимая команда в объявлении типа данных Enum %s"
+msgstr "E1419: Недопустимая команда в объявлении типа Enum %s"
 
 msgid "E1420: Missing :endenum"
 msgstr "E1420: Не указана команда :endenum"
@@ -10205,7 +10226,7 @@ msgstr "E1421: Не допускается в качестве значения 
 
 #, c-format
 msgid "E1422: Enum value \"%s\" not found in enum \"%s\""
-msgstr "E1422: У типа данных Enum \"%2$s\" отсутствует переменная \"%1$s\""
+msgstr "E1422: У типа Enum \"%2$s\" отсутствует значение \"%1$s\""
 
 #, c-format
 msgid "E1423: Enum value \"%s.%s\" cannot be modified"
@@ -10213,20 +10234,19 @@ msgstr "E1423: Не допускается изменение значения �
 
 #, c-format
 msgid "E1424: Using an Enum \"%s\" as a Number"
-msgstr "E1424: Ожидался тип данных Number, а получен тип данных Enum \"%s\""
+msgstr "E1424: Ожидался тип данных Number, а получен тип Enum \"%s\""
 
 #, c-format
 msgid "E1425: Using an Enum \"%s\" as a String"
-msgstr "E1425: Ожидался тип данных String, а получен тип данных Enum \"%s\""
+msgstr "E1425: Ожидался тип данных String, а получен тип Enum \"%s\""
 
 #, c-format
 msgid "E1426: Enum \"%s\" ordinal value cannot be modified"
-msgstr ""
-"E1426: Не допускается изменение порядка значений в типе данных Enum \"%s\""
+msgstr "E1426: Не допускается изменение порядка значений в типе Enum \"%s\""
 
 #, c-format
 msgid "E1427: Enum \"%s\" name cannot be modified"
-msgstr "E1427: Не допускается изменение наименования типа данных Enum \"%s\""
+msgstr "E1427: Не допускается изменение наименования типа Enum \"%s\""
 
 #, c-format
 msgid "E1428: Duplicate enum value: %s"
@@ -10253,30 +10273,30 @@ msgid ""
 "E1432: Overriding generic method \"%s\" in class \"%s\" with a concrete "
 "method"
 msgstr ""
-"E1432: Переопределение обобщённого метода \"%s\" класса \"%s\" конкретным "
-"методом"
+"E1432: Переопределение обобщённого метода \"%s\" конкретным методом в классе "
+"\"%s\""
 
 #, c-format
 msgid ""
 "E1433: Overriding concrete method \"%s\" in class \"%s\" with a generic "
 "method"
 msgstr ""
-"E1433: Переопределение конкретного метода \"%s\" класса \"%s\" обобщённым "
-"методом"
+"E1433: Переопределение конкретного метода \"%s\" обобщённым методом в классе "
+"\"%s\""
 
 #, c-format
 msgid ""
 "E1434: Mismatched number of type variables for generic method  \"%s\" in "
 "class \"%s\""
 msgstr ""
-"E1434: Несоответствующее количество типов переменных для обобщённого метода "
-"\"%s\" класса \"%s\""
+"E1434: Несоответствующее количество переменных типа для обобщённого метода "
+"\"%s\" в классе \"%s\""
 
 msgid "E1435: Enum can only be used in a script"
-msgstr "E1435: Команда :enum должна указываться только в командном файле"
+msgstr "E1435: Тип Enum может быть использован только в командном файле"
 
 msgid "E1436: Interface can only be used in a script"
-msgstr "E1436: Команда :interface должна указываться только в командном файле"
+msgstr "E1436: Тип Interface может быть использован только в командном файле"
 
 #, c-format
 msgid "E1500: Cannot mix positional and non-positional arguments: %s"
@@ -10467,14 +10487,13 @@ msgstr "E1548: Подключение к Wayland серверу отсутств
 
 #, c-format
 msgid "E1549: Cannot have more than %d diff anchors"
-msgstr ""
-"E1549: Разрешается указывать не более чем %d закладок в сравниваемых буферах"
+msgstr "E1549: Привязок сравнения не может быть больше чем %d"
 
 msgid "E1550: Failed to find all diff anchors"
-msgstr "E1550: Не удалось найти все закладки в сравниваемых буферах"
+msgstr "E1550: Не удалось найти все привязки сравнения"
 
 msgid "E1551: Cannot open a popup window to a closing buffer"
-msgstr "E1551: Не допускается вызов всплывающего окна для закрытого буфера"
+msgstr "E1551: Невозможно открыть всплывающее окно для закрывающегося буфера"
 
 #, c-format
 msgid "E1552: Type variable name must start with an uppercase letter: %s"
@@ -10483,24 +10502,24 @@ msgstr ""
 
 #, c-format
 msgid "E1553: Missing comma after type in generic function: %s"
-msgstr ""
-"E1553: Не указан символ запятая после переменной типа в обобщённой функции %s"
+msgstr "E1553: Отсутствует запятая после типа в обобщённой функции %s"
 
 #, c-format
 msgid "E1554: Missing '>' in generic function: %s"
-msgstr "E1554: Не указан символ '>' в обобщённой функции %s"
+msgstr "E1554: Не указана угловая скобка в обобщённой функции %s"
 
 #, c-format
 msgid "E1555: Empty type list specified for generic function '%s'"
-msgstr "E1555: Не указан перечень типов в обобщённой функции '%s'"
+msgstr "E1555: Указан пустой список типов для обобщённой функции '%s'"
 
 #, c-format
 msgid "E1556: Too many types specified for generic function '%s'"
-msgstr "E1556: Превышено количество типов в обобщённой функции '%s'"
+msgstr "E1556: Указано слишком много типов для обобщённой функции '%s'"
 
 #, c-format
 msgid "E1557: Not enough types specified for generic function '%s'"
-msgstr "E1557: Недостаточное количество типов в обобщённой функции '%s'"
+msgstr ""
+"E1557: Указано недостаточное количество типов для обобщённой функции '%s'"
 
 #, c-format
 msgid "E1558: Unknown generic function: %s"
@@ -10508,15 +10527,47 @@ msgstr "E1558: Не распознана обобщённая функция %s"
 
 #, c-format
 msgid "E1559: Type arguments missing for generic function '%s'"
-msgstr "E1559: Не указан тип аргументов в обобщённой функции '%s'"
+msgstr "E1559: Не указан тип аргументов для обобщённой функции '%s'"
 
 #, c-format
 msgid "E1560: Not a generic function: %s"
-msgstr "E1560: Функция %s не является обобщённой"
+msgstr "E1560: Не удалось распознать как обобщённую функцию %s"
 
 #, c-format
 msgid "E1561: Duplicate type variable name: %s"
-msgstr "E1561: Повтор наименования типа переменной %s"
+msgstr "E1561: Повтор наименования переменной типа %s"
+
+msgid "E1562: Diff anchors cannot be used with hidden diff windows"
+msgstr ""
+"E1562: Не допускается использовать привязки сравнения при наличии скрытых "
+"буферов в режиме сверки различий"
+
+msgid "E1563: Socket path is too big"
+msgstr "E1563: Маршрут к сокету слишком длинный"
+
+msgid "E1564: Socket name cannot have slashes in it without being a path"
+msgstr ""
+"E1564: В наименовании сокета не должно быть косой черты, если это не маршрут"
+
+msgid "E1565: Socket server is not online, call remote_startserver() first"
+msgstr ""
+"E1565: Сервер сокетов не подключен, вызовите функцию remote_startserver()"
+
+#, c-format
+msgid "E1566: Failed connecting to socket %s: %s"
+msgstr "E1566: Произошёл сбой при подключении к сокету %s: %s"
+
+msgid "E1567: Cannot start socket server, socket path is unavailable"
+msgstr ""
+"E1567: Не удалось запустить сервер сокетов, маршрут к сокету недействителен"
+
+#, c-format
+msgid "E1568: OSC command response timed out: %.*s"
+msgstr "E1568: Время ожидания ответа на команду OSC истекло: %.*s"
+
+msgid "E1569: Cannot use listener_add in a listener callback"
+msgstr ""
+"E1569: Функция listener_add() запрещена в самом обработчике обратного вызова"
 
 # Restorer: выводится, например, по команде `CTRL+g`, `g CTRL+g` и т. п.
 msgid "--No lines in buffer--"
@@ -10941,8 +10992,7 @@ msgid ""
 "\"            For other options you can edit the value before hitting "
 "<Enter>."
 msgstr ""
-"\"     для других параметров необходимо перед этим отредактировать их "
-"значения"
+"\"   для других параметров необходимо перед этим отредактировать их значения"
 
 msgid "\" Hit <Enter> on a help line to open a help window on this option."
 msgstr ""
@@ -11051,7 +11101,7 @@ msgstr ""
 
 msgid "maximum number for the search count feature"
 msgstr ""
-"максимальное количество отображаемых совпадений\n"
+"максимальное количество совпадений, отображамое\n"
 "в результатах поиска"
 
 msgid "what method to use for changing case of letters"
@@ -11505,6 +11555,9 @@ msgstr ""
 "восстановить содержимое экрана после завершения работы\n"
 "редактора Vim"
 
+msgid "timeout used for terminal OSC responses"
+msgstr "задержка, используемая для ответов терменала на OSC запросы"
+
 msgid "using the mouse"
 msgstr "Манипулятор «мышь»"
 
@@ -11798,10 +11851,28 @@ msgid "expression used for \"gq\" to format lines"
 msgstr "функция, используемая для форматирования строк по команде `gq`"
 
 msgid "specifies how Insert mode completion works for CTRL-N and CTRL-P"
-msgstr "работа команд CTRL+N и CTRL+P при подстановке в режиме вставки"
+msgstr ""
+"как выполняется подстановка в режиме вставки по команде\n"
+"CTRL+N и CTRL+P"
 
 msgid "automatic completion in insert mode"
-msgstr "автоматическая подстановка в режиме вставки"
+msgstr "автоматическая подставновка в режиме вставки"
+
+msgid "initial decay timeout for 'autocomplete' algorithm"
+msgstr ""
+" \n"
+"начальное время (в мс) ожидания для алгоритма 'autocmplte'"
+
+msgid "initial decay timeout for CTRL-N and CTRL-P completion"
+msgstr ""
+" \n"
+"начальная задержка (в мс) при подстановке по команде\n"
+"CTRL+N и CTRL+P"
+
+msgid "delay in msec before menu appears after typing"
+msgstr ""
+" \n"
+"задержка (в мс) перед появлением меню после начала печати"
 
 msgid "whether to use a popup menu for Insert mode completion"
 msgstr "использовать всплывающее меню при подстановке в режиме вставки"
@@ -11908,7 +11979,7 @@ msgstr "количество пробелов, вставляемых при н�
 msgid "round to 'shiftwidth' for \"<<\" and \">>\""
 msgstr ""
 "приводить к значению, заданному в параметре 'shiftwidth'\n"
-"для команд :<< и :>>"
+"для команд `<<` и `>>`"
 
 msgid "expand <Tab> to spaces in Insert mode"
 msgstr "замена в режиме вставки символа табуляции на пробелы"
@@ -12036,9 +12107,7 @@ msgid "expression used to obtain a diff file"
 msgstr "функция, используемая для создания файла различий"
 
 msgid "list of addresses for anchoring a diff"
-msgstr ""
-"перечень адресов, в которых установлены закладки\n"
-"при сравнении буферов"
+msgstr "список адресов для привязок сравнения"
 
 msgid "expression used to patch a file"
 msgstr "функция, используемая для внесения исправлений в файл"
