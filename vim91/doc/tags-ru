@@ -238,12 +238,14 @@
 <Esc>	intro.rux	/*<Esc>*
 <M-	intro.rux	/*<M-*
 <Nul>	intro.rux	/*<Nul>*
+<OSC>	intro.rux	/*<OSC>*
 <Return>	intro.rux	/*<Return>*
 <S-	intro.rux	/*<S-*
 <S-F1>	intro.rux	/*<S-F1>*
 <character>	intro.rux	/*<character>*
 <lt>	intro.rux	/*<lt>*
 <xCSI>	intro.rux	/*<xCSI>*
+<xOSC>	intro.rux	/*<xOSC>*
 ATTENTION	usr_11.rux	/*ATTENTION*
 CTRL-\_CTRL-G	intro.rux	/*CTRL-\\_CTRL-G*
 CTRL-\_CTRL-N	intro.rux	/*CTRL-\\_CTRL-N*
@@ -259,12 +261,14 @@ FAQ	intro.rux	/*FAQ*
 ICCF	uganda.rux	/*ICCF*
 Justify()	usr_25.rux	/*Justify()*
 Kibaale	uganda.rux	/*Kibaale*
+Kuwasha	uganda.rux	/*Kuwasha*
 Neovim	intro.rux	/*Neovim*
 Normal	intro.rux	/*Normal*
 Normal-mode	intro.rux	/*Normal-mode*
 Nvi	intro.rux	/*Nvi*
 Operator-pending	intro.rux	/*Operator-pending*
 Operator-pending-mode	intro.rux	/*Operator-pending-mode*
+Package-osc52	usr_05.rux	/*Package-osc52*
 Posix	intro.rux	/*Posix*
 Q	intro.rux	/*Q*
 Q_ab	quickref.rux	/*Q_ab*
@@ -308,7 +312,6 @@ Q_vi	quickref.rux	/*Q_vi*
 Q_vm	quickref.rux	/*Q_vm*
 Q_wi	quickref.rux	/*Q_wi*
 Q_wq	quickref.rux	/*Q_wq*
-Russian	russian.rux	/*Russian*
 Tab	intro.rux	/*Tab*
 Uganda	uganda.rux	/*Uganda*
 Vi	intro.rux	/*Vi*
@@ -398,6 +401,7 @@ gross-national-happiness	intro.rux	/*gross-national-happiness*
 gui-functions	usr_41.rux	/*gui-functions*
 help-context	help.rux	/*help-context*
 help-summary	usr_02.rux	/*help-summary*
+help-tags	tags-ru	1
 help.txt	help.rux	/*help.txt*
 highlighting-functions	usr_41.rux	/*highlighting-functions*
 history-functions	usr_41.rux	/*history-functions*
@@ -414,7 +418,6 @@ i_CTRL-\_CTRL-G	intro.rux	/*i_CTRL-\\_CTRL-G*
 i_CTRL-\_CTRL-N	intro.rux	/*i_CTRL-\\_CTRL-N*
 i_esc	intro.rux	/*i_esc*
 iccf	uganda.rux	/*iccf*
-iccf-donations	uganda.rux	/*iccf-donations*
 install	usr_90.rux	/*install*
 install-home	usr_90.rux	/*install-home*
 interactive-functions	usr_41.rux	/*interactive-functions*
@@ -460,6 +463,7 @@ news	intro.rux	/*news*
 not-compatible	usr_01.rux	/*not-compatible*
 notation	intro.rux	/*notation*
 option-list	quickref.rux	/*option-list*
+osc52-install	usr_05.rux	/*osc52-install*
 package-comment	usr_05.rux	/*package-comment*
 package-editorconfig	usr_05.rux	/*package-editorconfig*
 package-hlyank	usr_05.rux	/*package-hlyank*
@@ -484,17 +488,9 @@ quotecommandquote	intro.rux	/*quotecommandquote*
 ref	intro.rux	/*ref*
 reference	intro.rux	/*reference*
 reference_toc	help.rux	/*reference_toc*
-register	sponsor.rux	/*register*
 register-faq	sponsor.rux	/*register-faq*
 register-functions	usr_41.rux	/*register-functions*
 restore-cursor	usr_05.rux	/*restore-cursor*
-russian	russian.rux	/*russian*
-russian-intro	russian.rux	/*russian-intro*
-russian-issues	russian.rux	/*russian-issues*
-russian-keymap	russian.rux	/*russian-keymap*
-russian-l18n	russian.rux	/*russian-l18n*
-russian-l18n-support	russian.rux	/*russian-l18n-support*
-russian.txt	russian.rux	/*russian.txt*
 script	usr_41.rux	/*script*
 send-money	sponsor.rux	/*send-money*
 server-functions	usr_41.rux	/*server-functions*
@@ -595,7 +591,6 @@ vimrc-filetype	usr_05.rux	/*vimrc-filetype*
 vimrc-intro	usr_05.rux	/*vimrc-intro*
 vimrc_example.vim	usr_05.rux	/*vimrc_example.vim*
 vimtutor	usr_01.rux	/*vimtutor*
-vote-for-features	sponsor.rux	/*vote-for-features*
 window-contents	intro.rux	/*window-contents*
 window-functions	usr_41.rux	/*window-functions*
 window-size-functions	usr_41.rux	/*window-size-functions*
