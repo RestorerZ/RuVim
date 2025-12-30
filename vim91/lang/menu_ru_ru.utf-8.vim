@@ -2,7 +2,7 @@
 " Maintainer:		Restorer, <restorer@mail2k.ru>
 " Previous Maintainer:	Sergey Alyoshin, <alyoshin.s@gmail.com>
 "			vassily ragosin, <vrr[at]users.sourceforge.net>
-" Last Change:		25 May 2025
+" Last Change:		28 Dec 2025
 " URL:			https://github.com/RestorerZ/RuVim
 "
 " Adopted for RuVim project by Vassily Ragosin.
@@ -43,7 +43,7 @@ menutrans &Find\.\.\.			&Найти\.\.\.
 "--------------------
 menutrans &Credits			Со&авторы
 menutrans Co&pying			&Лицензия
-menutrans &Sponsor/Register		Сод&ействие\ и\ регистрация
+menutrans &Sponsor			Сод&ействие\ проекту
 menutrans O&rphans			&Благотворительность
 "--------------------
 menutrans &Version			&Текущая\ версия
