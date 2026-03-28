@@ -401,7 +401,6 @@ gross-national-happiness	intro.rux	/*gross-national-happiness*
 gui-functions	usr_41.rux	/*gui-functions*
 help-context	help.rux	/*help-context*
 help-summary	usr_02.rux	/*help-summary*
-help-tags	tags-ru	1
 help.txt	help.rux	/*help.txt*
 highlighting-functions	usr_41.rux	/*highlighting-functions*
 history-functions	usr_41.rux	/*history-functions*
